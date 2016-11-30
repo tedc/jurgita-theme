@@ -93,8 +93,8 @@ var cssTasks = function(filename) {
     .pipe(function() {
       return gulpif('*.scss', compass({
         config_file : path.source + 'styles/config.rb',
-        css: path.dist + 'css',
-        sass: path.source + 'sass',
+        css: path.dist + 'styles',
+        sass: path.source + 'styles',
         require : ['sass-globbing'],
         outputStyle : 'compressed'
       }));
