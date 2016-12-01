@@ -1,0 +1,45 @@
+%btn {
+    padding: em(20px);
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid $gold;
+}
+
+.btn {
+    @extend %btn;
+    background-color: $gold;
+    color: $w;
+
+    &:hover {
+         background-color: $w;
+         color: $gold;
+    }
+}
+
+
+.btn-reverse {
+    @extend %btn;
+    color: $gold;
+
+    &:hover {
+         background-color: $gold;
+         color: $w;
+         
+    }
+}
+
+
+.btn-social {
+    @extend %btn;
+    border: 3px solid $gold;
+    color: $gold;
+
+    &:hover {
+          background-color: $gold;
+         color: $w;
+    }
+}
+
+
+
