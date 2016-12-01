@@ -3,4 +3,4 @@
         <h1 class="header-title"><?php bloginfo('name'); ?> </h1>
         <h2 class="header-subtitle"><?php bloginfo('name'); ?></h2>
     </div>
-<?php }
+<?php } ?>
