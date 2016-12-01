@@ -2,10 +2,11 @@
 .footer {
   border-top: 1px solid $border-footer;
   h1 {
+    font-size:em(30px);
     text-align: center;
-    font-size: em(20px);
-    padding-top: em(40px);
-    padding-bottom: em(25px);
+    padding-top: em(40px, 30px);
+    padding-bottom: em(25px, 30px);
+
   }
 
   .bottom-footer {
@@ -25,6 +26,7 @@
       li {
         list-style-type: none;
         display: inline-block;
+        color: #808285;
 
         &:after {
           content:'\2022';
