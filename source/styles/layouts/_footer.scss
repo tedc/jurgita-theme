@@ -1,5 +1,6 @@
 
 .footer {
+  border-top: 1px solid $border-footer;
   h1 {
     text-align: center;
     font-size: em(20px);
@@ -11,24 +12,31 @@
     display: flex;
     justify-content: space-between;
 
+
     .text-2 {
       flex: 1;
     }
 
     .nav_menu-2 {
       flex: 2;
-
-      li:first-child{
-        list-style-type: none;
-      }
+      text-align: center;
 
       li {
+        list-style-type: none;
         display: inline-block;
+
+        &:after {
+          content:'\2022';
+          margin-left: em(7px);
+          margin-right: em(7px);
+          color: $medium_gray;
+        }
       }
     }
 
     .widget_img {
       flex: 1;
+      text-align: right;
     }
   }
 }
