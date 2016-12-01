@@ -19,5 +19,5 @@
   "paths": {
     "dist": "assets/",
     "source": "source/"
-  },
+  }
 }

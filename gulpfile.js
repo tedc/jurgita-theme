@@ -21,6 +21,7 @@ var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var compass      = require('gulp-compass');
 var postcss      = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./source/manifest.json');
