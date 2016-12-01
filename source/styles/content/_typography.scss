@@ -1,0 +1,23 @@
+*, *:after, *:before {
+  box-sizing: border-box !important;
+}
+
+
+body {
+  overflow-x: hidden;
+  font-size: 14px;
+  color: $base_color;
+
+  @include breakpoint(1024px) {
+    font-size: $base_font_size;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}

@@ -33,7 +33,10 @@
     }
 }
 
+
+
 @mixin breakpoint($point, $min : true) {
+    $min_or_max : null;
 	@if $min {
 		$min_or_max : "min";
 	} @else {
