@@ -16,11 +16,15 @@
     list-style: none;
     padding: 0;
 
-    .cat-item, .cat-item-all {
+    li {
       display: inline;
-      font-family: $third-font;
-      font-weight: 400;
-      color: $gold;
+
+      a {
+        color: $gold;
+        font-family: $third-font;
+        font-weight: 400;
+      }
+
     }
     .cat-item.current {
       color: $category_gray;
