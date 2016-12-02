@@ -1,9 +1,8 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
+<?php
 $categories = get_categories( );
-
-
-<?php if ( ! empty( $categories ) ) {
+if ( ! empty( $categories ) ) {
 echo '<ul class="categories">';
   foreach( $categories as $category ) {
   echo '<li><a class="category" href="'.get_category_link($category->term_id).'">';
