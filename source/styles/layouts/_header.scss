@@ -1,4 +1,13 @@
-.container-header{
+.container-header {
 	display: flex;
 	justify-content: space-between;
+}
+
+
+.page-header {
+	h1 {
+		text-align: center;
+		padding: em(80px) 0;
+	}
+
 }
