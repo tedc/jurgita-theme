@@ -3,7 +3,7 @@
 <ul class="categories">
 <?php
   wp_list_categories(  array(
-      'show_option_all' => _e("Tutti gli articoli", "jurgita"),
+      'show_option_all' => __("Tutti gli articoli", "jurgita"),
       'title_li' => "",
   ) )
 ;?>
