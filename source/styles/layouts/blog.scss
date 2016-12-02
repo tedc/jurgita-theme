@@ -1,5 +1,5 @@
 
-.blog {
+.blog, .archive {
   .page-header {
     h1 {
       font-size: em(50px);
@@ -14,9 +14,16 @@
   }
   .categories {
     list-style: none;
+    padding: 0;
 
-    li {
+    .cat-item {
       display: inline;
+      font-family: $third-font;
+      font-weight: 400;
+      color: $gold;
+    }
+    .cat-item.current {
+      color: $category_gray;
     }
   }
 }
