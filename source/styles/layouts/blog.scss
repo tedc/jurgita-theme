@@ -19,6 +19,10 @@
     li {
       display: inline;
 
+      .cat-item.current-cat {
+        color: $category_gray;
+      }
+
       a {
         color: $gold;
         font-family: $third-font;
@@ -26,8 +30,6 @@
       }
 
     }
-    .cat-item.current-cat {
-      color: $category_gray;
-    }
+
   }
 }
