@@ -23,6 +23,9 @@
 
       li {
         display: inline;
+        padding: 0 em(20px);
+        margin-right: em(30px);
+        background-color: white;
 
         a {
           color: $gold;
