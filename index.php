@@ -1,11 +1,12 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
+<ul class="categories">
 <?php
   wp_list_categories(  array(
       'show_option_all' => _e("Tutti gli articoli", "jurgita"),
   ) )
 ;?>
-
+</ul>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">

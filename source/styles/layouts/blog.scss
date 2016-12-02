@@ -3,6 +3,9 @@
   .page-header {
     h1 {
       font-size: em(50px);
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $gold;
       letter-spacing: $letter-spacing-large;
       font-family: $third-font;
       text-align: center;
