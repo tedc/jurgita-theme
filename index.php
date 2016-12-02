@@ -4,6 +4,7 @@
 <?php
   wp_list_categories(  array(
       'show_option_all' => _e("Tutti gli articoli", "jurgita"),
+      'title_li' => "",
   ) )
 ;?>
 </ul>
