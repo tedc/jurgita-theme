@@ -1,9 +1,9 @@
 <div class="container-img col-2">
     <figure>
         <img src="<?php the_post_thumbnail_url() ?>">
+        <div class="square"></div>
+        <div class="square-shadow"></div>
     </figure>
-    <div class="square"></div>
-    <div class="square-shadow"></div>
 </div>
 <article class="col-2" <?php post_class(); ?>>
     <div class="content-post">

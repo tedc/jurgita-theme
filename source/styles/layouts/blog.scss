@@ -66,12 +66,20 @@
 
     figure {
       position: relative;
-      overflow: hidden;
       width: 100%;
 
       img {
         width: 100%;
         height: auto;
+      }
+      .square {
+        width: 66%;
+        height: 66%;
+        background-color: $yellow;
+        position: absolute;
+        bottom: em(-45px);
+        right: em(-45px);
+        z-index: -1;
       }
     }
   }
