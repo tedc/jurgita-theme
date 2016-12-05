@@ -3,11 +3,9 @@
         <figure>
             <?php the_post_thumbnail('post-size') ?>
         </figure>
-        <div class="blur">
-            <a href="<?php the_permalink(); ?>">
+            <a class="blur" href="<?php the_permalink(); ?>">
                 <i class="icon-lens">X</i>
             </a>
-        </div>
     </div>
 
     <header>
