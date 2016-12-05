@@ -37,8 +37,7 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 function image() {
   add_image_size('post-size', 570, 270, true);
-
 }
 
-add_action("after_setup_theme", __NAMESPACE__ . '\\image');
+add_action('after_setup_theme', __NAMESPACE__ . '\\image');
 
