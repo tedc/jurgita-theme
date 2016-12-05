@@ -55,6 +55,8 @@
 
 .sticky {
   display: flex;
+  padding-bottom: em(150px);
+
   .container-img {
     width:50%;
     display: flex;
@@ -100,6 +102,7 @@
 
 .container-post {
   display: flex;
+  padding-bottom: em(100px);
 
   article {
     width:50%;
