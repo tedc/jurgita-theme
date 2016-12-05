@@ -58,6 +58,7 @@
   margin-bottom: em(150px);
 
   .container-img {
+    @include grid(2);
     width: 50%;
     display: flex;
     justify-content: center;
