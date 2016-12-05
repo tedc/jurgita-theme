@@ -94,14 +94,18 @@
       font-size: em(40px);
       font-family: $third-font;
       text-transform: uppercase;
-      padding: em(45px) 0;
+      padding: em(45px, 40px) 0;
+
+      a{
+        color: $gold;
+      }
     }
 
     .entry-summary{
       font-size: em(18px);
       font-family: $main-font;
       color: $base_color;
-      padding-bottom: em(45px);
+      padding-bottom: em(45px, 18px);
     }
   }
 }
