@@ -63,7 +63,6 @@
     figure {
       position: relative;
       overflow: hidden;
-      padding-bottom: 50%;
       width:100%;
 
       img{
@@ -98,6 +97,11 @@
 .container-post {
   display: flex;
   padding-bottom: em(100px);
+
+  .container-img{
+    width: 100%;
+    height: auto;
+  }
 
   article {
     width:50%;
