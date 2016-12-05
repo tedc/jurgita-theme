@@ -1,4 +1,4 @@
-<article <?php post_class(); ?>>
+<article class="col-2" <?php post_class(); ?>>
   <div class="container-img">
     <figure>
       <?php the_post_thumbnail( 'post-size' ) ?>
