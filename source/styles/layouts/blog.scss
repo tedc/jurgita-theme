@@ -53,17 +53,17 @@
 }
 
 
-.sticky{
-  .container-img{
+.sticky {
+  display: flex;
+  .container-img {
+    width:50%;
     figure{
       position: relative;
       width: 50%;
-
-      &:after{
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-      }
     }
+  }
+
+  article {
+    width:50%;
   }
 }
