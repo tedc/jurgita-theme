@@ -18,6 +18,19 @@
   </div>
 <?php endif; ?>
 
+<?php
+$sticky = get_option( 'sticky_posts' );
+$query = new WP_Query( 'p=' . $sticky[0] );
+$args = array(
+    'posts_per_page' => 1,
+    'post__in'  => get_option( 'sticky_posts' ),
+    'ignore_sticky_posts' => 1
+);
+$query = new WP_Query( $args );
+?>
+
+
+
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
 <?php endwhile; ?>
