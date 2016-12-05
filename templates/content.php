@@ -1,12 +1,12 @@
 <article class="col-2" <?php post_class(); ?>>
     <div class="container-img">
-        <a href="<?php the_permalink(); ?>">
-            <figure>
-                <?php the_post_thumbnail('post-size') ?>
-            </figure>
-        </a>
+        <figure>
+            <?php the_post_thumbnail('post-size') ?>
+        </figure>
         <div class="blur">
-            <i class="icon-lens">X</i>
+            <a href="<?php the_permalink(); ?>">
+                <i class="icon-lens">X</i>
+            </a>
         </div>
     </div>
 
