@@ -78,5 +78,30 @@
 
   article {
     width:50%;
+
+    .container-sticky-head {
+      font-size: em(18px);
+      font-family: $main-font;
+      color: $time-post;
+
+      a {
+        color: $time-post;
+      }
+    }
+
+    .entry-title{
+      color: $gold;
+      font-size: em(40px);
+      font-family: $third-font;
+      text-transform: uppercase;
+      padding: em(45px) 0;
+    }
+
+    .entry-summary{
+      font-size: em(18px);
+      font-family: $main-font;
+      color: $base_color;
+      padding-bottom: em(45px);
+    }
   }
 }
