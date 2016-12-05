@@ -109,3 +109,11 @@
     }
   }
 }
+
+.container-post {
+  display: flex;
+
+  article {
+    width:50%;
+  }
+}
