@@ -50,6 +50,8 @@
 @mixin grid($max, $points : $bp, $flex : true, $wrap : true) {
 
     [class^="grid"], [class*=" grid"] {
+        padding-left: em(40px);
+        padding-right: em(40px);
         @if $flex {
             display: flex;
             @if $wrap {
@@ -67,6 +69,8 @@
                 }
             }
             width: 100%;
+            padding-left: em(40px);
+            padding-right: em(40px);
         }
     }
     @if $flex {

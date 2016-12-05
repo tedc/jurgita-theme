@@ -62,7 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 em(80px);
+
 
     figure {
       position: relative;
@@ -94,7 +94,7 @@
   }
 
   article {
-    padding: 0 em(80px);
+
 
     .container-post-head {
       @extend %post-head;
