@@ -1,6 +1,5 @@
 <div class="container-img">
     <figure>
-        <?php the_post_thumbnail(); ?>
         <img src="<?php the_post_thumbnail_url() ?>">
     </figure>
     <div class="square"></div>
