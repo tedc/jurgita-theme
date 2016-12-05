@@ -57,9 +57,20 @@
   display: flex;
   .container-img {
     width:50%;
-    figure{
+    display: flex;
+    justify-content: center;
+    figure {
       position: relative;
-      width: 50%;
+      overflow: hidden;
+      padding-bottom: 50%;
+
+      img{
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
     }
   }
 
