@@ -79,36 +79,24 @@
   article {
     width:50%;
 
-    .container-sticky-head {
-      font-size: em(18px);
-      font-family: $main-font;
-      color: $time-post;
-
-      a {
-        color: $time-post;
-      }
+    .container-post-head {
+     @extend %post-head;
     }
 
     .entry-title{
-      color: $gold;
-      font-size: em(40px);
-      font-family: $third-font;
-      text-transform: uppercase;
+     @extend %title-post;
       padding: em(45px, 40px) 0;
-
-      a{
-        color: $gold;
-      }
     }
 
     .entry-summary{
-      font-size: em(18px);
-      font-family: $main-font;
-      color: $base_color;
+      @extend %excerpt-post;
       padding-bottom: em(45px, 18px);
     }
   }
 }
+
+
+
 
 .container-post {
   display: flex;
@@ -116,4 +104,44 @@
   article {
     width:50%;
   }
+  .container-post-head {
+    @extend %post-head;
+  }
+  .entry-title{
+    @extend %title-post;
+    padding: em(35px, 40px) 0;
+  }
+  .entry-summary{
+    @extend %excerpt-post;
+    padding-bottom: em(35px, 18px);
+  }
+
+}
+
+
+
+%post-head {
+  font-size: em(18px);
+  font-family: $main-font;
+  color: $time-post;
+
+  a {
+    color: $time-post;
+  }
+}
+%title-post {
+  color: $gold;
+  font-size: em(40px);
+  font-family: $third-font;
+  text-transform: uppercase;
+
+
+  a{
+    color: $gold;
+  }
+}
+%excerpt-post{
+  font-size: em(18px);
+  font-family: $main-font;
+  color: $base_color;
 }
