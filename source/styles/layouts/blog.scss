@@ -130,6 +130,7 @@
 
     .container-post-head {
       @extend %post-head;
+      padding-top: em(35px);
     }
 
     .entry-title {
