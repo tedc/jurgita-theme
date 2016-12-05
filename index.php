@@ -29,7 +29,7 @@
     $query = new WP_Query($args);
     if($query->have_posts()){
         $query->the_post();
-        the_title();
+     get_template_part('templates/sticky', get_post_type() != 'post' ? get_post_type() : get_post_format());
     }
     ?>
 </div>
