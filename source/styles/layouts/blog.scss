@@ -64,15 +64,11 @@
       position: relative;
       overflow: hidden;
       padding-bottom: 50%;
-      width:50%;
+      width:100%;
 
       img{
-        height: 100%;
-        position: absolute;
-        max-height: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        width:100%;
+        height:auto;
       }
     }
   }
