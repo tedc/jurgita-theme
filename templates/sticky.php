@@ -1,5 +1,8 @@
 <div class="container-img">
-    <img src="<?php the_post_thumbnail_url() ?>">
+    <figure>
+        the_post_thumbnail();
+        <img src="<?php the_post_thumbnail_url() ?>">
+    </figure>
     <div class="square"></div>
     <div class="square-shadow"></div>
 </div>
