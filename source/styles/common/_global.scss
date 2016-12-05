@@ -58,14 +58,15 @@
         } @else {
             @include clearfix();
         }
-        @if $flex{
-            [class^="col"], [class*=" col"] {
+        [class^="col"], [class*=" col"] {
+            @if $flex {
                 flex: 0 0 auto;
+            } @else {
+                @include breakpoint($points) {
+                    float: left;
+                }
             }
-        } @else {
-            @include breakpoint($points) {
-                float: left;
-            }
+            width: 100%;
         }
     }
     @if $flex {
