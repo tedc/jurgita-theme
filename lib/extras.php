@@ -36,8 +36,10 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 
 function image() {
-  add_theme_support( 'post-size' );
-  add_image_size('post-size', 570, 270, true);
+  add_theme_support( 'post-thumbnails' );
+  set_post_thumbnail_size( 150, 150 );
+ /* add_theme_support( 'post-size' );
+  add_image_size('post-size', 570, 270, true);*/
 
 }
 
