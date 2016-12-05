@@ -57,15 +57,19 @@
   display: flex;
   .container-img {
     width:50%;
-
+    display: flex;
+    justify-content:center;
     figure {
       position: relative;
       overflow: hidden;
       padding-bottom: 50%;
+      width:50%;
 
       img{
         height: 100%;
         position: absolute;
+         max-width: 100%;
+        max-height: 100%;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
