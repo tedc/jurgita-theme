@@ -77,8 +77,17 @@
         height: 66%;
         background-color: $yellow;
         position: absolute;
-        bottom: em(-45px);
+        bottom: em(-50px);
         right: em(-45px);
+        z-index: -1;
+      }
+      .square-shadow{
+        width: 66%;
+        height: 66%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+        position: absolute;
+        bottom: em(-80px);
+        right: em(-15px);
         z-index: -1;
       }
     }
