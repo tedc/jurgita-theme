@@ -22,14 +22,15 @@
 <div class="sticky">
 <?php
 $sticky = get_option( 'sticky_posts' );
-$query = new WP_Query( 'p=' . $sticky[0] );
 $args = array(
     'posts_per_page' => 1,
-    'post__in'  => get_option( 'sticky_posts' ),
+    'post__in'  => $sticky,
     'ignore_sticky_posts' => 1
 );
 $query = new WP_Query( $args );
-?>
+if ( isset($sticky[0]) ) {
+  echo "DAI CAZZO";
+}?>
 </div>
 
 
