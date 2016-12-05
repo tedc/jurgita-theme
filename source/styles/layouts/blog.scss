@@ -51,3 +51,19 @@
     }
   }
 }
+
+
+.sticky{
+  .container-img{
+    image{
+      position: relative;
+      width: 50%;
+
+      &:after{
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+  }
+}
