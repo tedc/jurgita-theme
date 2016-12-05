@@ -122,6 +122,7 @@
     margin-bottom: em(100px);
 
     .container-img {
+      position: relative;
 
       &:hover{
         .blur{
@@ -143,7 +144,7 @@
         justify-content: center;
         visibility: hidden;
         opacity: 0;
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVQoU2NkIABevHjxH6SEEZ86mCK8CpEVSUhIMGI1EV0RVhOxKcJQiEsRikJ8iuAKCSkCKyRGEYpCUBDgC1MAvh8neYp/F+UAAAAASUVORK5CYII=) repeat;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
       }
     }
 
