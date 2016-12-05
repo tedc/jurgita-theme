@@ -72,6 +72,7 @@
       img {
         width: 100%;
         height: auto;
+        display: block;
       }
       .square {
         width: 66%;
@@ -122,9 +123,27 @@
 
     .container-img {
 
+      &:hover{
+        .blur{
+          visibility: visible;
+          opacity: 0.7;
+        }
+      }
+
       img {
         width: 100%;
         height: auto;
+        display: block;
+      }
+
+      .blur{
+        @include absfull();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQUlEQVQoU2NkIABevHjxH6SEEZ86mCK8CpEVSUhIMGI1EV0RVhOxKcJQiEsRikJ8iuAKCSkCKyRGEYpCUBDgC1MAvh8neYp/F+UAAAAASUVORK5CYII=) repeat;
       }
     }
 
