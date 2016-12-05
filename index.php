@@ -18,6 +18,8 @@
   </div>
 <?php endif; ?>
 
+
+<div class="sticky">
 <?php
 $sticky = get_option( 'sticky_posts' );
 $query = new WP_Query( 'p=' . $sticky[0] );
@@ -28,7 +30,7 @@ $args = array(
 );
 $query = new WP_Query( $args );
 ?>
-
+</div>
 
 
 <?php while (have_posts()) : the_post(); ?>
