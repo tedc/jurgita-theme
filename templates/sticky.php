@@ -1,11 +1,11 @@
-<div class="container-img">
+<div class="container-img cols-2">
     <figure>
         <img src="<?php the_post_thumbnail_url() ?>">
     </figure>
     <div class="square"></div>
     <div class="square-shadow"></div>
 </div>
-<article <?php post_class(); ?>>
+<article class="cols-2" <?php post_class(); ?>>
     <div class="content-post">
         <header>
             <?php get_template_part('templates/entry-meta'); ?>

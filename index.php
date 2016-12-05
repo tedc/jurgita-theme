@@ -18,7 +18,7 @@
 <?php endif; ?>
 
 
-<div class="sticky">
+<div class="sticky grid-4">
     <?php
     $sticky = get_option('sticky_posts');
     $args = array(

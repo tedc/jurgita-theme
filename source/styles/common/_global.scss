@@ -48,15 +48,16 @@
 }
 
 @mixin grid($max, $points : $bp, $flex : true, $wrap : true) {
-	@if $flex {
-		display: flex;
-		@if $wrap {
-			flex-wrap: wrap;
-		}
-	} @else {
-        @include clearfix();
-    }
+
     [class^="grid"], [class*=" grid"] {
+        @if $flex {
+            display: flex;
+            @if $wrap {
+                flex-wrap: wrap;
+            }
+        } @else {
+            @include clearfix();
+        }
         @if $flex{
             [class^="col"], [class*=" col"] {
                 flex: 0 0 auto;
