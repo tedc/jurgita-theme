@@ -34,3 +34,6 @@ function excerpt_more()
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 
+add_image_size( 'post-size', 570, 270, true );
+
+

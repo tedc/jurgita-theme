@@ -1,7 +1,7 @@
 <article <?php post_class(); ?>>
   <div class="container-img">
     <figure>
-      <img src="<?php the_post_thumbnail_url() ?>">
+      <img src="<?php the_post_thumbnail_url( 'post-type' ) ?>">
     </figure>
   </div>
 
