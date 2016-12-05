@@ -14,6 +14,6 @@
         <div class="entry-summary">
             <?php the_excerpt(); ?>
         </div>
-        <a class="btn" href="<?php the_permalink(); ?>"></a>
+        <a class="btn" href="<?php the_permalink(); ?>"><?php _e('Leggi tutto', 'jurgita') ?></a>
     </div>
 </article>
