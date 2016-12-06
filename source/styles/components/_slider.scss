@@ -17,7 +17,6 @@
 .su-slider-prev, .su-slider-next {
   margin-left: 0!important;
   margin-right: 0!important;
-  opacity: 0.5!important;
   margin-top: -40px !important;
   position: relative!important;
   transform: translateY(-50%);
@@ -30,7 +29,7 @@
   background: $gold 0 0 url(../images/next-arrow.png) no-repeat!important;
 
   &:hover {
-    opacity: 1;
+    opacity: 1!important;
   }
 }
 .su-slider-prev {
@@ -38,6 +37,6 @@
   background: $gold 0 0 url(../images/prev-arrow.png) no-repeat!important;
 
   &:hover {
-    opacity: 1;
+    opacity: 1!important;
   }
 }
