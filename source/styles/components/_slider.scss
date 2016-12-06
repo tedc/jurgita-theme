@@ -1,14 +1,14 @@
 
 .su-slider-slide-title {
-  display: none;
+  display: none!important;
 }
 
 .su-slider-pagination {
-  display: none;
+  display: none!important;
 }
 
 .su-slider-prev, .su-slider-next {
-  border-radius: 0;
+  border-radius: 0!important;
   bottom: 0px;
   left: 50px;
 }
