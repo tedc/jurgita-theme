@@ -17,6 +17,8 @@
 .su-slider-prev, .su-slider-next {
   margin-left: 0!important;
   margin-right: 0!important;
+  visibility: visible;
+  opacity: 0.7!important;
   margin-top: -40px !important;
   position: relative!important;
   transform: translateY(-50%);
