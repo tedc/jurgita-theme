@@ -32,7 +32,11 @@
           content:'\2022';
           margin-left: em(7px);
           margin-right: em(7px);
-
+        }
+        &:before {
+          content:'';
+          margin-left: 0px;
+          margin-right: 0px;
         }
       }
       li:last-child {
