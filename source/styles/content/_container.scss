@@ -1,0 +1,11 @@
+.container{
+  max-width:100%;
+  position: relative;
+  padding: 0px $padding_container;
+
+  @include breakpoint($bp) {
+
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
