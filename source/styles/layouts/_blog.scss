@@ -63,7 +63,6 @@
     justify-content: center;
     align-items: center;
 
-
     figure {
       position: relative;
       width: 100%;
@@ -83,7 +82,7 @@
         right: 0px;
         z-index: -1;
       }
-      .square-shadow{
+      .square-shadow {
         width: 66%;
         height: 66%;
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
@@ -96,7 +95,6 @@
   }
 
   article {
-
 
     .container-post-head {
       @extend %post-head;
@@ -117,7 +115,6 @@
 
 .container-post {
 
-
   article {
 
     margin-bottom: em(100px);
@@ -125,8 +122,8 @@
     .container-img {
       position: relative;
 
-      &:hover{
-        .blur{
+      &:hover {
+        .blur {
           visibility: visible;
           opacity: 0.7;
         }
