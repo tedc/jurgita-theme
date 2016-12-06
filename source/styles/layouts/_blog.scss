@@ -173,25 +173,45 @@
 .single {
   .container-post-head {
     @extend %post-head;
+    padding-top: em(65px);
+
+    a {
+      color: $gold;
+    }
   }
+
   h1 {
     @extend %title-post;
     font-size: em(50px);
     letter-spacing: $letter-spacing-large;
+    padding-bottom: em(45px, 50px);
+    padding-top: em(45px, 50px);
   }
+
   h2 {
     @extend %title-post;
     font-size: em(40px);
     letter-spacing: $letter-spacing-base;
+    padding-bottom: em(25px, 40px);
   }
+
   h3 {
     @extend %title-post;
     font-size: em(30px);
     letter-spacing: $letter-spacing-base;
+    padding-bottom: em(25px, 30px);
   }
+
   h4, h5, h6 {
     @extend %title-post;
     font-size: em(26px);
+    letter-spacing: $letter-spacing-base;
+    padding-bottom: em(25px, 26px);
+  }
+
+  p {
+    font-family: $main-font;
+    font-size: em(18px);
     letter-spacing: $letter-spacing-base;
   }
 }
