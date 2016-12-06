@@ -168,6 +168,32 @@
   }
 }
 
+.single {
+  .container-post-head {
+    @extend %post-head;
+  }
+  h1 {
+    @extend %title-post;
+    font-size: em(50px);
+    letter-spacing: $letter-spacing-large;
+  }
+  h2 {
+    @extend %title-post;
+    font-size: em(40px);
+    letter-spacing: $letter-spacing-base;
+  }
+  h3 {
+    @extend %title-post;
+    font-size: em(30px);
+    letter-spacing: $letter-spacing-base;
+  }
+  h4, h5, h6 {
+    @extend %title-post;
+    font-size: em(26px);
+    letter-spacing: $letter-spacing-base;
+  }
+}
+
 %post-head {
   font-size: em(18px);
   font-family: $main-font;
@@ -180,6 +206,7 @@
 
 %title-post {
   color: $gold;
+  font-weight: 400;
   font-size: em(40px);
   font-family: $third-font;
   text-transform: uppercase;
