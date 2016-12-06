@@ -17,7 +17,7 @@
 .su-slider-prev, .su-slider-next {
   margin-left: 0!important;
   margin-right: 0!important;
-  opacity: 1!important;
+  opacity: 0.5!important;
   margin-top: -40px !important;
   position: relative!important;
   transform: translateY(-50%);
@@ -26,10 +26,18 @@
 }
 
 .su-slider-next {
-  transform: translateY(-50%) translateX(75%);
+  transform: translateY(-50%) translateX(90%);
   background: $gold 0 0 url(../images/next-arrow.png) no-repeat!important;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 .su-slider-prev {
   transform: translateY(0%) translateX(25%);
   background: $gold 0 0 url(../images/prev-arrow.png) no-repeat!important;
+
+  &:hover {
+    opacity: 1;
+  }
 }
