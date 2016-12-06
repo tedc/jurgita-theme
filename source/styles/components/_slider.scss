@@ -11,7 +11,7 @@
   position: relative!important;
   border-radius: 0!important;
   top: initial!important;
-  bottom: -20px!important;
+  /*bottom: -20px!important;*/
   left: 40px;
   margin: 0!important;
   transition: inherit!important;
@@ -21,8 +21,10 @@
 
 .su-slider-next {
   left: 0!important;
+  top: -60px;
   background: $gold 0 0 url(../images/prev-arrow.png) no-repeat!important;
 }
 .su-slider-prev {
+  top: -20px;
   background: $gold 0 0 url(../images/next-arrow.png) no-repeat!important;
 }
