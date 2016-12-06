@@ -6,8 +6,18 @@
 .su-slider-pagination {
   display: none!important;
 }
+.su-slider:hover {
+  .su-slider-prev, .su-slider-next {
+    margin-left: 0px;
+    margin-right: 0px;
+    opacity: 1;
+  }
+}
 
 .su-slider-prev, .su-slider-next {
+  margin-left: 0!important;
+  margin-right: 0!important;
+  opacity: 1;
  /* position: relative!important;
   border-radius: 0!important;
   top: initial!important;
@@ -17,6 +27,8 @@
   transition: inherit!important;
   visibility: visible!important;
   opacity: 1!important;*/
+
+
 }
 
 .su-slider-next {
