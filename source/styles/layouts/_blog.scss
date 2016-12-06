@@ -222,9 +222,25 @@
     color: $gold;
 
     p {
-      line-height: em(45px);
+      line-height: em(45px, 26px);
     }
 
+  }
+
+  ul {
+    li {
+      list-style-type: none;
+      display: inline-block;
+      font-size: em(18px);
+      line-height: em(31px, 18px);
+
+      &:before {
+        content: '\2022';
+        margin-left: em(7px);
+        margin-right: em(7px);
+
+      }
+    }
   }
 }
 
