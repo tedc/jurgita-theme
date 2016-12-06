@@ -8,9 +8,10 @@
 }
 
 .su-slider-prev, .su-slider-next {
+  position: relative!important;
   border-radius: 0!important;
   top: initial!important;
-  bottom: 0px!important;
+  /*bottom: -20px!important;*/
   left: 40px;
   margin: 0!important;
   transition: inherit!important;
