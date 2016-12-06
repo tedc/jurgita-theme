@@ -182,10 +182,10 @@
 
   h1 {
     @extend %title-post;
-    font-size: em(50px);
+    font-size: em(40px);
     letter-spacing: $letter-spacing-large;
-    padding-bottom: em(45px, 50px);
-    padding-top: em(45px, 50px);
+    padding-bottom: em(45px, 40px);
+    padding-top: em(45px, 40px);
   }
 
   h2 {
