@@ -1,8 +1,16 @@
 <?php while (have_posts()) : the_post(); ?>
+  <div class="hieratrchy container">
+    <?php get_template_part('templates/hierarchy'); ?>
+  </div>
+
+  <?php if(has_post_thumbnail()){?>
+    <div class="header_page_blog" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
+  <?php } ?>
+
   <article <?php post_class(); ?>>
     <header>
-      <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php get_template_part('templates/entry-meta'); ?>
+      <h1 class="entry-title"><?php the_title(); ?></h1>
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
