@@ -12,12 +12,14 @@
   top: initial!important;
   bottom: 0px!important;
   left: 40px;
+  margin: 0!important;
+  transition: inherit;
 }
 
 .su-slider-next {
   left: 0!important;
-  background: rgb(0, 0, 0) 0 0 url(../images/next-arrow.png) no-repeat!important;
+  background: $gold 0 0 url(../images/next-arrow.png) no-repeat!important;
 }
 .su-slider-prev {
-  background: rgb(0, 0, 0) 0 0 url(../images/next-arrow.png) no-repeat!important;
+  background: $gold 0 0 url(../images/next-arrow.png) no-repeat!important;
 }
