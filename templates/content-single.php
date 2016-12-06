@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-  <div class="hieratrchy container">
+  <div class="hieratrchy">
     <?php get_template_part('templates/hierarchy'); ?>
   </div>
 
@@ -7,7 +7,7 @@
     <div class="header_page_blog" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
   <?php } ?>
 
-    <div class="body-container">
+    <div class="body-container container">
   <article <?php post_class(); ?>>
     <header>
       <?php get_template_part('templates/entry-meta'); ?>

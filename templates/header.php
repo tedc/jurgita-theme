@@ -1,5 +1,5 @@
 <header class="banner">
-  <div class="container container-header">
+  <div class="container-header">
     <a class="icon icon-pittogramma" href="<?= esc_url(home_url('/')); ?>">j</a>
 
     <div class="container-menu">
