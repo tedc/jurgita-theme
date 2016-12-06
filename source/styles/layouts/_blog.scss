@@ -213,12 +213,17 @@
     font-family: $main-font;
     font-size: em(18px);
     letter-spacing: $letter-spacing-base;
+    line-height: em(30px, 18px);
   }
 
   blockquote {
     text-align: center;
     font-size: em(26px);
     color: $gold;
+
+    p {
+      line-height: em(45px);
+    }
 
   }
 }
