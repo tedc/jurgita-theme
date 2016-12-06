@@ -104,6 +104,7 @@
 
     .entry-title {
       @extend %title-post;
+      font-size: em(40px);
       padding: em(45px, 40px) 0;
     }
 
@@ -157,6 +158,7 @@
 
     .entry-title {
       @extend %title-post;
+      font-size: em(40px);
       padding: em(35px, 40px) 0;
     }
 
@@ -207,7 +209,6 @@
 %title-post {
   color: $gold;
   font-weight: 400;
-  font-size: em(40px);
   font-family: $third-font;
   text-transform: uppercase;
 
