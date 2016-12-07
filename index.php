@@ -43,11 +43,11 @@
     <?php endif; ?>
 
 
-    <?php the_posts_navigation(array(
+   <!-- --><?php /*the_posts_navigation(array(
         'prev_text'          => __( 'Precedente', "jurgita" ),
         'next_text'          => __(  'Successiva', "jurgita" ),
         'mid_size'  => 1,
-    ) ); ?>
+    ) ); */?>
 
     <?php echo paginate_links( array(
         'base'               => '%_%',
