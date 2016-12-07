@@ -65,6 +65,8 @@
         li:first-child {
           &:before {
             content: '';
+            margin-left: 0;
+            margin-right: 0;
           }
         }
       }
