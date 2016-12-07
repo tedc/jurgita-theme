@@ -42,5 +42,10 @@
     <?php endwhile; ?>
     <?php endif; ?>
 
-    <?php the_posts_navigation(); ?>
+    <?php  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;?>
+    <?php the_posts_navigation(array(
+        'prev_text'          => __( 'Precedente', "jurgita" ),
+        'next_text'          => __(  'Successiva', "jurgita" ),
+        'screen_reader_text' => $paged ,
+    ) ); ?>
 </div>
