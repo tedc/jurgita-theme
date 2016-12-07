@@ -109,6 +109,10 @@
     .entry-summary {
       @extend %excerpt-post;
       padding-bottom: em(45px, 18px);
+
+      p {
+        line-height: em(30px, 18px);
+      }
     }
   }
 }
@@ -152,7 +156,7 @@
       @extend %post-head;
       padding-top: em(35px);
 
-      a{
+      a {
         font-style: italic;
       }
     }
@@ -166,6 +170,11 @@
     .entry-summary {
       @extend %excerpt-post;
       padding-bottom: em(35px, 18px);
+
+      p {
+        line-height: em(30px, 18px);
+      }
+
     }
 
   }
