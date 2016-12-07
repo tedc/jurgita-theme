@@ -43,22 +43,19 @@
     <?php endif; ?>
 
 
-   <!-- --><?php /*the_posts_navigation(array(
-        'prev_text'          => __( 'Precedente', "jurgita" ),
-        'next_text'          => __(  'Successiva', "jurgita" ),
-        'mid_size'  => 1,
-    ) ); */?>
 
     <?php
     global $wp_query;
 
     $big = 999999999; // need an unlikely integer
 
-    echo paginate_links( array(
-        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+    echo paginate_links(array(
+        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
         'format' => '?paged=%#%',
-        'current' => max( 1, get_query_var('paged') ),
-        'total' => $wp_query->max_num_pages
-    ) );
+        'current' => max(1, get_query_var('paged')),
+        'total' => $wp_query->max_num_pages,
+        'prev_text' => __('Precedente', 'jurgita'),
+        'next_text' => __('Successiva', 'jurgita'),
+    ));
     ?>
 </div>
