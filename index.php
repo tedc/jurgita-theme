@@ -44,8 +44,6 @@
 
 
     <?php the_posts_navigation(array(
-        'prev_text'          => __( 'Precedente', "jurgita" ),
-        'next_text'          => __(  'Successiva', "jurgita" ),
-        'mid_size'  => 3,
+        array( 'mid_size'  => 2 )
     ) ); ?>
 </div>
