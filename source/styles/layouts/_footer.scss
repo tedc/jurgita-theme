@@ -2,11 +2,12 @@
 .footer {
   border-top: 1px solid $border-footer;
   h1 {
-    font-size:em(30px);
+    font-size:em(26px);
     text-align: center;
-    padding-top: em(40px, 30px);
-    padding-bottom: em(25px, 30px);
-
+    padding-top: em(40px, 26px);
+    padding-bottom: em(25px, 26px);
+    font-family: $third-font;
+    color: $gold;
   }
 
   .bottom-footer {
