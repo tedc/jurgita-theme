@@ -9,6 +9,7 @@ body {
   color: $base_color;
   margin: 0;
   font-family: $main-font;
+  letter-spacing: $letter-spacing-base;
 
 
   @include breakpoint(1024px) {
