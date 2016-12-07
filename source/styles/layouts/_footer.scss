@@ -28,6 +28,12 @@
         display: inline-block;
         color: #808285;
 
+        a {
+          color: #808285;
+          font-family: $main-font;
+          font-size: em(10px);
+        }
+
         &:after {
           content:'\2022';
           margin-left: em(7px);
