@@ -43,8 +43,8 @@
     <?php endif; ?>
 
     <?php  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;?>
-    <?php var_dump(get_pages( array(
-        'post_type' => 'page' ))); ?>
+    <?php echo sizeof((get_pages( array(
+        'post_type' => 'page' )))); ?>
     <?php the_posts_navigation(array(
         'prev_text'          => __( 'Precedente', "jurgita" ),
         'next_text'          => __(  'Successiva', "jurgita" ),
