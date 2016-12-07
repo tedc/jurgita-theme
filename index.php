@@ -44,7 +44,7 @@
 
     <?php  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;?>
     <?php echo sizeof((get_pages( array(
-        'post_type' => 'page' )))); ?>
+        'post_type' => 'post' )))); ?>
     <?php the_posts_navigation(array(
         'prev_text'          => __( 'Precedente', "jurgita" ),
         'next_text'          => __(  'Successiva', "jurgita" ),
