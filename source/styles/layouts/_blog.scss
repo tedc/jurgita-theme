@@ -151,6 +151,10 @@
     .container-post-head {
       @extend %post-head;
       padding-top: em(35px);
+
+      a{
+        font-style: italic;
+      }
     }
 
     .entry-title {
@@ -174,6 +178,7 @@
 
     a {
       color: $gold;
+      font-style: italic;
     }
   }
 
