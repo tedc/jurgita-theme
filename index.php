@@ -42,12 +42,10 @@
     <?php endwhile; ?>
     <?php endif; ?>
 
-    <?php  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;?>
-    <?php echo sizeof((get_pages( array(
-        'post_type' => 'post' )))); ?>
+
     <?php the_posts_navigation(array(
         'prev_text'          => __( 'Precedente', "jurgita" ),
         'next_text'          => __(  'Successiva', "jurgita" ),
-        'screen_reader_text' => $paged ,
+        'mid_size'  => 3,
     ) ); ?>
 </div>
