@@ -41,18 +41,14 @@
         }
       }
     }
-
+    .line-categories {
+      top: calc(50% - 2px);
+      @extend %line-navigation;
+    }
 
   }
 }
-.line-categories {
-  top: calc(50% - 2px);
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: $category_line;
-  z-index: -1;
-}
+
 
 .sticky {
 
@@ -181,6 +177,16 @@
   }
 }
 
+.navigation-page {
+  position: relative;
+
+  .line-categories {
+    top: calc(50% + 2px);
+    @extend %line-navigation;
+  }
+
+}
+
 .single {
   .container-post-head {
     @extend %post-head;
@@ -281,4 +287,12 @@
   font-size: em(18px);
   font-family: $main-font;
   color: $base_color;
+}
+
+%line-navigation {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $category_line;
+  z-index: -1;
 }
