@@ -186,6 +186,7 @@
     padding-left: em(20px);
     padding-right: em(20px);
     color: $gold;
+    text-transform: uppercase;
   }
 
   span.current {
@@ -197,6 +198,10 @@
     padding-left: em(20px);
     padding-right: em(20px);
     background-color: white;
+  }
+  .prev, .next {
+    margin-left: em(25px);
+    margin-right: em(25px);
   }
 
   .line-categories {
