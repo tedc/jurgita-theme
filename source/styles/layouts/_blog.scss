@@ -188,10 +188,21 @@
     color: $gold;
   }
 
+  span.current {
+    color: $current-page;
+  }
+  .page-numbers, .current {
+    margin-left: em(10px);
+    margin-right: em(10px);
+    padding-left: em(20px);
+    padding-right: em(20px);
+  }
+
   .line-categories {
     top: calc(50% + 2px);
     @extend %line-navigation;
   }
+
 }
 
 .single {
@@ -202,13 +213,6 @@
     a {
       color: $gold;
       font-style: italic;
-    }
-    span.current {
-      color: $current-page;
-    }
-    .page-numbers {
-      margin-left: em(10px);
-      margin-right: em(10px);
     }
   }
 
