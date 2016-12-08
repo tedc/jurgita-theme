@@ -58,4 +58,5 @@ echo paginate_links(array(
     'next_text' => __('Successiva', 'jurgita'),
 ));
 ?>
+    <div class="line-categories"></div>
 </div>
