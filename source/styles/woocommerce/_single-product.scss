@@ -83,6 +83,19 @@
           color: $base_color;
           text-align: right!important;
         }
+
+        .number_controlls {
+          @include absfull();
+          height: 50%;
+          width: 30px;
+        }
+        .minus {
+          background-color: red;
+          bottom:0px;
+        }
+        .plus {
+          background-color: yellow;
+        }
       }
     }
   }
