@@ -81,4 +81,16 @@
     }
   }
 
+  .woocommerce-description-product {
+    width: 100%;
+    overflow: hidden;
+    margin-top: em(100px);
+
+    h2 {
+      font-size: em(31px);
+    }
+    p {
+      font-size: em(18px);
+    }
+  }
 }
