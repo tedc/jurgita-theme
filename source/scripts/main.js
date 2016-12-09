@@ -83,10 +83,10 @@ $(".quantity").find(".number_controlls").each(function () {
     var number = $(this).parent().find('input[type="number"]');
     var val = parseInt(number.val());
     if ($(this).hasClass("plus")) {
-      console("plus");
+      console.log("plus");
       var res = val+1;
     } else {
-      console("minus");
+      console.log("minus");
       var res = val-1;
     }
 
