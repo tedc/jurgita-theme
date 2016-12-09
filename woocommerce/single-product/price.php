@@ -24,7 +24,7 @@ global $product;
 
 ?>
 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-	<?php /*get_template_part('templates/page', 'header'); */?>
+	<?php get_template_part('templates/page', 'header'); ?>
 
 	<p class="price"><?php echo $product->get_price_html(); ?></p>
 
