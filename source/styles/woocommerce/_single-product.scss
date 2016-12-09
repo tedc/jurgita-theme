@@ -12,9 +12,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 0px;
 
       a{
         border: 1px solid $light_gray;
+        width: 50%;
       }
     }
   }
