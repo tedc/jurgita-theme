@@ -75,3 +75,22 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+
+$(".quantity").find(".number_controlls").each(function () {
+  $(this).on("click", function () {
+    var number = $(this).parent().find('input[type="number"]'),
+        max = parseInt(number.attr("max")),
+        min = parseInt(number.attr("min")),
+        step = parseInt(number.attr("step"));
+    var val = parseInt(number.val());
+    if ($(this).hasClass("plus")) {
+      var res = (val < max) ? val + step : val;
+    } else {
+      var res = (val > min) ? val - step : val;
+    }
+    number.val(res);
+  });
+});
+

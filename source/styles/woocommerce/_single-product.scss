@@ -83,10 +83,12 @@
           font-family: $second-font;
           color: $base_color;
           text-align: right!important;
+          padding-right: 17px;
         }
         input[type=number]::-webkit-inner-spin-button,
         input[type=number]::-webkit-outer-spin-button {
           -webkit-appearance: none;
+          margin: 0;
         }
 
         .number_controlls {
