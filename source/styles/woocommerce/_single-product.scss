@@ -75,6 +75,7 @@
       .quantity {
         margin-right: 0!important;
         float: none!important;
+        position: relative;
 
         input{
           height: 100%;
@@ -88,10 +89,27 @@
           @include absfull();
           height: 50%;
           width: 30px;
+          &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid black;
+          }
         }
         .minus {
           background-color: red;
-          bottom:0px;
+          bottom: 0;
+          top: inherit;
+          &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid black;
+          }
         }
         .plus {
           background-color: yellow;
