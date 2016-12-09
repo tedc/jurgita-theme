@@ -67,12 +67,14 @@
       display: flex;
 
       .quantity {
-        margin-right: 0;
-        float: none;
+        margin-right: 0!important;
+        float: none!important;
 
         input{
           height: 100%;
           font-size: 26px;
+          font-family: $second-font;
+          color: $base_color;
         }
       }
     }
