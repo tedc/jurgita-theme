@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 ?>
-<div class="images">
+<div class="images prova-img">
 	<?php
 		if ( has_post_thumbnail() ) {
 			$attachment_count = count( $product->get_gallery_attachment_ids() );
