@@ -27,8 +27,8 @@
 
   .summary {
     display: flex;
-    float: none;
-    width: 50%;
+    float: none!important;
+    width: 50%!important;
     .page-header {
       h1 {
         padding-top: 0;
