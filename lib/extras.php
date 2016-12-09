@@ -43,5 +43,3 @@ function image() {
 add_action('after_setup_theme', __NAMESPACE__ . '\\image');
 
 
-add_filter('woocommerce_show_page_title', '__return_false');
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);

@@ -1,6 +1,9 @@
 <?php
 	$extra_includes = [
-		'extras/scripts.php'
+		'extras/scripts.php',
+        'extras/styles.php',
+        'extras/woocommerce.php',
+
 	];
 
 foreach ($extra_includes as $file) {
