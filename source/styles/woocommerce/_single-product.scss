@@ -1,8 +1,11 @@
 
 .product {
-
+  display: flex;
+  flex-wrap: wrap;
   .images {
     display: flex;
+    float: none;
+    width: 50%;
 
     a {
       order: 2;
@@ -23,6 +26,9 @@
   }
 
   .summary {
+    display: flex;
+    float: none;
+    width: 50%;
     .page-header {
       h1 {
         padding-top: 0;
@@ -83,7 +89,6 @@
 
   .woocommerce-description-product {
     width: 100%;
-    overflow: hidden;
     margin-top: em(100px);
 
     h2 {
