@@ -61,11 +61,11 @@ if ( ! $product->is_purchasable() ) {
 	</form>
 
 	<?php
-	
+/*
 		woocommerce_get_template( 'single-product/tabs/description.php' );
 
 	add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 20 );
-	?>
+	*/?>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 
