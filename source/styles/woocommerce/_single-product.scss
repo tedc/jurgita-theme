@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   .images {
     display: flex;
-    float: none;
-    width: 50%;
+    float: none!important;
+    width: 50%!important;
 
     a {
       order: 2;
