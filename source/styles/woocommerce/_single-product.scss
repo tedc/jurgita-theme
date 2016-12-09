@@ -62,5 +62,20 @@
         }
       }
     }
+
+    .cart {
+      display: flex;
+
+      .quantity {
+        margin-right: 0;
+        float: none;
+
+        input{
+          height: 100%;
+          font-size: 26px;
+        }
+      }
+    }
   }
+
 }
