@@ -32,6 +32,8 @@
 
     .price {
       line-height: 1;
+      padding-bottom: 40px;
+
       .woocommerce-Price-amount {
         font-family: $second-font;
         font-weight: bold;
@@ -40,6 +42,22 @@
 
         .woocommerce-Price-currencySymbol {
           font-size: em(26px ,36px);
+        }
+      }
+    }
+
+    div[itemprop="description"] {
+      font-size: em(14px);
+      padding-bottom: em(40px);
+
+      ul {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        li {
+          &:before {
+            color:$gold;
+          }
         }
       }
     }
