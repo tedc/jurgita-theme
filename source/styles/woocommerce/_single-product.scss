@@ -6,6 +6,8 @@
     display: flex;
     float: none!important;
     width: 50%!important;
+    justify-content: flex-end;
+    padding-right: em(40px);
 
     a {
       order: 2;
@@ -27,6 +29,8 @@
 
   .summary {
     display: flex;
+    justify-content: flex-end;
+    padding-left: em(40px);
     float: none!important;
     width: 50%!important;
     .page-header {
