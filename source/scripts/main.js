@@ -84,10 +84,10 @@ $(".quantity").find(".number_controlls").each(function () {
     var val = parseInt(number.val());
     if ($(this).hasClass("plus")) {
       console("plus");
-      var res = val++;
+      var res = val+1;
     } else {
       console("minus");
-      var res = val--;
+      var res = val-1;
     }
 
     number.val(res);
