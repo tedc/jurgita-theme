@@ -82,14 +82,12 @@ $(".quantity").find(".number_controlls").each(function () {
   $(this).on("click", function () {
     var number = $(this).parent().find('input[type="number"]');
     var val = parseInt(number.val());
+    var min = 0;
     if ($(this).hasClass("plus")) {
-      console.log("plus");
       var res = val+1;
     } else {
-      console.log("minus");
-      var res = val-1;
+      var res = (val > min) ? val-1 : val;
     }
-
     number.val(res);
   });
 });
