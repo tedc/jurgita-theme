@@ -11,6 +11,7 @@
     @extend %btn;
     background-color: $gold;
     color: $w;
+    margin: 0;
 
     &:hover {
          background-color: $w;
