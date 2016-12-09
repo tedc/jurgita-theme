@@ -80,19 +80,16 @@
 
 $(".quantity").find(".number_controlls").each(function () {
   $(this).on("click", function () {
-    console.log("click");
-    var number = $(this).parent().find('input[type="number"]'),
-        max = parseInt(number.attr("max")),
-        min = parseInt(number.attr("min")),
-        step = parseInt(number.attr("step"));
-    console.log(number);
+    var number = $(this).parent().find('input[type="number"]');
     var val = parseInt(number.val());
-    console.log(val);
     if ($(this).hasClass("plus")) {
-      var res = (val < max) ? val + step : val;
+      console("plus");
+      var res = val++;
     } else {
-      var res = (val > min) ? val - step : val;
+      console("minus");
+      var res = val--;
     }
+
     number.val(res);
   });
 });
