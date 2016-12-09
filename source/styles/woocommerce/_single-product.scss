@@ -29,5 +29,17 @@
         font-size: em(30px);
       }
     }
+
+    .price {
+      line-height: 1;
+      .woocommerce-Price-amount {
+        font-family: $second-font;
+        font-weight: bold;
+        font-size: em(36px);
+        .woocommerce-Price-currencySymbol {
+          font-size: em(26px ,36px);
+        }
+      }
+    }
   }
 }
