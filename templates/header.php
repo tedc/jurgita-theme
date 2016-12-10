@@ -8,7 +8,7 @@
 		<?php icl_selector(); ?>
 		<a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>"><?php _e('Shop', 'jurgita'); ?></a>
 		<?php wp_nav_menu( ['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'container_id' => 'menu', 'container_class' => 'menu'] ); ?>
-		<a class="btn-header btn-menu" href="#" data-reveal="#menu">
+		<a class="btn-header btn-menu" href="#" data-reveal="#menu" data-close="<?php _e('Chiudi', 'jurgita'); ?>">
 			<?php _e('Menu', 'jurgita'); ?>
 			<span class="toggle">
 				<span class="toggle-line"></span>

@@ -74,6 +74,17 @@
 	width: em(20px);
 	height: em(16px);
 	margin-left: 10px;
+	transition: color $speed;
+	&:before {
+		position: absolute;
+		left: 0; 
+		top: 50%;
+		transform: translate3d(0, -50%, 0);
+		visibility: hidden;
+		opacity: 0;
+		content: attr(data-close);
+		transition: opacity $speed, visibility $speed;
+	}
 	.toggle-line {
 		display: block;
 		height: em(4px);
@@ -90,6 +101,12 @@
 		}
 	}
 	.active & {
+		color: transparent;
+		&:before {
+			opacity: 1;
+			visibility: visible;
+			color: $base_color !important;
+		}
 		.toggle-line {
 			&:nth-child(1), &:nth-child(3) {
 				animation-duration: $speed;
