@@ -24,7 +24,6 @@
     }
 
     .single-image-slider-nav {
-
       img {
         border: 1px solid $light_gray;
         height: auto;
@@ -35,7 +34,7 @@
 
       @include breakpoint($bp) {
         width: em(120px);
-        padding: 0 em(20px);
+        padding-right: em(20px);
 
         img {
           margin-bottom: em(18px);
