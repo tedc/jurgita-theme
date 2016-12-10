@@ -5,11 +5,13 @@
   .images {
     width: 50%;
     padding-right: em(40px);
-    display: flex;
 
-    .sigle-image-slider {
-      order: 2;
-
+    @include breakpoint($bp) {
+      display: flex;
+      .sigle-image-slider {
+        order: 2;
+      }
+      
       img {
         border: 1px solid $light_gray;
       }
@@ -45,7 +47,7 @@
         color: $gold;
 
         .woocommerce-Price-currencySymbol {
-          font-size: em(26px ,36px);
+          font-size: em(26px, 36px);
         }
       }
     }
@@ -60,7 +62,7 @@
 
         li {
           &:before {
-            color:$gold;
+            color: $gold;
             margin-left: 0;
           }
         }
@@ -71,16 +73,16 @@
       display: flex;
 
       .quantity {
-        margin-right: 0!important;
-        float: none!important;
+        margin-right: 0 !important;
+        float: none !important;
         position: relative;
 
-        input{
+        input {
           height: 100%;
           font-size: 26px;
           font-family: $second-font;
           color: $base_color;
-          text-align: right!important;
+          text-align: right !important;
           padding-right: 17px;
         }
         input[type=number]::-webkit-inner-spin-button,
