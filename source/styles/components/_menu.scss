@@ -133,6 +133,7 @@
 		.menu-item {
 			transform: translate3d(-50px, 0, 0);
 			opacity: 0;
+			transition: transform $speed, opacity $speed;
 			@for $i from 1 through 12 {
 				&:nth-child(#{$i}) {
 					transition-delay: ($speed/2) * $i;
