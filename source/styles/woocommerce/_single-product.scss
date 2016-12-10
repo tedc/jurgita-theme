@@ -10,17 +10,16 @@
       width: 100%;
       height: auto;
     }
+    img {
+      border: 1px solid $light_gray;
+      width: 100%;
+      height: auto;
+    }
 
     @include breakpoint($bp) {
       display: flex;
       .sigle-image-slider {
         order: 2;
-      }
-
-      img {
-        border: 1px solid $light_gray;
-        width: 100%;
-        height: auto;
       }
     }
 
@@ -30,8 +29,8 @@
         border: 1px solid $light_gray;
         height: auto;
         width: em(80px);
-        margin-left: em(20px);
-
+        margin-right: em(20px);
+        margin-top: em(18px);
       }
 
       @include breakpoint($bp) {
