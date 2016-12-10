@@ -19,24 +19,8 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-      },
-      finalize: function() {
-        // JavaScript to be fired on all pages, after page specific JS is fired
-      }
-    },
-    // Home page
-    'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
-      },
-      finalize: function() {
-        // JavaScript to be fired on the home page, after the init JS
-      }
-    },
-    // About us page, note the change from about-us to about_us.
-    'about_us': {
-      init: function() {
-        // JavaScript to be fired on the about us page
+        reveal();
+        price();
       }
     }
   };
@@ -76,9 +60,18 @@
 
 })(jQuery); // Fully reference jQuery after this point.
 
+function reveal() {
+    $('[data-reveal]').each(function() {
+        var id = $(this).attr('data-reveal');
+        $(this).on('click', function(event) {
+            event.preventDefault();
+            $(id).toggleClass('opened');
+        })
+    })
+}
 
-
-$(".quantity").find(".number_controlls").each(function () {
+function price() {
+  $(".quantity").find(".number_controlls").each(function () {
   $(this).on("click", function () {
     var number = $(this).parent().find('input[type="number"]');
     var val = parseInt(number.val());
@@ -89,6 +82,6 @@ $(".quantity").find(".number_controlls").each(function () {
       var res = (val > min) ? val-1 : val;
     }
     number.val(res);
+    });
   });
-});
-
+}

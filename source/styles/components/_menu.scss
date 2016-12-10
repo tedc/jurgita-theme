@@ -23,7 +23,7 @@
 		&.btn-shop {
 			color: $w;
 			background-color: $gold;
-			transition: color $speed;
+			transition: background-color $speed;
 			&:hover {
 				background-color: $base_color;
 				color: $w;
