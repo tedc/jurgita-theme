@@ -3,7 +3,7 @@
 		'extras/scripts.php',
         'extras/styles.php',
         'extras/woocommerce.php',
-
+        'extras/wpml.php'
 	];
 
 foreach ($extra_includes as $file) {

@@ -4,6 +4,7 @@
 		<span class="j">J</span>
 	</a>
 	<div class="container-menu">
+		<?php icl_selector(); ?>
 		<a class="btn-header btn-shop">shop</a>
 		<a class="btn-header btn-menu" href="#" data-reveal="#menu">menu</a>
 	</div>

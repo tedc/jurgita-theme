@@ -6,19 +6,24 @@
 	width: $f;
 	z-index: 9997;
 	background-color: $w;
-	font-family: $third-font;
 	display: flex;
 	justify-content: space-between;
+	.btn-header {
+		height: em(70px);
+		display: flex;
+		align-items: center;
+		@include normalize_padding;
+	}
 	.logo {
 		width: em(70px);
-		height: em(70px);
 		text-align: center;
 		color: $w;
 		overflow: hidden;
 		position: relative;
+		font-family: $third-font;
 		.j {
 			@include absfull();
-			font-size: em(60px);
+			font-size: em(50px);
 			transition: {
 				property: transform;
 				duration: $speed;
