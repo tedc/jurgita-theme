@@ -39,7 +39,7 @@
 		&:hover {
 			.j {
 				&:nth-child(1) {
-					ransform: translate3d(0, -100%, 0);
+					transform: translate3d(0, -100%, 0);
 				}
 				&:nth-child(2) {
 					transform: translate3d(0, 0%, 0);
@@ -72,6 +72,19 @@
 		transform: translate3d(-120%, 0, 0);
 		&.opened {
 			transform: translate3d(0%, 0, 0);
+		}
+	}
+}
+
+.menu {
+	&-container {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&-language {
+		position: relative;
+		.sub-menu {
+			
 		}
 	}
 }

@@ -31,4 +31,11 @@ figure {
 
 p {
     letter-spacing: $letter-spacing-base;
+    margin: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding; 0;
+    margin: 0;
 }
