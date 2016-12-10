@@ -5,8 +5,9 @@
   .images {
     width: 50%;
     padding-right: em(40px);
+    display: flex;
 
-    a {
+    .sigle-image-slider {
       order: 2;
     }
 
