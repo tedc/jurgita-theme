@@ -133,12 +133,7 @@
 		.menu-item {
 			transform: translate3d(-50px, 0, 0);
 			opacity: 0;
-			transition: transform $speed, opacity $speed;
-			@for $i from 1 through 12 {
-				&:nth-child(#{$i}) {
-					transition-delay: ($speed/2) * $i;
-				}
-			}
+			transition: transform $speed/2, opacity $speed/2;
 		}
 	}
 	&.opened {
@@ -147,7 +142,12 @@
 		.nav {
 			.menu-item {
 				opacity: 1;
-				transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);	
+				@for $i from 1 through 12 {
+					&:nth-child(#{$i}) {
+						transition-delay: ($speed/2) * $i;
+					}
+				}
 			}
 		}
 	}
