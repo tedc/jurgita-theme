@@ -28,6 +28,7 @@ if ( $attachment_ids ) {
 	$loop 		= 0;
 	$columns 	= apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 	?>
+	<div class="single-image-slider-nav">
 	<?php
 
 		foreach ( $attachment_ids as $attachment_id ) {
@@ -67,5 +68,6 @@ if ( $attachment_ids ) {
 		}
 
 	?>
+	</div>
 	<?php
 }
