@@ -28,14 +28,14 @@
       img {
         border: 1px solid $light_gray;
         height: auto;
-        width: em(80px);
+        width: em(80px)!important;
         margin-right: em(20px);
         margin-top: em(20px);
         display: block;
       }
 
       @include breakpoint($bp) {
-        width: em(120px);
+        width: em(100px);
         padding-right: em(20px);
 
         img {
