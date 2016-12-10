@@ -92,7 +92,7 @@
 	.active & {
 		.toggle-line {
 			&:nth-child(1), &:nth-child(3) {
-				aninmation-duration: $speed;
+				animation-duration: $speed;
 				animation-fill-mode: forwards;
 				animation-direction: initial;
 				transition: none;
