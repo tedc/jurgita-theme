@@ -69,41 +69,42 @@
 			}
 		}
 	}
-	.toggle {
-		width: em(20px);
-		height: em(16px);
+}
+.toggle {
+	width: em(20px);
+	height: em(16px);
+	margin-left: 10px;
+	.toggle-line {
+		display: block;
+		height: em(4px);
+		margin-bottom: em(2px);
+		background-color: $gold;
+		&:nth-child(1) {
+			animation: lineTop $speed*2 forward reverse;
+		}
+		&:nth-child(2) {
+			transition: opacity $speed;
+		}
+		&:nth-child(3) {
+			animation: lineBottom $speed*2 forward reverse;
+			margin-bottom: 0;
+		}
+	}
+	.active & {
 		.toggle-line {
-			display: block;
-			height: em(4px);
-			margin-bottom: em(2px);
-			background-color: $gold;
 			&:nth-child(1) {
-				animation: lineTop $speed*2 forward reverse;
+				animation: lineTop $speed*2 forward;
 			}
 			&:nth-child(2) {
-				transition: opacity $speed;
+				opacity: 0;
+				transition-delay: $speed;
 			}
 			&:nth-child(3) {
-				animation: lineBottom $speed*2 forward reverse;
-				margin-bottom: 0;
-			}
-		}
-		&.active {
-			.toggle-line {
-				&:nth-child(1) {
-					animation: lineTop $speed*2 forward;
-				}
-				&:nth-child(2) {
-					opacity: 0;
-					transition-delay: $speed;
-				}
-				&:nth-child(3) {
-					animation: lineBottom $speed*2 forward;
-				}
+				animation: lineBottom $speed*2 forward;
 			}
 		}
 	}
-}
+}	
 .aside {
 	position: fixed;
 	left: 0;
