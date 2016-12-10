@@ -80,12 +80,13 @@
 	margin-left: 10px;
 	&:before {
 		position: absolute;
-		left: em(10px);
+		left: em(10px, 14px);
+		font-size: em(14px);
 		@include breakpoint(640px) {
-			left: em(20px);
+			left: em(20px, 14px);
 		}
 		@include breakpoint(640px) {
-			left: em(40px);
+			left: em(40px, 14px);
 		}
 		top: 50%;
 		transform: translate3d(0, -50%, 0);
