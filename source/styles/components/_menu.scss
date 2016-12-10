@@ -20,7 +20,7 @@
 		display: flex;
 		align-items: center;
 		@include normalize_padding;
-		.btn-shop {
+		&.btn-shop {
 			color: $w;
 			background-color: $gold;
 			transition: color $speed;

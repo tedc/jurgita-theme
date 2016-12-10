@@ -1,3 +1,4 @@
+<?php $shop = woocommerce_get_page_id( 'shop' ); ?>
 <header class="banner">
 	<a class="logo" href="<?= esc_url(home_url('/')); ?>">
 		<span class="j">J</span>
@@ -5,7 +6,7 @@
 	</a>
 	<div class="menu-container">
 		<?php icl_selector(); ?>
-		<a class="btn-header btn-shop">shop</a>
+		<a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>">shop</a>
 		<a class="btn-header btn-menu" href="#" data-reveal="#menu">menu</a>
 	</div>
 </header>
