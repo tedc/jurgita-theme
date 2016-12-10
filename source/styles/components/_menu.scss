@@ -1,0 +1,41 @@
+.banner {
+	height: em(70px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: $f;
+	z-index: 9997;
+	background-color: $w;
+	font-family: $third-font;
+	.logo {
+		width: em(70px);
+		height: em(70px);
+		text-align: center;
+		font-size: em(60px);
+		color: $w;
+		.j {
+			@include absfull();
+			transition: {
+				property: transform;
+				duration: $speed;
+			}
+			&:nth-child(1) {
+				background-color: $b;
+			}
+			&:nth-child(2) {
+				background-color: $gold;
+				transform: translate3d(0, 100%, 0);
+			}
+		}
+		&:hover {
+			.j {
+				&:nth-child(1) {
+					ransform: translate3d(0, -100%, 0);
+				}
+				&:nth-child(2) {
+					transform: translate3d(0, 0%, 0);
+				}
+			}
+		}
+	}
+}

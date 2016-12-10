@@ -1,38 +1,34 @@
 *, *:after, *:before {
-  box-sizing: border-box !important;
+    box-sizing: border-box !important;
 }
 
-
 body {
-  overflow-x: hidden;
-  font-size: 16px;
-  color: $base_color;
-  margin: 0;
-  font-family: $main-font;
-  letter-spacing: $letter-spacing-base;
-
-
-  @include breakpoint(1024px) {
-    font-size: $base_font_size;
-  }
+    overflow-x: hidden;
+    font-size: 16px;
+    color: $base_color;
+    margin: 0;
+    font-family: $main-font;
+    letter-spacing: $letter-spacing-base;
+    @include breakpoint(1024px) {
+      font-size: $base_font_size;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  font-size: 1em;
-  line-height:1;
+    margin: 0;
+    font-size: 1em;
+    line-height:1;
 }
 
 a {
-  text-decoration: none;
-  line-height:1;
+    text-decoration: none;
+    line-height: 1;
 }
 
 figure {
-  margin: 0;
+    margin: 0;
 }
 
-p{
-  letter-spacing: $letter-spacing-base;
-
+p {
+    letter-spacing: $letter-spacing-base;
 }

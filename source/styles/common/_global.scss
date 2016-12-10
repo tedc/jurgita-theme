@@ -33,8 +33,6 @@
     }
 }
 
-
-
 @mixin breakpoint($point, $min : true) {
     $min_or_max : null;
 	@if $min {
@@ -50,8 +48,22 @@
 @mixin grid($max, $points : $bp, $flex : true, $wrap : true) {
 
     [class^="grid"], [class*=" grid"] {
-        padding-left: em(40px);
-        padding-right: em(40px);
+        padding: {
+            left: em(10px);
+            right: em(10px);
+        }
+        @include breakpoint(640px){
+            padding: {
+                left: em(20px);
+                right: em(20px);
+            }
+        }
+        @include breakpoint($bp){
+            padding: {
+                left: em(40px);
+                right: em(40px);
+            }
+        }
         @if $flex {
             display: flex;
             @if $wrap {
@@ -69,8 +81,12 @@
                 }
             }
             width: 100%;
-            padding-left: em(40px);
-            padding-right: em(40px);
+            @include breakpoint($bp){
+                padding: {
+                    left: em(40px);
+                    right: em(40px);
+                }
+            }
         }
     }
     @if $flex {
@@ -119,7 +135,7 @@
     }
 }
 
-@mixin normalize_padding{
+@mixin normalize_padding {
     padding: {
         left: em(10px);
         right: em(10px);
