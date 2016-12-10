@@ -131,7 +131,7 @@
 			padding: em(10px) 0;
 		}
 		.menu-item {
-			transform: translate3d(-50px, 0, 0) skewY(10deg);
+			transform: translate3d(-50px, 0, 0) skewX(10deg);
 			opacity: 0;
 			transition: transform $speed/2, opacity $speed/2;
 		}
@@ -142,7 +142,7 @@
 		.nav {
 			.menu-item {
 				opacity: 1;
-				transform: translate3d(0, 0, 0) skewY(0deg);	
+				transform: translate3d(0, 0, 0) skewX(0deg);	
 				@for $i from 1 through 12 {
 					&:nth-child(#{$i}) {
 						transition-delay: ($speed/2) * $i;
