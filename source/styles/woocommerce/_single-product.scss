@@ -19,8 +19,9 @@
     }
 
     @include breakpoint($bp) {
-      width: calc(100% - #{em(100px)});
+
       .sigle-image-slider {
+        width: calc(100% - #{em(100px)});
         order: 2;
       }
     }
