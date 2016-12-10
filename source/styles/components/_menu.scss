@@ -32,6 +32,10 @@
 		&.btn-menu {
 			position: relative;
 			z-index: 9999;
+			transition: color $speed;
+			&.active {
+				color: transparent;
+			}
 		}
 	}
 	.logo {
@@ -74,10 +78,15 @@
 	width: em(20px);
 	height: em(16px);
 	margin-left: 10px;
-	transition: color $speed;
 	&:before {
 		position: absolute;
-		left: 0; 
+		left: em(10px);
+		@include breakpoint(640px) {
+			left: em(20px);
+		}
+		@include breakpoint(640px) {
+			left: em(40px);
+		}
 		top: 50%;
 		transform: translate3d(0, -50%, 0);
 		visibility: hidden;
@@ -101,7 +110,6 @@
 		}
 	}
 	.active & {
-		color: transparent;
 		&:before {
 			opacity: 1;
 			visibility: visible;
