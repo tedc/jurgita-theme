@@ -29,6 +29,10 @@
 				color: $w;
 			}
 		}
+		&.btn-meu {
+			position: relative;
+			z-index: 9999;
+		}
 	}
 	.logo {
 		width: em(70px);
@@ -103,6 +107,26 @@
 }
 
 .menu {
+	@include fixfull();
+	z-index: 9998;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transform: scale(1.5) translate3d(0, -100%, 0) rotateY(180deg);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	transition: transform $speed, opacity $speed;
+	&.opened {
+		transform: scale(1) translate3d(0, 0%, 0) rotateY(0deg);
+		opacity: 1;
+	}
+	ul {
+		margin: auto;
+		text-align: center;
+		width: $f;
+		@include normalize_padding();
+	}
 	&-container {
 		display: flex;
 		justify-content: flex-end;
