@@ -24,6 +24,7 @@
 		.j {
 			@include absfull();
 			font-size: em(50px);
+			line-height: em(70px, 50px);
 			transition: {
 				property: transform;
 				duration: $speed;
@@ -93,7 +94,16 @@
 	&-language {
 		position: relative;
 		.sub-menu {
-
+			position: absolute;
+			top: 100%;
+			letter-spacing: 0;
+			background-color: $w;
+			@include hidden(true);
+		}
+		&:hover {
+			.sub-menu {
+				@include hidden(false);
+			}
 		}
 	}
 }
