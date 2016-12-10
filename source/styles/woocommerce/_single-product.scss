@@ -9,6 +9,10 @@
 
     .sigle-image-slider {
       order: 2;
+
+      img {
+        border: 1px solid $light_gray;
+      }
     }
 
     .single-image-slider-nav {
