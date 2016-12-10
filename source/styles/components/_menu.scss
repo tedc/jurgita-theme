@@ -79,22 +79,29 @@
 		height: em(4px);
 		margin-bottom: em(2px);
 		background-color: $gold;
-		&:nth-child(1) {
-			animation: lineTop $speed reverse;
+		&:nth-child(1), &:nth-child(3) {
+			transition: transform $speed;
 		}
 		&:nth-child(2) {
 			transition: opacity $speed;
 		}
 		&:nth-child(3) {
-			animation: lineBottom $speed reverse;
 			margin-bottom: 0;
 		}
 	}
 	.active & {
 		.toggle-line {
-			&:nth-child(1), &:nth-child(2)  {
+			&:nth-child(1), &:nth-child(3) {
+				aninmation-duration: $speed;
 				animation-fill-mode: forwards;
-				animation-direction: normal;
+				animation-direction: initial;
+				transition: none;
+			}
+			&:nth-child(1) {
+				animation-name: lineTop;
+			}
+			&:nth-child(3) {
+				animation-name: lineBottom;
 			}
 			&:nth-child(2) {
 				opacity: 0;
