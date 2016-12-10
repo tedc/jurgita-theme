@@ -5,10 +5,11 @@
   .images {
     width: 50%;
     padding-right: em(40px);
+    display: flex;
 
     .single-image-slider {
       height: auto;
-      width: calc(100% - #{em(100px)});
+
     }
     img {
       border: 1px solid $light_gray;
@@ -18,7 +19,7 @@
     }
 
     @include breakpoint($bp) {
-      display: flex;
+      width: calc(100% - #{em(100px)});
       .sigle-image-slider {
         order: 2;
       }
