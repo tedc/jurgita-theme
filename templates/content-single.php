@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
-  <div class="hieratrchy">
-    <?php get_template_part('templates/hierarchy'); ?>
-  </div>
+
+    <?php get_template_part('templates/breadcrumbs'); ?>
+
 
   <?php if(has_post_thumbnail()){?>
     <div class="header_page_blog" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
