@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
 				"op",
 				"opacity\topacity()"
 			],
@@ -440,28 +448,28 @@
 	"buffers":
 	[
 		{
-			"file": "source/styles/layouts/_header.scss",
+			"file": "/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/scripts.php",
 			"settings":
 			{
-				"buffer_size": 69,
-				"line_ending": "Windows"
+				"buffer_size": 6139,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "builder/testo.php",
+			"file": "templates/footer.php",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 486,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 847,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": ".bowerrc",
-			"settings":
-			{
-				"buffer_size": 38,
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -472,36 +480,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "package control",
+		"height": 367.0,
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
 			[
-				"package control",
-				"Package Control: Install Package"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"color pi",
-				"Color Picker: Insert Color"
-			],
-			[
-				"color",
-				"Color Picker: Insert Color"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"sass",
-				"Set Syntax: Sass"
-			],
-			[
-				"Package Control: ins",
+				"Package Control: ",
 				"Package Control: Install Package"
 			],
 			[
@@ -509,15 +493,11 @@
 				"Package Control: Install Package"
 			],
 			[
-				"Package Control: ",
-				"Package Control: Add Channel"
-			],
-			[
 				"Snippet: html",
 				"Snippet: html"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -539,28 +519,38 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets/styles"
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/lib",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/common",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/templates"
 	],
 	"file_history":
 	[
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/styles/common/_variables.scss",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/styles/components/_buttons.scss",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/templates/header.php",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/styles/layouts/_header.scss",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/gulpfile.js",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/manifest.json",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets/styles/main.css",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/styles/main.scss",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/lib/extras.php",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/templates/head.php",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/styles/common/_global.scss",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/bower.json",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/lib/assets.php",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/package.json",
-		"/C/Users/RiMaStInO/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/templates/content-page.php",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/.gitignore",
+		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/lib/extras.php",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/extras/init.php",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/extras/scripts.php",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/config/application.php",
+		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/init.php",
+		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/functions.php",
+		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/gulpfile.js",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/config.rb",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/common/_global.scss",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/manifest.json",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/gulpfile.js",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/templates/page-layout.php",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/README.md",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/style.css",
+		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/funcs/_funcs.scss",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/main.scss",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/components/_forms.scss",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/components/_grid.scss",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/components/_wp-classes.scss",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/bower.json",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/common/_variables.scss",
+		"/Users/edograndinetti/Sites/bspkn/jurgita/web/app/themes/jurgita-theme/source/styles/components/_comments.scss",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/taxonomy-contratto.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/category.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/template-proposte.php",
@@ -631,7 +621,6 @@
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/gallery-wip.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/galleria.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/popup.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/gulpfile.js",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/lib/assets.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/home.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/404.php",
@@ -666,24 +655,17 @@
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/facebook.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/pug/facebook.pug",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_frt_container_gallery.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_arrow.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/layout/_header.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/search-proposte.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/video.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/year.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/core/marker.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/utils.php"
+		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_arrow.scss"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 93.0,
 		"where_history":
 		[
-			"C:\\Users\\RiMaStInO\\Desktop\\RiMaStInO\\wamp\\www\\jurgita\\web\\app\\themes\\jurgita-theme",
 			""
 		]
 	},
@@ -692,18 +674,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"dist/main.css",
-			"dist/",
-			"sage",
-			"sage/css-css",
-			"wp_head()",
-			"wp_head();",
-			"dist/styles/main.css",
-			"dist/main.css",
-			"dist",
-			"social",
-			"dist",
-			"bower",
+			"assets",
+			"'assets/",
 			"$rootScope.posts",
 			"$scope.posts",
 			"$scope.count",
@@ -819,7 +791,17 @@
 			"second_gallery",
 			"sub_title",
 			"sub",
-			"building"
+			"building",
+			"/span",
+			"/i",
+			" class=\"",
+			">",
+			"<",
+			"span class=\"label_details\"",
+			"</li>",
+			"<li class=\"details\" ng-if",
+			"ngtemp",
+			"template"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -827,7 +809,7 @@
 		"regex": false,
 		"replace_history":
 		[
-			"assets",
+			"'source/",
 			"$scope.posts",
 			"$rootScope.isLoading",
 			"1000",
@@ -875,114 +857,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "source/styles/layouts/_header.scss",
+					"file": "/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/scripts.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 69,
+						"buffer_size": 6139,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								69,
-								69
+								1947,
+								1947
 							]
 						],
 						"settings":
 						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										68,
-										69
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										17,
-										18
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/brogrammer (SL).tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -993,11 +887,11 @@
 				},
 				{
 					"buffer": 1,
-					"file": "builder/testo.php",
-					"semi_transient": false,
+					"file": "templates/footer.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 486,
 						"regions":
 						{
 						},
@@ -1010,81 +904,9 @@
 						],
 						"settings":
 						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1095,98 +917,26 @@
 				},
 				{
 					"buffer": 2,
-					"file": ".bowerrc",
-					"semi_transient": true,
+					"file": "functions.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 38,
+						"buffer_size": 847,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								606,
+								606
 							]
 						],
 						"settings":
 						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1237,7 +987,7 @@
 	"project": "jugita.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1275,7 +1025,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 551.0,
+	"side_bar_width": 425.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
