@@ -93,14 +93,14 @@
 	.active & {
 		.toggle-line {
 			&:nth-child(1) {
-				animation: lineTop $speed*2 forwards;
+				animation: lineTop $speed*2 forwards normal;
 			}
 			&:nth-child(2) {
 				opacity: 0;
 				transition-delay: $speed;
 			}
 			&:nth-child(3) {
-				animation: lineBottom $speed*2 forwards;
+				animation: lineBottom $speed*2 forwards normal;
 			}
 		}
 	}
