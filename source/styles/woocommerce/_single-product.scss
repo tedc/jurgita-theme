@@ -6,6 +6,7 @@
     width: 50%;
     padding-right: em(40px);
     display: flex;
+    flex-wrap: wrap;
 
     .single-image-slider {
       height: auto;
@@ -27,6 +28,7 @@
     }
 
     .single-image-slider-nav {
+
       img {
         border: 1px solid $light_gray;
         height: auto;
