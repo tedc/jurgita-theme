@@ -23,11 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post, $product;
 ?>
 <div class="images">
-	<div class="slider-nav">
-	<?php
-		do_action( 'woocommerce_product_thumbnails' );
-	?>
-	</div>
 	<div class="slider">
 	<?php
 
