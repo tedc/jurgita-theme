@@ -28,6 +28,7 @@
     }
 
     .single-image-slider-nav {
+      display: flex;
 
       img {
         border: 1px solid $light_gray;
@@ -39,6 +40,7 @@
       }
 
       @include breakpoint($bp) {
+        display: block;
         width: em(100px);
         padding-right: em(20px);
 
