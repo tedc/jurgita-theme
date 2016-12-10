@@ -73,6 +73,15 @@
 		&.opened {
 			transform: translate3d(0%, 0, 0);
 		}
+		&-btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(-50%, -50%, 0) rotate(90deg);
+			font-size: vh(16px);
+			color: $gold;
+			letter-spacing: $letter-spacing-large;
+		}
 	}
 }
 
@@ -84,7 +93,7 @@
 	&-language {
 		position: relative;
 		.sub-menu {
-			
+
 		}
 	}
 }
