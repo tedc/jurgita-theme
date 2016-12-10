@@ -29,7 +29,7 @@
 
       @include breakpoint($bp) {
         width: em(100px);
-        padding: 0 em(20px);
+        padding: 0 em(10px);
       }
     }
   }
