@@ -9,11 +9,26 @@
 	display: flex;
 	justify-content: space-between;
 	text-transform: uppercase;
+	a {
+		color: $base_color;
+		&:hover {
+			color: $gold;
+		}
+	}
 	.btn-header {
 		height: em(70px);
 		display: flex;
 		align-items: center;
 		@include normalize_padding;
+		.btn-shop {
+			color: $w;
+			background-color: $gold;
+			transition: color $speed;
+			&:hover {
+				background-color: $base_color;
+				color: $w;
+			}
+		}
 	}
 	.logo {
 		width: em(70px);
