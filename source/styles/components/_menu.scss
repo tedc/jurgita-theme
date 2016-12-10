@@ -7,12 +7,16 @@
 	z-index: 9997;
 	background-color: $w;
 	font-family: $third-font;
+	display: flex;
+	justify-content: space-between;
 	.logo {
 		width: em(70px);
 		height: em(70px);
 		text-align: center;
 		font-size: em(60px);
 		color: $w;
+		overflow: hidden;
+		position: relative;
 		.j {
 			@include absfull();
 			transition: {
