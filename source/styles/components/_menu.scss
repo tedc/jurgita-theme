@@ -114,16 +114,13 @@
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transform: scale(1.5) translate3d(-50%, -100%, 0);
+	transform: scale(1.5) translate3d(0%, -100%, 0);
 	backface-visibility: hidden;
 	perspective: 1000px;
 	background-color: $w;
 	transition: transform $speed, opacity $speed;
 	padding-top: em(70px);
-	&.opened {
-		transform: scale(1) translate3d(0%, 0%, 0);
-		opacity: 1;
-	}
+	overflow: hidden;
 	.nav {
 		margin: auto;
 		text-align: center;
@@ -132,6 +129,25 @@
 		a {
 			display: block;
 			padding: em(10px) 0;
+		}
+		.menu-item {
+			transform: translate3d(-50px, 0, 0);
+			opacity: 0;
+			@for $i from 1 through 12 {
+				&:nth-child(#{$i}) {
+					transition-delay: ($speed/2) * $i;
+				}
+			}
+		}
+	}
+	&.opened {
+		transform: scale(1) translate3d(0%, 0%, 0);
+		opacity: 1;
+		.nav {
+			.menu-item {
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+			}
 		}
 	}
 	&-container {
