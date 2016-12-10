@@ -21,13 +21,14 @@
     }
 
     .single-image-slider-nav {
-      @include breakpoint($bp) {
-        width: 15%;
-      }
+
       img {
         border: 1px solid $light_gray;
-        width: em(80px);
-        height: em(80px);
+        width: 100%;
+        height: auto;
+      }
+      @include breakpoint($bp) {
+        width: 15%;
       }
     }
   }
