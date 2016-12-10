@@ -28,8 +28,12 @@
       }
 
       @include breakpoint($bp) {
-        width: em(100px);
-        padding: 0 em(10px);
+        width: em(120px);
+        padding: 0 em(20px);
+
+        img {
+          margin-bottom: em(20px);
+        }
       }
     }
   }
