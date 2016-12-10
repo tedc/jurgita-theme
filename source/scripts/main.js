@@ -66,6 +66,7 @@ function reveal() {
         $(this).on('click', function(event) {
             event.preventDefault();
             $(id).toggleClass('opened');
+            $(this).toggleClass('active');
         })
     })
 }

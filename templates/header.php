@@ -6,9 +6,16 @@
 	</a>
 	<div class="menu-container">
 		<?php icl_selector(); ?>
-		<a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>">shop</a>
+		<a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>"><?php _e('Shop', 'jurgita'); ?></a>
 		<?php wp_nav_menu( ['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'container_id' => 'menu', 'container_class' => 'menu'] ); ?>
-		<a class="btn-header btn-menu" href="#" data-reveal="#menu">menu</a>
+		<a class="btn-header btn-menu" href="#" data-reveal="#menu">
+			<?php _e('Menu', 'jurgita'); ?>
+			<span class="toggle">
+				<span class="toggle-line"></span>
+				<span class="toggle-line"></span>
+				<span class="toggle-line"></span>
+			</span>
+		</a>
 	</div>
 </header>
 <?php $corsi = new WP_Query(array(
