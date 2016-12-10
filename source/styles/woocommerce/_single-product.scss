@@ -10,7 +10,7 @@
       display: flex;
       .sigle-image-slider {
         order: 2;
-        width: 100%;
+        width: 85%;
       }
 
       img {
@@ -21,7 +21,9 @@
     }
 
     .single-image-slider-nav {
-
+      @include breakpoint($bp) {
+        width: 15%;
+      }
       img {
         border: 1px solid $light_gray;
         width: em(80px);
