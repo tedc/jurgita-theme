@@ -41,6 +41,7 @@
 		overflow: hidden;
 		position: relative;
 		font-family: $third-font;
+		z-index: 9999;
 		.j {
 			@include absfull();
 			font-size: em(50px);
@@ -116,16 +117,22 @@
 	transform: scale(1.5) translate3d(0, -100%, 0) rotateY(180deg);
 	backface-visibility: hidden;
 	perspective: 1000px;
+	background-color: $w;
 	transition: transform $speed, opacity $speed;
+	padding-top: em(70px);
 	&.opened {
 		transform: scale(1) translate3d(0, 0%, 0) rotateY(0deg);
 		opacity: 1;
 	}
-	ul {
+	.nav {
 		margin: auto;
 		text-align: center;
 		width: $f;
 		@include normalize_padding();
+		a {
+			display: block;
+			padding: em(10px) 0;
+		}
 	}
 	&-container {
 		display: flex;
