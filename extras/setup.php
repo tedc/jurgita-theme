@@ -1,8 +1,7 @@
 <?php
 	
 	function main_menu_footer($nav_menu, $args) {
-		print_r($args->theme_location);
-		if($args['theme_location'] === 'primary_navigation') : 
+		if($args->theme_location === 'primary_navigation') : 
 			ob_start();
 			get_template_part( 'templates/menu', 'footer' );
 			$html = ob_get_contents();
