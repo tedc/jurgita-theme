@@ -6,5 +6,4 @@ function wcs_woo_remove_reviews_tab($tabs) {
     unset($tabs['reviews']);
     return $tabs;
 }
-
 ?>
