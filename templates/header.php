@@ -1,11 +1,22 @@
+<?php $shop = woocommerce_get_page_id( 'shop' ); ?>
 <header class="banner">
-  <div class="container-header">
-    <a class="icon icon-pittogramma" href="<?= esc_url(home_url('/')); ?>">j</a>
-    <div class="container-menu">
-       <a class="btn-header btn-shop">shop</a>
-       <a class="btn-header btn-menu">menu</a>
-    </div>
-  </div>
+	<a class="logo" href="<?= esc_url(home_url('/')); ?>">
+		<span class="j">J</span>
+		<span class="j">J</span>
+	</a>
+	<div class="menu-container">
+		<?php icl_selector(); ?>
+		<a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>"><span class="btn-header-text"><?php _e('Shop', 'jurgita'); ?></span></a>
+		<?php wp_nav_menu( ['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'container_id' => 'menu', 'container_class' => 'menu'] ); ?>
+		<a class="btn-header btn-menu" href="#" data-reveal="#menu">
+			<span class="btn-header-text"><?php _e('Menu', 'jurgita'); ?></span>
+			<span class="toggle" data-close="<?php _e('Chiudi', 'jurgita'); ?>">
+				<span class="toggle-line"></span>
+				<span class="toggle-line"></span>
+				<span class="toggle-line"></span>
+			</span>
+		</a>
+	</div>
 </header>
 <?php $corsi = new WP_Query(array(
 				'post_type' => 'corsi',
@@ -19,7 +30,8 @@
 				'order' => 'ASC' 
 			)); if($corsi->have_posts()) : ?>
 <aside class="aside">
-	<div class="panel">
+	<div class="panel" id="panel">
+		<a href="#" data-revael="#panel">
 		<ul>
 			<?php 
 				while($corsi->have_posts()) : $corsi->the_post();
@@ -37,6 +49,6 @@
 			<?php endwhile; wp_reset_query(); ?>
 		</ul>
 	</div>
-	<a href="#" class="open-courses"><?php _e('Prossimi corsi', 'jurgita'); ?></a>
+	<a href="#" class="aside-btn"><?php _e('Prossimi corsi', 'jurgita'); ?></a>
 </aside>
 <?php endif; ?>
