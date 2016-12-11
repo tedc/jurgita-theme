@@ -8,6 +8,7 @@
 			ob_end_clean();
 			$nav_menu .= $html;
 		endif;
+		return $nav_menu;
 	}
 
 	add_filter( 'wp_nav_menu', 'main_menu_footer', 10, 2 );
