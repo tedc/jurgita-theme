@@ -108,7 +108,7 @@
 
         input {
           height: 100%;
-          width:em(80px);
+          width:em(80px, 26px);
           font-size: 26px;
           font-family: $second-font;
           color: $base_color;
