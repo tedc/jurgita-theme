@@ -36,10 +36,14 @@
 		&.btn-menu {
 			position: relative;
 			z-index: 9999;
-			transition: color $speed, transform $speed;
+			.btn-header-text {
+				transition: color $speed, transform $speed;
+			}
 			&.active {
-				color: transparent;
-				transform: translate3d(-20px, 0, 0);
+				.btn-header-text {
+					color: transparent;
+					transform: translate3d(-20px, 0, 0);
+				}
 			}
 		}
 	}
@@ -54,7 +58,7 @@
 		.j {
 			@include absfull();
 			font-size: em(50px);
-			line-height: em(60px, 70px);
+			line-height: em(65px, 50px);
 			transition: {
 				property: transform;
 				duration: $speed;
@@ -86,13 +90,13 @@
 	margin-left: 10px;
 	&:before {
 		position: absolute;
-		left: em(10px, 14px);
-		font-size: em(14px);
+		left: em(10px, 12px);
+		font-size: em(12px);
 		@include breakpoint(640px) {
-			left: em(20px, 14px);
+			left: em(20px, 12px);
 		}
 		@include breakpoint(640px) {
-			left: em(40px, 14px);
+			left: em(40px, 12px);
 		}
 		top: 50%;
 		transform: translate3d(-20px, -50%, 0);
