@@ -190,6 +190,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	opacity: 0;
 	transform: scale(1.5) translateZ(0);
 	visibility: hidden;
@@ -287,6 +288,18 @@
 					@include hidden(false);
 				}
 			}
+		}
+	}
+	&-footer {
+		width: $f;
+		text-align: center;
+		align-self: flex-end;
+		&-phone {
+			@include normalize_padding;
+			background-color: $gold;
+			padding-top: em(20px);
+			padding-bottom: em(20px);
+			color: $w;
 		}
 	}
 }
