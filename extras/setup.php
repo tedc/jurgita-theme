@@ -1,6 +1,7 @@
 <?php
 	
 	function main_menu_footer($nav_menu, $args) {
+		var_dump($args);
 		if($args['theme_location'] === 'primary_navigation') : 
 			ob_start();
 			get_template_part( 'templates/menu', 'footer' );
