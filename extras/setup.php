@@ -16,7 +16,8 @@
 		acf_add_options_page(array(
 			'page_title' 	=> 'Telefono e WhatsApp',
 			'menu_title'	=> 'Telefono',
-			'menu_slug' 	=> 'general'
+			'menu_slug' 	=> 'telephones',
+			'parent_slug'   => 'options-general'
 		));
 	}
 	
