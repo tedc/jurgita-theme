@@ -58,7 +58,7 @@
 		.j {
 			@include absfull();
 			font-size: em(50px);
-			line-height: em(65px, 50px);
+			line-height: em(62px, 50px);
 			transition: {
 				property: transform;
 				duration: $speed;

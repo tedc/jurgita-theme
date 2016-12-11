@@ -16,4 +16,8 @@
  * @version     2.0.0
  */
 ?>
+<<<<<<< Updated upstream
 <li class="products grid-4">
+=======
+<div class="products grid-4">
+>>>>>>> Stashed changes
