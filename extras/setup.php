@@ -6,7 +6,7 @@
 			get_template_part( 'templates/menu', 'footer' );
 			$html = ob_get_contents();
 			ob_end_clean();
-			$nav_menu .= $html;
+			$nav_menu = str_replace('</div>', $html . '\n</div>', $nav_menu);
 		endif;
 		return $nav_menu;
 	}
