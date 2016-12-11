@@ -50,17 +50,13 @@
                         font-size: em(10px);
                     }
 
-                    /* &:after {
-                       content: '';
-                       margin-left: 0px;
-                       margin-right: 0px;
-                     }*/
                     &:before {
                         content: '\2022';
                         margin-left: em(7px);
                         margin-right: em(7px);
                     }
                 }
+
                 li:first-child {
                     &:before {
                         content: '';
