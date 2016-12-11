@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="container-footer">
-        <h1><?php bloginfo("name"); ?></h1>
+        <h2><?php bloginfo("name"); ?></h2>
         <div class="bottom-footer">
             <?php dynamic_sidebar('sidebar-footer'); ?>
             <section class="widget widget_img">

@@ -115,6 +115,7 @@
           text-align: right !important;
           padding-right: 17px;
         }
+
         input[type=number]::-webkit-inner-spin-button,
         input[type=number]::-webkit-outer-spin-button {
           -webkit-appearance: none;
@@ -126,8 +127,8 @@
           height: 50%;
           width: 30px;
           cursor: pointer;
-
         }
+
         .minus {
           bottom: 0;
           top: inherit;
@@ -143,6 +144,7 @@
             border-top: 6px solid $gold;
           }
         }
+
         .plus {
           &:after {
             right: 0;
@@ -167,6 +169,7 @@
     h2 {
       font-size: em(31px);
     }
+
     p {
       font-size: em(18px);
     }
