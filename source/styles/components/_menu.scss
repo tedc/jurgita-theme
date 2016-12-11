@@ -54,8 +54,7 @@
 		.j {
 			@include absfull();
 			font-size: em(50px);
-			display: flex;
-			align-items: center;
+			line-height: em(60px, 70px);
 			transition: {
 				property: transform;
 				duration: $speed;
@@ -189,10 +188,11 @@
 	justify-content: center;
 	opacity: 0;
 	transform: scale(1.5) translateZ(0);
+	visibility: hidden;
 	backface-visibility: hidden;
 	perspective: 1000px;
 	background-color: $w;
-	transition: transform $speed, opacity $speed;
+	transition: transform $speed, opacity $speed, visibility $speed;
 	padding-top: em(70px);
 	overflow: hidden;
 	.nav {
@@ -213,6 +213,7 @@
 	&.opened {
 		transform: scale(1) translateZ(0);
 		opacity: 1;
+		visibility: visible;
 		.nav {
 			.menu-item {
 				opacity: 1;
