@@ -16,4 +16,4 @@
  * @version     2.0.0
  */
 ?>
-<div class="products grid-4">
+<li class="products grid-4">
