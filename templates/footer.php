@@ -5,7 +5,7 @@
             <?php dynamic_sidebar('sidebar-footer'); ?>
             <section class="menu-footer">
                 <?php wp_nav_menu( array( 'menu' => 'menu footer',
-                    'menu_class' => 'menu-footer') );?>
+                    'menu_class' => 'menu-container') );?>
             </section>
             <section class="widget widget_img">
                 <?php _e('Credits', 'jurgita'); ?><a class="icon-credits" target="_blank" rel="nofollow"
