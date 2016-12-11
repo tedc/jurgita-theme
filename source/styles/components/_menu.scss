@@ -188,9 +188,7 @@
 	@include fixfull();
 	z-index: 9998;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	flex-direction: column;
 	opacity: 0;
 	transform: scale(1.5) translateZ(0);
 	visibility: hidden;
@@ -204,6 +202,7 @@
 		margin: auto;
 		text-align: center;
 		width: $f;
+		flex: 10;
 		@include normalize_padding();
 		a {
 			display: block;
@@ -291,9 +290,6 @@
 		}
 	}
 	&-footer {
-		width: $f;
-		text-align: center;
-		align-self: flex-end;
 		&-phone {
 			@include normalize_padding;
 			background-color: $gold;
