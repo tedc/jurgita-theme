@@ -16,8 +16,6 @@
  * @version     2.0.0
  */
 ?>
-<<<<<<< Updated upstream
-</li>
-=======
-</div>
->>>>>>> Stashed changes
+
+</ul>
+
