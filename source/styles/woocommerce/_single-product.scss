@@ -2,6 +2,7 @@
 .product {
   display: flex;
   flex-wrap: wrap;
+  margin-top: em(80px);
   .images {
     width: 50%;
     padding-right: em(40px);
@@ -107,6 +108,7 @@
 
         input {
           height: 100%;
+          width:em(80px);
           font-size: 26px;
           font-family: $second-font;
           color: $base_color;
