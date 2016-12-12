@@ -188,8 +188,7 @@
 	@include fixfull();
 	z-index: 9998;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: column;
 	opacity: 0;
 	transform: scale(1.5) translateZ(0);
 	visibility: hidden;
@@ -203,6 +202,7 @@
 		margin: auto;
 		text-align: center;
 		width: $f;
+		flex: 10;
 		@include normalize_padding();
 		a {
 			display: block;
@@ -287,6 +287,15 @@
 					@include hidden(false);
 				}
 			}
+		}
+	}
+	&-footer {
+		&-phone {
+			@include normalize_padding;
+			background-color: $gold;
+			padding-top: em(20px);
+			padding-bottom: em(20px);
+			color: $w;
 		}
 	}
 }
