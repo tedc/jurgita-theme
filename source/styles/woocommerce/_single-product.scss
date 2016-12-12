@@ -32,6 +32,8 @@
 
             @include breakpoint($bp) {
                 flex: 1;
+                width: calc(100% - #{em(100px)});
+                order: 2;
             }
 
         }
@@ -42,13 +44,13 @@
             display: block;
         }
 
-        @include breakpoint($bp) {
+      /*  @include breakpoint($bp) {
 
             .sigle-image-slider {
                 width: calc(100% - #{em(100px)});
                 order: 2;
             }
-        }
+        }*/
 
         .single-image-slider-nav {
             display: flex;
