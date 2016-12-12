@@ -3,6 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: em(80px);
+
+    .onsale {
+        width: 100%;
+        padding-left: calc( 50% + #{em(40px)});
+        padding-bottom: em(10px);
+    }
+
     .images, .summary {
         width: 100%;
         flex: 0 0 auto;
@@ -236,7 +243,7 @@
 
                     h3 {
                         @extend %title-post;
-                        color: #888888;
+                        color: $title-related;
                         font-family: $main-font;
                         text-transform: none;
                         text-align: center;
@@ -246,21 +253,36 @@
                     }
 
                     .price {
-                        @extend %price;
+                        color: $gold;
+                        font-size: em(18px);
+                        text-align: center;
+                        font-family: $second-font;
+                        display: table;
+                        margin: 0 auto;
 
+                        .int-price {
+                            font-size: em(23px, 18px);
+                        }
+
+                        del {
+                            color: $gray;
+                            font-size: em(14px, 18px);
+                        }
                     }
                 }
             }
+        }
 
-            .product:last-child {
-                padding-right: 0;
-            }
-            .product:first-child {
-                padding-left: 0;
-            }
+        .product:last-child {
+            padding-right: 0;
+        }
+        .product:first-child {
+            padding-left: 0;
         }
     }
 }
+
+
 
 %price {
     line-height: 1;
