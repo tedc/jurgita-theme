@@ -174,4 +174,16 @@
             font-size: em(18px);
         }
     }
+
+    .related.products {
+        .grid-4 {
+            .product {
+                &:before {
+                    content: '';
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
