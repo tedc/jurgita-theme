@@ -2,8 +2,14 @@
     box-sizing: border-box !important;
 }
 
+html {
+    overflow: {
+        &-x: hidden;
+        &-y: auto;
+    }
+}
+
 body {
-    overflow-x: hidden;
     font-size: $base_font_size - 2px;
     color: $base_color;
     margin: 0;
