@@ -106,15 +106,17 @@
                 margin-right: 0 !important;
                 float: none !important;
                 position: relative;
+                border: 1px solid $light_gray;
+
 
                 input {
-                    height: 100%;
-                    width: em(80px, 26px);
+                    width: em(100px, 26px);
                     font-size: 26px;
                     font-family: $second-font;
                     color: $base_color;
                     text-align: right !important;
                     padding-right: 17px;
+                    border: 0;
                 }
 
                 input[type=number]::-webkit-inner-spin-button,
