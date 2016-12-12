@@ -22,15 +22,13 @@
     .images {
         display: flex;
         flex-wrap: wrap;
-        @include breakpoint($bp) {
-            padding-right: em(40px);
-        }
 
         .single-image-slider {
             width:100%;
             height: auto;
-
         }
+
+
         img {
             border: 1px solid $light_gray;
             width: 100%;
@@ -39,6 +37,7 @@
         }
 
         @include breakpoint($bp) {
+            padding-right: em(40px);
 
             .sigle-image-slider {
                 width: calc(100% - #{em(100px)});
