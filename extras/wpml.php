@@ -24,7 +24,8 @@
             remove_filter( 'acf/settings/current_language', 'acf_get_language_default', 100 );
         }
     }
-    function icl_selector(){
+    function icl_selector() {
+        global $post;
         $langs = '<ul class="menu-language">';
         $other_langs = '';
         $languages = icl_get_languages('skip_missing=0');
@@ -47,5 +48,7 @@
             }
         }
         $langs.="</ul>";
-        echo $langs;
+        if(get_post_meta( $post->ID, '_icl_lang_duplicate_of', true )) {
+            echo $langs;
+        }
     }
