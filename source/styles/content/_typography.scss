@@ -14,14 +14,14 @@ body {
         font-size: $base_font_size - 1px;
     }
     @include breakpoint(1024px) {
-      font-size: $base_font_size;
+        font-size: $base_font_size;
     }
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     font-size: 1em;
-    line-height:1;
+    line-height: 1;
 }
 
 a {
@@ -36,10 +36,27 @@ figure {
 p {
     letter-spacing: $letter-spacing-base;
     margin: 0;
+    font-family: $main-font;
+    font-size: em(18px);
+    letter-spacing: $letter-spacing-base;
+    line-height: em(30px, 18px);
 }
+
 
 ul, ol {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+
+%title-post {
+    color: $gold;
+    font-weight: 400;
+    font-family: $third-font;
+    text-transform: uppercase;
+
+    a {
+        color: $gold;
+    }
 }
