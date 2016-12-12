@@ -47,6 +47,7 @@
 
         .single-image-slider-nav {
             display: flex;
+            padding-bottom: em(20px);
 
             img {
                 border: 1px solid $light_gray;
@@ -179,7 +180,14 @@
 
 .woocommerce-description-product {
     width: 100%;
-    margin-top: em(100px);
+    padding-top: em(100px);
+    padding-left: em(20px);
+    padding-right: em(20px);
+
+    @include breakpoint($bp) {
+        padding-left: em(140px);
+        padding-right: em(140px);
+    }
 
     h2 {
         @extend %title-post;
