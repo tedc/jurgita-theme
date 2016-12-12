@@ -31,7 +31,7 @@ global $product;
 	?>
 	<div class="price">
 		<span class="int-price"><?php echo $int_price ?></span>
-		<!--<span class="cent-price"><?php /*echo $cent_price */?></span>-->
+		<span class="cent-price"><?php echo $cent_price ?></span>
 	</div>
 
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_display_price() ); ?>" />

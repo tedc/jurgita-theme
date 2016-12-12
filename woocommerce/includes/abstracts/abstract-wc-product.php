@@ -1010,6 +1010,8 @@ class WC_Product {
 
 		$display_price         = $this->get_display_price();
 		$display_regular_price = $this->get_display_price( $this->get_regular_price() );
+		echo $display_price;
+		echo $display_regular_price;
 
 		if ( $this->get_price() > 0 ) {
 
