@@ -120,6 +120,9 @@
                     padding-right: 17px;
                     border: 0;
                 }
+                input:focus{
+                    outline: none;
+                }
 
                 input[type=number]::-webkit-inner-spin-button,
                 input[type=number]::-webkit-outer-spin-button {
