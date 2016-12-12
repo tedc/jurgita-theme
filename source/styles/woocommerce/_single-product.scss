@@ -191,6 +191,7 @@
             text-align: center;
         }
         .grid-4 {
+            padding-bottom: em(150px);
             .product {
                 padding-right: em(35px);
                 padding-left: em(35px);
@@ -208,6 +209,7 @@
                     img {
                         width: 100%!important;
                         height: auto!important;
+                        display: block;
                     }
 
                     h3 {
@@ -224,6 +226,8 @@
                         font-size: em(23px);
                         text-align: center;
                         font-family: $second-font;
+                        display: table;
+                        margin: 0 auto;
                     }
                 }
             }
