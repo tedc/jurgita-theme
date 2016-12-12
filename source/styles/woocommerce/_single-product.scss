@@ -167,7 +167,7 @@
         margin-top: em(100px);
 
         h2 {
-            font-size: em(31px);
+            font-size: em(26px);
         }
 
         p {
@@ -178,16 +178,23 @@
     .line-description {
         width:100%;
         height: 1px;
-        background: linear-gradient(to right, #918552, #f7dda9, #918552); ;
+        background: linear-gradient(to right, #918552, #f7dda9, #918552);
+        padding-top: em(100px);
+        padding-bottom: em(100px);
     }
 
     .related.products {
         width: 100%;
+
+        h2 {
+            font-size: em(26px);
+            text-align: center;
+        }
         .grid-4 {
             .product {
                 padding-right: em(35px);
                 padding-left: em(35px);
-                flex:1;
+                margin-top: em(50px);
                 &:before {
                     content: '';
                     margin-left: 0;
