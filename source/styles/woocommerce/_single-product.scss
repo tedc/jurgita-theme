@@ -65,7 +65,29 @@
             }
         }
 
+        .price {
+            @extend %price;
+            line-height: 1;
+            padding-bottom: 40px;
 
+            .woocommerce-Price-amount {
+                font-family: $second-font;
+                font-weight: bold;
+                font-size: em(36px);
+                color: $gold;
+
+                .woocommerce-Price-currencySymbol {
+                    font-size: em(26px, 36px);
+                }
+            }
+
+            .cent-price{
+                font-size: em(22px);
+                font-family: $second-font;
+                font-weight: bold;
+                color: $gold;
+            }
+        }
 
         div[itemprop="description"] {
             font-size: em(14px);
@@ -226,29 +248,5 @@
                 padding-left: 0;
             }
         }
-    }
-}
-
-
-.price {
-    line-height: 1;
-    padding-bottom: 40px;
-
-    .woocommerce-Price-amount {
-        font-family: $second-font;
-        font-weight: bold;
-        font-size: em(36px);
-        color: $gold;
-
-        .woocommerce-Price-currencySymbol {
-            font-size: em(26px, 36px);
-        }
-    }
-
-    .cent-price{
-        font-size: em(22px);
-        font-family: $second-font;
-        font-weight: bold;
-        color: $gold;
     }
 }

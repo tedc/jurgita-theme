@@ -30,8 +30,8 @@ global $product;
 	$cent_price = $price_split[1];
 	?>
 	<div class="price">
-		<span class="int-price"><?php echo $int_price ?></span>
-		<span class="cent-price"><?php echo $cent_price ?></span>
+		<span class="int-price"><?php var_dump($int_price) ?></span>
+		<span class="cent-price"><?php var_dump($cent_price) ?></span>
 	</div>
 
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_display_price() ); ?>" />
