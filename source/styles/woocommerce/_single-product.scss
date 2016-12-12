@@ -6,7 +6,7 @@
 
     .onsale {
         width: 100%;
-        padding-left: calc( 50% + #{em(40px)});
+        padding-left: calc(50% + #{em(40px)});
         padding-bottom: em(10px);
     }
 
@@ -28,7 +28,7 @@
         }
 
         .sigle-image-slider {
-            width:100%;
+            width: 100%;
             height: auto;
 
             @include breakpoint($bp) {
@@ -44,8 +44,6 @@
             height: auto;
             display: block;
         }
-
-
 
         .single-image-slider-nav {
             display: flex;
@@ -177,107 +175,105 @@
             }
         }
     }
+}
 
-    .woocommerce-description-product {
-        width: 100%;
-        margin-top: em(100px);
+.woocommerce-description-product {
+    width: 100%;
+    margin-top: em(100px);
 
-        h2 {
-            @extend %title-post;
-            font-size: em(26px);
-            margin-bottom: em(30px, 26px);
-        }
-
-        p {
-            font-size: em(18px);
-        }
+    h2 {
+        @extend %title-post;
+        font-size: em(26px);
+        margin-bottom: em(30px, 26px);
     }
 
-    .line-description {
-        width: 100%;
-        height: 1px;
-        background: linear-gradient(to right, #918552, #f7dda9, #918552);
-        margin-top: em(100px);
-        margin-bottom: em(100px);
+    p {
+        font-size: em(18px);
     }
+}
 
-    .related.products {
-        width: 100%;
+.line-description {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #918552, #f7dda9, #918552);
+    margin-top: em(100px);
+    margin-bottom: em(100px);
+}
 
-        h2 {
-            @extend %title-post;
-            font-size: em(26px);
-            text-align: center;
-        }
-        .grid-4 {
-            padding-bottom: em(150px);
-            .product {
+.related.products {
+    width: 100%;
 
-                margin-top: em(50px);
+    h2 {
+        @extend %title-post;
+        font-size: em(26px);
+        text-align: center;
+    }
+    .grid-4 {
+        padding-bottom: em(150px);
+        .product {
 
-                a {
+            margin-top: em(50px);
+
+            a {
+                width: 100% !important;
+
+                img {
                     width: 100% !important;
+                    height: auto !important;
+                    display: block;
 
-                    img {
-                        width: 100% !important;
-                        height: auto !important;
+                    &:before {
+                        content: "";
+                        visibility: hidden;
+                        opacity: 0;
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC), url("../images/lens.png");
+                        background-repeat: repeat, no-repeat;
                         display: block;
+                        position: relative;
+                        width: 100%;
+                        padding-top: 50%;
+                    }
+                }
 
-                        &:before {
-                            content: "";
-                            visibility: hidden;
-                            opacity: 0;
-                            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC), url("../images/lens.png");
-                            background-repeat: repeat, no-repeat;
-                            display: block;
-                            position: relative;
-                            width: 100%;
-                            padding-top: 50%;
-                        }
+                h3 {
+                    @extend %title-post;
+                    color: $title-related;
+                    font-family: $main-font;
+                    text-transform: none;
+                    text-align: center;
+                    font-size: em(18px);
+                    padding-top: em(20px, 18px);
+                    padding-bottom: em(10px, 18px);
+                }
+
+                .price {
+                    color: $gold;
+                    font-size: em(18px);
+                    text-align: center;
+                    font-family: $second-font;
+                    display: table;
+                    margin: 0 auto;
+
+                    .int-price {
+                        font-size: em(23px, 18px);
                     }
 
-                    h3 {
-                        @extend %title-post;
-                        color: $title-related;
-                        font-family: $main-font;
-                        text-transform: none;
-                        text-align: center;
-                        font-size: em(18px);
-                        padding-top: em(20px, 18px);
-                        padding-bottom: em(10px, 18px);
-                    }
-
-                    .price {
-                        color: $gold;
-                        font-size: em(18px);
-                        text-align: center;
-                        font-family: $second-font;
-                        display: table;
-                        margin: 0 auto;
-
-                        .int-price {
-                            font-size: em(23px, 18px);
-                        }
-
-                        del {
-                            color: $gray;
-                            font-size: em(14px, 18px);
-                        }
+                    del {
+                        color: $gray;
+                        font-size: em(14px, 18px);
                     }
                 }
             }
         }
+    }
 
-        .product:last-child {
+    .product:last-child {
 
-        }
-        .product:first-child {
+    }
+    .product:first-child {
 
-        }
     }
 }
-
-
 
 %price {
     line-height: 1;
