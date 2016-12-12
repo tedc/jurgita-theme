@@ -72,8 +72,9 @@
 
         h1 {
             @extend %title-post;
-            padding-top: 0;
             font-size: em(30px);
+            padding-bottom: em(50px, 30px);
+            padding-top: 0;
         }
 
         .price {
@@ -175,6 +176,7 @@
         h2 {
             @extend %title-post;
             font-size: em(26px);
+            margin-bottom: em(30px, 26px);
         }
 
         p {
