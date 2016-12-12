@@ -50,11 +50,11 @@ if ($products->have_posts()) : ?>
 
         <h2><?php _e('Related Products', 'woocommerce'); ?></h2>
 
-
+        <ul class="grid-4">
         <?php while ($products->have_posts()) :
         $products->the_post(); ?>
 
-        <ul class="grid-4">
+
             <?php wc_get_template_part('content', 'product'); ?>
 
             <?php endwhile; // end of the loop. ?>
