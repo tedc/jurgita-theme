@@ -25,42 +25,24 @@ $attribute_keys = array_keys( $attributes );
 
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-<form class="variations_form cart" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint( $product->id ); ?>" data-product_variations="<?php echo htmlspecialchars( json_encode( $available_variations ) ) ?>">
-	<?php do_action( 'woocommerce_before_variations_form' ); ?>
-
-	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
-		<p class="stock out-of-stock"><?php _e( 'This product is currently out of stock and unavailable.', 'woocommerce' ); ?></p>
-	<?php else : ?>
-
+	<form class="cart" method="post" enctype='multipart/form-data'>
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
+		<?php
+		if ( ! $product->is_sold_individually() ) {
+			woocommerce_quantity_input( array(
+				'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 1, $product ),
+				'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product ),
+				'input_value' => ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 )
+			) );
+		}
+		?>
 
-			<?php
-				/**
-				 * woocommerce_before_single_variation Hook.
-				 */
-				do_action( 'woocommerce_before_single_variation' );
+		<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
-				/**
-				 * woocommerce_single_variation hook. Used to output the cart button and placeholder for variation data.
-				 * @since 2.4.0
-				 * @hooked woocommerce_single_variation - 10 Empty div for variation data.
-				 * @hooked woocommerce_single_variation_add_to_cart_button - 20 Qty and cart button.
-				 */
-				do_action( 'woocommerce_single_variation' );
-
-				/**
-				 * woocommerce_after_single_variation Hook.
-				 */
-				do_action( 'woocommerce_after_single_variation' );
-			?>
-
+		<button type="submit" class="btn"><?php _e('Aggiungi al carrello', 'jurgita')?></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-	<?php endif; ?>
+	</form>
 
-	<?php do_action( 'woocommerce_after_variations_form' ); ?>
-</form>
-
-<?php
-do_action( 'woocommerce_after_add_to_cart_form' );
+<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
