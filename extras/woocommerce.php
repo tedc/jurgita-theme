@@ -15,4 +15,6 @@ function myPrice ($price) {
     return $price;
 }
 add_filter( 'woocommerce_get_price_html', 'myPrice' );
+
+
 ?>
