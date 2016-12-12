@@ -79,6 +79,13 @@
                     font-size: em(26px, 36px);
                 }
             }
+
+            .cent-price{
+                font-size: em(22px);
+                font-family: $second-font;
+                font-weight: bold;
+                color: $gold;
+            }
         }
 
         div[itemprop="description"] {
@@ -228,6 +235,7 @@
                         font-family: $second-font;
                         display: table;
                         margin: 0 auto;
+
                     }
                 }
             }
