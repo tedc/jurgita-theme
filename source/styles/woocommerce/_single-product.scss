@@ -27,7 +27,12 @@
         }
 
         .single-image-slider {
+            width:100%;
             height: auto;
+
+            @include breakpoint($bp) {
+                flex: 1;
+            }
 
         }
         img {
