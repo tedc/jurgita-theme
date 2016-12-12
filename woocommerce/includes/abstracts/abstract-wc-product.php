@@ -1013,6 +1013,7 @@ class WC_Product {
 
 		var_dump($display_price);
 		var_dump($display_regular_price);
+		echo "cristo di un dio";
 
 		if ( $this->get_price() > 0 ) {
 
