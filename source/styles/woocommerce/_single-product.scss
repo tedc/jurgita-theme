@@ -107,6 +107,8 @@
                 float: none !important;
                 position: relative;
                 border: 1px solid $light_gray;
+                display: flex;
+                align-items: center;
 
 
                 input {
