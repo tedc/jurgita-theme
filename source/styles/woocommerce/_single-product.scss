@@ -288,6 +288,11 @@
     line-height: 1;
     padding-bottom: 40px;
 
+    del {
+        color: $gray;
+        font-size: em(18px, 26px);
+    }
+
     .woocommerce-Price-amount {
         font-family: $second-font;
         font-weight: bold;
@@ -297,9 +302,6 @@
         .int-price {
             font-size: em(36px, 26px);
         }
-        del {
-            color: $gray;
-            font-size: em(18px, 26px);
-        }
+
     }
 }
