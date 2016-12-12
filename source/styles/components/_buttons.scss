@@ -6,8 +6,8 @@
     border: 1px solid $gold;
     font-family: $third-font;
     line-height: 1;
+    font-size: em(16px);
 }
-
 
 .btn {
     @extend %btn;
