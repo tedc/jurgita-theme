@@ -178,8 +178,8 @@
     .related.products {
         .grid-4 {
             .product {
-                padding-right: em(35px);
-                padding-left: em(35px);
+                margin-right: em(35px);
+                margin-left: em(35px);
                 flex:1;
                 &:before {
                     content: '';
@@ -198,10 +198,10 @@
             }
 
             .product:last-child {
-                padding-right: 0;
+                margin-right: 0;
             }
             .product:first-child {
-                padding-left: 0;
+                margin-left: 0;
             }
         }
     }
