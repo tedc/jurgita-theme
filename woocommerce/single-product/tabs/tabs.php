@@ -32,7 +32,7 @@ if ( ! empty( $tabs ) ) : ?>
 
 
 		<?php foreach ( $tabs as $key => $tab ) : ?>
-		<div class="body-container">
+		<div class="container">
 			<div class="woocommerce-description-product">
 				<?php call_user_func( $tab['callback'], $key, $tab ); ?>
 			</div>
