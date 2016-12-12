@@ -3,10 +3,8 @@
 }
 
 html {
-    overflow: {
-        &-x: hidden;
-        &-y: auto;
-    }
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
