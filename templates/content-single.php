@@ -7,8 +7,7 @@
     <div class="header_page_blog" style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
   <?php } ?>
 
-    <div class="body-container container">
-  <article <?php post_class(); ?>>
+  <article <?php post_class('container'); ?>>
     <header>
       <?php get_template_part('templates/entry-meta'); ?>
       <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -21,5 +20,4 @@
     </footer>
     <?php comments_template('/templates/comments.php'); ?>
   </article>
-    </div>
 <?php endwhile; ?>

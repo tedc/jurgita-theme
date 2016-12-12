@@ -1,11 +1,4 @@
 .container {
     position: relative;
     @include normalize_padding();
-    @include breakpoint($bp) {
-        max-width: $max-width;
-        margin: 0 auto;
-        .single &{
-            max-width: $max-width-blog;
-        }
-    }
 }
