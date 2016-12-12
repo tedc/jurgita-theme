@@ -297,5 +297,9 @@
         .int-price {
             font-size: em(36px, 26px);
         }
+        del {
+            color: $gray;
+            font-size: em(18px, 26px);
+        }
     }
 }
