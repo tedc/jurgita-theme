@@ -20,11 +20,11 @@ use Roots\Sage\Wrapper;
     ?>
     <main class="main" role="document">
       <?php include Wrapper\template_path(); ?>
-    </main>
-    <?php
+      <?php
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
     ?>
+    </main>
   </body>
 </html>
