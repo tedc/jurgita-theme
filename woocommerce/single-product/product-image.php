@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post, $product;
 ?>
+
 <div class="images">
 	<?php
 		echo '<div class="sigle-image-slider">';
