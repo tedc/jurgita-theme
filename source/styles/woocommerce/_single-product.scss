@@ -236,6 +236,7 @@
 
                     h3 {
                         @extend %title-post;
+                        color: $light_gray;
                         font-family: $main-font;
                         text-transform: none;
                         text-align: center;
