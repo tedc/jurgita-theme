@@ -3,11 +3,21 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: em(80px);
+    .images, .summary {
+        width: 100%;
+        flex: 0 0 auto;
+
+        @include breakpoint($bp) {
+            width: 50%;
+        }
+    }
+
     .images {
-        width: 50%;
-        padding-right: em(40px);
         display: flex;
         flex-wrap: wrap;
+        @include breakpoint($bp) {
+            padding-right: em(40px);
+        }
 
         .single-image-slider {
             height: auto;
@@ -56,8 +66,10 @@
     }
 
     .summary {
-        padding-left: em(40px);
-        width: 50%;
+        @include breakpoint($bp) {
+            padding-left: em(40px);
+        }
+
         .page-header {
             h1 {
                 padding-top: 0;
@@ -66,19 +78,8 @@
         }
 
         .price {
-            line-height: 1;
-            padding-bottom: 40px;
+          @extend %price;
 
-            .woocommerce-Price-amount {
-                font-family: $second-font;
-                font-weight: bold;
-                font-size: em(26px);
-                color: $gold;
-
-                .int-price{
-                    font-size: em(36px, 26px);
-                }
-            }
         }
 
         div[itemprop="description"] {
@@ -239,6 +240,23 @@
             .product:first-child {
                 padding-left: 0;
             }
+        }
+    }
+}
+
+
+%price {
+    line-height: 1;
+    padding-bottom: 40px;
+
+    .woocommerce-Price-amount {
+        font-family: $second-font;
+        font-weight: bold;
+        font-size: em(26px);
+        color: $gold;
+
+        .int-price{
+            font-size: em(36px, 26px);
         }
     }
 }
