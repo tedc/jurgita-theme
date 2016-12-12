@@ -210,15 +210,8 @@
         .grid-4 {
             padding-bottom: em(150px);
             .product {
-                padding-right: em(35px);
-                padding-left: em(35px);
+
                 margin-top: em(50px);
-                flex: 1;
-                &:before {
-                    content: '';
-                    margin-left: 0;
-                    margin-right: 0;
-                }
 
                 a {
                     width: 100% !important;
@@ -274,10 +267,10 @@
         }
 
         .product:last-child {
-            padding-right: 0;
+
         }
         .product:first-child {
-            padding-left: 0;
+
         }
     }
 }
