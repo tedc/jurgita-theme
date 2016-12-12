@@ -212,7 +212,7 @@
 
 }
 
-.single {
+
   .container-post-head {
     @extend %post-head;
     padding-top: em(65px);
@@ -222,6 +222,8 @@
       font-style: italic;
     }
   }
+
+  .entry-content {
 
   h1 {
     @extend %title-post;
