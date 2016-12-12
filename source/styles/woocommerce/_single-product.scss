@@ -72,19 +72,12 @@
             .woocommerce-Price-amount {
                 font-family: $second-font;
                 font-weight: bold;
-                font-size: em(36px);
+                font-size: em(26px);
                 color: $gold;
 
-                .woocommerce-Price-currencySymbol {
-                    font-size: em(26px, 36px);
+                .int-price{
+                    font-size: em(36px, 26px);
                 }
-            }
-
-            .cent-price{
-                font-size: em(22px);
-                font-family: $second-font;
-                font-weight: bold;
-                color: $gold;
             }
         }
 
