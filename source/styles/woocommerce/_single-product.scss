@@ -180,6 +180,7 @@
             .product {
                 padding-right: em(75px);
                 padding-left: 0;
+                flex:1;
                 &:before {
                     content: '';
                     margin-left: 0;
