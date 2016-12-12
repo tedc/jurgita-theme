@@ -3,11 +3,21 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: em(80px);
+    .images, .summary {
+        width: 100%;
+        flex: 0 0 auto;
+
+        @include breakpoint($bp) {
+            width: 50%;
+        }
+    }
+
     .images {
-        width: 50%;
-        padding-right: em(40px);
         display: flex;
         flex-wrap: wrap;
+        @include breakpoint($bp) {
+            padding-right: em(40px);
+        }
 
         .single-image-slider {
             height: auto;
@@ -56,8 +66,10 @@
     }
 
     .summary {
-        padding-left: em(40px);
-        width: 50%;
+        @include breakpoint($bp) {
+            padding-left: em(40px);
+        }
+
         .page-header {
             h1 {
                 padding-top: 0;
@@ -66,19 +78,8 @@
         }
 
         .price {
-            line-height: 1;
-            padding-bottom: 40px;
+          @extend %price;
 
-            .woocommerce-Price-amount {
-                font-family: $second-font;
-                font-weight: bold;
-                font-size: em(36px, 20px);
-                color: $gold;
-
-                .woocommerce-Price-currencySymbol {
-                    font-size: em(26px, 36px);
-                }
-            }
         }
 
         div[itemprop="description"] {
@@ -105,15 +106,22 @@
                 margin-right: 0 !important;
                 float: none !important;
                 position: relative;
+                border: 1px solid $light_gray;
+                display: flex;
+                align-items: center;
+
 
                 input {
-                    height: 100%;
-                    width: em(80px, 26px);
+                    width: em(100px, 26px);
                     font-size: 26px;
                     font-family: $second-font;
                     color: $base_color;
                     text-align: right !important;
                     padding-right: 17px;
+                    border: 0;
+                }
+                input:focus{
+                    outline: none;
                 }
 
                 input[type=number]::-webkit-inner-spin-button,
@@ -167,11 +175,107 @@
         margin-top: em(100px);
 
         h2 {
-            font-size: em(31px);
+            font-size: em(26px);
         }
 
         p {
             font-size: em(18px);
+        }
+    }
+
+    .line-description {
+        width:100%;
+        height: 1px;
+        background: linear-gradient(to right, #918552, #f7dda9, #918552);
+        margin-top: em(100px);
+        margin-bottom: em(100px);
+    }
+
+    .related.products {
+        width: 100%;
+
+        h2 {
+            font-size: em(26px);
+            text-align: center;
+        }
+        .grid-4 {
+            padding-bottom: em(150px);
+            .product {
+                padding-right: em(35px);
+                padding-left: em(35px);
+                margin-top: em(50px);
+                flex:1;
+                &:before {
+                    content: '';
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                a {
+                    width: 100%!important;
+
+                    img {
+                        width: 100%!important;
+                        height: auto!important;
+                        display: block;
+
+                        &:before {
+                            content: "";
+                            visibility: hidden;
+                            opacity: 0;
+                            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC), url(../images/lens.png);
+                            background-repeat: repeat, no-repeat;
+                            display: block;
+                            position: relative;
+                            width: 100%;
+                            padding-top: 50%;
+                        }
+                    }
+
+                    h3 {
+                        font-family: $main-font;
+                        text-transform: none;
+                        text-align: center;
+                        font-size: em(18px);
+                        padding-top: em(20px, 18px);
+                        padding-bottom: em(10px, 18px);
+                    }
+
+                    .price {
+                        color: $gold;
+                        font-size: em(23px);
+                        text-align: center;
+                        font-family: $second-font;
+                        display: table;
+                        margin: 0 auto;
+
+                    }
+                }
+            }
+
+            .product:last-child {
+                padding-right: 0;
+            }
+            .product:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+
+%price {
+    line-height: 1;
+    padding-bottom: 40px;
+
+    .woocommerce-Price-amount {
+        font-family: $second-font;
+        font-weight: bold;
+        font-size: em(26px);
+        color: $gold;
+
+        .int-price{
+            font-size: em(36px, 26px);
         }
     }
 }

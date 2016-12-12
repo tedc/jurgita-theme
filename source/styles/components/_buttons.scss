@@ -1,10 +1,12 @@
 %btn {
-    padding: em(20px) em(40px);
+    padding: em(20px);
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
     border: 1px solid $gold;
     font-family: $third-font;
+    line-height: 1;
+    font-size: em(16px);
 }
 
 .btn {
