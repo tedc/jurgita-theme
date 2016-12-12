@@ -1011,10 +1011,6 @@ class WC_Product {
 		$display_price         = $this->get_display_price();
 		$display_regular_price = $this->get_display_price( $this->get_regular_price() );
 
-		var_dump($display_price);
-		var_dump($display_regular_price);
-		echo "cristo di un dio";
-
 		if ( $this->get_price() > 0 ) {
 
 			if ( $this->is_on_sale() && $this->get_regular_price() ) {
