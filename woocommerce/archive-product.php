@@ -26,6 +26,7 @@ do_action( 'woocommerce_before_main_content' );
 do_action( 'woocommerce_archive_description' );
 ?>
 
+<div class="PROVISSIMA">
 <?php if ( have_posts() ) : ?>
 
     <?php
@@ -64,7 +65,7 @@ do_action( 'woocommerce_archive_description' );
     <?php wc_get_template( 'loop/no-products-found.php' ); ?>
 
 <?php endif; ?>
-
+</div>
 <?php
 /**
  * woocommerce_after_main_content hook.
