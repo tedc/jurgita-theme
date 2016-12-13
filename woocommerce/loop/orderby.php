@@ -50,26 +50,10 @@ $terms = get_terms($args);
 if ($terms): ?>
     <div class="categories">
     <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
-    <?php foreach ($terms as $term):
-        $query = new WP_Query(array(
-            'post_type' => "product",
-            'posts_per_page' => -1,
-            'taxonomy' => 'product_cat'
-        ));
-        if ($query->have_posts()):?>
-            <ul>
-                <?php while ($query->have_posts()):
-                    $query->the_post();
-                    ?>
-                    <li>
-                        <a href="<?php the_permalink(); ?> ">
-                            <?php the_title(); ?>
-                        </a>
-                    </li>
-                <?php endwhile;
-                wp_reset_query(); ?> ?>
-            </ul>
-        <?php endif; ?>
-        </div>
+    <ul>
+    <?php foreach ($terms as $term):?>
+        <li>
+            <a href="<?php the_permalink(); ?>" ><? $term -> name; ?></a></li>
     <?php endforeach; ?>
+    </ul>
 <?php endif; ?>
