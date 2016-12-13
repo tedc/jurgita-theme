@@ -25,7 +25,7 @@
 }
 
 .products.grid-4 {
-  @extend %grid-products;
+    @extend %grid-products;
 }
 
 .woocommerce-pagination {
@@ -35,7 +35,7 @@
         justify-content: flex-end;
         line-height: 1;
 
-        li{
+        li {
             span.current {
                 color: $current-page;
             }
@@ -52,15 +52,11 @@
                 margin-left: em(25px);
                 margin-right: em(25px);
             }
-
-            .line-categories {
-                top: calc(50% - 2px);
-                @extend %line-navigation;
-            }
+        }
+    }
 
     .line-categories {
         top: calc(50% - 2px);
         @extend %line-navigation;
-    }     }
     }
 }
