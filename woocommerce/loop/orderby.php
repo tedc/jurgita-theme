@@ -47,13 +47,12 @@ if (!defined('ABSPATH')) {
 
 <?php $args = array('taxonomy' => 'product_cat');
 $terms = get_terms($args);
-var_dump($terms);
 if ($terms): ?>
     <div class="categories">
     <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
     <?php foreach ($terms as $term):
         $query = new WP_Query(array(
-            'post_type' => "prodotti",
+            'post_type' => "product",
             'posts_per_page' => -1,
             'taxonomy' => 'product_cat'
         ));
