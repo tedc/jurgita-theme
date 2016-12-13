@@ -44,13 +44,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 </form>
 
-<form method="post" action="">
-	<?php $args1 = array('taxonomy'  => 'product_cat'); ?>
-	<?php wp_dropdown_categories( $args1 ); ?>
-	<input type="submit" name="cat_sel" value="SELECT PRODUCT CATEGORY" />
-</form><hr />
+<form method="get">
+	<?php $categories = array('taxonomy'  => 'product_cat'); ?>
+	<?php foreach ( $categories as $id => $name ) : ?>
+		<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
+	<?php endforeach; ?>
+</form>
 
-<?php $chosen_cat = $_POST['cat']; ?>
 <?php function get_product_category_by_id( $category_id ) {
 	$term = get_term_by( 'id', $category_id, 'product_cat', 'ARRAY_A' );
 	return $term['name'];
