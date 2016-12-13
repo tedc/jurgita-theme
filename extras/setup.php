@@ -18,5 +18,10 @@
 			'page_title' 	=> 'Telefono e WhatsApp',
 			'menu_title'	=> 'Telefono'
 		));
+		acf_add_options_sub_page(array(
+			'page_title' 	=> 'Extra',
+			'menu_title'	=> 'Impostaioni extra del tema'
+			'parent_slug'	=> 'theme-general-settings',
+		));
 	}
 	
