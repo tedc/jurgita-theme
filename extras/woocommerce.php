@@ -17,4 +17,6 @@ function myPrice ($price) {
 add_filter( 'woocommerce_get_price_html', 'myPrice' );
 
 
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count' );
+
 ?>
