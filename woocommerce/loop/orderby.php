@@ -47,13 +47,15 @@ if (!defined('ABSPATH')) {
 
 <?php $args = array('taxonomy' => 'product_cat');
 $terms = get_terms($args);
+var_dump($terms);
 if ($terms): ?>
     <div class="categories">
     <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
     <ul>
     <?php foreach ($terms as $term):?>
         <li>
-            <a href="<?php the_permalink(); ?>" ><? $term -> name; ?></a></li>
+            <a href="<?php echo get_term_link( $term -> term_id); ?>" ><?  echo $term -> name; ?></a>
+        </li>
     <?php endforeach; ?>
     </ul>
 <?php endif; ?>
