@@ -28,6 +28,7 @@
 }
 
 .order-bar {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
@@ -37,7 +38,18 @@
     }
 
     .categories {
-        position: relative;
+        font-family: $third-font;
+        color: $gold;
+        text-transform: uppercase;
+
+        .product_cat ul {
+            position: absolute;
+        }
+
+        li {
+            padding-left: em(20px);
+            padding-right: em(40px);
+        }
     }
 
     form {
