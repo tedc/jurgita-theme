@@ -60,3 +60,4 @@ if ($terms): ?>
     </ul>
 <?php endif; ?>
     </div>
+</div>
