@@ -28,10 +28,9 @@ if (!defined('ABSPATH')) {
 $terms = get_terms($args);
 if ($terms): ?>
     <div class="categories">
-    <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
     <ul>
     <?php wp_list_categories( array(
-            'show_option_all' => '',
+            'show_option_all' => __('Tutte', 'jurgita'),
             'taxonomy'        => 'product_cat',
         )
     ) ?>
