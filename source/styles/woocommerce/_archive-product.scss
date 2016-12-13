@@ -44,15 +44,9 @@
         &:hover{
             .product_cat {
                 border-top: 1px solid $category_gray;
-                border-left: 1px solid $category_gray;
-                border-right: 1px solid $category_gray;
                 ul {
-                    position: absolute;
                     visibility: visible;
                     opacity: 1;
-                    border-bottom: 1px solid $category_gray;
-                    border-left: 1px solid $category_gray;
-                    border-right: 1px solid $category_gray;
                 }
             }
         }
