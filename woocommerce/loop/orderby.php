@@ -23,11 +23,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <form class="woocommerce-ordering" method="get">
 	<select name="orderby" class="orderbyCategories">
-		<?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
+		<?php $categories = get_the_category();?>
+		<?php foreach ( $categories as $id => $name ) : ?>
 			<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
 		<?php endforeach; ?>
 	</select>
-	
+
 	<select name="orderby" class="orderby">
 		<?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
 			<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
