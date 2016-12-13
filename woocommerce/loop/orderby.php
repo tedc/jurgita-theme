@@ -22,6 +22,23 @@ if (!defined('ABSPATH')) {
 
 ?>
 <div class="order-bar">
+
+
+<?php $args = array('taxonomy' => 'product_cat');
+$terms = get_terms($args);
+if ($terms): ?>
+    <div class="categories">
+    <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
+    <ul>
+    <?php foreach ($terms as $term):?>
+        <li>
+            <a href="<?php echo get_term_link( $term -> term_id); ?>" ><?  echo $term -> name; ?></a>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
+    </div>
+
     <form class="woocommerce-ordering" method="get">
         <select name="orderby" class="orderby">
             <?php foreach ($catalog_orderby_options as $id => $name) : ?>
@@ -45,19 +62,4 @@ if (!defined('ABSPATH')) {
         }
         ?>
     </form>
-
-<?php $args = array('taxonomy' => 'product_cat');
-$terms = get_terms($args);
-if ($terms): ?>
-    <div class="categories">
-    <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
-    <ul>
-    <?php foreach ($terms as $term):?>
-        <li>
-            <a href="<?php echo get_term_link( $term -> term_id); ?>" ><?  echo $term -> name; ?></a>
-        </li>
-    <?php endforeach; ?>
-    </ul>
-<?php endif; ?>
-    </div>
 </div>
