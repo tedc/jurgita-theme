@@ -34,11 +34,13 @@
         justify-content: flex-end;
 
         li{
-            background-color: white;
-            padding-left: em(20px);
-            padding-right: em(20px);
-            color: $gold;
-            text-transform: uppercase;
+            .page-numbers {
+                background-color: white;
+                padding-left: em(20px);
+                padding-right: em(20px);
+                color: $gold;
+                text-transform: uppercase;
+            }
         }
     }
     .line-categories {
