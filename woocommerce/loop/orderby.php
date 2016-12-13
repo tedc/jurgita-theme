@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
 
 ?>
 <div class="order-bar">
-
+    <div class="line-categories"></div>
 
 <?php $args = array('taxonomy' => 'product_cat');
 $terms = get_terms($args);

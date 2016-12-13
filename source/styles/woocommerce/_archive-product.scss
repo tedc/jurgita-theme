@@ -27,6 +27,24 @@
     }
 }
 
+.order-bar {
+    display: flex;
+    justify-content: space-between;
+
+    .line-categories {
+        top: calc(50% - 2px);
+        @extend %line-navigation;
+    }
+
+    .categories {
+        position: relative;
+    }
+
+    form {
+
+    }
+}
+
 .products.grid-4 {
     @extend %grid-products;
 }
