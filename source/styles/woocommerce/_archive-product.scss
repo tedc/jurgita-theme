@@ -1,3 +1,30 @@
+.woocommerce-product-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container-search {
+        margin-right: 0 !important;
+        float: none !important;
+        position: relative;
+        border: 1px solid $light_gray;
+        display: flex;
+        align-items: center;
+
+        input {
+            width: em(100px, 26px);
+            font-size: 26px;
+            font-family: $second-font;
+            color: $base_color;
+            text-align: right !important;
+            padding-right: 17px;
+            border: 0;
+        }
+        input:focus {
+            outline: none;
+        }
+    }
+}
 .products.grid-4 {
   @extend %grid-products;
 }
