@@ -1,5 +1,3 @@
-<?php get_template_part('templates/page', 'header'); ?>
-
 <?php
 /**
  * woocommerce_before_main_content hook.
@@ -9,6 +7,8 @@
  */
 do_action( 'woocommerce_before_main_content' );
 ?>
+
+<?php get_template_part('templates/page', 'header'); ?>
 
 <?php
 /**
