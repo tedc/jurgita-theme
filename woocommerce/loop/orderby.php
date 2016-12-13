@@ -30,11 +30,10 @@ if ($terms): ?>
     <div class="categories">
     <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
     <ul>
-    <?php foreach ($terms as $term):?>
-        <li>
-            <a href="<?php echo get_term_link( $term -> term_id); ?>" ><?  echo $term -> name; ?></a>
-        </li>
-    <?php endforeach; ?>
+    <?php wp_list_categories( array(
+            'show_option_all' => ''
+        )
+    ) ?>
     </ul>
 <?php endif; ?>
     </div>
