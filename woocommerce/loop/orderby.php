@@ -32,6 +32,7 @@ if ($terms): ?>
     <?php wp_list_categories( array(
             'show_option_all' => __('Tutte', 'jurgita'),
             'taxonomy'        => 'product_cat',
+            'depth'           => 1,
         )
     ) ?>
     </ul>
