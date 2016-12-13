@@ -1,5 +1,5 @@
 %btn {
-    padding: em(20px);
+    padding: em(20px) em(40px);
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
@@ -7,6 +7,10 @@
     font-family: $third-font;
     line-height: 1;
     font-size: em(16px);
+    transition: background-color $speed;
+    p & {
+        font-size: em(16px, 18px);
+    }
 }
 
 .btn {
