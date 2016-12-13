@@ -41,6 +41,15 @@
         font-family: $third-font;
         color: $gold;
         text-transform: uppercase;
+        &:hover{
+            .product_cat {
+                ul {
+                    position: absolute;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
 
         .product_cat {
             background-color: white;
@@ -60,7 +69,8 @@
 
             ul {
                 position: absolute;
-                display: none;
+                visibility: hidden;
+                opacity: 0;
             }
         }
 
