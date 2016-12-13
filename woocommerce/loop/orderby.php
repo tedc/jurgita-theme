@@ -47,6 +47,7 @@ if (!defined('ABSPATH')) {
 
 <?php $args = array('taxonomy' => 'product_cat');
 $terms = get_terms($args);
+var_dump($terms);
 if ($terms): ?>
     <div class="categories">
     <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
