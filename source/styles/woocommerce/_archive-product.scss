@@ -10,7 +10,7 @@
         display: flex;
         align-items: center;
 
-        .btn-reverse{
+        .btn-reverse {
             background-color: $w;
         }
 
@@ -45,15 +45,17 @@
         .product_cat {
             background-color: white;
             color: $category_gray;
+            position: relative;
             &:after {
                 position: absolute;
-                right: 0;
+                right: 15px;
                 content: "";
                 width: 0;
                 height: 0;
                 border-left: 6px solid transparent;
                 border-right: 6px solid transparent;
-                border-top: 6px solid $category_gray;;
+                border-top: 6px solid $category_gray;
+                top: calc(50% - 4px);
             }
 
             ul {
@@ -62,9 +64,12 @@
             }
         }
 
-        li {
-            padding-left: em(20px);
-            padding-right: em(40px);
+        ul {
+            cursor: pointer;
+            li {
+                padding-left: em(20px);
+                padding-right: em(40px);
+            }
         }
     }
 
