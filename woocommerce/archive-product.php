@@ -75,12 +75,3 @@ do_action( 'woocommerce_archive_description' );
  */
 do_action( 'woocommerce_after_main_content' );
 ?>
-
-<?php
-/**
- * woocommerce_sidebar hook.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
-?>
