@@ -43,6 +43,19 @@
         text-transform: uppercase;
 
         .product_cat {
+            background-color: white;
+            color: $category_gray;
+            &:after {
+                position: absolute;
+                right: 0;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid $category_gray;;
+            }
+
             ul {
                 position: absolute;
                 display: none;
