@@ -1,4 +1,4 @@
-<div class="container grid-4">
+<div class="grid-4">
 <?php while(have_rows('colonne')) : the_row(); ?>
 <div class="col-2">
 <?php if(get_row_layout() == 'testo') : ?>
