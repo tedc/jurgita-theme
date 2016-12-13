@@ -44,6 +44,9 @@ p {
     font-size: em(18px);
     letter-spacing: $letter-spacing-base;
     line-height: em(30px, 18px);
+    .content &, .entry-content & {
+        padding-bottom: em(40px, 18px);
+    }
 }
 
 
