@@ -23,6 +23,26 @@
         }
     }
 }
+
 .products.grid-4 {
   @extend %grid-products;
+}
+
+.woocommerce-pagination {
+    .page-numbers {
+        display: flex;
+        justify-content: flex-end;
+
+        li{
+            background-color: white;
+            padding-left: em(20px);
+            padding-right: em(20px);
+            color: $gold;
+            text-transform: uppercase;
+        }
+    }
+    .line-categories {
+        top: calc(50% - 2px);
+        @extend %line-navigation;
+    }
 }

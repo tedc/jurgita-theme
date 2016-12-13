@@ -41,4 +41,5 @@ if ( $wp_query->max_num_pages <= 1 ) {
 			'mid_size'     => 3
 		) ) );
 	?>
+	<div class="line-categories"></div>
 </nav>
