@@ -31,7 +31,8 @@ if ($terms): ?>
     <a class="categories" href="#"><?php _e('Categorie', 'jurgita') ?></a>
     <ul>
     <?php wp_list_categories( array(
-            'show_option_all' => ''
+            'show_option_all' => '',
+            'taxonomy'        => 'product_cat',
         )
     ) ?>
     </ul>
