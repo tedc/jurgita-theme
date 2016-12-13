@@ -50,8 +50,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<input type="submit" name="cat_sel" value="SELECT PRODUCT CATEGORY" />
 </form><hr />
 
-<?php function get_product_category_by_id( $category_id ) {
-	$term = get_term_by( 'id', $category_id, 'product_cat', 'ARRAY_A' );
-	return $term['name'];
-}
-$product_category = get_product_category_by_id( $your_category_id ); ?>
