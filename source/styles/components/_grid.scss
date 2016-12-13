@@ -21,3 +21,28 @@
 		}
 	}
 }
+
+.row {
+	padding: {
+		top: em(20px);
+		bottom: em(20px);
+	}
+	&-md {
+		padding: {
+			top: em(40px);
+			bottom: em(40px);
+		}
+	}
+	&-lg {
+		padding: {
+			top: em(40px);
+			bottom: em(40px);
+		}
+		@include breakpoint($bp) {
+			padding: {
+				top: em(40px)*2;
+				bottom: em(40px)*2;
+			}
+		}
+	}
+}
