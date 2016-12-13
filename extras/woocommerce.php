@@ -21,9 +21,7 @@ add_filter( 'woocommerce_get_price_html', 'myPrice' );
 
 
 function custom_woocommerce_get_catalog_ordering_args( $args ) { if (isset($_SESSION['orderby'])) { if($_SESSION['orderby']) { $args['orderby'] = 'category'; } } return $args; }
-
 add_filter('woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby');
-
 function custom_woocommerce_catalog_orderby( $sortby ) { $sortby['category'] = 'Sort by category'; return $sortby; }
 
 ?>
