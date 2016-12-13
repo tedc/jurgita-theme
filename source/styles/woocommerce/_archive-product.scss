@@ -11,11 +11,10 @@
         align-items: center;
 
         input {
-            font-size: 26px;
-            font-family: $second-font;
-            color: $base_color;
-            text-align: right !important;
-            padding-right: 17px;
+            font-size: em(14px);
+            font-family: $main-font;
+            color: $placeholder;
+            padding-left: em(18px);
             border: 0;
         }
         input:focus {
@@ -30,6 +29,8 @@
 
 .woocommerce-pagination {
     position: relative;
+    margin-bottom: em(150px);
+
     .page-numbers {
         display: flex;
         justify-content: flex-end;
