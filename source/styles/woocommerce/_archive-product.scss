@@ -29,17 +29,31 @@
 }
 
 .woocommerce-pagination {
+    position: relative;
     .page-numbers {
         display: flex;
         justify-content: flex-end;
+        line-height: 1;
 
         li{
-            .page-numbers {
-                background-color: white;
+            span.current {
+                color: $current-page;
+            }
+            .page-numbers, .current {
+                margin-left: em(5px);
+                margin-right: em(5px);
                 padding-left: em(20px);
                 padding-right: em(20px);
-                color: $gold;
-                text-transform: uppercase;
+                background-color: white;
+            }
+            .prev, .next {
+                margin-left: em(25px);
+                margin-right: em(25px);
+            }
+
+            .line-categories {
+                top: calc(50% - 2px);
+                @extend %line-navigation;
             }
         }
     }
