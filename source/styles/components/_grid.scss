@@ -12,3 +12,12 @@
 		}
 	}
 }
+
+.col {
+	&-image {
+		position: relative;
+		img {
+			@include absfull();
+		}
+	}
+}
