@@ -21,6 +21,7 @@ if (!defined('ABSPATH')) {
 }
 
 ?>
+<div class="order-bar">
     <form class="woocommerce-ordering" method="get">
         <select name="orderby" class="orderby">
             <?php foreach ($catalog_orderby_options as $id => $name) : ?>
@@ -58,3 +59,4 @@ if ($terms): ?>
     <?php endforeach; ?>
     </ul>
 <?php endif; ?>
+    </div>
