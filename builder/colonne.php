@@ -2,7 +2,7 @@
 <?php while(have_rows('colonne')) : the_row(); ?>
 <div class="col-2">
 <?php if(get_row_layout() == 'testo') : ?>
-	<div class="row-lg container <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
+	<div class="row-lg container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
 		<?php the_sub_field('contenuto'); ?>
 	</div>
 <?php elseif (get_row_layout() == 'immagine') : ?>
