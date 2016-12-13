@@ -39,12 +39,14 @@
             span.current {
                 color: $current-page;
             }
-            .page-numbers, .current {
-                margin-left: em(5px);
-                margin-right: em(5px);
+            a {
+                background-color: white;
                 padding-left: em(20px);
                 padding-right: em(20px);
-                background-color: white;
+                color: $gold;
+                text-transform: uppercase;
+                margin-left: em(5px);
+                margin-right: em(5px);
             }
             .prev, .next {
                 margin-left: em(25px);
@@ -55,10 +57,10 @@
                 top: calc(50% - 2px);
                 @extend %line-navigation;
             }
-        }
-    }
+
     .line-categories {
         top: calc(50% - 2px);
         @extend %line-navigation;
+    }     }
     }
 }
