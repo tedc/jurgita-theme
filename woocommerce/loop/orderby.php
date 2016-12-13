@@ -47,6 +47,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 <form method="get">
 	<?php $args1 = array('taxonomy'  => 'product_cat'); ?>
 	<?php wp_dropdown_categories( $args1 ); ?>
-	<input type="submit" name="cat_sel" value="SELECT PRODUCT CATEGORY" />
-</form><hr />
+</form>
 
