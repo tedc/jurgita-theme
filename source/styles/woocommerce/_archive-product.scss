@@ -42,8 +42,11 @@
         color: $gold;
         text-transform: uppercase;
 
-        .product_cat ul {
-            position: absolute;
+        .product_cat {
+            ul {
+                position: absolute;
+                display: none;
+            }
         }
 
         li {
