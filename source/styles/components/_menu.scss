@@ -301,6 +301,12 @@
 			padding-bottom: em(20px);
 			color: $w;
 		}
+		a {
+			color: $w;
+			&:hover {
+				color: $light_gray;
+			}
+		}
 	}
 }
 
