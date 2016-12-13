@@ -71,3 +71,14 @@ ul, ol {
 .aligncenter {
     text-align: center;
 }
+
+.text-large {
+    font-family: $third-font;
+    font-size: em(23px);
+    &.gold {
+        color: $gold;
+    }
+    p & {
+        font-size: em(23px, 18px);
+    }
+}
