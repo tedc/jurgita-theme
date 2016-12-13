@@ -13,15 +13,6 @@
 	}
 }
 
-.col {
-	&-image {
-		position: relative;
-		img {
-			@include absfull();
-		}
-	}
-}
-
 .row {
 	padding: {
 		top: em(20px);
@@ -43,6 +34,15 @@
 				top: em(40px)*2;
 				bottom: em(40px)*2;
 			}
+		}
+	}
+}
+
+.col {
+	&-image {
+		position: relative;
+		img {
+			@include absfull();
 		}
 	}
 }
