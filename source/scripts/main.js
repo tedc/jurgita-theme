@@ -87,4 +87,4 @@ function price() {
   });
 }
 
-$(".orderby").niceSelect();
+$("select").niceSelect();

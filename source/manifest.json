@@ -13,6 +13,9 @@
       ],
       "bower" : ["normalize-scss", "jquery-nice-select"],
       "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
     }
   },
   "config": {
