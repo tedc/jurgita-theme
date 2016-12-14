@@ -4,7 +4,7 @@
     <ul class="products grid-4">
         <?php foreach ($posts as $post):  ?>
             <li>
-                <a href="<?php the_permalink( $post->ID ); ?>"><?php the_title( $post->ID ); ?></a>
+                <a href="<?php the_permalink( $post->ID ); ?>">ciao</a>
             </li>
         <?php endforeach; ?>
     </ul>
