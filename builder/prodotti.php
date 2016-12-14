@@ -13,11 +13,11 @@
 
     <?php woocommerce_product_subcategories(); ?>
 
-    <?php while ($query -> have_posts()) : the_post(); ?>
+    <?php while ($query -> have_posts()) : $query -> the_post(); ?>
 
         <?php wc_get_template_part('content', 'product'); ?>
 
-    <?php endwhile; // end of the loop. ?>
+    <?php endwhile; wp_reset_query() ?>
 
     <?php woocommerce_product_loop_end(); ?>
 
