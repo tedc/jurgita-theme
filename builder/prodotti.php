@@ -3,10 +3,9 @@
 <?php if ($posts): ?>
     <ul class="products grid-4">
         <?php foreach ($posts as $post):  ?>
-            <?php setup_postdata($post); ?>
             <li>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                <span>Custom field from $post: <?php the_field('author'); ?></span>
+                <a href="<?php the_permalink( $post->ID ); ?>"><?php echo get_the_title( $post->ID ); ?></a>
+                <span>Custom field from $post: <?php the_field('author', $post->ID); ?></span>
             </li>
         <?php endforeach; ?>
     </ul>
