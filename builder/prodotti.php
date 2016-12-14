@@ -1,4 +1,5 @@
 <h2 class="title aligncenter"><?php _e('Dal nostro shop', 'jurgita') ?></h2>
+<?php var_dump(get_sub_field('prodotti')); ?>
 <?php if ( get_sub_field('prodotti') ) { ?>
     <?php $query = new WP_Query(array(
         'post_type' => 'product',
