@@ -8,9 +8,9 @@
 <?php elseif (get_row_layout() == 'immagine') : ?>
 	<?php
 		$img = get_sub_field('immagine');
-		$colClass = (get_sub_field("full")) ? "full" : "container";
+		$colClass = (get_sub_field("full")) ? "full" : "container row-lg";
 	?>
-	<figure class="figure row-lg <?php echo $colClass ?>"<?php if(get_sub_field("full")) : ?> style="padding-top: <?php echo ( $img['height'] * 100 ) / $img['width']; ?>%"<?php endif ?>>
+	<figure class="figure <?php echo $colClass ?>"<?php if(get_sub_field("full")) : ?> style="padding-top: <?php echo ( $img['height'] * 100 ) / $img['width']; ?>%"<?php endif ?>>
 		<img src="<?php echo $img['url']; ?>" />
 	</figure>
 <?php elseif (get_row_layout() == 'video') : ?>
