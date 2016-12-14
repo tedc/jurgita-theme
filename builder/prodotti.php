@@ -5,8 +5,10 @@
         'post__in' => get_sub_field('prodotti'),
         'posts_per_page' => count(get_sub_field('prodotti'))
     )); ?>
+    <ul class="grid-4 products">
     <?php while ($query -> have_posts()) : $query ->  the_post(); ?>
         <?php wc_get_template_part('content', 'product'); ?>
     <?php endwhile; ?>
     <?php wp_reset_query() ?>
+    </ul>
 <?php } ?>
