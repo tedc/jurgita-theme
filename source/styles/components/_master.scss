@@ -29,4 +29,40 @@
         bottom: -75%;
         z-index: -1;
     }
+    .logo {
+        width: em(70px);
+        text-align: center;
+        color: $w;
+        overflow: hidden;
+        position: relative;
+        font-family: $third-font;
+        z-index: 9999;
+        .j {
+            @include absfull();
+            font-size: em(50px);
+            line-height: em(62px, 50px);
+            transition: {
+                property: transform;
+                duration: $speed;
+            }
+            &:nth-child(1) {
+                background-color: $b;
+            }
+            &:nth-child(2) {
+                background-color: $gold;
+                transform: translate3d(0, 100%, 0);
+            }
+        }
+        &:hover {
+            color: $w;
+            .j {
+                &:nth-child(1) {
+                    transform: translate3d(0, -100%, 0);
+                }
+                &:nth-child(2) {
+                    transform: translate3d(0, 0%, 0);
+                }
+            }
+        }
+    }
 }
