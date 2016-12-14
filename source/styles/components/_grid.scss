@@ -1,1 +1,48 @@
 @include grid(4);
+.grid-cols {
+	align-items: center;
+	padding: {
+		left: 0;
+		right: 0;
+	}
+	[class^="col"], [class*=" col"] {
+		padding: {
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+.row {
+	padding: {
+		top: em(20px);
+		bottom: em(20px);
+	}
+	&-md {
+		padding: {
+			top: em(40px);
+			bottom: em(40px);
+		}
+	}
+	&-lg {
+		padding: {
+			top: em(40px);
+			bottom: em(40px);
+		}
+		@include breakpoint($bp) {
+			padding: {
+				top: em(40px)*2;
+				bottom: em(40px)*2;
+			}
+		}
+	}
+}
+
+.col {
+	&-image {
+		position: relative;
+		img {
+			@include absfull();
+		}
+	}
+}

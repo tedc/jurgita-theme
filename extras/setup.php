@@ -14,9 +14,15 @@
 	add_filter( 'wp_nav_menu', 'main_menu_footer', 10, 2 );
 
 	if( function_exists('acf_add_options_page') ) {	
-		acf_add_options_page(array(
+		acf_add_options_sub_page(array(
 			'page_title' 	=> 'Telefono e WhatsApp',
-			'menu_title'	=> 'Telefono'
+			'menu_title'	=> 'Telefono',
+			'parent_slug'   => 'options-general.php'
+		));
+		acf_add_options_sub_page(array(
+			'page_title' 	=> 'Extra',
+			'menu_title'	=> 'Impostaioni extra del tema',
+			'parent_slug'	=> 'themes.php'
 		));
 	}
 	

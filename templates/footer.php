@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="container-footer">
+    <div class="container-footer container">
         <h2><?php bloginfo("name"); ?></h2>
         <div class="bottom-footer">
             <?php dynamic_sidebar('sidebar-footer'); ?>
