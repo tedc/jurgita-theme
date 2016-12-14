@@ -18,8 +18,8 @@
         .square-black-l{
             @extend %square-black;
             position: absolute;
-            right: 0;
-            bottom: 0;
+            right: -10%;
+            bottom: -10%;
         }
     }
     .square-yellow-r {
@@ -30,8 +30,8 @@
         .square-black-r{
             @extend %square-black;
             position: absolute;
-            left: 0;
-            bottom: 0;
+            left: -10%;
+            bottom: -10%;
         }
     }
 
