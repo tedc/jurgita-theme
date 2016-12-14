@@ -5,7 +5,6 @@
         <?php foreach ($posts as $post):  ?>
             <li>
                 <a href="<?php the_permalink( $post->ID ); ?>"><?php echo get_the_title( $post->ID ); ?></a>
-                <span>Custom field from $post: <?php the_field('author', $post->ID); ?></span>
             </li>
         <?php endforeach; ?>
     </ul>
