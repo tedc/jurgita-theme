@@ -3,6 +3,7 @@
 <?php if ($posts): ?>
     <ul class="products grid-4">
         <?php foreach ($posts as $post):  ?>
+            <?php var_dump( $post->ID ) ?>
             <li>
                 <a href="<?php the_permalink( $post->ID ); ?>"><?php echo get_the_title( $post->ID ); ?></a>
                 <span>Custom field from $post: <?php the_field('author', $post->ID); ?></span>
