@@ -31,8 +31,8 @@
 			<?php the_sub_field('testo_master'); ?>
 		</div>
 		<a href="<?php bloginfo('url'); ?>" class="logo">
-			<span class="j">j</span>
-			<span class="j">j</span>
+			<span class="j">J</span>
+			<span class="j">J</span>
 		</a>
 	</div>
 <?php elseif (get_row_layout() == 'switcher') : ?>
