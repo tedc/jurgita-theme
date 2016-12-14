@@ -1,6 +1,12 @@
 
 
 .row-quote {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQ…djpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
-
+   .quote {
+       text-align: center;
+       color: $gold;
+       font-size: em(30px);
+       font-family: $second-font;
+       padding-top: em(140px);
+       padding-bottom: em(140px);
+   }
 }
