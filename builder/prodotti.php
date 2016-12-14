@@ -7,11 +7,11 @@
     'posts_per_page' => -1
 )); ?>
 
-<?php if ($query->have_posts()): ?>
+<?php if (have_posts()): ?>
 
     <ul class="products grid-4">
 
-        <?php while ($query->have_posts()) : $query->the_post(); ?>
+        <?php while (have_posts()) : the_post(); ?>
 
           <?php the_post_thumbnail() ?>
 
