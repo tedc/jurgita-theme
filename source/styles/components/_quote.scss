@@ -1,5 +1,6 @@
 
 .row-quote {
+    position: relative;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
     .quote {
         text-align: center;
@@ -12,25 +13,25 @@
     .square-yellow-l {
         @extend %square-yellow;
         position: absolute;
-        left: 0;
-        top: 50%;
+        left: 10%;
+        top: 10%;
         .square-black-l{
             @extend %square-black;
             position: absolute;
-            left: 0;
-            top: 50%;
+            right: 0;
+            bottom: 0;
         }
     }
     .square-yellow-r {
         position: absolute;
-        right: 0;
-        top: 50%;
+        right: 10%;
+        bottom: 10%;
         @extend %square-yellow;
         .square-black-r{
             @extend %square-black;
             position: absolute;
             left: 0;
-            top: 50%;
+            bottom: 0;
         }
     }
 
