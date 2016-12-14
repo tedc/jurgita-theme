@@ -7,6 +7,24 @@
         font-family: $third-font;
         text-align: center;
         background-color: $yellow;
-        padding: em(50px) em(80px);
+        padding: em(50px, 26px) em(80px, 26px);
+    }
+    .square {
+        width: 66%;
+        height: 66%;
+        background-color: #f7dda9;
+        position: absolute;
+        bottom: -3.125em;
+        right: 0;
+        z-index: -1;
+    }
+    .pattern {
+        width: 66%;
+        height: 66%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQ…djpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+        position: absolute;
+        bottom: -5em;
+        right: 1.25em;
+        z-index: -1;
     }
 }
