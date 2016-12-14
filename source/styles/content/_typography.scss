@@ -91,3 +91,11 @@ ul, ol {
         padding-bottom: em(40px, 40px);
     }
 }
+
+.title {
+    font-size: em(30px);
+    text-transform: uppercase;
+    color: $gold;
+    padding-top: em(50px);
+    padding-bottom: em(50px);
+}
