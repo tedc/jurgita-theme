@@ -15,7 +15,7 @@
 
     <?php while ($query -> have_posts()) : $query -> the_post(); ?>
 
-        <?php get_template_part('woocommerce/content', 'product'); ?>
+        <?php wc_get_template_part('content', 'product'); ?>
 
     <?php endwhile; wp_reset_query() ?>
 
