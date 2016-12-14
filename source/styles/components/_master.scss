@@ -8,6 +8,14 @@
         text-align: center;
         background-color: $yellow;
         padding: em(50px, 26px) em(80px, 26px);
+        position: relative;
+        .logo {
+            position: absolute;
+            height: em(70px, 26px);
+            width: em(70px, 26px);
+            left: 0;
+            top: 0;
+        }
     }
     .square {
         height: 0;
@@ -29,7 +37,5 @@
         bottom: -75%;
         z-index: -1;
     }
-    .logo {
-        height: em(70px);
-    }
+
 }
