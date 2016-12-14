@@ -6,14 +6,14 @@
     'posts_per_page' => -1
 )); ?>
 
-<?php if ($query->have_posts()): ?>
+<?php if ($query -> have_posts()): ?>
 
 
     <?php woocommerce_product_loop_start(); ?>
 
     <?php woocommerce_product_subcategories(); ?>
 
-    <?php while (have_posts()) : the_post(); ?>
+    <?php while ($query -> have_posts()) : the_post(); ?>
 
         <?php wc_get_template_part('content', 'product'); ?>
 
