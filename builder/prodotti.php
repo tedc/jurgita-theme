@@ -3,7 +3,8 @@
 <?php $posts = get_sub_field('prodotti'); ?>
 <?php $query = new WP_Query(array(
     'post_type' => 'product',
-        'posts_per_page' => 4
+    'posts' => $posts,
+    'posts_per_page' => -1
 )); ?>
 
 <?php if ($query->have_posts()): ?>
@@ -12,7 +13,7 @@
 
         <?php while ($query->have_posts()) : $query->the_post(); ?>
 
-            <?php wc_get_template_part('content', 'product'); ?>
+          <?php the_post_thumbnail() ?>
 
         <?php endwhile;
         wp_reset_postdata() ?>
