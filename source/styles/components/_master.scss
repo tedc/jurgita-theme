@@ -1,9 +1,12 @@
 .master {
+    display: flex;
+    justify-content: center;
     .master-content{
         color: $gold;
         font-size: em(26px);
         font-family: $third-font;
         text-align: center;
         background-color: $yellow;
+        padding: em(50px) em(80px);
     }
 }
