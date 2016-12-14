@@ -3,8 +3,7 @@
 <?php $posts = get_sub_field('prodotti'); ?>
 <?php $query = new WP_Query(array(
     'post_type' => 'product',
-    'post__in' => $posts,
-    'posts_per_page' => -1
+        'posts_per_page' => 4
 )); ?>
 
 <?php if ($query->have_posts()): ?>
