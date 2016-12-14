@@ -1,13 +1,49 @@
 
-
 .row-quote {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
-   .quote {
-       text-align: center;
-       color: $gold;
-       font-size: em(30px);
-       font-family: $second-font;
-       padding-top: em(140px, 30px);
-       padding-bottom: em(140px, 30px);
-   }
+    .quote {
+        text-align: center;
+        color: $gold;
+        font-size: em(30px);
+        font-family: $second-font;
+        padding-top: em(140px, 30px);
+        padding-bottom: em(140px, 30px);
+    }
+    .square-yellow-l {
+        @extend %square-yellow;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        .square-black-l{
+            @extend %square-black;
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+    }
+    .square-yellow-r {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @extend %square-yellow;
+        .square-black-r{
+            @extend %square-black;
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+    }
+
+}
+
+%square-yellow {
+    width: em(60px);
+    height: em(60px);
+    background-color: $yellow;
+}
+
+%square-black {
+    width: em(26px);
+    height: em(26px);
+    background-color: $square-master;
 }
