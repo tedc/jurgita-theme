@@ -41,8 +41,18 @@
 .col {
 	&-image {
 		position: relative;
+		display: inline-block;
+		max-width: 100%;
+		margin: 0 auto;
 		img {
-			@include absfull();
+			width: 100%;
+			height: auto;
+		}
+		&.full {
+			display: block;
+			img {
+				@include absfull();
+			}
 		}
 	}
 }

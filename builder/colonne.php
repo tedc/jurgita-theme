@@ -6,8 +6,11 @@
 		<?php the_sub_field('contenuto'); ?>
 	</div>
 <?php elseif (get_row_layout() == 'immagine') : ?>
-	<?php $img = get_sub_field('immagine'); ?>
-	<figure class="col-image" style="padding-top: <?php echo ( $img['height'] * 100 ) / $img['width']; ?>%">
+	<?php
+		$img = get_sub_field('immagine');
+		$colClass = (get_sub_field("full")) ? " full" : "";
+	?>
+	<figure class="col-image<?php echo $colClass ?>"<?php if(get_sub_field("full")) : ?> style="padding-top: <?php echo ( $img['height'] * 100 ) / $img['width']; ?>%"<?php endif ?>>
 		<img src="<?php echo $img['url']; ?>" />
 	</figure>
 <?php elseif (get_row_layout() == 'video') : ?>
