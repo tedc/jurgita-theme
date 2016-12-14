@@ -32,11 +32,11 @@
 		<span class="square"></span>
 		<div class="master-content">
 			<?php the_sub_field('testo_master'); ?>
+			<a href="<?php bloginfo('url'); ?>" class="logo">
+				<span class="j">J</span>
+				<span class="j">J</span>
+			</a>
 		</div>
-		<a href="<?php bloginfo('url'); ?>" class="logo">
-			<span class="j">J</span>
-			<span class="j">J</span>
-		</a>
 	</div>
 <?php elseif (get_row_layout() == 'switcher') : ?>
 	<figure class="face-swticher">
