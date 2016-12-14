@@ -11,10 +11,10 @@
         position: relative;
         .logo {
             position: absolute;
-            height: em(70px, 26px);
-            width: em(70px, 26px);
-            left: 0;
-            top: 0;
+            height: 70px;
+            width: 70px;
+            left: -50px;
+            top: calc( 50% - 35px);;
             .j {
                 font-size: em(50px, 26px);
             }
