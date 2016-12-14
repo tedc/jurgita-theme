@@ -10,8 +10,7 @@
 
 
     <?php woocommerce_product_loop_start(); ?>
-
-    <?php woocommerce_product_subcategories(); ?>
+    
 
     <?php while ($query -> have_posts()) : $query -> the_post(); ?>
 
