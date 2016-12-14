@@ -5,7 +5,7 @@
         'posts_per_page' => 4
     )); ?>
     <?php while ($query -> have_posts()) : $query ->  the_post(); ?>
-        <?php the_post_thumbnail();?>
+        <?php wc_get_template_part('content', 'product'); ?>
     <?php endwhile; ?>
     <?php wp_reset_query() ?>
 <?php } ?>
