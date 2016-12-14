@@ -79,8 +79,8 @@
             ul {
                 position: absolute;
                 left: -1px;
-                visibility: visible;
-                opacity: 1;
+                visibility: hidden;
+                opacity: 0;
                 background-color: $w;
                 width: calc( 100% + 2px );
                 border-bottom: 1px solid $w;
