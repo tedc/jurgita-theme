@@ -1,6 +1,6 @@
-<div class="grid-4 grid-cols row-lg">
+<div class="grid-4 grid-cols">
 <?php while(have_rows('colonne')) : the_row(); ?>
-<div class="col-2 row-md">
+<div class="col-2">
 <?php if(get_row_layout() == 'testo') : ?>
 	<div class="row-lg container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
 		<?php the_sub_field('contenuto'); ?>
@@ -10,7 +10,7 @@
 		$img = get_sub_field('immagine');
 		$colClass = (get_sub_field("full")) ? "full" : "container";
 	?>
-	<figure class="figure <?php echo $colClass ?>"<?php if(get_sub_field("full")) : ?> style="padding-top: <?php echo ( $img['height'] * 100 ) / $img['width']; ?>%"<?php endif ?>>
+	<figure class="figure row-lg <?php echo $colClass ?>"<?php if(get_sub_field("full")) : ?> style="padding-top: <?php echo ( $img['height'] * 100 ) / $img['width']; ?>%"<?php endif ?>>
 		<img src="<?php echo $img['url']; ?>" />
 	</figure>
 <?php elseif (get_row_layout() == 'video') : ?>
