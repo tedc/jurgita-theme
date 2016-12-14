@@ -4,7 +4,7 @@
       "files": [
         "scripts/main.js"
       ],
-      "bower" : ["jquery-nice-select"],
+      "bower" : [ "jquery", "jquery-nice-select"],
       "main": true
     },
     "main.css": {
@@ -13,9 +13,6 @@
       ],
       "bower" : ["normalize-scss", "jquery-nice-select"],
       "main": true
-    },
-    "jquery.js": {
-      "bower": ["jquery"]
     }
   },
   "config": {
