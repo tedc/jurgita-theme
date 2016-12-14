@@ -34,8 +34,8 @@
         color: $w;
         overflow: hidden;
         position: absolute;
-        width: 10%;
-        padding-bottom: 10%;
+        width: em(85px);
+        padding-bottom: em(85px);
         font-family: $third-font;
         z-index: 9999;
         .j {
