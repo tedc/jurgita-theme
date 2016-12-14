@@ -1,6 +1,5 @@
 <h2 class="shop-title"><?php _e('Dal nostro shop', 'jurgita') ?></h2>
 <?php $posts = the_sub_field('prodotti'); ?>
-<?php var_dump(the_sub_field('prodotti')) ?>
 <?php if ($posts): ?>
     <ul class="products grid-4">
         <?php foreach ($posts as $post):  ?>
