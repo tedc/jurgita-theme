@@ -3,17 +3,17 @@
 <?php $posts = get_sub_field('prodotti'); ?>
 <?php $query = new WP_Query(array(
     'post_type' => 'product',
-    'posts' => $posts,
+    'post__in' => $posts,
     'posts_per_page' => -1
 )); ?>
 
-<?php if (have_posts()): ?>
+<?php if ($query->have_posts()): ?>
 
     <ul class="products grid-4">
 
-        <?php while (have_posts()) : the_post(); ?>
+        <?php while ($query->have_posts()) : $query->the_post(); ?>
 
-          <?php the_post_thumbnail() ?>
+            <?php wc_get_template_part('content', 'product'); ?>
 
         <?php endwhile;
         wp_reset_postdata() ?>
