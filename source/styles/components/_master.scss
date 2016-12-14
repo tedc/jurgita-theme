@@ -21,11 +21,10 @@
     }
     .pattern {
         height: 0;
-        width: 50%;
-        padding-bottom: 50%;
+        width: 40%;
+        padding-bottom: 40%;
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
         position: absolute;
-        bottom: 0;
         left:0;
         z-index: -1;
     }
