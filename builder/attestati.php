@@ -6,7 +6,7 @@
     <?php while ($query->have_posts()) : $query->the_post();
         /* $post = get_post();*/ ?>
         <div class="carousel_item">
-            <figure class="carousel_figure">
+            <figure class="carousel_figure container">
                 <img src="<?php the_post_thumbnail_url("small"); ?>">
             </figure>
         </div>
