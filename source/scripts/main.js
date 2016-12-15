@@ -105,12 +105,12 @@ var select = {
     })
   },
   createSelect : function(element) {
+        var name = element.attr('name')
         $('.select-list-item').each(function() {
             $(this).on('click', function() {
                 var value = $(this).attr('data-value'),
-                    text = $(this).text();
-                element.parent('.select-value').text(text);
-                element.find('option[value="'+value+'"]').trigger('click');
+                    text = $(this).text()
+                window.location.href += '?'+name +'='+value;
             })
         })
   }
