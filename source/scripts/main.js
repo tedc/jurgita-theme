@@ -120,15 +120,15 @@ var select = {
 
 
 $('.carousel_list').owlCarousel({
-    "margin": 15,
-    loop: true,
-    "dots": false,
-    nav: true,
     itemsCustom : [
         [0, 2],
-        [600, 4],
-        [1000, 5],
-        [1600, 7]
+        [450, 4],
+        [600, 7],
+        [700, 9],
+        [1000, 10],
+        [1200, 12],
+        [1400, 13],
+        [1600, 15]
     ],
     navigation : true
 });
