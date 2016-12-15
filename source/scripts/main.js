@@ -119,7 +119,7 @@ var select = {
 })(jQuery); // Fully reference jQuery after this point.
 
 
-$('.carousell_attestati').owlCarousel({
+$('.carousel_attestati').owlCarousel({
     "margin": 15,
     loop: true,
     "dots": false,
