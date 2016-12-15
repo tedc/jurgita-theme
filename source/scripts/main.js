@@ -143,15 +143,21 @@ $('.carousel_content').owlCarousel({
     items : 1,
 });
 
+var carousePhoto = $('.carousel_list');
+var carouseContent = $('.carousel_content');
+
 
 $(".next").click(function(){
     console.log("NEXT");
-    $('.carousel_list').trigger('owl.next');
-    $('.carousel_content').trigger('owl.next');
+    carousePhoto.trigger('owl.next');
+    carouseContent.trigger('owl.next');
+    console.log(carousePhoto.trigger('owl.next'));
+    console.log(carouseContent.trigger('owl.next'));
 })
 $(".prev").click(function(){
-    console.log("PREV");
-    $('.carousel_list').trigger('owl.prev');
-    $('.carousel_content').trigger('owl.prev');
+    carousePhoto.trigger('owl.prev');
+    carouseContent.trigger('owl.prev');
+    console.log(carousePhoto.trigger('owl.prev'));
+    console.log(carouseContent.trigger('owl.prev'));
 })
 
