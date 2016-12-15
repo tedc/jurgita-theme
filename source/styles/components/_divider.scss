@@ -1,13 +1,14 @@
 .divider {
     height: em(110px);
     background-color: $category_line;
-
+    position: relative;
     .square-yellow {
         left: em(100px);
         width: em(180px);
         height: em(180px);
         background-color: $yellow;
         position: relative;
+        top: em(-20px);
     }
     .logo {
         position: absolute;
@@ -23,11 +24,11 @@
     }
     .square-gray {
         position: absolute;
-        height: 70px;
-        width: 70px;
-        left: em(315px);
+        height: em(70px);
+        width: em(70px);
+        left: em(300px);
         top: 0;
+        transform: translateY(-50%);
         background-color: $square-master;
-        /*transform: translate3d(50%, -40%, 0);*/
     }
 }
