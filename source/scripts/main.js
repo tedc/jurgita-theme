@@ -123,12 +123,12 @@ $('.carousel_list').owlCarousel({
     "margin": 15,
     loop: true,
     "dots": false,
-    responsiveClass: true,
     nav: true,
     itemsCustom : [
         [0, 2],
         [600, 4],
         [1000, 5],
         [1600, 7]
-    ]
+    ],
+    navigation : true
 });
