@@ -121,8 +121,8 @@ var select = {
 
 $('.carousel_list').owlCarousel({
     items : 5,
-    loop:true,
     responsiveClass: true,
+    loop: true,
     responsive: {
         0: {
             items: 1,
@@ -135,14 +135,13 @@ $('.carousel_list').owlCarousel({
             items: 5,
             loop: false,
         }
-
     }
 });
 
 
 $('.carousel_content').owlCarousel({
     items : 1,
-    loop:true
+    loop: true
 });
 
 var carousePhoto = $('.carousel_list');
@@ -150,11 +149,13 @@ var carouseContent = $('.carousel_content');
 
 
 $(".next").click(function(){
-    carousePhoto.next();
-    carouseContent.next();
-})
+    carousePhoto.trigger('owl.next');
+    carouseContent.trigger('owl.next');
+
+});
 $(".prev").click(function(){
-    carousePhoto.prev();
-    carouseContent.prev();
-})
+    carousePhoto.trigger('owl.prev');
+    carouseContent.trigger('owl.prev');
+
+});
 
