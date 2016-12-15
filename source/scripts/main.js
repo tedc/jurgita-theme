@@ -143,11 +143,14 @@ $('.carousel_content').owlCarousel({
     items : 1,
 });
 
+
 $(".nav-next").click(function(){
+    console.log("NEXT");
     $('.carousel_list').trigger('owl.next');
     $('.carousel_content').trigger('owl.next');
 })
 $(".nav-prev").click(function(){
+    console.log("PREV");
     $('.carousel_list').trigger('owl.prev');
     $('.carousel_content').trigger('owl.prev');
 })
