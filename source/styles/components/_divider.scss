@@ -12,9 +12,9 @@
     }
     .logo {
         position: absolute;
-        height: 120px;
-        width: 120px;
-        left: 20px;
+        height: em(120px);
+        width: em(120px);
+        left: em(80px);
         top: -50%;
         z-index: 6;
         .j {
