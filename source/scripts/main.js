@@ -110,7 +110,7 @@ var select = {
             $(this).on('click', function() {
                 var value = $(this).attr('data-value'),
                     text = $(this).text()
-                window.location.href += '?'+name +'='+value;
+                window.location.href += window.location.origin + window.location.pathname + '?'+name +'='+value;
             })
         })
   }
