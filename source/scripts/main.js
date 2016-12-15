@@ -87,4 +87,34 @@ function price() {
   });
 }
 
-$("select").niceSelect();
+var select = {
+  init : function() {
+    this.styleSelect()
+  },
+  styleSelect : function() {
+    self = this
+    $('select').each(function() {
+        var $this = $(this),
+            text = $this.find('option:selected').text(),
+            html = '<div class="select"><span class="select-value">'+text+'</span><ul class="select-list">';
+        $this.each('option', function() {
+            html += '<li class="select-list-item" data-value="'+$(this).val()+'">'+$(this).text()+'</li>';
+        });
+        html += '</ul></div>';
+        $(html).insertAfter($this);
+        self.createSelect($this);
+    })
+  },
+  createSelect : function(element) {
+        $('.select-list-item').each(function() {
+            $(this).on('click', function() {
+                var value = $(this).attr('data-value'),
+                    text = $(this).text();
+                element.parent('.select-value').text(text);
+                element.val(value).trigger('change');
+            })
+        })
+  }
+}
+
+select.init()
