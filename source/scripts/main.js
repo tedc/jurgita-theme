@@ -118,3 +118,27 @@ var select = {
 
 })(jQuery); // Fully reference jQuery after this point.
 
+
+$('.carousell_attestati').owlCarousel({
+    "margin": 15,
+    loop: true,
+    "dots": false,
+    responsiveClass: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true,
+        },
+        600: {
+            items: 2,
+            margin: 15,
+            nav: true,
+        },
+        1000: {
+            items: 3,
+            loop: false,
+            nav: true,
+        }
+    }
+});

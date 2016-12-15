@@ -150,3 +150,8 @@
         @extend %line-navigation;
     }
 }
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
