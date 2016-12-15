@@ -110,7 +110,10 @@ var select = {
                 var value = $(this).attr('data-value'),
                     text = $(this).text();
                 element.parent('.select-value').text(text);
-                element.val(value).trigger('change');
+                element.val(value);
+                setTimeout(function() {
+                    element.trigger('change');
+                }, 100);
             })
         })
   }
