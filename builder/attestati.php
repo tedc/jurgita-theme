@@ -14,8 +14,8 @@
     <?php wp_reset_query(); ?>
 </div>
 <div class="container-nav">
-    <div class="container-arrow">
-        <span class="nav-pre"><</span>
+    <div class="container-arrow prev">
+        <span class="nav-prev"><</span>
     </div>
 
 
@@ -37,7 +37,7 @@
     </div>
 
 
-    <div class="container-arrow">
+    <div class="container-arrow next">
         <span class="nav-next">></span>
     </div>
 </div>
