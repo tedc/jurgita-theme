@@ -14,7 +14,7 @@
             height: 120px;
             width: 120px;
             left: 0px;
-            top: calc(50% - 35px);
+            top: 0;
             z-index: 6;
             .j {
                 font-size: em(80px);
@@ -24,8 +24,8 @@
             position: absolute;
             height: 70px;
             width: 70px;
-            left: -50px;
-            top: calc(50% - 35px);
+            right: 0;
+            top: 0;
             background-color: $square-master;
         }
     }
