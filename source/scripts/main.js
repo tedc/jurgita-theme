@@ -133,7 +133,6 @@ $('.carousel_list').owlCarousel({
         },
         1000: {
             items: 5,
-            loop: false,
         }
     }
 });
