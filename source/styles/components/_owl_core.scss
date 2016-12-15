@@ -117,4 +117,13 @@
 }
 
 
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    .carousel_content {
+        width: em(600px);
+        text-align: center;
+    }
+}

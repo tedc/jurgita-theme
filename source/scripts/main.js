@@ -142,3 +142,13 @@ $('.carousel_list').owlCarousel({
 $('.carousel_content').owlCarousel({
     items : 1,
 });
+
+$(".nav-next").click(function(){
+    $('.carousel_list').trigger('owl.next');
+    $('.carousel_content').trigger('owl.next');
+})
+$(".nav-prev").click(function(){
+    $('.carousel_list').trigger('owl.prev');
+    $('.carousel_content').trigger('owl.prev');
+})
+
