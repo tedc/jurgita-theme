@@ -125,6 +125,13 @@ $('.carousell_attestati').owlCarousel({
     "dots": false,
     responsiveClass: true,
     nav: true,
+    itemsCustom : [
+        [0, 2],
+        [600, 4],
+        [1000, 5],
+        [1600, 7]
+    ],
+    navigation : true,
     responsive: {
         0: {
             items: 1,
