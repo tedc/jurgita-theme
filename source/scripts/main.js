@@ -121,22 +121,18 @@ var select = {
 
 $('.carousel_list').owlCarousel({
     items : 5, //10 items above 1000px browser width
-    nav: true,
     responsiveClass: true,
     responsive: {
         0: {
             items: 1,
-            nav: true,
         },
         600: {
             items: 3,
             margin: 15,
-            nav: true,
         },
         1000: {
             items: 5,
             loop: false,
-            nav: true,
         }
 
     }
