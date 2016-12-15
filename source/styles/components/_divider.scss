@@ -11,13 +11,13 @@
 
         .logo {
             position: absolute;
-            height: 140px;
-            width: 140px;
+            height: 120px;
+            width: 120px;
             left: 0px;
             top: calc(50% - 35px);
             z-index: 6;
             .j {
-                font-size: em(80px, 26px);
+                font-size: em(80px);
             }
         }
         .square-gray {
