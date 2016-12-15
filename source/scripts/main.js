@@ -120,10 +120,17 @@ var select = {
 
 
 $('.carousel_list').owlCarousel({
-    items : 4, //10 items above 1000px browser width
-    itemsDesktop : [1000,4], //5 items between 1000px and 901px
+    items : 3, //10 items above 1000px browser width
+    itemsDesktop : [1000,3], //5 items between 1000px and 901px
     itemsDesktopSmall : [900,3], // betweem 900px and 601px
     itemsTablet: [600,2], //2 items between 600 and 0
     itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
     nav: true,
+});
+
+$('.carousel_content').owlCarousel({
+    navigation : true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true
 });

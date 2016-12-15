@@ -4,15 +4,29 @@
         "post_type" => "attestati",
     )); ?>
     <?php while ($query->have_posts()) : $query->the_post();
-       /* $post = get_post();*/ ?>
+        /* $post = get_post();*/ ?>
         <div class="carousel_item">
             <figure class="carousel_figure">
-                <a href="<?php the_permalink() ?>">
-                    <img src="<?php the_post_thumbnail_url("large"); ?>"></a>
+                <img src="<?php the_post_thumbnail_url("large"); ?>">
             </figure>
-            <h5><a class="m_button" href="<?php  the_permalink() ?>"><?php the_title() ?></a></h5>
         </div>
     <?php endwhile; ?>
+    <?php wp_reset_query(); ?>
 </div>
 
-<?php wp_reset_query(); ?>
+
+<div class="carousel_content">
+    <?php $query = new WP_Query(array(
+        "post_type" => "attestati",
+    )); ?>
+    <?php while ($query->have_posts()) :
+    $query->the_post(); ?>
+    <div class="carousel_item">
+        <h5><?php the_title() ?></h5>
+        <div class="description-attestati">
+            <?php the_content();?>
+        </div>
+    </div>
+    <?php endwhile; ?>
+    <?php wp_reset_query(); ?>
+</div>
