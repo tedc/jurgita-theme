@@ -59,9 +59,7 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-})(jQuery); // Fully reference jQuery after this point.
-
-function reveal() {
+  function reveal() {
     $('[data-reveal]').each(function() {
         var id = $(this).attr('data-reveal');
         $(this).on('click', function(event) {
@@ -94,6 +92,7 @@ var select = {
   },
   styleSelect : function() {
     var self = this;
+    console.log($('select'));
     $('select').each(function() {
         var $this = $(this),
             text = $this.find('option:selected').text(),
@@ -117,3 +116,6 @@ var select = {
         })
   }
 }
+
+})(jQuery); // Fully reference jQuery after this point.
+
