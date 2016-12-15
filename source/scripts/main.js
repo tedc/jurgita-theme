@@ -120,9 +120,11 @@ var select = {
 
 
 $('.carousel_list').owlCarousel({
+    autoWidth : true,
     items : 5,
     responsiveClass: true,
     loop: true,
+    center : true,
     responsive: {
         0: {
             items: 1,

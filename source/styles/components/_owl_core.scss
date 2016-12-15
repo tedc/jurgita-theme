@@ -112,8 +112,13 @@
     display: block;
 }
 
-.carousel_figure {
-    padding: 20px;
+.carouasel-item {
+    text-align: center;
+    .carousel_figure {
+        width: auto;
+        max-width: 100%;
+        display: inline-block;
+    }
 }
 
 
