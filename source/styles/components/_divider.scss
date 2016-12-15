@@ -8,27 +8,26 @@
         height: em(180px);
         background-color: $yellow;
         position: relative;
-
-        .logo {
-            position: absolute;
-            height: 120px;
-            width: 120px;
-            left: 0px;
-            top: 0;
-            transform:translate3d(-60%, -40%, 0);
-            z-index: 6;
-            .j {
-                font-size: em(80px);
-            }
+    }
+    .logo {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        left: 20px;
+        top: 0;
+       /* transform:translate3d(-60%, -40%, 0);*/
+        z-index: 6;
+        .j {
+            font-size: em(80px);
         }
-        .square-gray {
-            position: absolute;
-            height: 70px;
-            width: 70px;
-            right: 0;
-            top: 0;
-            background-color: $square-master;
-            transform: translate3d(50%, -40%, 0);
-        }
+    }
+    .square-gray {
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        left: em(315px);
+        top: 0;
+        background-color: $square-master;
+        /*transform: translate3d(50%, -40%, 0);*/
     }
 }
