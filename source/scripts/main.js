@@ -93,7 +93,7 @@ var select = {
     this.styleSelect()
   },
   styleSelect : function() {
-    self = this
+    var self = this;
     $('select').each(function() {
         var $this = $(this),
             text = $this.find('option:selected').text(),
