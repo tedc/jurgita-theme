@@ -3,15 +3,17 @@
     background-color: $category_line;
 
     .square-yellow {
+        left: em(100px);
         width: em(180px);
         height: em(180px);
         background-color: $yellow;
+        position: relative;
 
         .logo {
             position: absolute;
-            height: 70px;
-            width: 70px;
-            left: -50px;
+            height: 140px;
+            width: 140px;
+            left: 0px;
             top: calc(50% - 35px);
             z-index: 6;
             .j {
