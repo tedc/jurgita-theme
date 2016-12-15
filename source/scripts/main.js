@@ -130,22 +130,5 @@ $('.carousel_list').owlCarousel({
         [600, 4],
         [1000, 5],
         [1600, 7]
-    ],
-    navigation : true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: true,
-        },
-        600: {
-            items: 2,
-            margin: 15,
-            nav: true,
-        },
-        1000: {
-            items: 3,
-            loop: false,
-            nav: true,
-        }
-    }
+    ]
 });
