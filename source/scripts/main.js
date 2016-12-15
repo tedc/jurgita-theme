@@ -21,6 +21,7 @@
         // JavaScript to be fired on all pages
         reveal();
         price();
+        select.init()
       }
     }
   };
@@ -116,5 +117,3 @@ var select = {
         })
   }
 }
-
-select.init()
