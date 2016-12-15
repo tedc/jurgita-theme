@@ -120,7 +120,7 @@ var select = {
 
 
 $('.carousel_list').owlCarousel({
-    autoWidth : true,
+
     items : 5,
     responsiveClass: true,
     loop: true,
@@ -142,7 +142,8 @@ $('.carousel_list').owlCarousel({
 
 $('.carousel_content').owlCarousel({
     items : 1,
-    loop: true
+    loop: true,
+    center : true,
 });
 
 var carousePhoto = $('.carousel_list');
