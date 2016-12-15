@@ -121,6 +121,7 @@ var select = {
 
 $('.carousel_list').owlCarousel({
     items : 5,
+    loop:true,
     responsiveClass: true,
     responsive: {
         0: {
@@ -141,6 +142,7 @@ $('.carousel_list').owlCarousel({
 
 $('.carousel_content').owlCarousel({
     items : 1,
+    loop:true
 });
 
 var carousePhoto = $('.carousel_list');
@@ -148,15 +150,11 @@ var carouseContent = $('.carousel_content');
 
 
 $(".next").click(function(){
-    carousePhoto.trigger('owl.next');
-    carouseContent.trigger('owl.next');
-    console.log(carousePhoto.trigger('owl.next'));
-    console.log(carouseContent.trigger('owl.next'));
+    carousePhoto.next();
+    carouseContent.next();
 })
 $(".prev").click(function(){
-    carousePhoto.trigger('owl.prev');
-    carouseContent.trigger('owl.prev');
-    console.log(carousePhoto.trigger('owl.prev'));
-    console.log(carouseContent.trigger('owl.prev'));
+    carousePhoto.prev();
+    carouseContent.prev();
 })
 
