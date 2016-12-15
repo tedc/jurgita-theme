@@ -92,8 +92,9 @@ var select = {
   },
   styleSelect : function() {
     var self = this;
-    console.log($('select'));
     $('select').each(function() {
+        console.log( $(this) );
+    
         var $this = $(this),
             text = $this.find('option:selected').text(),
             html = '<div class="select"><span class="select-value">'+text+'</span><ul class="select-list">';
