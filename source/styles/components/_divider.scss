@@ -3,8 +3,8 @@
     background-color: $category_line;
 
     .square-yellow {
-        width: 20%;
-        padding-bottom: 20%;
+        width: em(180px);
+        height: em(180px);
         background-color: $yellow;
 
         .logo {
