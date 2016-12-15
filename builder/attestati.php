@@ -4,11 +4,11 @@
 <?php $query = new WP_Query(array(
     "post_type" => "attestati",
 )); ?>
-<div class="carousel_attestati">
+<div class="carousel_attestati owl-theme">
 
     <?php while ($query->have_posts()) : $query->the_post();
         $post = get_post(); ?>
-        <div class="carousel_item">
+        <div class="item">
 
         <?php the_post_thumbnail("large"); ?>
 
