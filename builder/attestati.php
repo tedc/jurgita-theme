@@ -14,19 +14,19 @@
     <?php wp_reset_query(); ?>
 </div>
 
-
+<!--
 <div class="carousel_content">
-    <?php $query = new WP_Query(array(
+    <?php /*$query = new WP_Query(array(
         "post_type" => "attestati",
-    )); ?>
-    <?php while ($query->have_posts()) :
-    $query->the_post(); ?>
+    )); */?>
+    <?php /*while ($query->have_posts()) :
+    $query->the_post(); */?>
     <div class="carousel_item">
-        <h5><?php the_title() ?></h5>
+        <h5><?php /*the_title() */?></h5>
         <div class="description-attestati">
-            <?php the_content();?>
+            <?php /*the_content();*/?>
         </div>
     </div>
-    <?php endwhile; ?>
-    <?php wp_reset_query(); ?>
-</div>
+    <?php /*endwhile; */?>
+    <?php /*wp_reset_query(); */?>
+</div>-->
