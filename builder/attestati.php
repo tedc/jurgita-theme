@@ -6,16 +6,14 @@
 )); ?>
 <div class="carousell_attestati">
 
-    <div class="carousel_item">
     <?php while ($query->have_posts()) : $query->the_post();
         $post = get_post(); ?>
-
+        <div class="carousel_item">
 
         <?php the_post_thumbnail("large"); ?>
 
-
+        </div>
     <?php endwhile; ?>
-    </div>
 </div>
 
 <?php wp_reset_query(); ?>
