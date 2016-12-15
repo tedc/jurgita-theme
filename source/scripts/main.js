@@ -148,7 +148,6 @@ var carouseContent = $('.carousel_content');
 
 
 $(".next").click(function(){
-    console.log("NEXT");
     carousePhoto.trigger('owl.next');
     carouseContent.trigger('owl.next');
     console.log(carousePhoto.trigger('owl.next'));

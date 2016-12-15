@@ -99,3 +99,9 @@ ul, ol {
     padding-top: em(50px);
     padding-bottom: em(50px);
 }
+
+h2, h3, h4, h5, h6 {
+    font-family: $third-font;
+    letter-spacing: $letter-spacing-base;
+    text-transform: uppercase;
+}
