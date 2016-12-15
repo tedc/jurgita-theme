@@ -120,7 +120,6 @@ var select = {
 
 
 $('.carousel_list').owlCarousel({
-    autoHeight : true,
     items : 5,
     responsiveClass: true,
     loop: true,
