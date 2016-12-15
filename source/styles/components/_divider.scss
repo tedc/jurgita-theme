@@ -15,7 +15,7 @@
             width: 120px;
             left: 0px;
             top: 0;
-            transform: translate3D ( -30%, -60%, 0);
+            transform:translate3d(-60%, -60%, 0);
             z-index: 6;
             .j {
                 font-size: em(80px);
@@ -28,7 +28,7 @@
             right: 0;
             top: 0;
             background-color: $square-master;
-            transform: translate3D ( -30%, -60%, 0);
+            transform: translate3d(-30%, -60%, 0);
         }
     }
 }
