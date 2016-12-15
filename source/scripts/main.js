@@ -110,7 +110,7 @@ var select = {
                 var value = $(this).attr('data-value'),
                     text = $(this).text();
                 element.parent('.select-value').text(text);
-                element.find('option[value="'+value+'"').trigger('click');
+                element.find('option[value="'+value+'"]').trigger('click');
             })
         })
   }
