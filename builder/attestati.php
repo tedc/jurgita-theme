@@ -7,7 +7,7 @@
         /* $post = get_post();*/ ?>
         <div class="carousel_item">
             <figure class="carousel_figure">
-                <img src="<?php the_post_thumbnail_url("large"); ?>">
+                <img src="<?php the_post_thumbnail_url("small"); ?>">
             </figure>
         </div>
     <?php endwhile; ?>
