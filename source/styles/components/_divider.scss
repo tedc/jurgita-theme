@@ -1,0 +1,29 @@
+.divider {
+    width: em(110px);
+
+    .square-yellow {
+        width: 20%;
+        padding-bottom: 20%;
+        background-color: $yellow;
+
+        .logo {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            left: -50px;
+            top: calc(50% - 35px);
+            z-index: 6;
+            .j {
+                font-size: em(50px, 26px);
+            }
+        }
+        .square-gray {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            left: -50px;
+            top: calc(50% - 35px);
+            background-color: $square-master;
+        }
+    }
+}
