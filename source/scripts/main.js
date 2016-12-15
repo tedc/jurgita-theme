@@ -21,6 +21,7 @@
         // JavaScript to be fired on all pages
         reveal();
         price();
+        select.init()
       }
     }
   };
@@ -58,9 +59,7 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-})(jQuery); // Fully reference jQuery after this point.
-
-function reveal() {
+  function reveal() {
     $('[data-reveal]').each(function() {
         var id = $(this).attr('data-reveal');
         $(this).on('click', function(event) {
@@ -87,4 +86,35 @@ function price() {
   });
 }
 
-$("select").niceSelect();
+var select = {
+  init : function() {
+    this.styleSelect()
+  },
+  styleSelect : function() {
+    var self = this;
+    $('select').each(function() {
+        var $this = $(this),
+            text = $this.find('option:selected').text(),
+            html = '<div class="select"><span class="select-value">'+text+'</span><ul class="select-list">';
+        $this.find('option').each(function() {
+            html += '<li class="select-list-item" data-value="'+$(this).val()+'">'+$(this).text()+'</li>';
+        });
+        html += '</ul></div>';
+        $(html).insertAfter($this);
+        self.createSelect($this);
+    })
+  },
+  createSelect : function(element) {
+        var name = element.attr('name')
+        $('.select-list-item').each(function() {
+            $(this).on('click', function() {
+                var value = $(this).attr('data-value'),
+                    text = $(this).text()
+                window.location.href = window.location.origin + window.location.pathname + '?'+name +'='+value;
+            })
+        })
+  }
+}
+
+})(jQuery); // Fully reference jQuery after this point.
+
