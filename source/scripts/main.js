@@ -120,7 +120,7 @@ var select = {
 
 
 $('.carousel_list').owlCarousel({
-    items : 5, //10 items above 1000px browser width
+    items : 5,
     responsiveClass: true,
     responsive: {
         0: {
@@ -137,15 +137,8 @@ $('.carousel_list').owlCarousel({
 
     }
 });
-/*
+
 
 $('.carousel_content').owlCarousel({
-    autoPlay : 3000,
-    stopOnHover : true,
-    navigation:true,
-    paginationSpeed : 1000,
-    goToFirstSpeed : 2000,
-    singleItem : true,
-    autoHeight : true,
-    transitionStyle:"fade"
-});*/
+    items : 1,
+});
