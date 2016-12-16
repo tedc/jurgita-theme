@@ -74,9 +74,14 @@
     z-index: -1;
   }
   .logo {
- /*   right: 0;
+    position: absolute;
+    height: em(100px);
     width: em(100px);
-    height: em(100px);*/
+    right: 0;
+    top: -50%;
+    .j {
+      font-size: em(80px);
+    }
   }
   .gray-square {
     bottom: 0;
