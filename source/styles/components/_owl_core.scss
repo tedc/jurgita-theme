@@ -130,8 +130,11 @@
     padding-top: em(75px);
 
     .carousel_content {
-      /*  width: em(600px);*/
         text-align: center;
+        width: 80%;
+        @include breakpoint($bp) {
+            width: em(600px);
+        }
     }
 }
 
