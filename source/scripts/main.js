@@ -173,15 +173,16 @@
     function faceSwitcher() {
         $('.switcher').each(function() {
             var dragger = $(this).find('.dragger');
+            var $this = $(this);
             Draggable.create(dragger, {
-                bounds: $(this),
+                bounds: $this,
                 onDrag: function(evt) {
                     var x = evt.offsetX,
-                        width = $(this).width(),
-                        p = ( x * 100 ) / width
+                        width = $this.width(),
+                        p = ( x * 100 ) / width,
                         nW = 100 - p;
-                    TweenMax.to($(this).find('.back'), { width : p + '%' });
-                    TweenMax.to($(this).find('.front'), { left : p + '%', width : nW + '%' });
+                    TweenMax.to($this.find('.back'), { width : p + '%' });
+                    TweenMax.to($this.find('.front'), { left : p + '%', width : nW + '%' });
                 }
             })
         })
