@@ -53,11 +53,23 @@
     top: 0;
     height: $f;
     width: $f/2;
+    img {
+        position: absolute;
+        top: 0;
+        width: auto;
+        height: $f;
+    }
     &.back {
         left: 0;
+        img {
+            left: 0;
+        }
     }
     &.front {
         left: 50%;
+        img {
+            right: 0;
+        }
     }
 }
 

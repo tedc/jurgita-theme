@@ -42,7 +42,7 @@
 			$front = get_sub_field('immagine_destra');
 			$back = get_sub_field('immagine_sinistra');
 		?>
-	<div class="swticher" style="padding-top:<?php ( $fron['height'] * 100 ) / $front['width']; ?>%">		
+	<div class="swticher" style="padding-top:<?php ( $front['height'] * 100 ) / $front['width']; ?>%">		
 		<div class="face-wrapper front">
 			<img src="<?php $back['url']; ?>">
 		</div>
