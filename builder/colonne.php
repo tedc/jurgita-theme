@@ -41,15 +41,14 @@
 <?php elseif (get_row_layout() == 'switcher') : 
 			$front = get_sub_field('immagine_destra');
 			$back = get_sub_field('immagine_sinistra');
-			var_dump($front);
 			var_dump($back);
 		?>
-	<div class="swticher" style="padding-top:<?php ( $front['height'] * 100 ) / $front['width']; ?>%">		
+	<div class="switcher" style="padding-top:<?php echo ( $front['height'] * 100 ) / $front['width']; ?>%">		
 		<div class="face-wrapper front">
-			<img src="<?php $back['url']; ?>">
+			<img src="<?php echo $back['url']; ?>">
 		</div>
 		<div class="face-wrapper back">
-			<img src="<?php $front['url']; ?>">
+			<img src="<?php echo $front['url']; ?>">
 		</div>
 		<span class="dragger"></span>
 	</div>
