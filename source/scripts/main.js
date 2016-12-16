@@ -159,6 +159,12 @@ $(".prev").click(function(){
     alert("prev");
     carousePhoto.trigger('prev.owl.carousel');
     carouseContent.trigger('prev.owl.carousel');
+});
 
+carousePhoto.on('changed.owl.carousel', function(event) {
+    carouseContent.trigger('next.owl.carousel');
+});
+carouseContent.on('changed.owl.carousel', function(event) {
+    carousePhoto.trigger('next.owl.carousel');
 });
 
