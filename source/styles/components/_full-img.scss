@@ -8,22 +8,28 @@
 
     }
     .square {
-        width: em(180px);
-        height: em(180px);
-        background-color: $yellow;
-        position: absolute;
-       /* top: calc( 50% - 300px);*/
-        bottom: em(-60px);
-        right: em(50px);
-        z-index: -1;
+        display: none;
+        @include breakpoint($bp) {
+            display: block;
+            width: em(180px);
+            height: em(180px);
+            background-color: $yellow;
+            position: absolute;
+            bottom: em(-60px);
+            right: em(50px);
+            z-index: -1;
+        }
     }
     .square-shadow {
-        width: em(240px);
-        height: em(240px);
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
-        position: absolute;
-        bottom: em(-120px);
-        right: em(80px);
-        /*top: calc( 50% - 40px);*/
+        display: none;
+        @include breakpoint($bp) {
+            display: block;
+            width: em(240px);
+            height: em(240px);
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+            position: absolute;
+            bottom: em(-120px);
+            right: em(80px);
+        }
     }
 }
