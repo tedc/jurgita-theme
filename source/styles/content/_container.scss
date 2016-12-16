@@ -4,6 +4,7 @@
 }
 .body-container {
     position: relative;
+    margin: 0 auto;
     @include normalize_padding();
     max-width: $max-width-blog;
 
