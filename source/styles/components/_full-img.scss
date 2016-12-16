@@ -42,3 +42,49 @@
         height: auto !important;
     }
 }
+
+.switcher {
+    height: 0;
+    position: relative;
+}
+
+.face-wrapper {
+    position: absolute;
+    top: 0;
+    height: $f;
+    width: $f/2;
+    &.back {
+        left: 0;
+    }
+    &.front {
+        left: 50%;
+    }
+}
+
+.dragger {
+    position: absolute;
+    width: 2px;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    height: calc(100% + 20px);
+    background-color: $gold;
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 12px;
+        background-color: $w;
+        border-radius: 100%;
+        border: 2px solid $gold;
+        margin-left: -6px;
+    }
+    .icon-drag {
+        color: $light_gray;
+        font-size: em(50px);
+        margin-left: em(20px, 50px) * -1;
+        top: 100%;
+        left: 0;
+        margin-top: 3px;
+    }
+}

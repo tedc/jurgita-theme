@@ -38,10 +38,17 @@
 			</a>
 		</div>
 	</div>
-<?php elseif (get_row_layout() == 'switcher') : ?>
-	<figure class="face-swticher">
-		<img src="<?php the_sub_field('immagine_destra'); ?>" class="back">
-		<img src="<?php the_sub_field('immagine_sinistra'); ?>" class="front">
+<?php elseif (get_row_layout() == 'switcher') : 
+			$front = get_sub_field('immagine_destra');
+			$back = get_sub_field('immagine_sinistra');
+		?>
+	<div class="swticher" style="padding-top:<?php ( $fron['height'] * 100 ) / $front['width']; ?>%">		
+		<div class="face-wrapper front">
+			<img src="<?php $back['url']; ?>">
+		</div>
+		<div class="face-wrapper back">
+			<img src="<?php $front['url']; ?>">
+		</div>
 		<span class="dragger"></span>
 	</figure>
 <?php endif; ?>

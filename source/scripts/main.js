@@ -169,6 +169,18 @@
         });
     }
 
+    function faceSwitcher() {
+        $('.swticher').each(function() {
+            var dragger = element.find('.dragger');
+            Draggable.create(dragger, {
+                bounds: $(this),
+                onDrag: function(evt) {
+                    console.log(evt);
+                }
+            })
+        })
+    }
+
 })(jQuery); // Fully reference jQuery after this point.
 
 
