@@ -13,8 +13,8 @@
         background-color: $yellow;
         position: absolute;
        /* top: calc( 50% - 300px);*/
-        bottom: 0;
-        right: 0;
+        bottom: em(-60px);
+        right: em(50px);
         z-index: -1;
     }
     .square-shadow {
@@ -22,8 +22,8 @@
         height: em(240px);
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: em(-120px);
+        right: em(80px);
         /*top: calc( 50% - 40px);*/
     }
 }
