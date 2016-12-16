@@ -9,6 +9,7 @@
   "dependencies": {
     "normalize-scss": "normalize.scss#^6.0.0",
     "owl.carousel": "^2.2.0",
-    "scrollmagic": "~2.0.5"
+    "scrollmagic": "~2.0.5",
+    "gsap": "~1.19.0"
   }
 }
