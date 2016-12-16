@@ -41,7 +41,6 @@
 <?php elseif (get_row_layout() == 'switcher') : 
 			$front = get_sub_field('immagine_destra');
 			$back = get_sub_field('immagine_sinistra');
-			var_dump($back);
 		?>
 	<div class="switcher" style="padding-top:<?php echo ( $front['height'] * 100 ) / $front['width']; ?>%">		
 		<div class="face-wrapper front">
