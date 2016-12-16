@@ -69,7 +69,7 @@
     z-index: -1;
   }
   .square-shadow {
-    left: 0;
+    left: em(-170px);
     right: 0;
     margin-left: auto;
     margin-right: auto;
@@ -77,11 +77,11 @@
     height: em(340px);
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
     position: absolute;
-    top: calc( 50% - 170px);
+    top: calc( 50% - 220px);
     z-index: -1;
   }
   .logo {
-    left: 0;
+    left: em(335px);
     right: 0;
     margin-left: auto;
     margin-right: auto;
@@ -96,8 +96,8 @@
     }
   }
   .gray-square {
-    top: calc( 50% - 60px);
-    left: 0;
+    top: calc(50% + 80px);
+    left: em(-170px);
     right: 0;
     margin-left: auto;
     margin-right: auto;
