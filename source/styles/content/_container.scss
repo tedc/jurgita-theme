@@ -2,3 +2,9 @@
     position: relative;
     @include normalize_padding();
 }
+.body-container {
+    position: relative;
+    @include normalize_padding();
+    max-width: $max-width-blog;
+
+}
