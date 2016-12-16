@@ -1,5 +1,32 @@
 
-.full-img {
-    width: 100%;
-    display: block;
+.container-img {
+    .full-img {
+        width: 100%;
+        display: block;
+    }
+    .square {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: em(340px);
+        height: em(340px);
+        background-color: $yellow;
+        position: absolute;
+        top: calc( 50% - 170px);
+        left:0 ;
+        z-index: -1;
+    }
+    .square-shadow {
+        left: em(-600px);
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: em(340px);
+        height: em(340px);
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+        position: absolute;
+        top: calc( 50% - 40px);
+        z-index: -1;
+    }
 }
