@@ -96,8 +96,7 @@ ul, ol {
     font-size: em(30px);
     text-transform: uppercase;
     color: $gold;
-    padding-top: em(50px);
-    padding-bottom: em(50px);
+    padding-bottom: em(50px, 30px);
 }
 
 h2, h3, h4, h5, h6 {
