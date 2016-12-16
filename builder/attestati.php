@@ -1,3 +1,4 @@
+<div class="awards">
 <h2 class="title aligncenter"><?php _e('I miei attestati', 'jurgita') ?></h2>
 <div class="carousel_list">
     <?php $query = new WP_Query(array(
@@ -41,4 +42,4 @@
         <span class="icon-arrow-right"></span>
     </div>
 </div>
-
+</div>
