@@ -2,11 +2,12 @@
 
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 ?>
 
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html class="<?php if(is_plugin_active('mobble')) : echo (is_handled()) ? ' mobile' : ' no-mobile'; endif; ?>" <?php language_attributes(); ?>" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
     <!--[if IE]>
