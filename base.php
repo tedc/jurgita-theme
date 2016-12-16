@@ -6,7 +6,7 @@ use Roots\Sage\Wrapper;
 ?>
 
 <!doctype html>
-<html class="<?php if(function_exists('is_handled')) : echo (is_handled()) ? ' mobile' : ' no-mobile'; endif; endif; ?>" <?php language_attributes(); ?>" <?php language_attributes(); ?>>
+<html class="<?php if(function_exists('is_handled')) : echo (is_handled()) ? ' mobile' : ' no-mobile'; endif; ?>" <?php language_attributes(); ?>" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
     <!--[if IE]>
