@@ -1,33 +1,29 @@
 
 .container-img {
+    position: relative;
+
     .full-img {
         width: 100%;
         display: block;
 
     }
     .square {
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
         width: em(180px);
         height: em(180px);
         background-color: $yellow;
         position: absolute;
        /* top: calc( 50% - 300px);*/
         bottom: 0;
+        right: 0;
         z-index: -1;
     }
     .square-shadow {
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
         width: em(240px);
         height: em(240px);
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
         position: absolute;
         bottom: 0;
+        right: 0;
         /*top: calc( 50% - 40px);*/
     }
 }
