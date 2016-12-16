@@ -6,7 +6,7 @@
 	</a>
 	<div class="menu-container">
 		<?php icl_selector(); ?>
-		<a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>"><span class="btn-header-text"><?php _e('Shop', 'jurgita'); ?></span><i class="icon-cart"></i></a>
+		<a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>"><span class="btn-header-text"><?php _e('Shop', 'jurgita'); ?></span><i class="icon-cart"></i><i class="icon-cart-full"></i></a>
 		<?php wp_nav_menu( ['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'container_id' => 'menu', 'container_class' => 'menu'] ); ?>
 		<a class="btn-header btn-menu" href="#" data-reveal="#menu">
 			<span class="btn-header-text"><?php _e('Menu', 'jurgita'); ?></span>

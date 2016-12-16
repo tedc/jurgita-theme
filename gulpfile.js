@@ -252,7 +252,7 @@ gulp.task('Iconfont', function(done){
         gulp.src(path.source + 'fonts/template.css')
           .pipe(consolidate('lodash', {
             glyphs: glyphs,
-            fontName: 'frt-icons',
+            fontName: 'jurgita-icons',
             fontPath: '../fonts/',
             className: 'icon'
           }))
