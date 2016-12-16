@@ -89,7 +89,9 @@
         background-color: $w;
         border-radius: 100%;
         border: 2px solid $gold;
-        margin-left: -6px;
+        margin-left: -5px;
+        height: 12px;
+        content: '';
     }
     .icon-drag {
         color: $light_gray;

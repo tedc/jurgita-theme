@@ -49,7 +49,9 @@
 		<div class="face-wrapper back">
 			<img src="<?php echo $front['url']; ?>">
 		</div>
-		<span class="dragger"></span>
+		<span class="dragger">
+			<i class="icon-drag"></i>
+		</span>
 	</div>
 <?php endif; ?>
 </div>
