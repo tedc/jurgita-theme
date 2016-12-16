@@ -143,6 +143,9 @@ $('.carousel_content').owlCarousel({
     items : 1,
     loop: true,
     center : true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false
 });
 
 var carousePhoto = $('.carousel_list');
@@ -160,11 +163,3 @@ $(".prev").click(function(){
     carousePhoto.trigger('prev.owl.carousel');
     carouseContent.trigger('prev.owl.carousel');
 });
-
-carousePhoto.on('changed.owl.carousel', function(event) {
-    carouseContent.trigger('next.owl.carousel');
-});
-carouseContent.on('changed.owl.carousel', function(event) {
-    carousePhoto.trigger('next.owl.carousel');
-});
-
