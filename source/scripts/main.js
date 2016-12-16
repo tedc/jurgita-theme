@@ -150,11 +150,13 @@ var carouseContent = $('.carousel_content');
 
 
 $(".next").click(function(){
+    alert("next");
     carousePhoto.trigger('owl.next');
     carouseContent.trigger('owl.next');
 
 });
 $(".prev").click(function(){
+    alert("prev");
     carousePhoto.trigger('owl.prev');
     carouseContent.trigger('owl.prev');
 
