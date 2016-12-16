@@ -56,6 +56,10 @@
 .square-container {
   position: relative;
   .square {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     padding-bottom: 50%;
     background-color: $yellow;
@@ -65,27 +69,39 @@
     z-index: -1;
   }
   .square-shadow {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     padding-bottom: 50%;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
     position: absolute;
     top: 0;
-    left: 0;
     z-index: -1;
   }
   .logo {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     height: em(100px);
     width: em(100px);
-    right: 0;
+
 
     .j {
       font-size: em(70px);
     }
   }
   .gray-square {
-    bottom: 0;
-    position: absolute;
     left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    height: em(120px);
+    width: em(120px);
+    background-color: $square-master;
   }
 }
