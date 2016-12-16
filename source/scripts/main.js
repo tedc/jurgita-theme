@@ -172,7 +172,7 @@
 
     function faceSwitcher() {
         $('.switcher').each(function() {
-            var dragger = element.find('.dragger');
+            var dragger = $(this).find('.dragger');
             Draggable.create(dragger, {
                 bounds: $(this),
                 onDrag: function(evt) {
