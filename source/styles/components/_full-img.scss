@@ -81,6 +81,7 @@
     margin-left: -1px;
     height: calc(100% + 20px);
     background-color: $gold;
+    cursor: pointer;
     &:after {
         position: absolute;
         bottom: 0;
@@ -94,6 +95,7 @@
         content: '';
     }
     .icon-drag {
+        position: absolute;
         color: $light_gray;
         font-size: em(50px);
         margin-left: em(20px, 50px) * -1;

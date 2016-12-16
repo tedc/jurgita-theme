@@ -23,6 +23,7 @@
                 price();
                 select.init();
                 awards();
+                faceSwitcher();
             }
         }
     };
