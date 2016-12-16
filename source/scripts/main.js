@@ -181,8 +181,9 @@
                         width = $this.width(),
                         p = ( x * 100 ) / width,
                         nW = 100 - p;
-                    TweenMax.to($this.find('.back'), .5, { width : p + '%' });
-                    TweenMax.to($this.find('.front'), .5, { left : p + '%', width : nW + '%' });
+                    console.log(p, nW);
+                    TweenMax.set($this.find('.back'), { width : p + '%' });
+                    TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
                 }
             })
         })
