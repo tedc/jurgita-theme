@@ -1,4 +1,4 @@
-<div class="awards">
+<div class="awards row-lg">
 <h2 class="title aligncenter"><?php _e('I miei attestati', 'jurgita') ?></h2>
 <div class="carousel_list">
     <?php $query = new WP_Query(array(
