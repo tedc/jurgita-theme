@@ -51,3 +51,26 @@
 .su-slider-slide > a, .su-slider-slide > img, .su-slider-slide > a > img {
   height: 100%!important;
 }
+
+
+.square-container {
+  position: relative;
+  .square {
+    width: 66%;
+    height: 66%;
+    background-color: $yellow;
+    position: absolute;
+    bottom: em(-50px);
+    right: 0px;
+    z-index: -1;
+  }
+  .square-shadow {
+    width: 66%;
+    height: 66%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+    position: absolute;
+    bottom: em(-80px);
+    right: em(20px);
+    z-index: -1;
+  }
+}
