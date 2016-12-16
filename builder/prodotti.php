@@ -1,5 +1,6 @@
 <?php if ( get_sub_field('prodotti') ) { ?>
-<header class="row-lg">
+<div class="row-lg">
+    <header>
 <h2 class="title aligncenter"><?php _e('Dal nostro shop', 'jurgita') ?></h2>
 </header>
     <?php $query = new WP_Query(array(
@@ -17,5 +18,5 @@
     <div class="btn-container">
         <a class="btn-header btn-shop" href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>"><span class="btn"><?php _e('Visita lo shop', 'jurgita'); ?></span></a>
     </div>
-
+</div>
 <?php } ?>
