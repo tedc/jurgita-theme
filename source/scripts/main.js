@@ -151,14 +151,14 @@ var carouseContent = $('.carousel_content');
 
 $(".next").click(function(){
     alert("next");
-    carousePhoto.trigger('owl.next');
-    carouseContent.trigger('owl.next');
+    carousePhoto.trigger('next.owl.carousel');
+    carouseContent.trigger('next.owl.carousel');
 
 });
 $(".prev").click(function(){
     alert("prev");
-    carousePhoto.trigger('owl.prev');
-    carouseContent.trigger('owl.prev');
+    carousePhoto.trigger('prev.owl.carousel');
+    carouseContent.trigger('prev.owl.carousel');
 
 });
 
