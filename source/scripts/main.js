@@ -176,6 +176,7 @@
             var $this = $(this);
             Draggable.create(dragger, {
                 bounds: $this,
+                type : 'x',
                 onDrag: function(evt) {
                     var x = evt.screenX - $this.offset().left,
                         width = $this.width(),
