@@ -222,24 +222,28 @@
 
 }
 
-%price {
+.price, %price {
     line-height: 1;
-    padding-bottom: 40px;
-
+    padding-bottom: em(40px);
+    font-family: $second-font;
+    color: $gold; 
+    font-weight: bold;     
     del {
         color: $light_gray;
         font-size: em(18px, 26px);
     }
-
     .woocommerce-Price-amount {
-        font-family: $second-font;
-        font-weight: bold;
         font-size: em(26px);
-        color: $gold;
-
         .int-price {
             font-size: em(36px, 26px);
         }
 
+    }
+    .products & {
+        text-align: center;
+        display: block;
+        .woocommerce-Price-amount {
+            font-size: em(18px);
+        }  
     }
 }
