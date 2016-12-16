@@ -176,7 +176,11 @@
             Draggable.create(dragger, {
                 bounds: $(this),
                 onDrag: function(evt) {
-                    console.log(evt);
+                    var x = evt.offsetX,
+                        width = $(this).width(),
+                        p = ( x * 100 ) / width;
+                    TweenMax.to($(this).find('.back'), { width : p + '%' });
+                    TweenMax.to($(this).find('.front'), { left : p + '%' });
                 }
             })
         })
