@@ -156,13 +156,11 @@ var carouseContent = $('.carousel_content');
 
 
 $(".next").click(function(){
-    alert("next");
     carousePhoto.trigger('next.owl.carousel');
     carouseContent.trigger('next.owl.carousel');
 
 });
 $(".prev").click(function(){
-    alert("prev");
     carousePhoto.trigger('prev.owl.carousel');
     carouseContent.trigger('prev.owl.carousel');
 });
