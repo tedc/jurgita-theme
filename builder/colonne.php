@@ -50,7 +50,7 @@
 			<img src="<?php $front['url']; ?>">
 		</div>
 		<span class="dragger"></span>
-	</figure>
+	</div>
 <?php endif; ?>
 </div>
 <?php endwhile; ?>
