@@ -33,3 +33,12 @@
         }
     }
 }
+
+.zoomer {
+    max-width: 1000px;
+    margin: 0 auto;
+    img {
+        width: $f !important;
+        height: auto !important;
+    }
+}
