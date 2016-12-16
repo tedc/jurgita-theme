@@ -25,13 +25,13 @@
 			letter-spacing: $letter-spacing-large;
 		}
 		&.btn-shop {
-			color: $w;
-			background-color: $gold;
-			transition: background-color $speed;
-			&:hover {
-				background-color: $base_color;
+			a {
 				color: $w;
+				&:hover {
+					color: $light_gray;
+				}
 			}
+			background-color: $gold;
 		}
 		&.btn-menu {
 			position: relative;
@@ -313,6 +313,11 @@
 			}
 		}
 	}
+}
+
+[class^="icon-cart"], [class*=" icon-cart"] {
+	font-size: em(20px);
+	margin-left: 1em;
 }
 
 @keyframes lineTop {
