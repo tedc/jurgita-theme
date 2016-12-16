@@ -178,9 +178,10 @@
                 onDrag: function(evt) {
                     var x = evt.offsetX,
                         width = $(this).width(),
-                        p = ( x * 100 ) / width;
+                        p = ( x * 100 ) / width
+                        nW = 100 - p;
                     TweenMax.to($(this).find('.back'), { width : p + '%' });
-                    TweenMax.to($(this).find('.front'), { left : p + '%' });
+                    TweenMax.to($(this).find('.front'), { left : p + '%', width : nW + '%' });
                 }
             })
         })
