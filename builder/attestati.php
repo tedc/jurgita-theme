@@ -15,7 +15,7 @@
 </div>
 <div class="container-nav">
     <div class="container-arrow prev">
-        <span class="nav-prev"><</span>
+        <span class="icon-arrow-left"></span>
     </div>
 
 
@@ -38,7 +38,7 @@
 
 
     <div class="container-arrow next">
-        <span class="nav-next">></span>
+        <span class="icon-arrow-right"></span>
     </div>
 </div>
 

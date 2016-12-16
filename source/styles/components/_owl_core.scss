@@ -140,12 +140,9 @@
 
 .container-arrow {
     cursor: pointer;
-    .nav-prev {
-
-    }
-    .nav-next {
-
-    }
+  [class^="icon-arrow"], [class*=" icon-arrow"] {
+      font-size: em(24px);
+  }
 }
 
 .description-attestati {

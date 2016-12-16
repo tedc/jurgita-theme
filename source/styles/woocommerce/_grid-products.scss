@@ -1,7 +1,8 @@
 %grid-products {
-    padding-bottom: em(150px);
+    .archive & {
+        padding-bottom: em(150px);
+    }
     .product {
-
         margin-top: em(50px);
 
         a {
