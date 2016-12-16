@@ -149,7 +149,7 @@ var carousePhoto = $('.carousel_list');
 var carouseContent = $('.carousel_content');
 
 
-$(".title").click(function(){
+$(".next").click(function(){
     alert("next");
     carousePhoto.trigger('owl.next');
     carouseContent.trigger('owl.next');
