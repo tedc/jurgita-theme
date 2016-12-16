@@ -1,3 +1,3 @@
 <div class="container body-container">
-	<?php the_field('zoomer'); ?>
+	<?php the_sub_field('zoomer'); ?>
 </div>
