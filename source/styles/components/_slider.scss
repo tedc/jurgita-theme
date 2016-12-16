@@ -55,6 +55,10 @@
 
 .square-container {
   position: relative;
+  display: none;
+  @include breakpoint($bp) {
+    display: block;
+  }
   .square {
     left: 0;
     right: 0;
