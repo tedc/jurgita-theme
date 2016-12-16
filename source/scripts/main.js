@@ -177,13 +177,14 @@
             Draggable.create(dragger, {
                 bounds: $this,
                 onDrag: function(evt) {
-                    var x = evt.offsetX,
-                        width = $this.width(),
-                        p = ( x * 100 ) / width,
-                        nW = 100 - p;
-                    console.log(p, nW);
-                    TweenMax.set($this.find('.back'), { width : p + '%' });
-                    TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
+                    console.log(evt, $this.offset().left);
+                    // var x = evt.offsetX,
+                    //     width = $this.width(),
+                    //     p = ( x * 100 ) / width,
+                    //     nW = 100 - p;
+                    // console.log(p, nW);
+                    // TweenMax.set($this.find('.back'), { width : p + '%' });
+                    // TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
                 }
             })
         })
