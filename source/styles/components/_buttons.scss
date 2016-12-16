@@ -31,6 +31,7 @@
 .btn-reverse {
     @extend %btn;
     color: $gold;
+    background-color: $w;
 
     &:hover {
         background-color: $gold;
