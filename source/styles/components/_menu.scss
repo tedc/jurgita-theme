@@ -316,15 +316,7 @@
 }
 
 .icon-cart {
-	&-full {
-		display: none;
-		.woocommerce-items-in-cart & {
-			display: inline-block;
-		}
-	}
-	.woocommerce-items-in-cart & {
-		display: none;
-	}
+	font-size: em(20px);
 }
 
 @keyframes lineTop {

@@ -24,14 +24,9 @@ function custom_woocommerce_get_catalog_ordering_args( $args ) { if (isset($_SES
 add_filter('woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby');
 function custom_woocommerce_catalog_orderby( $sortby ) { $sortby['category'] = 'Sort by category'; return $sortby; }
 
-add_filter('body_class', 'pwm_woocommerce_cart_status');
-
-function pwm_woocommerce_cart_status( $classes ){
+function woocommerce_car_icon(){
 	global $woocommerce;
-
-	if( $woocommerce->cart->cart_contents_count > 0 ):
-		$classes[] = 'woocommerce-items-in-cart';
-	endif;
-	
-	return $classes;
+	$url = woocommerce_get_page_id( 'cart' );
+	$icon = ( $woocommerce->cart->cart_contents_count > 0 ) ? '<a href="'.$url.'" class="icon-cart-full"></a>' : '<a href="'.$url.'" class="icon-cart"></a>';
+	echo $icon;
 }
