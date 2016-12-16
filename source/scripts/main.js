@@ -123,6 +123,9 @@ $('.carousel_list').owlCarousel({
     items : 5,
     responsiveClass: true,
     loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
     center : true,
     responsive: {
         0: {
