@@ -171,7 +171,7 @@
     }
 
     function faceSwitcher() {
-        $('.swticher').each(function() {
+        $('.switcher').each(function() {
             var dragger = element.find('.dragger');
             Draggable.create(dragger, {
                 bounds: $(this),
