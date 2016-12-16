@@ -26,7 +26,7 @@ function custom_woocommerce_catalog_orderby( $sortby ) { $sortby['category'] = '
 
 function woocommerce_car_icon(){
 	global $woocommerce;
-	$url = woocommerce_get_page_id( 'cart' );
+	$url = get_permalink( woocommerce_get_page_id( 'cart' ) );
 	$icon = ( $woocommerce->cart->cart_contents_count > 0 ) ? '<a href="'.$url.'" class="icon-cart-full"></a>' : '<a href="'.$url.'" class="icon-cart"></a>';
 	echo $icon;
 }

@@ -315,7 +315,7 @@
 	}
 }
 
-.icon-cart {
+[class^="icon-cart"], [class*=" icon-cart"] {
 	font-size: em(20px);
 	margin-left: 1em;
 }
