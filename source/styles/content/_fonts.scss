@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "frt-icons";
+  src: url('../fonts/frt-icons.eot');
+  src: url('../fonts/frt-icons.eot?#iefix') format('eot'),
+    url('../fonts/frt-icons.woff2') format('woff2'),
+    url('../fonts/frt-icons.woff') format('woff'),
+    url('../fonts/frt-icons.ttf') format('truetype'),
+    url('../fonts/frt-icons.svg#frt-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon"], [class*=" icon"] {
+  display: inline-block;
+  font-family: "frt-icons";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-J:before { content: "\EA01" }
+.icon-arrow-down:before { content: "\EA02" }
+.icon-arrow-left:before { content: "\EA03" }
+.icon-arrow-right:before { content: "\EA04" }
+.icon-audio-off:before { content: "\EA05" }
+.icon-audio:before { content: "\EA06" }
+.icon-cart-full:before { content: "\EA07" }
+.icon-cart:before { content: "\EA08" }
+.icon-close:before { content: "\EA09" }
+.icon-drag:before { content: "\EA0A" }
+.icon-facebook:before { content: "\EA0B" }
+.icon-google:before { content: "\EA0C" }
+.icon-instagram:before { content: "\EA0D" }
+.icon-lente:before { content: "\EA0E" }
+.icon-menu:before { content: "\EA0F" }
+.icon-pause:before { content: "\EA10" }
+.icon-play-anteprima:before { content: "\EA11" }
+.icon-play:before { content: "\EA12" }
+.icon-scroll-mouse:before { content: "\EA13" }
+.icon-scroll:before { content: "\EA14" }
+.icon-select-down:before { content: "\EA15" }
+.icon-select-up:before { content: "\EA16" }
+.icon-twitter:before { content: "\EA17" }

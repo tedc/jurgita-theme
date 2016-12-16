@@ -22,6 +22,10 @@ var uglify       = require('gulp-uglify');
 var compass      = require('gulp-compass');
 var postcss      = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var async        = require('async');
+var consolidate  = require('gulp-consolidate');
+var iconfont     = require('gulp-iconfont');
+var rename       = require('gulp-rename');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./source/manifest.json');
@@ -236,6 +240,37 @@ gulp.task('jshint', function() {
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
+});
+
+gulp.task('Iconfont', function(done){
+  var iconStream = gulp.src([path.source + 'fonts/*.svg'])
+    .pipe(iconfont({ fontName: 'jurgita-icons', normalize : true, formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'] }));
+
+  async.parallel([
+    function handleGlyphs (cb) {
+      iconStream.on('glyphs', function(glyphs, options) {
+        gulp.src(path.source + 'fonts/template.css')
+          .pipe(consolidate('lodash', {
+            glyphs: glyphs,
+            fontName: 'frt-icons',
+            fontPath: '../fonts/',
+            className: 'icon'
+          }))
+          .pipe(rename({
+            basename : '_fonts',
+            extname : '.scss'
+          }))
+          .pipe(gulp.dest(path.source + 'styles/content'))
+          .on('finish', cb);
+      });
+    },
+    function handleFonts (cb) {
+      iconStream
+        .pipe(gulp.dest(path.dist + 'fonts/'))
+        .on('finish', cb);
+    }
+  ], done);
+
 });
 
 // ### Clean
