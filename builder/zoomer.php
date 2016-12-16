@@ -1,3 +1,3 @@
-<div class="container row-lg zoomer">
+<div class="container row-md zoomer">
 	<?php the_sub_field('zoomer'); ?>
 </div>

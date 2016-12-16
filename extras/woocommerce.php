@@ -24,4 +24,14 @@ function custom_woocommerce_get_catalog_ordering_args( $args ) { if (isset($_SES
 add_filter('woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby');
 function custom_woocommerce_catalog_orderby( $sortby ) { $sortby['category'] = 'Sort by category'; return $sortby; }
 
-?>
+add_filter(‘body_class’, ‘pwm_woocommerce_cart_status’);
+
+function pwm_woocommerce_cart_status( $classes ){
+	global $woocommerce;
+
+	if( $woocommerce->cart->cart_contents_count > 0 ):
+		$classes[] = 'woocommerce-items-in-cart';
+	endif;
+	
+	return $classes;
+}
