@@ -47,8 +47,7 @@
         left: calc(50% - #{em(200px)});
     }
     .pattern {
-       /* @include pattern();*/
-        background-color: red;
+        @include pattern();
         position: absolute;
         width: em(200px);
         height: em(200px);
