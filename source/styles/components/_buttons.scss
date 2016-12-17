@@ -44,6 +44,7 @@
     @extend %btn;
     border: 3px solid $gold;
     color: $gold;
+    background-color: $w;
 
     &:hover {
         background-color: $gold;
