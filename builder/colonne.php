@@ -42,6 +42,7 @@
 			$front = get_sub_field('immagine_destra');
 			$back = get_sub_field('immagine_sinistra');
 		?>
+	<div class="row-lg">
 	<div class="switcher" style="padding-top:<?php echo ( $front['height'] * 100 ) / $front['width']; ?>%">		
 		<div class="face-wrapper front">
 			<img src="<?php echo $back['url']; ?>">
@@ -52,6 +53,7 @@
 		<span class="dragger">
 			<i class="icon-drag"></i>
 		</span>
+	</div>
 	</div>
 <?php endif; ?>
 </div>

@@ -105,6 +105,7 @@ ul, ol {
 }
 
 .subtitle {
+    font-family: $third-font;
     font-size: em(26px);
     padding-top: em(40px, 26px);
     .home & {
