@@ -3,10 +3,10 @@
         position: absolute;
         width: em(80px);
         height: em(80px);
-        top: calc( 100% + 40px );
-        left: calc( 50% + 40px );
+        top: calc(100% - #{em(130px)});
+        left: calc( 50% - #{em(40px)} );
         .j {
-            font-size: em(100px);
+            font-size: em(60px);
         }
         display: none;
         @include breakpoint($bp){
