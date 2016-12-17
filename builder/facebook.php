@@ -16,7 +16,9 @@
         ?>
         <p class="title">196847 LIKE</p>
         <div class="gray-square"></div>
-        <span class="like icon-facebook"></span>
+        <span class="like">
+            <span class="icon-facebook"></span>
+        </span>
         <a href="<?php bloginfo('url'); ?>" class="logo">
             <span class="j">J</span>
             <span class="j">J</span>

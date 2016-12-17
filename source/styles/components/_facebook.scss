@@ -29,6 +29,12 @@
             top: calc(50% - 50px);
             right: -30px;
             background-color: #3c5a9a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-facebook {
+                font-size: em(65px);
+            }
         }
     }
     figure{
