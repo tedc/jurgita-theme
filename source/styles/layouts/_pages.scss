@@ -23,6 +23,8 @@
 			display: flex;
 			align-content: center;
 			flex-wrap: wrap;
+			padding-top: em(50px);
+			padding-bottom: 0;
 		}
 		&-bottom {
 			align-self: flex-end;
