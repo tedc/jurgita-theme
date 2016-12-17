@@ -21,7 +21,7 @@
 		@include normalize_padding();
 		.home & {
 			display: flex;
-			flex-direction: columns;
+			flex-direction: column;
 			padding-top: em(50px);
 			padding-bottom: 0;
 			min-height: calc(100vh - #{em(70px)});
@@ -30,6 +30,7 @@
 			flex: 20;
 			display: flex;
 			align-content: center;
+			flex-wrap: wrap;
 		}
 		&-bottom {
 			width: $f;
