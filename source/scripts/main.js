@@ -176,20 +176,21 @@
             var $this = $(this);
             Draggable.create(dragger, {
                 bounds: $this,
-                type : 'x',
+                type : 'left',
                 onDrag: function(evt) {
-                    var width = $this.width(),
-                        center = width / 2,
-                        x = center + this.x,
-                        p = ( x * 100 ) / width,
-                        nW = 100 - p;
-                    TweenMax.set($this.find('.back'), { width : p + '%' });
-                    TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
+                    console.log(this);
+                    // var width = $this.width(),
+                    //     center = width / 2,
+                    //     x = center + this.x,
+                    //     p = ( x * 100 ) / width,
+                    //     nW = 100 - p;
+                    // TweenMax.set($this.find('.back'), { width : p + '%' });
+                    // TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
                 },
                 onDragEnd: function() {
-                    var x = this.x,
-                        p = ( x * 100 ) / 2;
-                    TweenMax.set(dragger, { x : p + '%'});
+                    // var x = this.x,
+                    //     p = ( x * 100 ) / 2;
+                    // TweenMax.set(dragger, { x : p + '%'});
                 }
             })
         })
