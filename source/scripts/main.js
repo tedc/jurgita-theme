@@ -190,7 +190,7 @@
         });
         $(window).on('resize', function() {
             $('.switcher').each(function() {
-                var pos = $(this).find('.front').offset().left - ( $(this).width() / 2 );
+                var pos = $(this).find('.front').position().left - ( $(this).width() / 2 );
                 TweenMax.set($(this).find('.dragger'), { x : pos});
             });
         })
