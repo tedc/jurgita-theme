@@ -178,10 +178,8 @@
                 bounds: $this,
                 type : 'x',
                 onDrag: function(evt) {
-                    console.log(this);
-                    var left =  $this.offset().left,
-                        width = $this.width(),
-                        center = ( width - left ) / 2,
+                    var width = $this.width(),
+                        center = width / 2,
                         x = center + this.x,
                         p = ( x * 100 ) / width,
                         nW = 100 - p;
