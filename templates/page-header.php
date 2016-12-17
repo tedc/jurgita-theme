@@ -2,7 +2,7 @@
 <header class="page-header">
 	<?php if(!is_front_page()) : ?>
 	<h1 class="title"><?= Titles\title(); ?></h1>
-	<?php get_field('sottotitolo') : ?>
+	<?php if(get_field('sottotitolo')) : ?>
 	<h2 class="subtitle"><?php the_field('sottotitolo'); ?></h2>
 	<?php endif; ?>
 	<?php else : ?>
