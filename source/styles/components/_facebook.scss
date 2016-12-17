@@ -6,9 +6,29 @@
     .like-content {
         background-color: $yellow;
         padding: em(70px) em(200px);
+        position: relative;
 
         p {
             text-align: center;
+        }
+
+        .logo {
+            position: absolute;
+            width:em(140px);
+            height: em(140px);
+            top: -70px;
+            right: -70px;
+            .j {
+                font-size: em(100px);
+            }
+        }
+        .like {
+            position: absolute;
+            width:em(100px);
+            height: em(100px);
+            top: calc(50% - 50px);
+            right: -30px;
+            background-color: #3c5a9a;
         }
     }
     figure{
