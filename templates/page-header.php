@@ -8,7 +8,7 @@
 	<?php else : ?>
 	<?php 
 		$name = explode(' ', get_bloginfo('name'));
-		$description explode('&', get_bloginfo( 'description') );
+		$description = explode('&', get_bloginfo( 'description') );
 		$about = get_field('about');
 		$i = 1;
 		$h1 = '<h1 class="title">'
