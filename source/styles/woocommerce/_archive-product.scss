@@ -172,11 +172,11 @@
                 visibility: hidden;
                 opacity: 0;
                 background-color: $w;
-                width: calc( 100% );
+                width: 100%;
                 border-bottom: 1px solid $w;
                 border-left: 1px solid $w;
                 border-right: 1px solid $w;
-                .li {
+                .select-list-item {
                     padding-top: em(15px);
                     padding-bottom: em(15px);
                 }
