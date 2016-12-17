@@ -28,7 +28,7 @@
     <?php while ($query->have_posts()) :
         $query->the_post();  ?>
         <div class="carousel_item">
-            <h5><?php the_title()  ?></h5>
+            <h5 class="title"><?php the_title()  ?></h5>
             <div class="description-attestati">
                 <?php the_content(); ?>
             </div>
