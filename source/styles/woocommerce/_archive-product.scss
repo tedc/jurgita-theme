@@ -139,8 +139,8 @@
                 }
             }
             .select-value {
-                padding-left: em(20px);
-                padding-right: em(40px);
+              /*  padding-left: em(20px);
+                padding-right: em(40px);*/
                 background-color: white;
                 color: $category_gray;
                 position: relative;
@@ -161,8 +161,8 @@
             }
             .select-list {
                 position: absolute;
-                padding-left: em(20px);
-                padding-right: em(40px);
+               /* padding-left: em(20px);
+                padding-right: em(40px);*/
                 left: 0px;
                 visibility: hidden;
                 opacity: 0;
