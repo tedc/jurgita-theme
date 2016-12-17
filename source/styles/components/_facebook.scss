@@ -33,7 +33,6 @@
             top: calc(50% - 50px);
             right: -10px;
             background-color: #3c5a9a;
-            display: flex;
             align-items: center;
             justify-content: center;
             .icon-facebook {
@@ -42,7 +41,7 @@
             }
             display: none;
             @include breakpoint($bp){
-                display: block;
+                display: flex;
             }
         }
     }
@@ -74,5 +73,9 @@
         position: absolute;
         top: 0;
         left: calc(50% - #{em(530px)});
+        display: none;
+        @include breakpoint($bp){
+            display: block;
+        }
     }
 }
