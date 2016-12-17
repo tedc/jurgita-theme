@@ -176,23 +176,23 @@
             var $this = $(this);
             Draggable.create(dragger, {
                 bounds: $this,
-                type : 'left',
+                type : 'x',
                 onDrag: function(evt) {
-                    console.log(this);
-                    // var width = $this.width(),
-                    //     center = width / 2,
-                    //     x = center + this.x,
-                    //     p = ( x * 100 ) / width,
-                    //     nW = 100 - p;
-                    // TweenMax.set($this.find('.back'), { width : p + '%' });
-                    // TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
-                },
-                onDragEnd: function() {
-                    // var x = this.x,
-                    //     p = ( x * 100 ) / 2;
-                    // TweenMax.set(dragger, { x : p + '%'});
+                    var width = $this.width(),
+                        center = width / 2,
+                        x = center + this.x,
+                        p = ( x * 100 ) / width,
+                        nW = 100 - p;
+                    TweenMax.set($this.find('.back'), { width : p + '%' });
+                    TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
                 }
             })
+        });
+        $(window).on('resize', function() {
+            $('.switcher').each(function() {
+                var pos = $(this).find('.front').offset().left - ( $(this).width() / 2 );
+                TweenMax.set($(this).find('.front'), { x : pos});
+            });
         })
     }
 
