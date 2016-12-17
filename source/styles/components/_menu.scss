@@ -205,10 +205,17 @@
 	transition: transform $speed, opacity $speed, visibility $speed;
 	padding-top: em(70px);
 	overflow: hidden;
+	@include pattern();
+	&:before {
+		@include absfull();
+		content: '';
+		background: linear-gradient(to bottom, rbga(255,255,255,0) 0, white em(90px));
+	}
 	.nav {
 		margin: auto;
 		text-align: center;
 		width: $f;
+		position: relative;
 		@include normalize_padding();
 		a {
 			display: block;
@@ -299,7 +306,18 @@
 		width: $f;
 		text-align: center;
 		align-self: flex-end;
-		padding-bottom: em(40px);
+		padding-top: em(40px);
+		position: relative;
+		@include pattern();
+		&:before {
+			@include absfull();
+			content: '';
+			background: linear-gradient(to bottom, rbga(255,255,255,0) 0, white em(90px));
+		}
+		&-social {
+			padding-bottom: em(40px);
+			position: relative;
+		}
 		[class^="icon"], [class*=" icon"] {
 			color: $gold;
 			font-size: em(24px);
@@ -310,6 +328,7 @@
 		}
 		&-phone {
 			@include normalize_padding;
+			position: relative;
 			background-color: $gold;
 			padding-top: em(20px);
 			padding-bottom: em(20px);
