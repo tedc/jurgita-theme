@@ -21,6 +21,10 @@
             .j {
                 font-size: em(100px);
             }
+            display: none;
+            @include breakpoint($bp){
+                display: block;
+            }
         }
         .like {
             position: absolute;
@@ -36,6 +40,10 @@
                 font-size: em(65px);
                 color: $w;
             }
+            display: none;
+            @include breakpoint($bp){
+                display: block;
+            }
         }
     }
     .gray-square {
@@ -45,6 +53,10 @@
         background-color: $light_gray;
         bottom: calc(50% - #{em(200px)});
         left: calc(50% - #{em(200px)});
+        display: none;
+        @include breakpoint($bp){
+            display: block;
+        }
     }
     .pattern {
         @include pattern();
@@ -53,6 +65,10 @@
         height: em(200px);
         bottom: calc(50% - #{em(80px)});
         right: calc(50% - #{em(500px)});
+        display: none;
+        @include breakpoint($bp){
+            display: block;
+        }
     }
     figure {
         position: absolute;
