@@ -1,6 +1,7 @@
 <div class="container facebook row-lg">
     <span class="pattern"></span>
     <span class="square"></span>
+    <div class="gray-square"></div>
     <div class="like-content">
         <?php
         $fb_page = '1574408442879997';
@@ -15,7 +16,6 @@
        /* echo "Likes:".$details['likes']*/;
         ?>
         <p class="title">196847 LIKE</p>
-        <div class="gray-square"></div>
         <span class="like">
             <span class="icon-facebook"></span>
         </span>

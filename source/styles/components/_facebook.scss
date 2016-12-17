@@ -14,7 +14,7 @@
 
         .logo {
             position: absolute;
-            width:em(140px);
+            width: em(140px);
             height: em(140px);
             top: -70px;
             right: -70px;
@@ -24,7 +24,7 @@
         }
         .like {
             position: absolute;
-            width:em(100px);
+            width: em(100px);
             height: em(100px);
             top: calc(50% - 50px);
             right: -30px;
@@ -34,12 +34,30 @@
             justify-content: center;
             .icon-facebook {
                 font-size: em(65px);
+                color: $w;
             }
         }
     }
-    figure{
+    .gray-square {
+        width: em(200px);
+        height: em(200px);
         position: absolute;
-        left: 0;
-        top: 0px;
+        background-color: $square-master;
+        bottom: calc(50% - #{em(200px)});
+        left: calc(50% - #{em(200px)});
+    }
+    .pattern {
+       /* @include pattern();*/
+        background-color: red;
+        position: absolute;
+        width: em(200px);
+        height: em(200px);
+        bottom: calc(50% - #{em(50px)});
+        right: calc(50% - #{em(300px)});
+    }
+    figure {
+        position: absolute;
+        top: calc(50% - #{em(50px)});
+        left: calc(50% - #{em(400px)});
     }
 }
