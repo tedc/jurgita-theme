@@ -201,15 +201,15 @@
 	visibility: hidden;
 	backface-visibility: hidden;
 	perspective: 1000px;
-	background-color: $w;
 	transition: transform $speed, opacity $speed, visibility $speed;
 	padding-top: em(70px);
 	overflow: hidden;
 	@include pattern();
+	background-color: $w;
 	&:before {
 		@include absfull();
 		content: '';
-		background: linear-gradient(to bottom, rbga(255,255,255,0) 0, white em(90px));
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0, white em(90px));
 	}
 	.nav {
 		margin: auto;
@@ -312,7 +312,7 @@
 		&:before {
 			@include absfull();
 			content: '';
-			background: linear-gradient(to bottom, rbga(255,255,255,0) 0, white em(90px));
+			background: linear-gradient(to top, rgba(255,255,255,0) 0, white em(90px));
 		}
 		&-social {
 			padding-bottom: em(40px);
