@@ -31,9 +31,27 @@
 			display: flex;
 			align-content: center;
 			flex-wrap: wrap;
+			position: relative;
+			z-index: 1;
 		}
 		&-bottom {
 			width: $f;
+			position: relative;
+			z-index: 1;
+			.icon-scroll {
+				display: block;
+				color: $gold;
+				font-size: em(40px);
+			}
+		}
+		.wp-post-image {
+			.home & {
+				height: $f;
+				left: 50%;
+				position: absolute;
+				z-index: 0;
+				bottom: 0;
+			}
 		}
 	}
 }
