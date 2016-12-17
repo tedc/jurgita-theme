@@ -11,6 +11,6 @@
         <a class="btn"><?php _e('Diventa fan', 'jurgita') ?></a>
     </div>
     <figure>
-        <img src="graph.facebook.com/1574408442879997/picture">
+        <img src=<?php echo get_option("wpseo_social")["og_default_image"] ?>>
     </figure>
 </div>
