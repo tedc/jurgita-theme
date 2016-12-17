@@ -312,7 +312,7 @@
 		&:before {
 			@include absfull();
 			content: '';
-			background: linear-gradient(to top, rgba(255,255,255,0) 0, white em(90px));
+			background: linear-gradient(to bottom, white 0, rgba(255,255,255,0) em(90px));
 		}
 		&-social {
 			padding-bottom: em(40px);

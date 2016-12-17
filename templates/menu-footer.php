@@ -1,5 +1,5 @@
 <footer class="menu-footer">
-	<nav classs="menu-footer-social">
+	<nav class="menu-footer-social">
 		<a class="icon-facebook" href="<?php echo get_option("wpseo_social")["facebook_site"] ?>"></a>
 		<a class="icon-instagram" href="<?php echo get_option("wpseo_social")["instagram_url"] ?>"></a>
 	</nav>
