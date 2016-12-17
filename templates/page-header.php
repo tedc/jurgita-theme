@@ -22,6 +22,7 @@
 			echo '<div class="page-header-bottom"><a class="btn-reverse" href="'.get_permalink($about).'">'.get_the_title( $about ).'</a><a href="#site" class="icon-scroll"></a></div>';
 		endif;
 	?>
+	<?php the_post_thumbnail( 'full' ); ?>
 
 	<?php endif; ?>
 </header>
