@@ -52,12 +52,12 @@
         position: absolute;
         width: em(200px);
         height: em(200px);
-        bottom: calc(50% - #{em(50px)});
-        right: calc(50% - #{em(300px)});
+        bottom: calc(50% - #{em(80px)});
+        right: calc(50% - #{em(500px)});
     }
     figure {
         position: absolute;
-        top: calc(50% - #{em(50px)});
-        left: calc(50% - #{em(400px)});
+        top: 0;
+        left: calc(50% - #{em(530px)});
     }
 }
