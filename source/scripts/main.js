@@ -178,7 +178,7 @@
                 bounds: $this,
                 type : 'x',
                 onDrag: function(evt) {
-                    var x = evt.screenX - $this.offset().left,
+                    var x = evt.pageX - $this.offset().left,
                         width = $this.width(),
                         p = ( x * 100 ) / width,
                         nW = 100 - p;
