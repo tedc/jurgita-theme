@@ -112,6 +112,7 @@
             text-transform: uppercase;
             background-color: $w;
             cursor: pointer;
+            position: relative;
 
             &:hover{
                 .select-value {
@@ -150,6 +151,8 @@
             }
             .select-list {
                 position: absolute;
+                padding-left: em(20px);
+                padding-right: em(40px);
                 left: -1px;
                 visibility: hidden;
                 opacity: 0;
