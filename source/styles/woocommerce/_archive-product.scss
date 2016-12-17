@@ -47,6 +47,9 @@
                 border-top: 1px solid $category_gray;
                 border-left: 1px solid $category_gray;
                 border-right: 1px solid $category_gray;
+                &:after {
+                    transform: scale(-1);
+                }
                 ul {
                     visibility: visible;
                     opacity: 1;
@@ -119,6 +122,9 @@
                     border-top: 1px solid $category_gray;
                     border-left: 1px solid $category_gray;
                     border-right: 1px solid $category_gray;
+                    &:after {
+                        transform: scale(-1);
+                    }
                 }
                 .select-list {
                     visibility: visible;
@@ -153,7 +159,7 @@
                 position: absolute;
                 padding-left: em(20px);
                 padding-right: em(40px);
-                left: -1px;
+                left: 0px;
                 visibility: hidden;
                 opacity: 0;
                 background-color: $w;
