@@ -1,4 +1,4 @@
-<div class="container facebook">
+<div class="container facebook row-lg">
     <span class="pattern"></span>
     <span class="square"></span>
     <div class="like-content">
@@ -11,6 +11,6 @@
         <a class="btn"><?php _e('Diventa fan', 'jurgita') ?></a>
     </div>
     <figure>
-        <img>
+        <img src="graph.facebook.com/1574408442879997/picture">
     </figure>
 </div>
