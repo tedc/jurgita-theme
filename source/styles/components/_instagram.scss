@@ -1,0 +1,16 @@
+.instagram {
+    .logo {
+        position: absolute;
+        width: em(80px);
+        height: em(80px);
+        top: calc( 100% + 40px );
+        left: calc( 50% + 40px );
+        .j {
+            font-size: em(100px);
+        }
+        display: none;
+        @include breakpoint($bp){
+            display: block;
+        }
+    }
+}
