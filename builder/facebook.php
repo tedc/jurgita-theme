@@ -14,7 +14,7 @@
         $details = json_decode($result,true);
        /* echo "Likes:".$details['likes']*/;
         ?>
-        <p>196847 LIKE</p>
+        <p class="title">196847 LIKE</p>
         <div class="gray-square"></div>
         <span class="like"></span>
         <a href="<?php bloginfo('url'); ?>" class="logo">
