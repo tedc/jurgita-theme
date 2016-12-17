@@ -178,6 +178,7 @@
                 bounds: $this,
                 type : 'x',
                 onDrag: function(evt) {
+                    console.lo(this);
                     var x = evt.pageX - $this.offset().left,
                         width = $this.width(),
                         p = ( x * 100 ) / width,
