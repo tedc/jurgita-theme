@@ -7,5 +7,7 @@
             <span class="j">J</span>
         </a>
     </div>
-    <a href="https://www.instagram.com/rimastino/" class="btn" target="_blank"><?php _e('Segui', 'jurgita') ?></a>
+    <div class="container-btn">
+        <a href="https://www.instagram.com/rimastino/" class="btn" target="_blank"><?php _e('Segui', 'jurgita') ?></a>
+    </div>
 </div>
