@@ -123,6 +123,7 @@
             cursor: pointer;
             position: relative;
 
+
             &:hover{
                 .select-value {
                     border-top: 1px solid $category_gray;
@@ -143,6 +144,8 @@
             .select-value {
                 padding-left: em(20px);
                 padding-right: em(40px);
+                padding-top: em(15px);
+                padding-bottom: em(15px);
                 background-color: white;
                 color: $category_gray;
                 position: relative;
@@ -165,8 +168,6 @@
                 position: absolute;
                 padding-left: em(20px);
                 padding-right: em(40px);
-                padding-top: em(15px);
-                padding-bottom: em(15px);
                 left: 0px;
                 visibility: hidden;
                 opacity: 0;
@@ -175,6 +176,10 @@
                 border-bottom: 1px solid $w;
                 border-left: 1px solid $w;
                 border-right: 1px solid $w;
+                .li {
+                    padding-top: em(15px);
+                    padding-bottom: em(15px);
+                }
             }
         }
     }
