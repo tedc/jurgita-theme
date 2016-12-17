@@ -153,3 +153,7 @@
         }
     }
 }
+
+@mixin pattern() {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+}

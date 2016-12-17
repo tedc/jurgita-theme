@@ -46,11 +46,12 @@
 		}
 		.wp-post-image {
 			.home & {
-				height: $f;
+				height: $f !important;
 				left: 50%;
 				position: absolute;
 				z-index: 0;
 				bottom: 0;
+				width: auto !important;
 			}
 		}
 	}

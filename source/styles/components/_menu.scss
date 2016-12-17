@@ -299,17 +299,26 @@
 		width: $f;
 		text-align: center;
 		align-self: flex-end;
+		padding-bottom: em(40px);
+		[class^="icon"], [class*=" icon"] {
+			color: $gold;
+			font-size: em(24px);
+			padding: 0 em(10px, 24px);
+			&:hover {
+				color: $gray;
+			}
+		}
 		&-phone {
 			@include normalize_padding;
 			background-color: $gold;
 			padding-top: em(20px);
 			padding-bottom: em(20px);
 			color: $w;
-		}
-		a {
-			color: $w;
-			&:hover {
-				color: $light_gray;
+			a {
+				color: $w;
+				&:hover {
+					color: $light_gray;
+				}
 			}
 		}
 	}
