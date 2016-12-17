@@ -187,10 +187,8 @@
                     TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
                 },
                 onDragEnd: function() {
-                    var width = $this.width(),
-                        center = width / 2,
-                        x = center + this.x,
-                        p = ( x * 100 ) / width;
+                    var x = this.x,
+                        p = ( x * 100 ) / 2;
                     TweenMax.set(dragger, { x : p + '%'});
                 }
             })
