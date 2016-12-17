@@ -16,12 +16,13 @@
 			$h1 .= ($n < count($name)) ? $n . '<br>' : $n . '</h1>';
 			$i++;
 		}
-		echo $h1;
-		echo '<h2 class="subtitle">' .$description[0].'<br/>&'.$description[1].'</h2>';
+		echo '<div class="page-header-top">'.$h1;
+		echo '<h2 class="subtitle">' .$description[0].'<br/>&'.$description[1].'</h2></div>';
 		if($about) :
-			echo '<a class="btn-reverse" href="'.get_permalink($about).'">'.get_the_title( $about ).'</a>';
+			echo '<div class="page-header-bottom"><a class="btn-reverse" href="'.get_permalink($about).'">'.get_the_title( $about ).'</a><a href="#site" class="icon-scroll"></a></div>';
 		endif;
 	?>
+	<?php the_post_thumbnail( 'full' ); ?>
 
 	<?php endif; ?>
 </header>

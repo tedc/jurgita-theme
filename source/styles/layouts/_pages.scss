@@ -1,0 +1,39 @@
+.page {
+	&-header {
+		position: relative;
+		text-align: center;
+		padding: {
+			top: em(75px);
+			bottom: em(75px);
+		}
+		@include breakpoint($bp) {
+			padding: {
+				top: em(100px);
+				bottom: em(100px);
+			}
+		}
+		@include breakpoint(1024px) {
+			padding: {
+				top: em(150px);
+				bottom: em(150px);
+			}
+		}
+		@include normalize_padding();
+		.home & {
+			display: flex;
+			flex-direction: column;
+			padding-top: em(50px);
+			padding-bottom: 0;
+			min-height: calc(100vh - #{em(70px)});
+		}
+		&-top {
+			flex: 20;
+			display: flex;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+		&-bottom {
+			width: $f;
+		}
+	}
+}
