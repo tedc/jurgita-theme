@@ -27,7 +27,7 @@
             width: em(100px);
             height: em(100px);
             top: calc(50% - 50px);
-            right: -30px;
+            right: -10px;
             background-color: #3c5a9a;
             display: flex;
             align-items: center;
@@ -42,7 +42,7 @@
         width: em(200px);
         height: em(200px);
         position: absolute;
-        background-color: $square-master;
+        background-color: $light_gray;
         bottom: calc(50% - #{em(200px)});
         left: calc(50% - #{em(200px)});
     }
