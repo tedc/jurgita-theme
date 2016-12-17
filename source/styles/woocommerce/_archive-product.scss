@@ -111,21 +111,25 @@
             color: $gold;
             text-transform: uppercase;
             background-color: $w;
+            cursor: pointer;
+
             &:hover{
                 .select-value {
                     border-top: 1px solid $category_gray;
                     border-left: 1px solid $category_gray;
                     border-right: 1px solid $category_gray;
-                    .select-list {
-                        visibility: visible;
-                        opacity: 1;
-                        border-bottom: 1px solid $category_gray;
-                        border-left: 1px solid $category_gray;
-                        border-right: 1px solid $category_gray;
-                    }
+                }
+                .select-list {
+                    visibility: visible;
+                    opacity: 1;
+                    border-bottom: 1px solid $category_gray;
+                    border-left: 1px solid $category_gray;
+                    border-right: 1px solid $category_gray;
                 }
             }
             .select-value {
+                padding-left: em(20px);
+                padding-right: em(40px);
                 background-color: white;
                 color: $category_gray;
                 position: relative;
