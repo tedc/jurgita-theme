@@ -1,0 +1,32 @@
+.page {
+	&-header {
+		position: relative;
+		text-align: center;
+		padding: {
+			top: em(75px);
+			bottom: em(75px);
+		}
+		@include breakpoint($bp) {
+			padding: {
+				top: em(100px);
+				bottom: em(100px);
+			}
+		}
+		@include breakpoint(1024px) {
+			padding: {
+				top: em(150px);
+				bottom: em(150px);
+			}
+		}
+		@include normalize_padding();
+		.home & {
+			display: flex;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+		&-bottom {
+			align-self: flex-end;
+			width: $f;
+		}
+	}
+}
