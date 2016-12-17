@@ -185,6 +185,13 @@
                         nW = 100 - p;
                     TweenMax.set($this.find('.back'), { width : p + '%' });
                     TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
+                },
+                onDragEnd: function() {
+                    var width = $this.width(),
+                        center = width / 2,
+                        x = center + this.x,
+                        p = ( x * 100 ) / width;
+                    TweenMax.set(dragger, { x : p + '%'});
                 }
             })
         })
