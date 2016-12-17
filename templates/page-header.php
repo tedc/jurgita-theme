@@ -13,7 +13,7 @@
 		$i = 1;
 		$h1 = '<h1 class="title">';
 		foreach ($name as $n) {
-			$h1 .= ($n < count($name)) ? $n . '<br>' : ? $n . '</h1>';
+			$h1 .= ($n < count($name)) ? $n . '<br>' : $n . '</h1>';
 			$i++;
 		}
 		echo $h1;
