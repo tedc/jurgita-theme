@@ -1,6 +1,7 @@
 .video-cover {
     background-size: cover;
     background-position: center;
+    @include absfull();
     &-header {
         opacity: .2;
     }
