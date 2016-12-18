@@ -1,12 +1,14 @@
-.video-cover {
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    @include absfull();
+.video {
+    &-cover {
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        @include absfull();
+    }
     &-header {
         opacity: .2;
     }
-    .video {
+    &-item {
         position: absolute;
         min-width: 100%;
         min-height: 100%;
