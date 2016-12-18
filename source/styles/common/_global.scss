@@ -73,6 +73,7 @@
             @include clearfix();
         }
         [class^="col"], [class*=" col"] {
+            position: relative;
             @if $flex {
                 flex: 0 0 auto;
             } @else {
