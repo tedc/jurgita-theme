@@ -303,40 +303,42 @@
 		}
 	}
 	&-footer {
-		width: $f;
-		text-align: center;
-		align-self: flex-end;
-		padding-top: em(40px);
-		position: relative;
-		@include pattern();
-		&:before {
-			@include absfull();
-			content: '';
-			background: linear-gradient(to bottom, white 0, rgba(255,255,255,0) em(90px));
-		}
-		&-social {
-			padding-bottom: em(40px);
+		.banner &{
+			width: $f;
+			text-align: center;
+			align-self: flex-end;
+			padding-top: em(40px);
 			position: relative;
-		}
-		[class^="icon"], [class*=" icon"] {
-			color: $gold;
-			font-size: em(24px);
-			padding: 0 em(10px, 24px);
-			&:hover {
-				color: $gray;
+			@include pattern();
+			&:before {
+				@include absfull();
+				content: '';
+				background: linear-gradient(to bottom, white 0, rgba(255,255,255,0) em(90px));
 			}
-		}
-		&-phone {
-			@include normalize_padding;
-			position: relative;
-			background-color: $gold;
-			padding-top: em(20px);
-			padding-bottom: em(20px);
-			color: $w;
-			a {
-				color: $w;
+			&-social {
+				padding-bottom: em(40px);
+				position: relative;
+			}
+			[class^="icon"], [class*=" icon"] {
+				color: $gold;
+				font-size: em(24px);
+				padding: 0 em(10px, 24px);
 				&:hover {
-					color: $light_gray;
+					color: $gray;
+				}
+			}
+			&-phone {
+				@include normalize_padding;
+				position: relative;
+				background-color: $gold;
+				padding-top: em(20px);
+				padding-bottom: em(20px);
+				color: $w;
+				a {
+					color: $w;
+					&:hover {
+						color: $light_gray;
+					}
 				}
 			}
 		}

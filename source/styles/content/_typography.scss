@@ -108,6 +108,7 @@ ul, ol {
     font-family: $third-font;
     font-size: em(26px);
     padding-top: em(40px, 26px);
+    font-weight: normal;
     .home & {
         padding-bottom: em(50px, 26px);
         width: $f;

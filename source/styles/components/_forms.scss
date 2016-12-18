@@ -1,0 +1,24 @@
+%inputs {
+	@include appearance(none);
+	border: 1px solid $gold;
+	padding: em(10px);
+	background-color: $w;
+	width: $f;
+	color: $gray;
+	@include input-placeholder() {
+		font-family: $main-font;
+		font-size: 1em;
+		color: $light_gray;
+	}
+}
+
+input {
+	&[type="text"], &[type="email"], &[type="password"], &[type="tel"] {
+		@extend %inputs;
+	}
+}
+
+textarea {
+	@extend %inputs;
+	min-height: 150px;
+}
