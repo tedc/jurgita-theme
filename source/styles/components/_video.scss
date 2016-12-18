@@ -1,7 +1,9 @@
 .video-cover {
     background-size: cover;
     background-position: center;
-
+    &-header {
+        opacity: .2;
+    }
     .video {
         position: absolute;
         min-width: 100%;

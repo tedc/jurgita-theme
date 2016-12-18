@@ -1,5 +1,6 @@
 <?php use Roots\Sage\Titles; ?>
 <header class="page-header">
+	<?php get_template_part( 'templates/header', 'video' ); ?>
 	<?php if(!is_front_page()) : ?>
 	<h1 class="title"><?= Titles\title(); ?></h1>
 	<?php if(get_field('sottotitolo')) : ?>
