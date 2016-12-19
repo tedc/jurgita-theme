@@ -39,8 +39,9 @@
     content: "\EA04";
     color: $w;
     position: absolute;
-    top: em(12px);
-    left: em(12px);
+    font-size: em(24px);
+    top: em(8px);
+    left: em(10px);
     display: block;
     height: 100%;
     width: 100%;
@@ -58,8 +59,9 @@
     content: "\EA03";
     position: absolute;
     color: $w;
-    top: em(12px);
-    left: em(10px);
+    font-size: em(24px);
+    top: em(8px);
+    left: em(6px);
     display: block;
     height: 100%;
     width: 100%;
