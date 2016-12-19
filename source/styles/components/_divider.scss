@@ -49,7 +49,17 @@
     }
     .square-yellow {
         background-color: $yellow;
+        display: block;
+        a {
+            font-family: $third-font;
+            color: $gold;
+            font-size: em(26px);
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: em(40px);
+            padding-bottom: em(40px);
 
+        }
 
         @include breakpoint($bp) {
             position: relative;
@@ -63,12 +73,7 @@
                 width: 0;
                 vertical-align: middle;
             }
-            a{
-                font-family: $third-font;
-                color: $gold;
-                font-size: em(26px);
-                text-transform: uppercase;
-                text-align: center;
+            a {
                 padding: 0 90px;
                 vertical-align: middle;
                 display: inline-block;
