@@ -32,14 +32,3 @@ function excerpt_more()
   return ' &hellip;';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
-
-
-
-function image() {
-  add_image_size('post-size', 499, 200, true);
-
-}
-
-add_action('after_setup_theme', __NAMESPACE__ . '\\image');
-
-

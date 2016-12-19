@@ -4,7 +4,8 @@
         'extras/styles.php',
         'extras/woocommerce.php',
         'extras/wpml.php',
-        'extras/setup.php'
+        'extras/setup.php',
+        'extras/utils.php'
 	];
 
 foreach ($extra_includes as $file) {

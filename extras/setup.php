@@ -26,3 +26,8 @@
 		));
 	}
 	
+	function image() {
+		add_image_size('post-size', 1000, 400, true);
+	}
+
+	add_action('after_setup_theme', __NAMESPACE__ . '\\image');
