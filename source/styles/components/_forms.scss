@@ -75,24 +75,24 @@ input[type=number]::-webkit-outer-spin-button {
 
 .wpcf7-validates-as-required.wpcf7-not-valid{
     .wpcf7-list-item-label{
-        outline:1px solid red;
+        outline:1px solid $red-alert;
     }
 }
 
 span .wpcf7-not-valid {
-    border: 1px solid #ff0000;
+    border: 1px solid $red-alert;
 }
 span .wpcf7-not-valid::-webkit-input-placeholder {
-    color: #ff0000;
+    color: $red-alert;
 }
 span .wpcf7-not-valid::-moz-placeholder { /* Firefox 19+ */
-    color: #ff0000;
+    color: $red-alert;
 }
 span .wpcf7-not-valid:-ms-input-placeholder { /* IE 10+ */
-    color: #ff0000;
+    color: $red-alert;
 }
 span .wpcf7-not-valid:-moz-placeholder { /* Firefox 18- */
-    color: #ff0000;
+    color: $red-alert;
 }
 
 span.wpcf7-not-valid-tip {
@@ -100,8 +100,8 @@ span.wpcf7-not-valid-tip {
 }
 div.wpcf7-validation-errors {
     background: #ffe2e2;
-    border: 1px solid #ff0000;
-    color: #C10000;
+    border: 1px solid $red-alert;
+    color: $red-alert;
 }
 .autorizzazione .wpcf7-not-valid, .newsletter .wpcf7-not-valid{
     border:none!important;
@@ -118,4 +118,8 @@ div.wpcf7-response-output {
 }
 div.wpcf7-validation-errors {
     display: none !important;
+}
+.label_aut {
+    font-size: em(12px);
+    font-style: italic;
 }
