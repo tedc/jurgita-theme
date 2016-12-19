@@ -205,11 +205,14 @@
 
 .container-post-head {
     @extend %post-head;
-    padding-top: em(65px);
+    padding-bottom: em(40px);
 
     a {
         color: $gold;
         font-style: italic;
+    }
+    .title {
+        padding-bottom: em(40px);
     }
 }
 
