@@ -21,6 +21,7 @@ if ($terms): ?>
                     )
                 );
                 $query = new WP_Query($args);?>
+                <?php var_dump($query); ?>
                 <?php
                 if ($query -> have_rows('argomenti')):
 
