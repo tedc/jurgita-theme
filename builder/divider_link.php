@@ -1,4 +1,4 @@
-<div class="divider-link container">
+<div class="divider-link row-lg">
     <div class="gray-line"></div>
     <div class="shadow"></div>
     <div class="square-gray"></div>
