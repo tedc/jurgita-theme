@@ -33,9 +33,12 @@
 
 .su-slider-next {
   transform: translateY(-50%) translateX(90%);
-  background: none;
+  background: none!important;
   font-family: "jurgita-icons";
-  &:before { content: "\EA03" }
+  &:before {
+    content: "\EA04";
+    color: $w;
+  }
 
   &:hover {
     opacity: 1!important;
@@ -44,8 +47,11 @@
 .su-slider-prev {
   transform: translateY(0%) translateX(25%);
   font-family: "jurgita-icons";
-  &:before { content: "\EA04" }
-  background: none;
+  &:before {
+    content: "\EA03";
+    color: $w;
+  }
+  background: none!important;
 
   &:hover {
     opacity: 1!important;
