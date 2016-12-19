@@ -8,7 +8,6 @@ if ($terms): ?>
         <?php foreach ($terms as $term): ?>
             <div class="col-1">
                 <h2><?php echo $term->name; ?></h2>
-                <?php var_dump($term->taxonomy.'_'.$term->term_id) ?>
                 </div>
         <?php endforeach; ?>
     </div>
