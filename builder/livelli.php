@@ -10,15 +10,12 @@ if ($terms): ?>
                 <h2><?php echo $term->name; ?></h2>
                 <?php
 
-                // check if the repeater field has rows of data
-                if (have_rows('argomenti')):
+                if ($term->have_rows('argomenti')):
 
-                    // loop through the rows of data
-                    while (have_rows('argomenti')) : the_row();
+                    while ($term->have_rows('argomenti')) : $term->the_row();
 
-                        // display a sub field value
-                        the_sub_field('argomento');
-                        the_sub_field('check');
+                        $term->the_sub_field('argomento');
+                        $term->the_sub_field('check');
 
                     endwhile; ?>
                 <?php endif ?>
