@@ -4,9 +4,9 @@
         background-position: center;
         overflow: hidden;
         @include absfull();
-    }
-    &-header {
-        opacity: .2;
+        &-header {
+            opacity: .2;
+        }
     }
     &-item {
         position: absolute;
