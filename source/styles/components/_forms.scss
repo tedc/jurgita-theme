@@ -58,3 +58,7 @@ input[type="checkbox"]:checked + span {
 	border: 2px solid $w;
 
 }
+
+textarea{
+	resize: none;
+}
