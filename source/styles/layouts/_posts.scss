@@ -323,7 +323,8 @@
 .post {
     .container-post-head {
         @extend %post-head;
-        padding-top: 0;
+        padding-top: em(40px);
+        padding-bottom: 0;
 
         a {
             font-style: italic;
