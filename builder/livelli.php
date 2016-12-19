@@ -15,7 +15,7 @@ if ($terms): ?>
                     $term -> the_sub_field('argomento');
 
                 endwhile;?>
-
+                <?php endif; ?>
                 </div>
         <?php endforeach; ?>
     </div>
