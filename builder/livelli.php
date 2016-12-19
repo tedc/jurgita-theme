@@ -21,17 +21,7 @@ if ($terms): ?>
                     )
                 );
                 $query = new WP_Query($args);?>
-                <?php var_dump($query); ?>
-                <?php
-                if ($query -> have_rows('argomenti')):
-
-                    while ($query -> have_rows('argomenti')) : $query -> the_row();
-
-                        $query->the_sub_field('argomento');
-                        $query->the_sub_field('check');
-
-                    endwhile; ?>
-                <?php endif ?>
+            <?php var_dump( $query->have_posts() ) ?>
             </div>
         <?php endforeach; ?>
     </div>
