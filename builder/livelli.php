@@ -8,10 +8,8 @@ if ($terms): ?>
         <?php foreach ($terms as $term): ?>
             <div class="col-1">
                 <h2><?php echo $term->name; ?></h2>
-                    <?var_dump(have_rows('argomenti')) ?>
-
-
-                    <?php the_sub_field('argomento'); ?>
+                
+                    <?php var_dump(the_sub_field('argomento')); ?>
 
 
                 </div>
