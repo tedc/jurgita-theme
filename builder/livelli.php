@@ -13,11 +13,11 @@ if ($terms): ?>
             array(
                 'post_type' => 'corsi',
                 'field' => 'slug',
-                'tax_query' => array(
+               /* 'tax_query' => array(
                     array(
                         'taxonomy' => 'livelli',
                         'field' => $term->ID,
-                    ))
+                    ))*/
             )
         ); ?>
             <?php var_dump($query->have_posts())?>
