@@ -40,8 +40,8 @@
     color: $w;
     position: absolute;
     font-size: em(24px);
-    top: em(8px);
-    left: em(10px);
+    top: em(8px, 24px);
+    left: em(10px, 24px);
     display: block;
     height: 100%;
     width: 100%;
@@ -60,8 +60,8 @@
     position: absolute;
     color: $w;
     font-size: em(24px);
-    top: em(8px);
-    left: em(6px);
+    top: em(8px, 24px);
+    left: em(6px, 24px);
     display: block;
     height: 100%;
     width: 100%;
