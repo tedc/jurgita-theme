@@ -109,11 +109,8 @@
 }
 
 .container-post {
-
     article {
-
         margin-bottom: em(100px);
-
         .container-img {
             position: relative;
 
@@ -121,6 +118,7 @@
                 .blur {
                     visibility: visible;
                     opacity: 0.7;
+                    transition: visibility 0.5s, opacity 0.5s;
                 }
             }
 
@@ -133,7 +131,7 @@
             .blur {
                 visibility: hidden;
                 opacity: 0;
-                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+                @include pattern();
                 cursor: pointer;
                 @include absfull();
                 display: flex;
