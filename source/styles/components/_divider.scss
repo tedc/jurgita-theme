@@ -57,30 +57,29 @@
             top: -50%;
             display: block;
             &:before {
-
+                padding-top: 100%;
+                content: '';
+                display: inline-block;
+                width: 0;
+                vertical-align: middle;
             }
-            a {
-                width:100%;
-                padding-top: em(40px);
-                padding-bottom: em(40px);
+            a{
+                font-family: $third-font;
+                color: $gold;
+                font-size: em(26px);
+                text-transform: uppercase;
+                text-align: center;
+                padding: 0 90px;
+                vertical-align: middle;
+                display: inline-block;
             }
         }
-        &:before {
-            padding-top: 100%;
-            content: '';
-            display: inline-block;
-            width: 0;
-            vertical-align: middle;
-        }
-        a{
-            font-family: $third-font;
-            color: $gold;
-            font-size: em(26px);
-            text-transform: uppercase;
-            text-align: center;
-            padding: 0 90px;
-            vertical-align: middle;
-            display: inline-block;
+       /* &:before {
+        }*/
+        a {
+            width:100%;
+            padding-top: em(40px);
+            padding-bottom: em(40px);
         }
     }
     .logo {
