@@ -4,7 +4,7 @@
             <?php the_post_thumbnail('post-size') ?>
         </figure>
             <a class="blur" href="<?php the_permalink(); ?>">
-                <i class="icon-lens">X</i>
+                <i class="icon-lente"></i>
             </a>
     </div>
 
