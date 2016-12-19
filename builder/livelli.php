@@ -8,21 +8,15 @@ if ($terms): ?>
         <?php foreach ($terms as $term): ?>
             <div class="col-1">
                 <h2><?php echo $term->name; ?></h2>
+                <?php if( $term -> have_rows('repeater_field_name') ):
+                while ($term -> have_rows('repeater_field_name') ) :$term -> the_row();
 
-                <?php $args = array(
-                    'post_type' => "corsi",
-                    'posts_per_page' => -1,
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'livelli',
-                            'field' => 'name',
-                            'terms' => $term->name
-                        )
-                    )
-                );
-                $query = new WP_Query($args);?>
-            <?php var_dump( $query->have_posts() ) ?>
-            </div>
+                    // display a sub field value
+                    $term -> the_sub_field('argomento');
+
+                endwhile;?>
+
+                </div>
         <?php endforeach; ?>
     </div>
 <?php endif; ?>
