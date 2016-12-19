@@ -118,7 +118,7 @@
                 .blur {
                     visibility: visible;
                     opacity: 0.7;
-                    transition: visibility 0.5s, opacity 0.5s;
+
                 }
             }
 
@@ -137,7 +137,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                transition: visibility 0.5s, opacity 0.5s;
             }
         }
 
