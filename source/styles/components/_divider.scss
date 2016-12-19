@@ -55,6 +55,12 @@
         @include breakpoint($bp) {
             left: 50%;
             top: -50%;
+            &:before {
+
+            }
+            a {
+                padding: em(40px);
+            }
         }
         &:before {
             padding-top: 100%;
