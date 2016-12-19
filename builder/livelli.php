@@ -1,19 +1,36 @@
 <?php
 
 $terms = get_sub_field('tipologie');
-var_dump(get_sub_field('tipologie'));
-if( $terms ): ?>
+if ($terms): ?>
 
-    <ul>
+    <div class="grid-4">
 
-        <?php foreach( $terms as $term ): ?>
+    <?php foreach ($terms as $term): ?>
+        <div class="col-1">
+        <h2><?php echo $term->name; ?></h2>
 
-            <h2><?php echo $term->name; ?></h2>
-            <p><?php echo $term->description; ?></p>
-            <a href="<?php echo get_term_link( $term ); ?>">View all '<?php echo $term->name; ?>' posts</a>
+        <?php $query = new WP_Query(
+            array(
+                'post_type' => 'corsi',
+                'field' => 'slug',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'livelli',
+                        'field' => 'slug',
+                        'terms' => $term->slug
+                    ))
+            )
+        ); ?>
+        <?php if ($query->have_posts()): ?>
+            <?php while ($query->have_posts()): $query->the_post(); ?>
+            <?php the_field('argomento'); ?>
+            <?php the_field('check'); ?>
+                <?php the_title()?>
+            <?php endwhile; wp_reset_query(); ?>
 
-        <?php endforeach; ?>
 
-    </ul>
+  <?php endif; ?>
+            </div>
 
-<?php endif; ?>
+    <?php endforeach; ?>
+        <?php endif; ?>
