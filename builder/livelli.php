@@ -16,8 +16,7 @@ if ($terms): ?>
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'livelli',
-                        'field' => 'slug',
-                        'terms' => $term->slug
+                        'field' => $term->ID,
                     ))
             )
         ); ?>
