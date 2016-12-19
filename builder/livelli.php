@@ -1,6 +1,6 @@
 <?php
 
-$term = get_sub_field('tipologie');
+$terms = get_sub_field('tipologie');
 var_dump(get_sub_field('tipologie'));
 if( $terms ): ?>
 
