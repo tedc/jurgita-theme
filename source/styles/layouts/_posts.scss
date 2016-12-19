@@ -152,7 +152,7 @@
         .entry-title {
             @extend %title-post;
             font-size: em(40px);
-            padding: em(35px, 40px) 0;
+            padding-bottom: em(35px, 40px);
         }
 
         .entry-summary {
