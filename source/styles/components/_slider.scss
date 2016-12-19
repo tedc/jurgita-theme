@@ -33,7 +33,7 @@
 
 .su-slider-next {
   transform: translateY(-50%) translateX(90%);
-  background: rgb(0, 0, 0) 0 0;
+  background: rgb(0, 0, 0) 0 0!important;
   font-family: "jurgita-icons";
   &:before {
     content: "\EA04";
@@ -46,7 +46,7 @@
 }
 .su-slider-prev {
   transform: translateY(0%) translateX(25%);
-  background: rgb(0, 0, 0) 0 0;
+  background: rgb(0, 0, 0) 0 0!important;;
   font-family: "jurgita-icons";
   &:before {
     content: "\EA03";
