@@ -82,6 +82,7 @@
 
         .container-post-head {
             @extend %post-head;
+
         }
 
         .entry-title {
@@ -142,7 +143,7 @@
 
         .container-post-head {
             @extend %post-head;
-            padding-top: em(35px);
+            padding-bottom: em(40px);
 
             a {
                 font-style: italic;
@@ -205,7 +206,7 @@
 
 .container-post-head {
     @extend %post-head;
-    padding-top: em(40px);
+    padding-bottom: em(40px);
 
     a {
         color: $gold;
