@@ -29,11 +29,10 @@ textarea {
 
 
 input[type=checkbox]:checked {
-	background: black;
+	background: $gold;
 }
 
 input[type="checkbox"] {
-	margin-top: 0px;
 	display: block;
 	position: absolute; /* remove it from the flow */
 	width: 100%;
@@ -41,13 +40,14 @@ input[type="checkbox"] {
 	cursor: pointer;
 	opacity: 0; /* make it transparent */
 	z-index: 666; /* place it on top of everything else */
+	margin: 0;
 }
 
 input[type="checkbox"] + span {
 	display: inline-block;
 	width:14px;
 	height:14px;
-	outline: 1px solid black;
+	outline: 1px solid $gold;;
 	margin-left: -4px;
 
 }
@@ -56,9 +56,18 @@ input[type="checkbox"] + span {
 input[type="checkbox"]:checked + span {
 	background-color: $gold;
 	border: 2px solid $w;
-
 }
 
 textarea{
 	resize: none;
+}
+
+.wpcf7-list-item.first.last{
+	margin:0;
+}
+
+.wpcf7-list-item-label {
+	overflow: hidden;
+	text-indent: 120%;
+	white-space: nowrap;
 }
