@@ -178,16 +178,21 @@
                 bounds: $this,
                 type : 'x',
                 onDrag: function(evt) {
-                    console.log(this);
-                    var x = evt.pageX - $this.offset().left,
-                        width = $this.width(),
+                    var width = $this.width(),
+                        center = width / 2,
+                        x = center + this.x,
                         p = ( x * 100 ) / width,
                         nW = 100 - p;
-                    console.log(p, nW);
                     TweenMax.set($this.find('.back'), { width : p + '%' });
                     TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
                 }
             })
+        });
+        $(window).on('resize', function() {
+            $('.switcher').each(function() {
+                var pos = $(this).find('.front').position().left - ( $(this).width() / 2 );
+                TweenMax.set($(this).find('.dragger'), { x : pos});
+            });
         })
     }
 

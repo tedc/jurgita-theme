@@ -38,10 +38,12 @@
 			width: $f;
 			position: relative;
 			z-index: 1;
+			padding-bottom: em(20px);
 			.icon-scroll {
 				display: block;
 				color: $gold;
 				font-size: em(40px);
+				position: em(20px, 40px) 0;
 			}
 		}
 		.wp-post-image {
