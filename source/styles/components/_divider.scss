@@ -49,30 +49,32 @@
     }
     .square-yellow {
         background-color: $yellow;
-        position: relative;
-        display: inline-block;
+
 
         @include breakpoint($bp) {
+            position: relative;
+            display: inline-block;
             left: 50%;
             top: -50%;
+            &:before {
+                padding-top: 100%;
+                content: '';
+                display: inline-block;
+                width: 0;
+                vertical-align: middle;
+            }
+            a{
+                font-family: $third-font;
+                color: $gold;
+                font-size: em(26px);
+                text-transform: uppercase;
+                text-align: center;
+                padding: 0 90px;
+                vertical-align: middle;
+                display: inline-block;
+            }
         }
-        &:before {
-            padding-top: 100%;
-            content: '';
-            display: inline-block;
-            width: 0;
-            vertical-align: middle;
-        }
-        a{
-            font-family: $third-font;
-            color: $gold;
-            font-size: em(26px);
-            text-transform: uppercase;
-            text-align: center;
-            padding: 0 90px;
-            vertical-align: middle;
-            display: inline-block;
-        }
+
     }
     .logo {
         display: none;
@@ -87,6 +89,7 @@
             .j {
                 font-size: em(90px);
             }
+
         }
     }
     .square-gray {
