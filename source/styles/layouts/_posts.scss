@@ -205,7 +205,7 @@
 
 .container-post-head {
     @extend %post-head;
-    padding-bottom: em(40px);
+    padding-top: em(40px);
 
     a {
         color: $gold;
