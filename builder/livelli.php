@@ -8,8 +8,8 @@ if ($terms): ?>
         <?php foreach ($terms as $term): ?>
             <div class="col-1">
                 <h2><?php echo $term->name; ?></h2>
-                <?php if( $term -> have_rows('repeater_field_name') ):
-                while ($term -> have_rows('repeater_field_name') ) :$term -> the_row();
+                <?php if( have_rows('repeater_field_name') ):
+                while (have_rows('repeater_field_name') ) : the_row();
 
                     // display a sub field value
                     $term -> the_sub_field('argomento');
