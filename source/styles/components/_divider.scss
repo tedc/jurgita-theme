@@ -31,3 +31,50 @@
         background-color: $square-master;
     }
 }
+
+.divider-link {
+    position: relative;
+
+    .gray-line {
+        height: em(110px);
+        background-color: $category_line;
+        position: absolute;
+        top: calc(50% - 55px);
+        left:0;
+    }
+    .square-yellow {
+        left: calc(50% - 195px);
+        width: em(390px);
+        height: em(390px);
+        background-color: $yellow;
+        position: relative;
+        top: calc(50% - 195px);
+    }
+    .logo {
+        position: absolute;
+        height: em(120px);
+        width: em(120px);
+        left: em(80px);
+        top: -50%;
+        z-index: 6;
+        .j {
+            font-size: em(80px);
+        }
+    }
+    .square-gray {
+        position: absolute;
+        height: em(220px);
+        width: em(220px);
+        left: calc(50% - 110px);
+        top: calc(50% - 110px);
+        background-color: $square-master;
+    }
+    .shadow {
+        position: absolute;
+        height: em(340px);
+        width: em(340px);
+        left: calc(50% - 170px);
+        top: calc(50% - 170px);
+        @include pattern();
+    }
+}

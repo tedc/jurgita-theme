@@ -1,4 +1,4 @@
-<div class="divider container">
+<div class="divider-link container">
     <div class="square-gray"></div>
     <div class="square-yellow">
         <a href="#"><?php _e('Calendario dei corsi', 'jurgita') ?></a>
