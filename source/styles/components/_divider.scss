@@ -36,45 +36,55 @@
     position: relative;
 
     .gray-line {
+        width:100%;
         height: em(110px);
         background-color: $category_line;
         position: absolute;
-        top: calc(50% - 55px);
+        top: calc(50% - #{em(55px)});
         left:0;
     }
     .square-yellow {
-        left: calc(50% - 195px);
+        left: calc(50%);
         width: em(390px);
         height: em(390px);
         background-color: $yellow;
         position: relative;
-        top: calc(50% - 195px);
+        top: calc(50% - #{em(195px)});
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            font-family: $third-font;
+            color: $gold;
+            font-size: em(26px);
+            text-transform: uppercase;
+        }
     }
     .logo {
         position: absolute;
-        height: em(120px);
-        width: em(120px);
-        left: em(80px);
-        top: -50%;
+        height: em(140px);
+        width: em(140px);
+        left: calc(50% - #{em(400px)});
+        top: em(50px);
         z-index: 6;
         .j {
-            font-size: em(80px);
+            font-size: em(90px);
         }
     }
     .square-gray {
         position: absolute;
         height: em(220px);
         width: em(220px);
-        left: calc(50% - 110px);
-        top: calc(50% - 110px);
+        left: calc(50% + #{em(350px)});
+        top: calc(50% - #{em(250px)});
         background-color: $square-master;
     }
     .shadow {
         position: absolute;
         height: em(340px);
         width: em(340px);
-        left: calc(50% - 170px);
-        top: calc(50% - 170px);
+        left: calc(50% - #{em(170px)});
+        top: calc(50% - #{em(170px)});
         @include pattern();
     }
 }
