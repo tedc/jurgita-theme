@@ -50,12 +50,12 @@
     .square-yellow {
         background-color: $yellow;
         position: relative;
-        display: inline-block;
+        display: block;
 
         @include breakpoint($bp) {
             left: 50%;
             top: -50%;
-            display: block;
+            display: inline-block;
             &:before {
                 padding-top: 100%;
                 content: '';
@@ -74,13 +74,8 @@
                 display: inline-block;
             }
         }
-       /* &:before {
-        }*/
-        a {
-            width:100%;
-            padding-top: em(40px);
-            padding-bottom: em(40px);
-        }
+
+
     }
     .logo {
         display: none;
