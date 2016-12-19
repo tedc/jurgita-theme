@@ -33,4 +33,5 @@ if ($terms): ?>
             </div>
 
     <?php endforeach; ?>
+        </div>
         <?php endif; ?>
