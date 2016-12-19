@@ -214,15 +214,15 @@
     .title {
         padding-bottom: em(40px);
     }
-    .entry-title{
-        @extend %title-post;
-        font-size: em(40px);
-        letter-spacing: $letter-spacing-large;
-        padding-bottom: em(45px, 40px);
-        padding-top: em(45px, 40px);
-    }
 }
 
+.entry-title{
+    @extend %title-post;
+    font-size: em(40px);
+    letter-spacing: $letter-spacing-large;
+    padding-bottom: em(45px, 40px);
+    padding-top: em(45px, 40px);
+}
 .entry-content {
 
     h1 {
