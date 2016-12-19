@@ -83,8 +83,8 @@
         position: absolute;
         height: em(340px);
         width: em(340px);
-        left: calc(50% - #{em(170px)});
-        top: calc(50% - #{em(170px)});
+        left: calc(50% - #{em(305px)});
+        top: calc(50% - #{em(250px)});
         @include pattern();
     }
 }
