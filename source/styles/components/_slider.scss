@@ -35,7 +35,7 @@
   transform: translateY(-50%) translateX(90%);
   background: none;
   font-family: "jurgita-icons";
-  &:before { content: "\EA02" }
+  &:before { content: "\EA03" }
 
   &:hover {
     opacity: 1!important;
@@ -43,7 +43,9 @@
 }
 .su-slider-prev {
   transform: translateY(0%) translateX(25%);
-  background: $gold 0 0 url(../images/prev-arrow.png) no-repeat!important;
+  font-family: "jurgita-icons";
+  &:before { content: "\EA04" }
+  background: none;
 
   &:hover {
     opacity: 1!important;
