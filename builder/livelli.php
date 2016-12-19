@@ -21,6 +21,7 @@ if ($terms): ?>
                     ))
             )
         ); ?>
+            <?php var_dump($query->have_posts())?>
         <?php if ($query->have_posts()): ?>
             <?php while ($query->have_posts()): $query->the_post(); ?>
             <?php the_field('argomento'); ?>
