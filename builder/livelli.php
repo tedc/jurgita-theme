@@ -10,8 +10,8 @@ if ($terms): ?>
                 <h2><?php echo $term->name; ?></h2>
 
 
-                
-                    <?php $term -> the_sub_field('argomento'); ?>
+
+                    <?php the_sub_field('argomento'); ?>
 
 
                 </div>
