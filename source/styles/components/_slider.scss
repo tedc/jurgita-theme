@@ -38,6 +38,12 @@
   &:before {
     content: "\EA04";
     color: $w;
+    position: absolute;
+    top: em(12px);
+    left: em(12px);
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 
   &:hover {
@@ -50,7 +56,13 @@
   font-family: "jurgita-icons";
   &:before {
     content: "\EA03";
+    position: absolute;
     color: $w;
+    top: em(12px);
+    left: em(10px);
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 
   &:hover {
