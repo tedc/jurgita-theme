@@ -33,7 +33,9 @@
 
 .su-slider-next {
   transform: translateY(-50%) translateX(90%);
-  background: $gold 0 0 url(../images/next-arrow.png) no-repeat!important;
+  background: none;
+  font-family: "jurgita-icons";
+  &:before { content: "\EA02" }
 
   &:hover {
     opacity: 1!important;
