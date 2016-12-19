@@ -46,6 +46,9 @@ p {
     line-height: em(30px, 18px);
     .content &, .entry-content & {
         padding-bottom: em(40px, 18px);
+        &:nht-last-of-type(1) {
+            padding-bottom: 0;
+        }
     }
 }
 
