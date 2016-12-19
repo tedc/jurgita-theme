@@ -138,6 +138,14 @@
                 justify-content: center;
                 transition: visibility 0.5s, opacity 0.5s;
             }
+
+            &:before {
+                display: block;
+                position: relative;
+                width: 100%;
+                content: '';
+                padding-top: 50%;
+            }
         }
 
         .container-post-head {
