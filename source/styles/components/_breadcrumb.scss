@@ -4,7 +4,9 @@
     padding-bottom: em(15px);
     font-size: em(12px);
     font-family: $main-font;
+    background-color: $category_line;
     a {
+        font-size: em(12px, 12px);
         font-weight: bold;
         color: $gold;
     }
