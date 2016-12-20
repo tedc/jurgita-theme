@@ -69,11 +69,16 @@
 		align-items: center;
 		padding-bottom: em(40px);
 		justify-content: space-between;
-	}
-	a {
-		color: $base_color;
-		&:hover {
-			color: $gold;
+		.right {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		a {
+			color: $base_color;
+			&:hover {
+				color: $gold;
+			}
 		}
 	}
 }
