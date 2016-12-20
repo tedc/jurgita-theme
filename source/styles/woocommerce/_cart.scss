@@ -151,9 +151,12 @@
 }
 
 th {
-    border-bottom: 1px solid $base_color;
+    border-bottom: 1px solid $category_line;
     font-size: em(14px);
     color: $placeholder;
+}
+td {
+    border-bottom: 1px solid $category_line;
 }
 
 .product-name {
@@ -246,5 +249,13 @@ th {
                 border-bottom: 6px solid $gold;
             }
         }
+    }
+}
+
+.product-price, .product-subtotal {
+    .amount {
+        font-size: em(22px);
+        color: $gold;
+        font-family: $second-font;
     }
 }
