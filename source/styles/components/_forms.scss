@@ -1,7 +1,7 @@
 %inputs {
     @include appearance(none);
     border: 1px solid $gold;
-    padding: em(10px);
+    padding: em(20px);
     background-color: $w;
     width: $f;
     color: $gray;
@@ -29,7 +29,12 @@ input {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+        flex-wrap: wrap;
 	}
+}
+
+.ajax-loader {
+    width: $f;
 }
 
 textarea {
