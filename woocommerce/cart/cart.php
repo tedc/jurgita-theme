@@ -31,8 +31,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 <table class="shop_table shop_table_responsive cart" cellspacing="0">
 	<thead>
 		<tr>
-			<th class="product-thumbnail">&nbsp;</th>
 			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
+			<th class="product-thumbnail">&nbsp;</th>
 			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
 			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
 			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
