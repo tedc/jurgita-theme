@@ -168,11 +168,13 @@ th {
             color: $base_color;
             font-size: em(14px);
             font-family: $main-font;
-            &:before {
-                margin-right: 10px;
-                top: 3px;
-                position: relative;
-                color: $gold;
+            .icon-close {
+                &:before {
+                    margin-right: 10px;
+                    top: 3px;
+                    position: relative;
+                    color: $gold;
+                }
             }
         }
     }
