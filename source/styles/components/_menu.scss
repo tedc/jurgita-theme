@@ -334,6 +334,11 @@
 				padding-top: em(20px);
 				padding-bottom: em(20px);
 				color: $w;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				text-transform: none;
 				a {
 					color: $w;
 					&:hover {
