@@ -3,8 +3,6 @@
  * Template Name: Contatti
  */
 ?>
-
-
 <?php while (have_posts()) : the_post(); ?>
 	<article <?php post_class("container row-lg entry-content"); ?>>
 		<header class="contact-header">
