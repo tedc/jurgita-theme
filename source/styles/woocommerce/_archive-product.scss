@@ -44,7 +44,7 @@
         color: $gold;
         text-transform: uppercase;
         background-color: $w;
-        transition: opacity $speed, visibility $speed;
+
         &:hover{
             .product_cat {
                 border-top: 1px solid $category_gray;
@@ -84,6 +84,7 @@
             }
 
             ul {
+                transition: opacity $speed, visibility $speed;
                 position: absolute;
                 left: -1px;
                 visibility: hidden;
@@ -124,7 +125,7 @@
             background-color: $w;
             cursor: pointer;
             position: relative;
-            transition: opacity $speed, visibility $speed;
+
 
             &:hover{
                 .select-value {
@@ -168,6 +169,7 @@
                 }
             }
             .select-list {
+                transition: opacity $speed, visibility $speed;
                 position: absolute;
                 padding-left: em(20px);
                 padding-right: em(40px);
