@@ -345,6 +345,18 @@
 	}
 }
 
+.whatsapp {
+	font-size: 11px;
+	&-link {
+		display: inline-block;
+		text-indent: 120%;
+		overflow: hidden;
+		width: em(121px, 11px);
+		height: em(36px, 11px);
+		white-space: nowrap;
+	}
+}
+
 [class^="icon-cart"], [class*=" icon-cart"] {
 	font-size: em(20px);
 	margin-left: 1em;
