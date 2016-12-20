@@ -24,6 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="container-btn">
+	<?php $shop = woocommerce_get_page_id( 'shop' ); ?>
 <a href="<?php echo get_permalink( $shop ); ?>" class="btn"><?php _e('Shop', 'jurgita'); ?></a>
 <a href="<?php echo esc_url( wc_get_checkout_url() ) ;?>" class="btn checkout-button button alt wc-forward">
 	<?php echo __( 'Vai al Checkout', 'jurgita' ); ?>
