@@ -72,6 +72,12 @@
 				min-width: $f !important;
 				transform: translate3d(-50%, -50%, 0);
 			}
+			&:after {
+				content: '';
+				@include absfull();
+				background: $b;
+				opacity: .45;
+			}
 		}
 		.single-corsi & {
 			display: flex;
