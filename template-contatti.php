@@ -4,7 +4,7 @@
  */
 ?>
 <?php while (have_posts()) : the_post(); ?>
-	<article <?php post_class("container row-lg entry-content"); ?>>
+	<article <?php post_class("container row-lg body-contentainer"); ?>>
 		<header class="contact-header">
 			<h1 class="title"><?php _e('Scrivimi', 'jurgita'); ?></h1>
 			<div class="right">
