@@ -18,6 +18,7 @@ function my_price ($price) {
 }
 add_filter( 'woocommerce_get_price_html', 'my_price' );
 add_filter('woocommerce_cart_item_price', 'my_price');
+add_filter('woocommerce_cart_item_subtotal', 'my_price');
 
 
 

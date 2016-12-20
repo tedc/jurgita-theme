@@ -253,6 +253,7 @@ td {
 }
 
 .product-price, .product-subtotal {
+    padding-bottom: 0;
     .amount {
         font-size: em(22px);
         color: $gold;
