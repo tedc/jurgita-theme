@@ -1,10 +1,10 @@
 <?php get_template_part('templates/content-single', get_post_type()); ?>
-<div class="social">
+<div class="social row-lg">
     <p class="label-social"><?php _e('Condividi', 'jurgita') ?></p>
     <div class="container-loghi">
-        <span class="icon-facebook"></span>
-        <span class="icon-google"></span>
-        <span class="icon-instagram"></span>
+        <a href="" class="icon-facebook"></a>
+        <a href="" class="icon-google"></a>
+        <a href="" class="icon-instagram"></a>
     </div>
 </div>
 
