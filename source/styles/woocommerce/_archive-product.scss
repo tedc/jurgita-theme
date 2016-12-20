@@ -12,7 +12,8 @@
         width: em(500px);
 
         .btn-reverse {
-            background-color: $w;
+            background-color: $category_line;
+            border: 1px solid $category_line;
         }
 
         input {
