@@ -153,3 +153,15 @@
 th {
     border-bottom: 1px solid $base_color;
 }
+
+td {
+    .product-name {
+        padding-bottom: em(70px);
+        a {
+            font-size: em(18px);
+            color: $gold;
+
+        }
+
+    }
+}

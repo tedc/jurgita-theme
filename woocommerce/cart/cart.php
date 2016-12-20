@@ -69,6 +69,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<?php
 							if ( ! $product_permalink ) {
 								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
+
 							} else {
 								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_title() ), $cart_item, $cart_item_key );
 							}
@@ -85,7 +86,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<div class="delete-button">
 						<?php
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;'.__('Elimina', 'jurgita').'</a>',
+							'<a href="%s" class=".icon-close remove" title="%s" data-product_id="%s" data-product_sku="%s">'.__('Elimina', 'jurgita').'</a>',
 							esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
 							__( 'Remove this item', 'woocommerce' ),
 							esc_attr( $product_id ),
