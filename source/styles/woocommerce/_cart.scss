@@ -265,6 +265,7 @@ td.product-name {
         font-size: em(22px)!important;
         color: $gold;
         font-family: $second-font;
+        font-weight: bold;
     }
 }
 
@@ -281,5 +282,14 @@ td.product-name {
         font-size: em(14px);
         color: $placeholder;
         font-family: $main-font;
+    }
+    input {
+        font-size: 26px;
+        font-family: $second-font;
+        color: $base_color;
+        border: 0;
+    }
+    input:focus {
+        outline: none;
     }
 }
