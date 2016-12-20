@@ -283,11 +283,10 @@ td.product-name {
         color: $placeholder;
         font-family: $main-font;
     }
-    input {
+    input.input-text {
         font-size: 26px;
         font-family: $second-font;
         color: $base_color;
-        border: 0;
     }
     input:focus {
         outline: none;
