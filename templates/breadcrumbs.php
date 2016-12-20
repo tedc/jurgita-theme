@@ -1,5 +1,4 @@
 <?php use Roots\Sage\Titles; ?>
-<?php var_dump((is_home())) ?>
     <?php
     if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('

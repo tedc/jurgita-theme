@@ -1,4 +1,5 @@
 <?php use Roots\Sage\Titles; ?>
+<?php var_dump((is_home())) ?>
 <?php get_template_part('templates/breadcrumbs'); ?>
 <header class="page-header">
 	<?php if(!is_home()) : get_template_part( 'templates/header', 'video' ); endif; ?>
