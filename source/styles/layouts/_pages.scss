@@ -61,3 +61,12 @@
 		position: relative;
 	}
 }
+
+.contact {
+	&-header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-bottom: em(80px);
+	}
+}

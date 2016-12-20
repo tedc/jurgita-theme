@@ -15,17 +15,27 @@
 input {
     &[type="text"], &[type="email"], &[type="password"], &[type="tel"] {
         @extend %inputs;
+    } 
+}
+
+.input {
+	&-row {
+    	padding-bottom: em(30px);
     }
+}
+
+.acceptance {
+	&-row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
 textarea {
     @extend %inputs;
     min-height: 150px;
     resize: none;
-}
-
-input[type=checkbox]:checked {
-    background: $gold;
 }
 
 input[type="checkbox"] {
@@ -35,6 +45,7 @@ input[type="checkbox"] {
     	font-style: italic;
     	display: flex;
     	align-items: center;
+    	cursor: pointer;
     	&:before {
     		width: 14px;
     		height: 14px;

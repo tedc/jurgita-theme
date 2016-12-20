@@ -2,7 +2,7 @@
     <?php
     if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('
-<p class="hieratrchy" id="breadcrumbs">','</p>
+<p class="breadcrumb" id="breadcrumbs">','</p>
 ');
     }
     ?>
