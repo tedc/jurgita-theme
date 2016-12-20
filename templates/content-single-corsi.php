@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-<?php get_template_part('templates/'. get_post_type(), 'header')); ?>
+<?php get_template_part('templates/'. get_post_type(), 'header'); ?>
 <div class="course-meta row-md container">
 	<figure class="flag"><?php $flags = get_field('lingue'); foreach ($flags as $flag) { echo '<img src="'.$flag['url'].'" alt="'.$flag['alt']'" class="flag" />'; } ?></figure>
 	<figure class="partners"><?php $partners = get_field('credit'); foreach ($partners as $partner) { echo '<img src="'.$partner['url'].'" alt="'.$partner['alt']'" class="flag" />'; } ?></figure>
