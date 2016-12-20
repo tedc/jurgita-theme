@@ -4,4 +4,4 @@
 	function clean_css() {
 		wp_deregister_style( 'contact-form-7' );
 	}
-	add_action( 'init', 'clean_css');
+	add_action( 'wp_enqueue_scripts', 'clean_css');
