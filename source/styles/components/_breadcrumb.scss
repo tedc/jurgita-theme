@@ -13,9 +13,9 @@
 }
 
 .breadcrumb{
-    padding-top: em(15px);
-    padding-bottom: em(15px);
-    padding-left: em(30px);
+    padding-top: em(15px, 12px);
+    padding-bottom: em(15px, 12px);
+    padding-left: em(30px, 12px);
     font-size: em(12px);
     font-family: $main-font;
     background-color: $category_line;
