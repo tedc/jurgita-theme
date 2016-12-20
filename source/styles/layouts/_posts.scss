@@ -341,11 +341,23 @@
     padding-top: em(40px);
     padding-bottom: em(40px);
     @include pattern();
+    margin-bottom: em(40px);
+    margin-top: em(40px);
+
+    .label-social {
+        line-height: 1;
+        padding-bottom: em(20px);
+        font-size: em(18px);
+    }
 
     .container-loghi {
         font-size: em(30px);
         a {
             color: $gold;
+        }
+        .icon-google {
+            padding-left: em(15px);
+            padding-right: em(15px);
         }
     }
 }
