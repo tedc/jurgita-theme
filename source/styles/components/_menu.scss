@@ -347,6 +347,8 @@
 
 .whatsapp {
 	font-size: 11px;
+	display: flex;
+	align-items: flex-end;
 	&-link {
 		display: inline-block;
 		text-indent: 120%;
@@ -354,6 +356,8 @@
 		width: em(121px, 11px);
 		height: em(36px, 11px);
 		white-space: nowrap;
+		position: relative;
+		top: em(10px, 11px);
 		background: url(../images/whatsapp.svg) no-repeat center {
 			size: contain;
 		}
