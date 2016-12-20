@@ -68,5 +68,12 @@
 		flex-wrap: wrap;
 		align-items: center;
 		padding-bottom: em(80px);
+		justify-content: space-between;
+	}
+	a {
+		color: $base_color;
+		&:hover {
+			color: $gold;
+		}
 	}
 }

@@ -6,7 +6,15 @@
 
 
 <?php while (have_posts()) : the_post(); ?>
+<<<<<<< Updated upstream
 	<article <?php post_class("body-container row-lg content"); ?>>
+=======
+<<<<<<< HEAD
+	<article <?php post_class("container row-lg entry-content"); ?>>
+=======
+	<article <?php post_class("body-container row-lg content"); ?>>
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 		<header class="contact-header">
 			<h1 class="title"><?php _e('Scrivimi', 'jurgita'); ?></h1>
 			<div class="right">

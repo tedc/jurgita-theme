@@ -354,6 +354,9 @@
 		width: em(121px, 11px);
 		height: em(36px, 11px);
 		white-space: nowrap;
+		background: url(../images/whatsapp.svg) no-repeat center {
+			size: contain;
+		}
 	}
 }
 
