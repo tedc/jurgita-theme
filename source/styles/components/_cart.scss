@@ -149,3 +149,7 @@
 .product-price, .product-subtotal {
     text-align: right;
 }
+
+th {
+    border-bottom: 1px solid $base_color;
+}

@@ -65,6 +65,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					</td>
 
 					<td class="product-name" data-title="<?php _e( 'Product', 'woocommerce' ); ?>">
+						<div class="name-product">
 						<?php
 							if ( ! $product_permalink ) {
 								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
@@ -80,6 +81,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>';
 							}
 						?>
+						</div>
+						<div class="delete-button">
 						<?php
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;'.__('Elimina', 'jurgita').'</a>',
@@ -89,6 +92,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							esc_attr( $_product->get_sku() )
 						), $cart_item_key );
 						?>
+						</div>
 					</td>
 
 					<td class="product-quantity" data-title="<?php _e( 'Quantity', 'woocommerce' ); ?>">
