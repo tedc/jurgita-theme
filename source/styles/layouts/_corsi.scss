@@ -1,0 +1,17 @@
+.corsi {
+	&-meta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.flag {
+			img {
+				margin-right: em(10px);
+			}
+		}
+		.partners {
+			img {
+				margin-left: em(10px);
+			}
+		}
+	}
+}
