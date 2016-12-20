@@ -2,9 +2,9 @@
 <div class="social row-lg">
     <p class="label-social"><?php _e('Condividi', 'jurgita') ?></p>
     <div class="container-loghi">
-        <a href="" class="icon-facebook"></a>
-        <a href="" class="icon-google"></a>
-        <a href="" class="icon-instagram"></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="icon-facebook" target="_blank"></a>
+        <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="icon-google" target="_blank"></a>
+        <a href="http://twitter.com/share?url=<?php the_permalink(); ?>&amp;text=<?php the_title(); ?>" class="icon-twitter" target="_blank"></a>
     </div>
 </div>
 
