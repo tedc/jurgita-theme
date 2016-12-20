@@ -12,11 +12,12 @@ remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_prod
 
 remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
 
-function myPrice ($price) {
+function my_price ($price) {
     $price = str_replace(array('<ins>', '</ins>', '&euro;</span>&nbsp;', ',', ':'), array('', '', '&euro;</span>&nbsp;<span class="int-price">','</span>,', ''), $price);
     return $price;
 }
-add_filter( 'woocommerce_get_price_html', 'myPrice' );
+add_filter( 'woocommerce_get_price_html', 'my_price' );
+add_filter('woocommerce_cart_item_price', 'my_price');
 
 
 
@@ -30,10 +31,3 @@ function woocommerce_car_icon(){
 	$icon = ( $woocommerce->cart->cart_contents_count > 0 ) ? '<a href="'.$url.'" class="icon-cart-full"></a>' : '<a href="'.$url.'" class="icon-cart"></a>';
 	echo $icon;
 }
-
-function my_cart_price ($price) {
-    var_dump($price);
-    return $price;
-}
-
-add_filter('woocommerce_cart_item_price', 'my_cart_price');
