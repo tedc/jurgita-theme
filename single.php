@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="navigation"><p><?php posts_nav_link(' ', __('precedente', 'jurgita'), __('successivo', 'jurgita')); ?></p></div>
+<div class="navigation"><p><?php posts_nav_link(' · ', 'previous page', 'next page'); ?></p></div>
 
 <div class="container facebook row-lg">
     <span class="pattern"></span>
