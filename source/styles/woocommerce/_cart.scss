@@ -311,15 +311,16 @@ input[name=update_cart] {
 
 .cart_totals {
     h2{
-
+        padding-bottom: 0;
+        font-size: em(20px);
     }
-}
-.shop_table {
-    tr {
-        text-align: left;
-        td {
-            text-align: right;
+    .shop_table {
+        tr {
+            text-align: left;
+            td {
+                text-align: right;
+            }
         }
-    }
 
+    }
 }
