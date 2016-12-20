@@ -1,13 +1,11 @@
 .woocommerce-breadcrumb {
+    color: $placeholder;
+    padding-top: em(15px);
+    padding-bottom: em(15px);
+    font-size: em(12px);
+    font-family: $main-font;
     a {
-        padding-top: em(15px);
-        padding-bottom: em(15px);
-        color: $gold;
-        font-size: em(12px);
-        font-family: $main-font;
         font-weight: bold;
-        &:last-child {
-            color: $placeholder;
-        }
+        color: $gold;
     }
 }
