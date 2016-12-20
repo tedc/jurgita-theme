@@ -152,6 +152,8 @@
 
 th {
     border-bottom: 1px solid $base_color;
+    font-size: em(14px);
+    color: $placeholder;
 }
 
 .product-name {
@@ -189,7 +191,7 @@ th {
         align-items: center;
 
         input {
-            width: em(100px, 26px);
+            width: em(80px, 26px);
             font-size: 26px;
             font-family: $second-font;
             color: $base_color;
