@@ -138,14 +138,14 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<div class="coupon">
 
 						<label class="coupon-label" for="coupon_code"><?php _e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" />
-						<input type="submit" class="btn button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>" />
 
 						<?php do_action( 'woocommerce_cart_coupon' ); ?>
 					</div>
 				<?php } ?>
-
+				<div class="container-btn">
+				<input type="submit" class="btn button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>" />
 				<input type="submit" class="btn-reverse button" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'woocommerce' ); ?>" />
-
+				</div>
 				<?php do_action( 'woocommerce_cart_actions' ); ?>
 
 				<?php wp_nonce_field( 'woocommerce-cart' ); ?>

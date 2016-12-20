@@ -302,3 +302,9 @@ input[name=update_cart] {
     margin-top: em(10px);
     margin-bottom: em(10px);
 }
+
+.container-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
