@@ -349,6 +349,7 @@
 	font-size: 11px;
 	&-link {
 		display: inline-block;
+		vertical-align: top;
 		text-indent: 120%;
 		overflow: hidden;
 		width: em(121px, 11px);
