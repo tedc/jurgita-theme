@@ -10,6 +10,16 @@
         font-size: 1em;
         color: $light_gray;
     }
+    &.wpcf7-not-valid {
+        border-color: #7a2f31;
+        background-color: #f1eaea;
+        color: #7a2f31;
+        font-weight: bold;
+        @include input-placeholder() {
+            color: #7a2f31;
+            font-weight: bold;
+        }
+    }
 }
 
 input {
@@ -68,67 +78,12 @@ input[type="checkbox"] {
     }
 }
 
-.wpcf7-list-item.first.last {
-    margin: 0;
-}
-
-.wpcf7-list-item-label {
-    overflow: hidden;
-    text-indent: 120%;
-    white-space: nowrap;
-}
-
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-
-.wpcf7-validates-as-required.wpcf7-not-valid{
-    .wpcf7-list-item-label{
-        outline:1px solid $red-alert;
-    }
-}
-
-span .wpcf7-not-valid {
-    border: 1px solid $red-alert;
-}
-span .wpcf7-not-valid::-webkit-input-placeholder {
-    color: $red-alert;
-}
-span .wpcf7-not-valid::-moz-placeholder { /* Firefox 19+ */
-    color: $red-alert;
-}
-span .wpcf7-not-valid:-ms-input-placeholder { /* IE 10+ */
-    color: $red-alert;
-}
-span .wpcf7-not-valid:-moz-placeholder { /* Firefox 18- */
-    color: $red-alert;
-}
-
-span.wpcf7-not-valid-tip {
+.screen-reader-response, .wpcf7-not-valid-tip, .wpcf7-response-output {
     display: none;
-}
-div.wpcf7-validation-errors {
-    background: #ffe2e2;
-    border: 1px solid $red-alert;
-    color: $red-alert;
-}
-.autorizzazione .wpcf7-not-valid, .newsletter .wpcf7-not-valid{
-    border:none!important;
-}
-
-
-div.wpcf7-response-output {
-    margin: 2em 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-div.wpcf7-validation-errors {
-    display: none !important;
 }
