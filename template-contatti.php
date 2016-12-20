@@ -6,7 +6,7 @@
 
 
 <?php while (have_posts()) : the_post(); ?>
-	<article <?php post_class("container row-lg content"); ?>>
+	<article <?php post_class("body-container row-lg content"); ?>>
 		<header class="contact-header">
 			<h1 class="title"><?php _e('Scrivici', 'jurgita'); ?></h1>
 			<div class="right">
