@@ -71,6 +71,7 @@
             border-top: 1px solid $w;
             border-left: 1px solid $w;
             border-right: 1px solid $w;
+            transition:  border-top $speed, border-left $speed, border-right $speed;
             &:after {
                 position: absolute;
                 right: 15px;
@@ -81,6 +82,7 @@
                 border-right: 6px solid transparent;
                 border-top: 6px solid $category_gray;
                 top: calc(50% - 4px);
+                transition: transform $speed;
             }
 
             ul {
