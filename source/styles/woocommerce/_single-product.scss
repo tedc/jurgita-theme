@@ -210,6 +210,7 @@
         @extend %title-post;
         font-size: em(26px);
         text-align: center;
+        padding-bottom: em(60px, 26px);
     }
     .grid-4 {
         @extend %grid-products;
