@@ -26,5 +26,5 @@
 		<?php the_field('descrizione_corso'); ?>
 	</div>
 </div>
-<?php get_template_part('templates/page', 'layout')); ?>
+<?php get_template_part('templates/page', 'layout'); ?>
 <?php endwhile; ?>
