@@ -344,6 +344,7 @@
 					&:hover {
 						color: $light_gray;
 					}
+					margin-right: em(20px);
 				}
 			}
 		}
@@ -354,6 +355,8 @@
 	font-size: 11px;
 	display: flex;
 	align-items: flex-end;
+	position: relative;
+	top: em(10px, 11px) * -1;
 	&-link {
 		display: inline-block;
 		text-indent: 120%;

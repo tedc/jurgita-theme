@@ -74,10 +74,6 @@
 			flex-wrap: wrap;
 			align-items: center;
 		}
-		.whatsapp {
-			position: relative;
-			top: em(10px, 11px) * -1;
-		}
 		a {
 			color: $base_color;
 			&:hover {
