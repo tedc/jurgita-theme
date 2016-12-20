@@ -163,6 +163,8 @@ td {
     white-space: nowrap;
 }
 .product-name {
+    width: 1px;
+    white-space: nowrap;
     .name-product {
         padding-bottom: em(70px);
         a {
@@ -189,13 +191,13 @@ td {
 }
 .product-quantity {
     .quantity {
-        margin-right: 0 !important;
+        margin: 0 auto;
         float: none !important;
         position: relative;
         border: 1px solid $light_gray;
         display: flex;
         align-items: center;
-        width: em(82px);
+        width: em(85px);
 
         input {
             width: em(80px, 26px);
