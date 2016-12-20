@@ -1,5 +1,5 @@
 <?php use Roots\Sage\Titles; ?>
-<?php if (!is_home()) {?>
+<?php var_dump((is_home())) ?>
     <?php
     if ( function_exists('yoast_breadcrumb') ) {
         yoast_breadcrumb('
@@ -7,5 +7,5 @@
 ');
     }
     ?>
-<?php } ?>
+
 
