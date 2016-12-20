@@ -9,6 +9,7 @@
         border: 1px solid $light_gray;
         display: flex;
         align-items: center;
+        width: em(500px);
 
         .btn-reverse {
             background-color: $w;
