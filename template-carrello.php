@@ -6,5 +6,6 @@
 <?php use Roots\Sage\Titles; ?>
 
 <?php get_template_part('templates/breadcrumbs'); ?>
-<h1 class="container title"><?= Titles\title(); ?></h1>
+<div class="container">
+<h1 class="title"><?= Titles\title(); ?></h1></div>
 <?php get_template_part('templates/content', 'page'); ?>

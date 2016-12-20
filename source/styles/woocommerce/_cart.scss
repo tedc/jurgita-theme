@@ -158,7 +158,10 @@ th {
 td {
     border-bottom: 1px solid $category_line;
 }
-
+.product-thumbnail {
+    width: 1px;
+    white-space: nowrap;
+}
 .product-name {
     .name-product {
         padding-bottom: em(70px);
