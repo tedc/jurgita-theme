@@ -54,7 +54,7 @@
     /*
     Label the data
     */
-    .woocommerce-page table.shop_table td.product-remove:before {
+  /*  .woocommerce-page table.shop_table td.product-remove:before {
         content: "DELETE";
     }
 
@@ -81,7 +81,7 @@
     .woocommerce-page table.shop_table td.product-total:before {
         content: "TOTAL";
     }
-
+*/
     .woocommerce .quantity,
     .woocommerce #content .quantity,
     .woocommerce-page .quantity,
