@@ -30,3 +30,10 @@ function woocommerce_car_icon(){
 	$icon = ( $woocommerce->cart->cart_contents_count > 0 ) ? '<a href="'.$url.'" class="icon-cart-full"></a>' : '<a href="'.$url.'" class="icon-cart"></a>';
 	echo $icon;
 }
+
+function my_cart_price ($price) {
+    var_dump($price);
+    return $price;
+}
+
+add_filter('woocommerce_cart_item_price', 'my_cart_price');
