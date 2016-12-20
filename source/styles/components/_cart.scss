@@ -51,37 +51,7 @@
         white-space: nowrap;
     }
 
-    /*
-    Label the data
-    */
-  /*  .woocommerce-page table.shop_table td.product-remove:before {
-        content: "DELETE";
-    }
 
-    .woocommerce-page table.shop_table td.product-thumbnail:before {
-        content: "IMAGE";
-    }
-
-    .woocommerce-page table.shop_table td.product-name:before {
-        content: "PRODUCT";
-    }
-
-    .woocommerce-page table.shop_table td.product-price:before {
-        content: "PRICE";
-    }
-
-    .woocommerce-page table.shop_table td.product-quantity:before {
-        content: "QUANTITY";
-    }
-
-    .woocommerce-page table.shop_table td.product-subtotal:before {
-        content: "SUBTOTAL";
-    }
-
-    .woocommerce-page table.shop_table td.product-total:before {
-        content: "TOTAL";
-    }
-*/
     .woocommerce .quantity,
     .woocommerce #content .quantity,
     .woocommerce-page .quantity,
@@ -168,3 +138,14 @@
 }
 
 /* END Make the WooCommerce Cart Table Responsive  for Mobile */
+
+
+.product-name {
+    text-align: left;
+}
+.product-quantity{
+    text-align: center;
+}
+.product-price, .product-subtotal {
+    text-align: right;
+}

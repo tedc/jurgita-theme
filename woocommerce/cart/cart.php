@@ -31,11 +31,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 <table class="shop_table shop_table_responsive cart" cellspacing="0">
 	<thead>
 		<tr>
-			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
+			<th class="product-name"><?php _e( 'Prodotto', 'jurgita' ); ?></th>
 			<th class="product-thumbnail">&nbsp;</th>
-			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
-			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
-			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
+			<th class="product-quantity"><?php _e( 'Quantità', 'jurgita' ); ?></th>
+			<th class="product-price"><?php _e( 'Prezzo', 'jurgita' ); ?></th>
+			<th class="product-subtotal"><?php _e( 'Subtotale', 'jurgita' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -82,7 +82,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 						<?php
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;'.__('Elimina', 'jurgita').'</a>',
 							esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
 							__( 'Remove this item', 'woocommerce' ),
 							esc_attr( $product_id ),
