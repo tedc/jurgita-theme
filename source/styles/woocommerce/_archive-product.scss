@@ -58,6 +58,7 @@
                     border-bottom: 1px solid $category_gray;
                     border-left: 1px solid $category_gray;
                     border-right: 1px solid $category_gray;
+                    z-index: 1;
                 }
             }
         }
@@ -139,13 +140,14 @@
                     border-bottom: 1px solid $category_gray;
                     border-left: 1px solid $category_gray;
                     border-right: 1px solid $category_gray;
+                    z-index: 1;
                 }
             }
             .select-value {
                 padding-left: em(20px);
                 padding-right: em(40px);
-                padding-top: em(15px);
-                padding-bottom: em(15px);
+                padding-top: em(10px);
+                padding-bottom: em(10px);
                 background-color: white;
                 color: $category_gray;
                 position: relative;
@@ -177,8 +179,8 @@
                 border-left: 1px solid $w;
                 border-right: 1px solid $w;
                 .select-list-item {
-                    padding-top: em(15px);
-                    padding-bottom: em(15px);
+                    padding-top: em(10px);
+                    padding-bottom: em(10px);
                 }
             }
         }
