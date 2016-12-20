@@ -6,12 +6,6 @@
 
 
 <?php while (have_posts()) : the_post(); ?>
-<<<<<<< HEAD
-    <div class="container scrivimi">
-        <h1 class="title"><?php _e('Scrivimi', 'jurgita'); ?></h1>
-        <?php get_template_part('templates/content', 'page'); ?>
-    </div>
-=======
 	<article <?php post_class("container row-lg content"); ?>>
 		<header class="contact-header">
 			<h1 class="title"><?php _e('Scrivici', 'jurgita'); ?></h1>
@@ -20,5 +14,4 @@
 		</header>
 		<?php get_template_part('templates/content', 'page'); ?>
 	</article>
->>>>>>> 5372de3ac1397f1f957063e0e7501ef381bc1d8f
 <?php endwhile; ?>
