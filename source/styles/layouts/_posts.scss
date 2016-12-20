@@ -354,6 +354,10 @@
         font-size: em(30px);
         a {
             color: $gold;
+            transition: color $speed;
+            &:hover {
+                color: $base_color;
+            }
         }
         .icon-google {
             padding-left: em(10px, 30px);
