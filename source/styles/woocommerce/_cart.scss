@@ -154,6 +154,7 @@ th {
     border-bottom: 1px solid $category_line;
     font-size: em(14px);
     color: $placeholder;
+    padding-left: 0px;
 }
 td {
     border-bottom: 1px solid $category_line;
@@ -273,4 +274,12 @@ td {
 
 .title-cart {
     padding-top: em(80px);
+}
+.coupon {
+    padding-top: em(30px);
+    .coupon-label {
+        font-size: em(14px);
+        color: $placeholder;
+        font-family: $main-font;
+    }
 }
