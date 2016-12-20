@@ -163,6 +163,7 @@ td {
     white-space: nowrap;
 }
 .product-name {
+    width: 30%;
     .name-product {
         padding-bottom: em(70px);
         a {
@@ -188,6 +189,7 @@ td {
     }
 }
 .product-quantity {
+    width:25%;
     .quantity {
         margin-right: 0 !important;
         float: none !important;
@@ -195,7 +197,7 @@ td {
         border: 1px solid $light_gray;
         display: flex;
         align-items: center;
-        width: em(82px);
+        width: em(85px);
 
         input {
             width: em(80px, 26px);
@@ -256,6 +258,7 @@ td {
 }
 
 .product-price, .product-subtotal {
+    width:15%;
     padding-bottom: 0!important;
     .amount {
         font-size: em(22px)!important;
