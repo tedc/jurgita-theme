@@ -9,8 +9,7 @@
 </div>
 
 <div class="navigation"><p>
-        <?php previous_post_link('&laquo; &laquo; %', 'Previous Post', 'yes'); ?> |
-        <?php next_post_link('% &raquo; &raquo; ', 'Next Post', 'yes'); ?></p></div>
+       </p></div>
 
 <div class="container facebook row-lg">
     <span class="pattern"></span>

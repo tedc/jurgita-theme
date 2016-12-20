@@ -332,3 +332,13 @@
         }
     }
 }
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: em(40px);
+    padding-bottom: em(40px);
+    @include pattern();
+}
