@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <div class="container-btn">
-<a href="<?php echo get_permalink( $shop ); ?>" title="<?php echo get_the_title($shop); ?>" class="btn"><?php _e('Shop', 'jurgita'); ?></a>
+<a href="<?php echo get_permalink( $shop ); ?>" class="btn"><?php _e('Shop', 'jurgita'); ?></a>
 <a href="<?php echo esc_url( wc_get_checkout_url() ) ;?>" class="btn checkout-button button alt wc-forward">
 	<?php echo __( 'Vai al Checkout', 'jurgita' ); ?>
 </a>
