@@ -308,3 +308,12 @@ input[name=update_cart] {
     justify-content: space-between;
     align-items: center;
 }
+.shop_table {
+    tr {
+        text-align: left;
+        td {
+            text-align: right;
+        }
+    }
+
+}
