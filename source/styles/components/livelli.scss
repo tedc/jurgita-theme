@@ -14,9 +14,19 @@
     }
 }
 .argomento {
+    padding-bottom: em(30px);
     .check {
         width: em(33px);
         height: em(33px);
         background-color: $square-list;
+        .icon-check {
+            top: -5px;
+            left: -5px;
+            position: relative;
+            color: $light_gray;
+        }
+    }
+    .argomento-text {
+        padding-left: 30px;
     }
 }
