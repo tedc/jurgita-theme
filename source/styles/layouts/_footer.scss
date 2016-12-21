@@ -17,10 +17,12 @@
        .text-2 {
           text-align: center;
           width: $f;
+          padding-bottom: 20px;
            @include breakpoint($bp) {
               flex: 1;
               text-align: left;
               width: auto;
+              padding-bottom: 0;
            }
            .textwidget {
                color: #808285 ;
@@ -67,10 +69,12 @@
        .widget_img {
           text-align: center;
           width: $f;
+          padding-top: 20px;
            @include breakpoint($bp) {
               flex: 1;
               text-align: right;
               width: auto;
+              padding-top: 0;
            }
            color: #808285 ;
            font-family: $main-font;
