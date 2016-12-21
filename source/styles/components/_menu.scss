@@ -195,20 +195,19 @@
 			letter-spacing: $letter-spacing-large;
 			font-family: $third-font;
 			z-index: 2;
+			font-size: vh(16px);
 			.icon-arrow-down {
 				transition: transform $speed;
 				margin-left: 20px;
 			}
 			@media screen and (min-height: #{em(320px)}) {
-				font-size: vh(16px);
+				font-size: 1em;
 			}
 		}
 		&.opened {
 			transform: translate3d(0%, 0, 0);
-			.panel-btn {
-				.icon-arrow-down {
-					transform: scaleY(-1) translate3d(0,0,0);
-				}
+			.icon-arrow-down {
+				transform: scaleY(-1) translate3d(0,0,0);
 			}	
 		}
 		&-content {
