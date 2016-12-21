@@ -12,20 +12,20 @@
         p {
             text-align: center;
         }
-
-        .logo {
-            position: absolute;
-            width: em(140px);
-            height: em(140px);
-            top: -70px;
-            right: -70px;
-            .j {
-                font-size: em(100px);
-            }
-            display: none;
-            @include breakpoint($bp){
-                display: block;
-            }
+    }
+    .logo {
+        position: absolute;
+        width: em(140px);
+        height: em(140px);
+        top: -70px;
+        right: -70px;
+        display: none;
+        z-index: 10;
+        @include breakpoint($bp){
+            display: block;
+        }
+        .j {
+            font-size: em(100px);
         }
     }
     .like {
