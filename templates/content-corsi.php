@@ -7,15 +7,12 @@
 	        <div class="square-shadow"></div>
 	    </figure>
 	</div>
-	<article class="col-2" <?php post_class(); ?>>
-	    <div class="content-post">
-	        <header>
-<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	        </header>
-	        <div class="entry-summary">
-	            <?php the_excerpt(); ?>
-	        </div>
-	        <a class="btn" href="<?php the_permalink(); ?>"><?php _e('Leggi tutto', 'jurgita') ?></a>
-	    </div>
+	<article class="col-2 content">
+		<?php get_template_part('templates/corsi', 'meta'); ?>
+		<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	    <h3 class="title title-date">
+	    	<?php data_corsi(get_field('data_inizio', false, false), get_field('data_fine', false, false)); ?>
+			<span class="place"><?php the_field('luogo'); ?></span>
+		</h3>
 	</article>
 </div>
