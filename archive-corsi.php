@@ -4,8 +4,9 @@
     <ul class="categories">
         <?php
         wp_list_categories(array(
-            'show_option_all' => __("Tutti gli articoli", "jurgita"),
+            'show_option_all' => __("Tutti i corsi", "jurgita"),
             'title_li' => "",
+            'taxonomy' => 'livelli'
         )); ?>
     </ul>
     <div class="line-categories"></div>
