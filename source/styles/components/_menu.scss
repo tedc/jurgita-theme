@@ -160,15 +160,18 @@
 	width: em(70px);
 	display: block;
 	font-family: $third-font;
+	z-index: 9999;
 	@include breakpoint($bp) {
 		display: inherit;
 	}
 	.panel {
 		position: absolute;
+		background-color: $w;
 		top: 0;
 		left: 100%;
 		height: $f;
 		width: em(300px);
+		text-align: center;
 		transition: {
 			duration: $speed;
 			property: transform;
@@ -186,6 +189,26 @@
 			color: $gold;
 			letter-spacing: $letter-spacing-large;
 		}
+		display: flex;
+		flex-direction: column;
+		ul {
+			flex: 20;
+		}
+		.permalink {
+			display: block;
+			padding: em(20px);
+			transition: background-color $speed;
+			&:hover {
+				background-color: $light_gray;
+			}
+		}
+		.title {
+			font-size: em(20px);
+			padding-bottom: 2em;
+		}
+	}
+	.btn-contact {
+		display: block;
 	}
 }
 

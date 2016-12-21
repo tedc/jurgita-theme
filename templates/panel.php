@@ -56,7 +56,7 @@ $corsi = new WP_Query(array(
                     $query = new WP_Query($args);
                     while ($query->have_posts()) : $query->the_post(); ?>
                     <li <?php post_class(); ?>>
-                        <a href="<?php the_permalink(  ); ?>">
+                        <a href="<?php the_permalink(  ); ?>" class="permalink">
                             <?php data_corsi_simple(get_field('data_inizio', false, false), get_field('data_fine', false, false)); ?>
                             <span class="place"><?php the_field('luogo'); ?></span>
                         </a>
@@ -68,8 +68,8 @@ $corsi = new WP_Query(array(
                         </a>
                     </li>
             </ul>
-            <a href="<?php the_field('contact_page'); ?>" class="btn"><?php _e('Contattami'); ?></a>
+            <a href="<?php the_field('contact_page'); ?>" class="btn btn-contact"><?php _e('Contattami'); ?></a>
         </div>
-        <a href="#" class="aside-btn" data-reveal="#panel"><?php _e('Prossimi corsi', 'jurgita'); ?><i class="icon-arrow-down"></i></a>
+        <a href="#" class="panel-btn" data-reveal="#panel"><?php _e('Prossimi corsi', 'jurgita'); ?><i class="icon-arrow-down"></i></a>
     </aside>
 <?php endif; ?>
