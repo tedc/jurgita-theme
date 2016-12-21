@@ -71,12 +71,12 @@
                 $(this).toggleClass('active');
                 if(id === '#panel') {
                     setTimeout(function() {
-                        $('#panel').perfectScrollbar('update');
+                        $('#panel-content').perfectScrollbar('update');
                     }, 400);
                 }
             })
         })
-        $('#panel').perfectScrollbar();
+        $('#panel-content').perfectScrollbar();
     }
 
     function price() {

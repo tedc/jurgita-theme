@@ -201,10 +201,13 @@
 			font-family: $third-font;
 			z-index: 2;
 		}
+		&-content {
+			overflow: hidden;
+		}
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		ul {
-			flex: 20;
 			font-family: $second-font;
 		}
 		.permalink {
