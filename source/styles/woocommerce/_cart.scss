@@ -4,12 +4,12 @@
 @media screen and (max-width: 600px) {
 
     .product-thumbnail {
-        width: 100%;
+        width: 100%!important;;
         text-align: center;
     }
-    .td.product-name {
+    td.product-name {
         padding-left: 0;
-        width: 100%;
+        width: 100%!important;
         text-align: center;
         .name-product {
             padding-bottom: 0;
