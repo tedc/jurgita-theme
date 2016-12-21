@@ -8,16 +8,8 @@
 </div>
 <?php endif; ?>
 <div class="body-container">
-	<?php 
-		$start = new DateTime(
-            get_field('data_inizio', false, false)
-        );
-        // make date object
-        $end = new DateTime(
-            get_field('data_fine', false, false)
-        ); ?>
-	<h2 class="title">
-		<?php data_corsi($start, $end); ?>
+	<h2 class="title title-date">
+		<?php data_corsi(get_field('data_inizio', false, false), get_field('data_fine', false, false)); ?>
 		<span class="place"><?php the_field('luogo'); ?></span>
 	</h2>
 	<div class="row-md">

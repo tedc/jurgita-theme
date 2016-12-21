@@ -15,3 +15,22 @@
 		}
 	}
 }
+
+.title {
+	&-date {
+		padding-bottom: 0;
+		font-size: em(40px);
+		line-height: 1;
+		text-align: center;
+		color: $base_color;
+		.date-group {
+			font-size: em(70px, 40px);
+		}
+		.place {
+			color: $gold;
+		}
+		.sep {
+			color: $light_gray;
+		}
+	}
+}
