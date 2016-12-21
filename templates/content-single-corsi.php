@@ -14,3 +14,5 @@
 </article>
 <?php get_template_part('templates/page', 'layout'); ?>
 <?php endwhile; ?>
+
+<?php echo ICL_LANGUAGE_CODE; ?>
