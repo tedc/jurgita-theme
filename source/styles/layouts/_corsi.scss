@@ -24,6 +24,44 @@
             }
         }
     }
+    .container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        figure {
+            position: relative;
+            width: 100%;
+            padding-right: em(40px);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .square {
+            width: 66%;
+            height: 66%;
+            background-color: $yellow;
+            position: absolute;
+            bottom: em(-50px);
+            right: 0px;
+            z-index: -1;
+        }
+        .square-shadow {
+            width: 66%;
+            height: 66%;
+            @include pattern();
+            position: absolute;
+            bottom: em(-80px);
+            right: em(20px);
+            z-index: -1;
+        }
+    }
+    .content {
+        h2.title {
+            font-size: em(24px);
+        }
+    }
 }
 
 .title {
@@ -54,54 +92,6 @@
         }
         .single-corsi & {
             text-align: center;
-        }
-    }
-}
-
-.corsi {
-
-    margin-bottom: em(150px);
-
-    .container-img {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        figure {
-            position: relative;
-            width: 100%;
-            padding-right: em(40px);
-
-            img {
-                width: 100%;
-                height: auto;
-                display: block;
-            }
-            .square {
-                width: 66%;
-                height: 66%;
-                background-color: $yellow;
-                position: absolute;
-                bottom: em(-50px);
-                right: 0px;
-                z-index: -1;
-            }
-            .square-shadow {
-                width: 66%;
-                height: 66%;
-                @include pattern();
-                position: absolute;
-                bottom: em(-80px);
-                right: em(20px);
-                z-index: -1;
-            }
-        }
-    }
-
-    article {
-        h2 {
-            font-size: em(24px);
         }
     }
 }
