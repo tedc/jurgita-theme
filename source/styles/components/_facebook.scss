@@ -27,23 +27,24 @@
                 display: block;
             }
         }
-        .like {
-            position: absolute;
-            width: em(100px);
-            height: em(100px);
-            top: calc(50% - 50px);
-            right: -10px;
-            background-color: #3c5a9a;
-            align-items: center;
-            justify-content: center;
-            .icon-facebook {
-                font-size: em(65px);
-                color: $w;
-            }
-            display: none;
-            @include breakpoint($bp){
-                display: flex;
-            }
+    }
+    .like {
+        position: absolute;
+        width: em(100px);
+        height: em(100px);
+        top: calc(50% - 50px);
+        right: -10px;
+        background-color: #3c5a9a;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        @include breakpoint($bp){
+            display: flex;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
         }
     }
     .gray-square {
