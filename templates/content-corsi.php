@@ -1,9 +1,9 @@
 <?php $postClass = ($i%2 == 0) ? '' : ' alt'; ?>
-<div <?php post_class('container grid-4'.$postClass); ?>>
+<div <?php post_class('container grid-4 row-lg'.$postClass); ?>>
 	<div class="container-img col-2">
 	    <figure>
 		    <a href="<?php the_permalink(); ?>">
-		        <img src="<?php the_post_thumbnail_url() ?>">
+		        <img src="<?php the_post_thumbnail_url( 'large' ) ?>">
 		    </a>
 	        <div class="square"></div>
 	        <div class="square-shadow"></div>
