@@ -1,7 +1,7 @@
 .tabs {
     display: flex;
-    padding-top: em(50px);
-    padding-bottom: em(50px);
+    padding-top: em(50px, 30px);
+    padding-bottom: em(50px, 30px);
 }
 
 .tab-content{
@@ -21,6 +21,6 @@
 }
 .login, .register {
     p {
-        padding-bottom: 30px;
+        padding-bottom: em(30px);
     }
 }
