@@ -19,6 +19,7 @@
 			}
 		}
 		.blog &, .archive & {
+			background-color: $w;
 			padding: {
 				top: em(10px);
 				bottom: em(10px);
