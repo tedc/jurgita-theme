@@ -45,7 +45,8 @@ if (!defined('ABSPATH')) {
                                value="<?php if (!empty($_POST['username'])) echo esc_attr($_POST['username']); ?>"/>
                     </p>
                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                        <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password"
+                        <input class="woocommerce-Input woocommerce-Input--text input-text" type="password"
+                               name="password"
                                id="password"/>
                     </p>
 
@@ -63,6 +64,8 @@ if (!defined('ABSPATH')) {
                     <?php do_action('woocommerce_login_form_end'); ?>
 
                 </form>
+            </div>
+            <div class="account-forms">
                 <form method="post" class="register">
 
                     <?php do_action('woocommerce_register_form_start'); ?>
@@ -70,7 +73,8 @@ if (!defined('ABSPATH')) {
                     <?php if ('no' === get_option('woocommerce_registration_generate_username')) : ?>
 
                         <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username"
+                            <input type="text" class="woocommerce-Input woocommerce-Input--text input-text"
+                                   name="username"
                                    id="reg_username" placeholder="<?php _e('Nome', 'jurgita') ?>"
                                    value="<?php if (!empty($_POST['username'])) echo esc_attr($_POST['username']); ?>"/>
                         </p>
@@ -79,13 +83,15 @@ if (!defined('ABSPATH')) {
 
                     <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                         <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email"
-                               id="reg_email" value="<?php if (!empty($_POST['email'])) echo esc_attr($_POST['email']); ?>"/>
+                               id="reg_email"
+                               value="<?php if (!empty($_POST['email'])) echo esc_attr($_POST['email']); ?>"/>
                     </p>
 
                     <?php if ('no' === get_option('woocommerce_registration_generate_password')) : ?>
 
                         <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-                            <input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password"
+                            <input type="password" class="woocommerce-Input woocommerce-Input--text input-text"
+                                   name="password"
                                    id="reg_password"/>
                         </p>
 
@@ -113,8 +119,7 @@ if (!defined('ABSPATH')) {
         </div>
     </div>
 </div>
-
-
+</div>
 
 
 <?php do_action('woocommerce_after_customer_login_form'); ?>
