@@ -23,7 +23,10 @@
 		line-height: 1;
 		text-align: center;
 		color: $base_color;
-		.date-group {
+		.corsi-date-row, .day-group, .place {
+			display: block;
+		}
+		.day-group {
 			font-size: em(70px, 40px);
 		}
 		.place {
