@@ -20,7 +20,6 @@
 	&-date {
 		padding-bottom: 0;
 		font-size: em(40px);
-		line-height: 1;
 		text-align: center;
 		color: $base_color;
 		.corsi-date-row, .day-group, .place {
@@ -34,6 +33,10 @@
 		}
 		.sep {
 			color: $light_gray;
+			padding: 0 em(20px, 70px);
+		}
+		.year {
+			padding-left: em(20px, 40px);
 		}
 	}
 }
