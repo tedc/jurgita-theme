@@ -1,7 +1,7 @@
 <?php use Roots\Sage\Titles; ?>
 <?php get_template_part('templates/breadcrumbs'); ?>
 <header class="page-header">
-	<?php if(!is_home()) : get_template_part( 'templates/header', 'video' ); endif; ?>
+	<?php if(!is_home() || !is_archive()) : get_template_part( 'templates/header', 'video' ); endif; ?>
 	<?php if(!is_front_page()) : ?>
 	<h1 class="title"><?= Titles\title(); ?></h1>
 	<?php if(get_field('sottotitolo')) : ?>
