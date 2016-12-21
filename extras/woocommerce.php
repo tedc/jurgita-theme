@@ -33,13 +33,13 @@ function woocommerce_car_icon(){
 	echo $icon;
 }
 
-function login_menu ($menu, $args) {
+function login_menu ($nav_menu, $args) {
     $str = '';
-    if( $args->theme_location === "primary_navigation" ) {
+    if( $args->theme_location === 'primary_navigation' ) {
         $str.= (is_user_logged_in()) ? '<li class="menu-item login-menu-item"><a href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'" title="'.__('Il mio account','jurgita').'"'.__('Il mio account','jurgita').'</a></li>' : '<li class="menu-item login-menu-item"><a href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'" title="'.__('Login','jurgita').'"'.__('Login','jurgita').'</a></li>';
     }
-    $menu = preg_replace('/(<\/ul>)$/', $str.'$1', $menu );
-    return $menu;
+    $nav_menu = preg_replace('/(<\/ul>)$/', $str.'$1', $nav_menu );
+    return $nav_menu;
 }
 
 add_filter('wp_nav_menu', 'login_menu', 10, 2);
