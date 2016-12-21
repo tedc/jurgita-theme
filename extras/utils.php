@@ -14,6 +14,7 @@
 			$date .= '<span class="corsi-date-row">'.$start->format('d') . '<span class="month">' . $start->format('F') . '</span>';
 			$date .= ($start->format('Y') != $end->format('Y')) ? '<span class="year">'.$start->format('Y').'</span></span>' : '</span>';
 			$date .= '<span class="corsi-date-row">'.$end->format('d') . '<span class="month">' . $end->format('F') . '</span><span class="year">'.$end->format('Y').'</span></span>';
+		endif;
 		$date .= '</span>';
 		echo $date;
 	}
