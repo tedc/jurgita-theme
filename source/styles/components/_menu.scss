@@ -203,6 +203,7 @@
 		}
 		&-content {
 			overflow: hidden;
+			position: relative;
 		}
 		display: flex;
 		flex-direction: column;
@@ -233,6 +234,17 @@
 		.last {
 			padding-top: em(20px);
 		}
+	}
+	.ps-scrollbar-y-rail {
+		width: 5px;
+		height: $f;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		position: absolute;
+	}
+	.ps-scrollbar-y {
+		background-color: $gold;
 	}
 	.btn-contact {
 		display: block;
