@@ -1,4 +1,5 @@
-<div <?php post_class('container grid-4'); ?>>
+<?php $postClass = ($i%2 == 0) ? '' : ' alt'; ?>
+<div <?php post_class('container grid-4'.$postClass); ?>>
 	<div class="container-img col-2">
 	    <figure>
 	        <img src="<?php the_post_thumbnail_url() ?>">
