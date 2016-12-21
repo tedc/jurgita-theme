@@ -31,7 +31,6 @@
 		padding-bottom: 0;
 		font-size: em(40px);
 		line-height: 1.125;
-		text-align: center;
 		color: $base_color;
 		.corsi-date-row, .day-group, .place {
 			display: block;
@@ -49,6 +48,9 @@
 		}
 		.year {
 			padding-left: em(20px, 40px);
+		}
+		.single-corsi & {
+			text-align: center;
 		}
 	}
 }
