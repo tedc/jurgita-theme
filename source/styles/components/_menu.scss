@@ -159,7 +159,6 @@
 	bottom: 0;
 	width: em(70px);
 	display: block;
-	font-family: $third-font;
 	z-index: 9999;
 	@include breakpoint($bp) {
 		display: inherit;
@@ -188,19 +187,29 @@
 			font-size: vh(16px);
 			color: $gold;
 			letter-spacing: $letter-spacing-large;
+			font-family: $third-font;
 		}
 		display: flex;
 		flex-direction: column;
 		ul {
 			flex: 20;
+			font-family: $second-font;
 		}
 		.permalink {
 			display: block;
 			padding: em(20px);
 			transition: background-color $speed;
+			color: $base_color;
 			&:hover {
 				background-color: $light_gray;
 			}
+		}
+		.corsi-date {
+			font-size: em(18px);
+		}
+		.place {
+			font-weight: bold;
+			font-size: em(18px);
 		}
 		.title {
 			font-size: em(20px);
