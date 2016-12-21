@@ -22,6 +22,7 @@
 
     <?php 
     $today = date('Ymd');
+    var_dump($today);
     $args = array (
         'post_type' => 'corsi',
         'meta_query' => array(
