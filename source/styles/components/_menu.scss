@@ -158,7 +158,7 @@
 	top: em(70px);
 	bottom: 0;
 	width: em(70px);
-	display: block;
+	display: none;
 	z-index: 9999;
 	&:before {
 		content: '';
