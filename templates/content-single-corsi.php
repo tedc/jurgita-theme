@@ -13,6 +13,11 @@
 </div>
 </article>
 <?php get_template_part('templates/page', 'layout'); ?>
+<div class="body-container">
+	<?php acf_set_language_to_default(); while(have_rows('form_prenotazioni', 'options')) : the_row(); ?>
+		<?php if(strtolower(get_sub_field('lang')) != strtolower(ICL_LANGUAGE_CODE)) : ?>
+			<?php echo do_shortcode( get_sub_field('shortcode') ); ?>
+		<?php endif; ?>
+	<?php endwhile; acf_unset_language_to_default(); ?>
+</div>
 <?php endwhile; ?>
-
-<?php echo ICL_LANGUAGE_CODE; ?>
