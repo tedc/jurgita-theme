@@ -18,6 +18,24 @@
 				bottom: em(150px);
 			}
 		}
+		.blog &, .archive & {
+			padding: {
+				top: em(10px);
+				bottom: em(10px);
+			}
+			@include breakpoint($bp) {
+				padding: {
+					top: em(20px);
+					bottom: em(20px);
+				}
+			}
+			@include breakpoint(1024px) {
+				padding: {
+					top: em(40px);
+					bottom: em(40px);
+				}
+			}
+		}
 		@include normalize_padding();
 		.home & {
 			display: flex;
