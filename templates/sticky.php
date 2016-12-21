@@ -5,15 +5,8 @@
         <div class="square-shadow"></div>
     </figure>
 </div>
-<<<<<<< Updated upstream
-<article <?php post_class("col-2"); ?>>
-=======
-<<<<<<< HEAD
-<article class="col-2 content">
-=======
-<article <?php post_class("col-2"); ?>>
->>>>>>> origin/master
->>>>>>> Stashed changes
+
+<article <?php post_class("col-2"); ?>
     <div class="content-post">
         <header>
             <?php get_template_part('templates/entry-meta'); ?>
