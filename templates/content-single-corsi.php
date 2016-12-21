@@ -17,11 +17,8 @@
             get_field('data_fine', false, false)
         ); ?>
 	<h2 class="title">
-	<span class="days"><?php echo $start->format('d'); ?> <span class="sep">/</span> <?php echo $end->format('d'); ?></span>
-	<span class="right">
-		<span class="month"><?php echo $start->format('F'); ?></span>
+		<?php data_corsi($start, $end); ?>
 		<span class="place"><?php the_field('luogo'); ?></span>
-	</span>
 	</h2>
 	<div class="row-md">
 		<?php the_field('descrizione_corso'); ?>

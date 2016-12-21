@@ -29,6 +29,6 @@
                     <?php endwhile; wp_reset_query(); ?>
                 </ul>
         </div>
-        <a href="#" class="aside-btn"><?php _e('Prossimi corsi', 'jurgita'); ?></a>
+        <a href="#" class="aside-btn"><?php _e('Prossimi corsi', 'jurgita'); ?><i class="icon-arrow-down"></i></a>
     </aside>
 <?php endif; ?>
