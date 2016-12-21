@@ -42,7 +42,7 @@ $args = array (
     'order'     => 'ASC',
     'tax_query' => array(
         array(
-            'taxonomy' => 'livelli',
+            'taxonomy' => get_queried_object()->taxonomy,
             'terms' => get_queried_object()->term_id,
             'field' => 'term_id'
         )
