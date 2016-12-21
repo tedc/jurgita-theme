@@ -21,6 +21,7 @@
                 // JavaScript to be fired on all pages
                 reveal();
                 price();
+                disableButtonCart();
                 select.init();
                 awards();
                 faceSwitcher();
@@ -86,6 +87,10 @@
                 number.val(res);
             });
         });
+    }
+
+    function disableButtonCart () {
+        $( '.shop_table.cart' ).closest( 'form' ).find( 'input[name="update_cart"]' ).removeProp( 'disabled');
     }
 
     var select = {
