@@ -14,6 +14,16 @@
 			}
 		}
 	}
+	&.alt {
+		@include breakpoint($bp) {
+			.container-img {
+				order: 2;
+			}
+			.content {
+				order: 1;
+			}
+		}
+	}
 }
 
 .title {
