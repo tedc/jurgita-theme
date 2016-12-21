@@ -82,7 +82,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
 					<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" value="<?php if ( ! empty( $_POST['email'] ) ) echo esc_attr( $_POST['email'] ); ?>" />
 				</p>
-				
 			<?php endif; ?>
 
 
