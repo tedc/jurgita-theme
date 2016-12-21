@@ -7,7 +7,7 @@ if ($terms): ?>
         <?php foreach ($terms as $term): ?>
             <div class="col-2">
                 <h2 class="title title-corso"><?php echo $term->name; ?></h2>
-                <ul>
+                <ul class="argomenti">
                     <?php while (have_rows('argomenti', 'livelli_' . $term->term_id)) : the_row(); ?>
                         <li class="argomento">
                             <span class="check">
