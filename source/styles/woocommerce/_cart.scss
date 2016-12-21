@@ -3,16 +3,21 @@
 
 @media screen and (max-width: 600px) {
 
-    .product-thumbnail {
+    td.product-thumbnail {
         width: 100%!important;;
         text-align: center;
     }
     td.product-name {
-        padding-left: 0;
+        padding-left: 0!important;
         width: 100%!important;
         text-align: center;
         .name-product {
             padding-bottom: 0!important;
+        }
+    }
+    td.product-quantity {
+        .quantity {
+            width: em(95px)!important;
         }
     }
 
