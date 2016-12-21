@@ -213,13 +213,13 @@
 		&-content {
 			overflow: hidden;
 			position: relative;
-			padding: em(20px) 0;
 		}
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		ul {
 			font-family: $second-font;
+			padding: em(20px) 0;
 		}
 		.permalink {
 			display: block;
@@ -239,7 +239,7 @@
 		}
 		.title {
 			font-size: em(20px);
-			padding-bottom: em(30px, 20px);
+			padding-bottom: em(10px, 20px);
 		}
 		.last {
 			padding-top: em(20px);
