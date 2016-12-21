@@ -78,12 +78,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
 					<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="reg_username" value="<?php if ( ! empty( $_POST['username'] ) ) echo esc_attr( $_POST['username'] ); ?>" />
 				</p>
-				<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
-					<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" value="<?php if ( ! empty( $_POST['email'] ) ) echo esc_attr( $_POST['email'] ); ?>" />
-				</p>
+
 			<?php endif; ?>
 
-
+			<p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+				<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" value="<?php if ( ! empty( $_POST['email'] ) ) echo esc_attr( $_POST['email'] ); ?>" />
+			</p>
 
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 
