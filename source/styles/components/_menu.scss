@@ -195,12 +195,12 @@
 			letter-spacing: $letter-spacing-large;
 			font-family: $third-font;
 			z-index: 2;
-			font-size: vh(16px, 320);
+			font-size: vh(16px, 250);
 			.icon-arrow-down {
 				transition: transform $speed;
 				margin-left: 20px;
 			}
-			@media screen and (min-height: #{em(320px)}) {
+			@media screen and (min-height: #{em(400px)}) {
 				font-size: 1em;
 			}
 		}
