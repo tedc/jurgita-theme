@@ -214,11 +214,11 @@
         $('ul.tabs li').click(function () {
             var tab_id = $(this).attr('data-tab');
 
-            $('ul.tabs li').removeClass('current');
-            $('.tab-content').removeClass('current');
+            $('ul.tabs li').removeClass('current', {duration:500});
+            $('.tab-content').removeClass('current', {duration:500});
 
-            $(this).addClass('current');
-            $("#" + tab_id).addClass('current');
+            $(this).addClass('current', {duration:500});
+            $("#" + tab_id).addClass('current', {duration:500});
         })
 
     }
