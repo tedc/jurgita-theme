@@ -39,7 +39,14 @@ $args = array (
     ),
     'meta_key'  => 'data_fine',
     'orderby'   => 'meta_value_num',
-    'order'     => 'ASC'
+    'order'     => 'ASC',
+    'tax_query' => array(
+        array(
+            'taxonomy' => get_queried_object()->taxonomy,
+            'terms' => get_queried_object()->term_id,
+            'field' => 'term_id'
+        )
+    )
 );
 $query = new WP_Query($args); ?>
 <?php if ($query->have_posts()) : $i = 0; while ($query->have_posts()) : $query->the_post(); ?>
