@@ -36,16 +36,18 @@
             display: block;
         }
         .day-group {
-            font-size: em(70px, 40px);
+            color: $time-post;
+            font-size: em(95px, 40px);
         }
         .place {
-            color: $gold;
+            color: $time-post;
             font-size: em(60px, 40px);
         }
         .sep {
             color: $light_gray;
             padding: 0 em(10px, 70px);
         }
+
         .year {
             padding-left: em(20px, 40px);
         }
@@ -87,7 +89,7 @@
             .square-shadow {
                 width: 66%;
                 height: 66%;
-                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+                @include pattern();
                 position: absolute;
                 bottom: em(-80px);
                 right: em(20px);
@@ -97,25 +99,17 @@
     }
 
     article {
-
-        .container-post-head {
-            @extend %post-head;
-
+        h2 {
+            font-size: em(24px);
         }
+        h3 {
+            .place {
 
-        .entry-title {
-            @extend %title-post;
-            font-size: em(40px);
-            padding: em(45px, 40px) 0;
-        }
-
-        .entry-summary {
-            @extend %excerpt-post;
-            padding-bottom: em(45px, 18px);
-
-            p {
-                line-height: em(30px, 18px);
             }
+        }
+        .day-group {
+            font-size: em(95px);
+            color: $time-post;
         }
     }
 }
