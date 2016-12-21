@@ -8,7 +8,7 @@
 </div>
 <?php endif; ?>
 <div class="body-container">
-	<h2 class="title">
+	<h2 class="title title-date">
 		<?php data_corsi(get_field('data_inizio', false, false), get_field('data_fine', false, false)); ?>
 		<span class="place"><?php the_field('luogo'); ?></span>
 	</h2>
