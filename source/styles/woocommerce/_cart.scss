@@ -20,6 +20,9 @@
             width: em(95px)!important;
         }
     }
+    td.price {
+        text-align: center!important;
+    }
 
     /* Force table to not be like tables anymore */
     .woocommerce-page table.shop_table,
@@ -324,6 +327,7 @@ input[name=update_cart] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cart_totals {
