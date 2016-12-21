@@ -191,7 +191,6 @@
 			white-space: nowrap;
 			display: flex;
 			align-items: center;
-			font-size: vh(16px);
 			color: $gold;
 			letter-spacing: $letter-spacing-large;
 			font-family: $third-font;
@@ -200,12 +199,17 @@
 				transition: transform $speed;
 				margin-left: 20px;
 			}
+			@media screen and (min-height: #{em(320px)}) {
+				font-size: vh(16px);
+			}
 		}
 		&.opened {
 			transform: translate3d(0%, 0, 0);
-			.icon-arrow-down {
-				transform: scaleY(-1) translate3d(0,0,0);
-			}
+			.panel-btn {
+				.icon-arrow-down {
+					transform: scaleY(-1) translate3d(0,0,0);
+				}
+			}	
 		}
 		&-content {
 			overflow: hidden;
