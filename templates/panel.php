@@ -1,4 +1,24 @@
-<?php $corsi = new WP_Query(array(
+<?php 
+    $today = date('Ymd');
+    $args = array (
+        'post_type' => 'corsi',
+        'meta_query' => array(
+            array(
+                'key'       => 'data_inizio',
+                'compare'   => '>=',
+                'value'     => $today,
+            ),
+             array(
+                'key'       => 'data_fine',
+                'compare'   => '<=',
+                'value'     => $today,
+            )
+        ),
+        'meta_key'  => 'data_fine',
+        'orderby'   => 'meta_value_num',
+        'order'     => 'ASC'
+    );
+$corsi = new WP_Query(array(
     'post_type' => 'corsi',
     'orderby' => 'meta_value',
     'meta_query' => array(
