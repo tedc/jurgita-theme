@@ -1,13 +1,19 @@
-.account-tab-list {
+.tabs {
     display: flex;
 }
 
 .tab-content{
+    transition: display $speed;
     display: none;
-    background: #ededed;
-    padding: 15px;
 }
 
 .tab-content.current{
     display: inherit;
+}
+
+.tab-link.current {
+    font-weight: bold;
+}
+.tab-link {
+    cursor: pointer;
 }
