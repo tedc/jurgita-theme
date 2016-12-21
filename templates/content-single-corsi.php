@@ -20,5 +20,4 @@
 		<?php endif; ?>
 		</div>
 	<?php endwhile; acf_unset_language_to_default(); ?>
-
 <?php endwhile; ?>

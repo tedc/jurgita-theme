@@ -2,7 +2,9 @@
 <div <?php post_class('container grid-4'.$postClass); ?>>
 	<div class="container-img col-2">
 	    <figure>
-	        <img src="<?php the_post_thumbnail_url() ?>">
+		    <a href="<?php the_permalink(); ?>">
+		        <img src="<?php the_post_thumbnail_url() ?>">
+		    </a>
 	        <div class="square"></div>
 	        <div class="square-shadow"></div>
 	    </figure>
