@@ -57,7 +57,7 @@ $corsi = new WP_Query(array(
                     while ($query->have_posts()) : $query->the_post(); ?>
                     <li <?php post_class(); ?>>
                         <a href="<?php the_permalink(  ); ?>">
-                            <?php ddata_corsi_simple(get_field('data_inizio', false, false), get_field('data_fine', false, false)); ?>
+                            <?php data_corsi_simple(get_field('data_inizio', false, false), get_field('data_fine', false, false)); ?>
                             <span class="place"><?php the_field('luogo'); ?></span>
                         </a>
                     </li>
