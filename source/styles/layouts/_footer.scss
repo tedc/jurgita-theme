@@ -16,9 +16,11 @@
        flex-wrap: wrap;
        .text-2 {
           text-align: center;
+          width: $f;
            @include breakpoint($bp) {
               flex: 1;
               text-align: left;
+              width: auto;
            }
            .textwidget {
                color: #808285 ;
@@ -28,11 +30,14 @@
        }
 
        .menu-footer {
-        @include breakpoint($bp) {
-            flex: 2;
-         }
+
          text-align: center;
          color: $medium_gray;
+         width: $f;
+         @include breakpoint($bp) {
+            flex: 2;
+            width: auto;
+         }
         li {
                  list-style-type: none;
                  color: #808285 ;
@@ -61,13 +66,22 @@
 
        .widget_img {
           text-align: center;
+          width: $f;
            @include breakpoint($bp) {
               flex: 1;
               text-align: right;
+              width: auto;
            }
            color: #808285 ;
            font-family: $main-font;
            font-size: em(10px);
+       }
+       .icon-credits {
+          color: $base_color;
+          margin-left: 10px;
+          &:hover {
+            color: $gold;
+          }
        }
    }
 
@@ -80,7 +94,10 @@
    justify-content: center;
    padding-left: 0;
    margin-top: 0;
-
+   width: $f;
+   @include breakpoint($bp) {
+      width: auto;
+   }
    li {
        list-style-type: none;
        display: flex;
