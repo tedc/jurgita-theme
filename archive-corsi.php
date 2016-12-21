@@ -40,8 +40,9 @@
         'orderby'   => 'meta_value_num',
         'order'     => 'ASC'
     );
-    $query = new WP_Query($args); ?>
+    $query = new WP_Query($args); var_dump($query);?>
     <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+
         <?php get_template_part('templates/content', get_post_type() ); ?>
     <?php endwhile; ?>
     <?php endif; ?>
