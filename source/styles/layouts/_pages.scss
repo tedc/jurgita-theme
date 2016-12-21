@@ -1,137 +1,140 @@
 .page {
-	&-header {
-		position: relative;
-		text-align: center;
-		padding: {
-			top: em(75px);
-			bottom: em(75px);
-		}
-		@include breakpoint($bp) {
-			padding: {
-				top: em(100px);
-				bottom: em(100px);
-			}
-		}
-		@include breakpoint(1024px) {
-			padding: {
-				top: em(150px);
-				bottom: em(150px);
-			}
-		}
-		.blog &, .archive & {
-			background-color: $w;
-			padding: {
-				top: em(10px);
-				bottom: em(10px);
-			}
-			@include breakpoint($bp) {
-				padding: {
-					top: em(20px);
-					bottom: em(20px);
-				}
-			}
-			@include breakpoint(1024px) {
-				padding: {
-					top: em(40px);
-					bottom: em(40px);
-				}
-			}
-		}
-		@include normalize_padding();
-		.home & {
-			display: flex;
-			flex-direction: column;
-			padding-top: em(50px);
-			padding-bottom: 0;
-			min-height: calc(100vh - #{em(70px)});
-		}
-		&-top {
-			flex: 20;
-			display: flex;
-			align-content: center;
-			flex-wrap: wrap;
-			position: relative;
-			z-index: 1;
-		}
-		&-bottom {
-			width: $f;
-			position: relative;
-			z-index: 1;
-			padding-bottom: em(20px);
-			.icon-scroll {
-				display: block;
-				color: $gold;
-				font-size: em(40px);
-				padding: em(20px, 40px) 0;
-			}
-		}
-		.wp-post-image {
-			.home & {
-				height: $f !important;
-				left: 50%;
-				position: absolute;
-				z-index: 0;
-				bottom: 0;
-				width: auto !important;
-			}
-		}
-		.title, .subtitle {
-			position: relative;
-		}
-		.cover {
-			@include absfull();
-			overflow: hidden;
-			.wp-post-image {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: auto !important;
-				height: auto !important;
-				min-height: $f !important;
-				min-width: $f !important;
-				transform: translate3d(-50%, -50%, 0);
-			}
-			&:after {
-				content: '';
-				@include absfull();
-				background: $b;
-				opacity: .45;
-			}
-		}
-		.single-corsi & {
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-			.title {
-				width: $f;
-				color: $w;
-				padding-bottom: 0;
-			}
-		}
-	}
+    &-header {
+        position: relative;
+        text-align: center;
+        background-color: $w;
+        padding: {
+            top: em(10px);
+            bottom: em(10px);
+        }
+        @include breakpoint($bp) {
+            padding: {
+                top: em(20px);
+                bottom: em(20px);
+            }
+        }
+        @include breakpoint(1024px) {
+            padding: {
+                top: em(40px);
+                bottom: em(40px);
+            }
+        }
+        .page-template-template-custom-php & {
+            background-color: $header-color;
+            padding: {
+                top: em(75px);
+                bottom: em(75px);
+            }
+
+            @include breakpoint($bp) {
+                padding: {
+                    top: em(100px);
+                    bottom: em(100px);
+                }
+            }
+            @include breakpoint(1024px) {
+                padding: {
+                    top: em(150px);
+                    bottom: em(150px);
+                }
+            }
+        }
+
+        @include normalize_padding();
+        .home & {
+            display: flex;
+            flex-direction: column;
+            padding-top: em(50px);
+            padding-bottom: 0;
+            min-height: calc(100vh - #{em(70px)});
+        }
+        &-top {
+            flex: 20;
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+        &-bottom {
+            width: $f;
+            position: relative;
+            z-index: 1;
+            padding-bottom: em(20px);
+            .icon-scroll {
+                display: block;
+                color: $gold;
+                font-size: em(40px);
+                padding: em(20px, 40px) 0;
+            }
+        }
+        .wp-post-image {
+            .home & {
+                height: $f !important;
+                left: 50%;
+                position: absolute;
+                z-index: 0;
+                bottom: 0;
+                width: auto !important;
+            }
+        }
+        .title, .subtitle {
+            position: relative;
+        }
+        .cover {
+            @include absfull();
+            overflow: hidden;
+            .wp-post-image {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: auto !important;
+                height: auto !important;
+                min-height: $f !important;
+                min-width: $f !important;
+                transform: translate3d(-50%, -50%, 0);
+            }
+            &:after {
+                content: '';
+                @include absfull();
+                background: $b;
+                opacity: .45;
+            }
+        }
+        .single-corsi & {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .title {
+                width: $f;
+                color: $w;
+                padding-bottom: 0;
+            }
+        }
+    }
 }
 
 .contact {
-	&-header {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		padding-bottom: em(40px);
-		justify-content: space-between;
-		.right {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-		}
-		a {
-			color: $base_color;
-			&:hover {
-				color: $gold;
-			}
-			margin-left: em(10px);
-		}
-		.title {
-			padding-bottom: 0;
-		}
-	}
+    &-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: em(40px);
+        justify-content: space-between;
+        .right {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        a {
+            color: $base_color;
+            &:hover {
+                color: $gold;
+            }
+            margin-left: em(10px);
+        }
+        .title {
+            padding-bottom: 0;
+        }
+    }
 }
