@@ -40,12 +40,12 @@ if (!defined('ABSPATH')) {
             <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                 <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username"
                        id="username"
-                       value="<?php if (!empty($_POST['username'])) echo esc_attr($_POST['username']); ?>" placeholder="<?php _e('Nome', 'jurgita') ?>"/>
+                       value="<?php if (!empty($_POST['username'])) echo esc_attr($_POST['username']); ?>" placeholder="<?php _e('Nome (campo obligatorio)', 'jurgita') ?>"/>
             </p>
             <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                 <input class="woocommerce-Input woocommerce-Input--text input-text" type="password"
                        name="password"
-                       id="password" placeholder="<?php _e('Password', 'jurgita') ?>"/>
+                       id="password" placeholder="<?php _e('Password (campo obligatorio)', 'jurgita') ?>"/>
             </p>
 
             <?php do_action('woocommerce_login_form'); ?>
@@ -56,7 +56,7 @@ if (!defined('ABSPATH')) {
                        value="<?php esc_attr_e('Login', 'woocommerce'); ?>"/>
             </p>
             <p class="woocommerce-LostPassword lost_password">
-                <a href="<?php echo esc_url(wp_lostpassword_url()); ?>"><?php _e('Lost your password?', 'woocommerce'); ?></a>
+                <a href="<?php echo esc_url(wp_lostpassword_url()); ?>"><?php _e('Password dimenticata?', 'jurgita'); ?></a>
             </p>
 
             <?php do_action('woocommerce_login_form_end'); ?>
@@ -73,7 +73,7 @@ if (!defined('ABSPATH')) {
                 <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                     <input type="text" class="woocommerce-Input woocommerce-Input--text input-text"
                            name="username"
-                           id="reg_username" placeholder="<?php _e('Nome', 'jurgita') ?>"
+                           id="reg_username" placeholder="<?php _e('Nome (campo obligatorio)', 'jurgita') ?>"
                            value="<?php if (!empty($_POST['username'])) echo esc_attr($_POST['username']); ?>"/>
                 </p>
 
@@ -82,7 +82,7 @@ if (!defined('ABSPATH')) {
             <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                 <input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="email"
                        id="reg_email"
-                       value="<?php if (!empty($_POST['email'])) echo esc_attr($_POST['email']); ?>" placeholder="<?php _e('Email', 'jurgita') ?>"/>
+                       value="<?php if (!empty($_POST['email'])) echo esc_attr($_POST['email']); ?>" placeholder="<?php _e('Indirizzo Email (campo obligatorio)', 'jurgita') ?>"/>
             </p>
 
             <?php if ('no' === get_option('woocommerce_registration_generate_password')) : ?>
@@ -90,7 +90,7 @@ if (!defined('ABSPATH')) {
                 <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
                     <input type="password" class="woocommerce-Input woocommerce-Input--text input-text"
                            name="password"
-                           id="reg_password" placeholder="<?php _e('Password', 'jurgita') ?>"/>
+                           id="reg_password" placeholder="<?php _e('Password (campo obligatorio)', 'jurgita') ?>"/>
                 </p>
 
             <?php endif; ?>
@@ -107,7 +107,7 @@ if (!defined('ABSPATH')) {
             <p class="woocomerce-FormRow form-row">
                 <?php wp_nonce_field('woocommerce-register', 'woocommerce-register-nonce'); ?>
                 <input type="submit" class="woocommerce-Button btn button" name="register"
-                       value="<?php esc_attr_e('Register', 'woocommerce'); ?>" placeholder="<?php _e('Nome', 'jurgita') ?>"/>
+                       value="<?php esc_attr_e('Register', 'woocommerce'); ?>" placeholder="<?php _e('Nome (campo obligatorio)', 'jurgita') ?>"/>
             </p>
 
             <?php do_action('woocommerce_register_form_end'); ?>
