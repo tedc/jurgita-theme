@@ -62,7 +62,7 @@ $corsi = new WP_Query(array(
                         </a>
                     </li>
                 <?php endwhile; wp_reset_query(); ?>
-                    <li>
+                    <li class="last">
                         <a href="<?php echo get_post_type_archive_link('corsi'); ?>" class="btn-reverse">
                             <?php _e('Tutti i corsi', 'jurgita'); ?>
                         </a>

@@ -69,8 +69,14 @@
                 event.preventDefault();
                 $(id).toggleClass('opened');
                 $(this).toggleClass('active');
+                if(id === '#panel') {
+                    setTimeout(function() {
+                        $('#panel').perfectScrollbar('update');
+                    }, 400);
+                }
             })
         })
+        $('#panel').perfectScrollbar();
     }
 
     function price() {
