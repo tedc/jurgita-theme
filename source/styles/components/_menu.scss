@@ -160,17 +160,25 @@
 	width: em(70px);
 	display: block;
 	z-index: 9999;
+	&:before {
+		content: '';
+		background-color: $w;
+		@include absfull();
+		z-index: 1;
+	}
 	@include breakpoint($bp) {
 		display: inherit;
 	}
 	.panel {
 		position: absolute;
+		padding-top: em(20px);
 		background-color: $w;
 		top: 0;
 		left: 100%;
 		height: $f;
 		width: em(300px);
 		text-align: center;
+		z-index: 0;
 		transition: {
 			duration: $speed;
 			property: transform;
@@ -183,11 +191,15 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate3d(-50%, -50%, 0) rotate(90deg);
+			transform: translate3d(-50%, -50%, 0) rotate(-90deg);
+			white-space: nowrap;
+			display: flex;
+			align-items: center;
 			font-size: vh(16px);
 			color: $gold;
 			letter-spacing: $letter-spacing-large;
 			font-family: $third-font;
+			z-index: 2;
 		}
 		display: flex;
 		flex-direction: column;
