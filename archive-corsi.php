@@ -26,8 +26,13 @@
         'post_type' => 'corsi',
         'meta_query' => array(
             array(
+                'key'       => 'data_inizio',
+                'compare'   => '>=',
+                'value'     => $today,
+            ),
+             array(
                 'key'       => 'data_fine',
-                'compare'   => '<=',
+                'compare'   => '>=',
                 'value'     => $today,
             )
         ),
