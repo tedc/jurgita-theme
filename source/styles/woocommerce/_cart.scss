@@ -3,6 +3,19 @@
 
 @media screen and (max-width: 600px) {
 
+    .product-thumbnail {
+        width: 100%;
+        text-align: center;
+    }
+    .td.product-name {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        .name-product {
+            padding-bottom: 0;
+        }
+    }
+
     /* Force table to not be like tables anymore */
     .woocommerce-page table.shop_table,
     .woocommerce-page table.shop_table thead,
