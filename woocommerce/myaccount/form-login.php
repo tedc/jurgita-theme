@@ -26,7 +26,7 @@ if (!defined('ABSPATH')) {
 
 <?php do_action('woocommerce_before_customer_login_form'); ?>
 
-<div class="container-tab">
+<div class="container-tab body-container">
     <ul class="tabs title">
         <li class="tab-link current" data-tab="login-id">Login</li>
         <li class="sep">/</li>

@@ -1,5 +1,7 @@
 .tabs {
     display: flex;
+    padding-top: em(50px);
+    padding-bottom: em(50px);
 }
 
 .tab-content{
@@ -16,4 +18,9 @@
 }
 .tab-link {
     cursor: pointer;
+}
+.login, .register {
+    p {
+        padding-bottom: 30px;
+    }
 }
