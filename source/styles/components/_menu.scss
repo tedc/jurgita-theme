@@ -195,7 +195,7 @@
 			letter-spacing: $letter-spacing-large;
 			font-family: $third-font;
 			z-index: 2;
-			font-size: vh(16px);
+			font-size: vh(16px, 320);
 			.icon-arrow-down {
 				transition: transform $speed;
 				margin-left: 20px;

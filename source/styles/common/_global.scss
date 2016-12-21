@@ -11,8 +11,8 @@
     @return ($target/$vw-context) * 1vw;
 }
 
-@function vh($target) { 
-    $vw-context: (768*.01) * 1px;
+@function vh($target, $vp : 768x) { 
+    $vw-context: ($vp*.01) * 1px;
     @return ($target/$vw-context) * 1vh;
 }
 
