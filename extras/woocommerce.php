@@ -38,7 +38,7 @@ function login_menu ($nav_menu, $args) {
     if( $args->theme_location === 'primary_navigation' ) {
         $str.= (is_user_logged_in()) ? '<li class="menu-item login-menu-item"><a href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'" title="'.__('Il mio account','jurgita').'">'.__('Il mio account','jurgita').'</a></li>' : '<li class="menu-item login-menu-item"><a href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'" title="'.__('Login','jurgita').'">'.__('Login','jurgita').'</a></li>';
     }
-    $nav_menu = preg_replace('/(<\/ul>)$/', $str.'$1', $nav_menu );
+    $nav_menu = preg_replace('/(<\/ul>)/', $str.'$1', $nav_menu );
     return $nav_menu;
 }
 
