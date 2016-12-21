@@ -17,7 +17,7 @@
         ?>
         <p class="title">196847 LIKE</p>
         <span class="like">
-            <img class="facebook-like" href="<?php get_stylesheet_directory_uri() . '/assets/images/like.svg' ?>">
+            <img class="facebook-like" href="<?php echo get_stylesheet_directory_uri() . '/assets/images/like.svg' ?>">
         </span>
         <a href="<?php bloginfo('url'); ?>" class="logo">
             <span class="j">J</span>
