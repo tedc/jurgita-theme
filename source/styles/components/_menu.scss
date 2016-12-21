@@ -171,7 +171,6 @@
 	}
 	.panel {
 		position: absolute;
-		padding-top: em(20px);
 		background-color: $w;
 		top: 0;
 		left: 100%;
@@ -184,9 +183,6 @@
 			property: transform;
 		}
 		transform: translate3d(-120%, 0, 0);
-		&.opened {
-			transform: translate3d(0%, 0, 0);
-		}
 		&-btn {
 			position: absolute;
 			top: 50%;
@@ -200,10 +196,21 @@
 			letter-spacing: $letter-spacing-large;
 			font-family: $third-font;
 			z-index: 2;
+			.icon-arrow-down {
+				transition: transform $speed;
+				margin-left: 20px;
+			}
+		}
+		&.opened {
+			transform: translate3d(0%, 0, 0);
+			.icon-arrow-down {
+				transform: scaleY(-1) translate3d(0,0,0);
+			}
 		}
 		&-content {
 			overflow: hidden;
 			position: relative;
+			padding: em(20px) 0;
 		}
 		display: flex;
 		flex-direction: column;
@@ -229,7 +236,7 @@
 		}
 		.title {
 			font-size: em(20px);
-			padding-bottom: 2em;
+			padding-bottom: em(30px, 20px);
 		}
 		.last {
 			padding-top: em(20px);
