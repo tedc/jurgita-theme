@@ -1,9 +1,13 @@
 .account-tab-list {
     display: flex;
 }
-.tabcontent {
+
+.tab-content{
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    background: #ededed;
+    padding: 15px;
+}
+
+.tab-content.current{
+    display: inherit;
 }

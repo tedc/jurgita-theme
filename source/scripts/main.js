@@ -25,6 +25,7 @@
                 select.init();
                 awards();
                 faceSwitcher();
+                swichTab();
             }
         }
     };
@@ -69,8 +70,8 @@
                 event.preventDefault();
                 $(id).toggleClass('opened');
                 $(this).toggleClass('active');
-                if(id === '#panel') {
-                    setTimeout(function() {
+                if (id === '#panel') {
+                    setTimeout(function () {
                         $('#panel-content').perfectScrollbar('update');
                     }, 400);
                 }
@@ -95,8 +96,8 @@
         });
     }
 
-    function disableButtonCart () {
-        $( '.shop_table.cart' ).closest( 'form' ).find( 'input[name="update_cart"]' ).removeProp( 'disabled');
+    function disableButtonCart() {
+        $('.shop_table.cart').closest('form').find('input[name="update_cart"]').removeProp('disabled');
     }
 
     var select = {
@@ -128,7 +129,8 @@
             })
         }
     }
-    function awards () {
+
+    function awards() {
         $(".awards").each(function () {
             var first = $(this).find('.carousel_list');
             var second = $(this).find('.carousel_content');
@@ -182,53 +184,45 @@
     }
 
     function faceSwitcher() {
-        $('.switcher').each(function() {
+        $('.switcher').each(function () {
             var dragger = $(this).find('.dragger');
             var $this = $(this);
             Draggable.create(dragger, {
                 bounds: $this,
-                type : 'x',
-                onDrag: function(evt) {
+                type: 'x',
+                onDrag: function (evt) {
                     var width = $this.width(),
                         center = width / 2,
                         x = center + this.x,
                         p = ( x * 100 ) / width,
                         nW = 100 - p;
-                    TweenMax.set($this.find('.back'), { width : p + '%' });
-                    TweenMax.set($this.find('.front'), { left : p + '%', width : nW + '%' });
+                    TweenMax.set($this.find('.back'), {width: p + '%'});
+                    TweenMax.set($this.find('.front'), {left: p + '%', width: nW + '%'});
                 }
             })
         });
-        $(window).on('resize', function() {
-            $('.switcher').each(function() {
+        $(window).on('resize', function () {
+            $('.switcher').each(function () {
                 var pos = $(this).find('.front').position().left - ( $(this).width() / 2 );
-                TweenMax.set($(this).find('.dragger'), { x : pos});
+                TweenMax.set($(this).find('.dragger'), {x: pos});
             });
         })
     }
 
 
+    function swichTab() {
+        $('ul.tabs li').click(function () {
+            var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+
+            $(this).addClass('current');
+            $("#" + tab_id).addClass('current');
+        })
+
+    }
+
 })(jQuery); // Fully reference jQuery after this point.
 
-
-function openTab(evt, tab) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(tab).style.display = "block";
-    evt.currentTarget.className += " active";
-}
 

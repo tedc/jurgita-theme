@@ -27,14 +27,12 @@ if (!defined('ABSPATH')) {
 <?php do_action('woocommerce_before_customer_login_form'); ?>
 
 <div class="container-tab">
-    <ul class="account-tab-list title">
-        <li class="tablinks account-tab-item"><a class="account-tab-link current" href="javascript:void(0)"
-                                                 onclick="openTab(event, 'login-id')">Login</a></li>
+    <ul class="tabs title">
+        <li class="tab-link current" data-tab="login-id">Login</li>
         <li class="sep">/</li>
-        <li class="tablinks account-tab-item last"><a class="account-tab-link" href="javascript:void(0)"
-                                                      onclick="openTab(event, 'register-id')">Register</a></li>
+        <li class="tab-link" data-tab="register-id">Register</li>
     </ul>
-    <div id="login-id" class="tabcontent">
+    <div id="login-id" class="tab-content current">
         <form method="post" class="login">
 
             <?php do_action('woocommerce_login_form_start'); ?>
@@ -65,7 +63,7 @@ if (!defined('ABSPATH')) {
 
         </form>
     </div>
-    <div id="register-id" class="tabcontent">
+    <div id="register-id" class="tab-content">
         <form method="post" class="register">
 
             <?php do_action('woocommerce_register_form_start'); ?>
@@ -116,7 +114,6 @@ if (!defined('ABSPATH')) {
 
         </form>
     </div>
-
 
 </div>
 
