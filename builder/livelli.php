@@ -6,15 +6,20 @@ if ($terms): ?>
     <div class="grid-4 container">
         <?php foreach ($terms as $term): ?>
             <div class="col-2">
-                <h2><?php echo $term->name; ?></h2>
+                <h2 class="title title-corso"><?php echo $term->name; ?></h2>
                 <ul>
-                <?php while ( have_rows('argomenti', 'livelli_'.$term->term_id ) ) : the_row();
-                    echo '<li>';
+                    <?php while (have_rows('argomenti', 'livelli_' . $term->term_id)) : the_row();
+                        echo '<li class="argomento">';
 
-                    the_sub_field('argomento');
-                    the_sub_field('check');
-                    echo '</li>';
-                endwhile;?>
+                        echo '<span class="icon ';
+                        if (the_sub_field('check')) {
+                            echo 'icon-check';
+                        }
+                        echo '">';
+
+                        echo '<span class="argomento-text">' . the_sub_field('argomento') . '</span>';
+                        echo '</li>';
+                    endwhile; ?>
 
             </div>
         <?php endforeach; ?>
