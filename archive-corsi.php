@@ -22,16 +22,10 @@
 
     <?php 
     $today = date('Ymd');
-    var_dump($today);
     $args = array (
         'post_type' => 'corsi',
         'meta_query' => array(
             array(
-                'key'       => 'data_inizio',
-                'compare'   => '>=',
-                'value'     => $today,
-            ),
-             array(
                 'key'       => 'data_fine',
                 'compare'   => '<=',
                 'value'     => $today,
