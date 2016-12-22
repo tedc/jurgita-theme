@@ -6,7 +6,9 @@
 
     .like-content {
         background-color: $yellow;
-        padding: em(70px) em(200px);
+        padding: em(70px) 0;
+        max-width: em(600px);
+        width: 100%;
         position: relative;
 
         p {
