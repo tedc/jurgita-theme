@@ -18,6 +18,8 @@
         padding-right: 0;
     }
     .col-2{
+        padding-left: 0;
+        padding-right: 0;
         &:nth-child(odd) {
            padding-left: em(20px);
         }
