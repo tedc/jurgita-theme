@@ -5,4 +5,14 @@
     .product-name {
         padding-left: 0;
     }
+    .cart-subtotal, .order-total {
+        text-align: left;
+        td {
+            text-align: right;
+        }
+    }
+    .woocommerce-Price-amount {
+        @extend .price;
+    }
+
 }
