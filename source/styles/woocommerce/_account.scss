@@ -1,15 +1,21 @@
 .woocommerce-MyAccount-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: em(30px);
+    padding-bottom: em(30px);
     li {
         list-style-type: none;
         color: $gold;
         line-height: 1;
         text-align: center;
+        padding-bottom: em(10px);
+        padding-top: em(10px);
         a {
             font-size: em(18px);
             color: $gold;
             transition: color $speed;
             font-family: $main-font;
-
             &:hover {
                 color: $category_gray;
             }
