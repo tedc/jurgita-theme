@@ -26,7 +26,7 @@
             $fbApp,
             $extend_result,
             'GET',
-            '/'. $opts['facebook_page_id'] . '/?fields=fan_count'
+            '/'. $opts['facebook_page_id'] . '/?fields=access_token'
         );
         try {
             $response = $fb->getClient()->sendRequest($request);
@@ -69,7 +69,7 @@
             $fbApp,
             $token,
             'GET',
-            '/'. $page_id . '/ratings?fields=open_graph_story,created_time,review_text,reviewer,rating&limit=15'
+            '/'. $page_id . '/?fields=fan_count'
         );
         //$facebookSession = new FacebookSession($pageToken);
         try {
