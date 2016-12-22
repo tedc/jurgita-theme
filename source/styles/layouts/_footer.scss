@@ -13,10 +13,17 @@
    .bottom-footer {
        display: flex;
        justify-content: space-between;
-
+       flex-wrap: wrap;
        .text-2 {
-           flex: 1;
-
+          text-align: center;
+          width: $f;
+          padding-bottom: 20px;
+           @include breakpoint($bp) {
+              flex: 1;
+              text-align: left;
+              width: auto;
+              padding-bottom: 0;
+           }
            .textwidget {
                color: #808285 ;
                font-family: $main-font;
@@ -25,52 +32,60 @@
        }
 
        .menu-footer {
-           flex: 2;
-           text-align: center;
-           color: $medium_gray;
 
-
-
-               li {
-                   list-style-type: none;
-                   display: flex;
-                   align-items: center;
-                   color: #808285 ;
-                   line-height: 1;
-
-                   a {
-                       color: #808285 ;
-                       font-family: $main-font;
-                       font-size: em(10px);
-                       &:hover {
-                           color: $gold;
-                       }
-                   }
-
-                   &:before {
-                       content: '\2022';
-                       margin-left: em(7px);
-                       margin-right: em(7px);
-                   }
+         text-align: center;
+         color: $medium_gray;
+         width: $f;
+         @include breakpoint($bp) {
+            flex: 2;
+            width: auto;
+         }
+        li {
+                 list-style-type: none;
+                 color: #808285 ;
+                 line-height: 1;
+                 text-align: center;
+                 a {
+                     color: #808285 ;
+                     font-family: $main-font;
+                     font-size: em(10px);
+                     &:hover {
+                         color: $gold;
+                     }
+                 }
+                @include breakpoint($bp) {
+                  display: flex;
+                  align-items: center;
+                 &:before {
+                     content: '\2022';
+                     margin-left: em(7px);
+                     margin-right: em(7px);
+                 }
                }
-
-               li:first-child {
-                   &:before {
-                       content: '';
-                       margin-left: 0;
-                       margin-right: 0;
-                   }
-               }
-           }
-
+             }
+         }
        }
 
        .widget_img {
-           flex: 1;
-           text-align: right;
+          text-align: center;
+          width: $f;
+          padding-top: 20px;
+           @include breakpoint($bp) {
+              flex: 1;
+              text-align: right;
+              width: auto;
+              padding-top: 0;
+           }
            color: #808285 ;
            font-family: $main-font;
            font-size: em(10px);
+       }
+       .icon-credits {
+          color: $base_color;
+          margin-left: 10px;
+          &:hover {
+            color: $gold;
+          }
        }
    }
 
@@ -83,7 +98,10 @@
    justify-content: center;
    padding-left: 0;
    margin-top: 0;
-
+   width: $f;
+   @include breakpoint($bp) {
+      width: auto;
+   }
    li {
        list-style-type: none;
        display: flex;
@@ -95,6 +113,9 @@
            color: #808285 ;
            font-family: $main-font;
            font-size: em(10px);
+           &:hover {
+               color: $gold;
+           }
        }
 
        &:before {
