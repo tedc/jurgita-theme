@@ -84,5 +84,5 @@
             exit;
         }
         $graphNode = $pageResponse->getDecodedBody();
-        return $graphNode;
+        return $graphNode['fan_count'];
     }
