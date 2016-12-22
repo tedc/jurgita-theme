@@ -3,6 +3,7 @@
         font-size: em(14px, 20px);
         color: $category_gray;
         padding-bottom: em(30px, 20px);
+        display: flex;
     }
     .payment_method_paypal {
         img {

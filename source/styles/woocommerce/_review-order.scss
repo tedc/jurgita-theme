@@ -1,6 +1,9 @@
 .woocommerce-checkout-review-order-table {
     .product-total {
-        text-align: right;
+        text-align: center;
+        @include breakpoint($bp) {
+            text-align: right;
+        }
     }
     .product-name {
         padding-left: 0;
@@ -9,12 +12,15 @@
         padding: em(20px) 0;
     }
     .cart-subtotal, .order-total {
-        text-align: left;
-        th {
-            padding: em(20px) 0;
-        }
-        td {
-            text-align: right;
+        text-align: center;
+        @include breakpoint($bp) {
+            text-align: left;
+            th {
+                padding: em(20px) 0;
+            }
+            td {
+                text-align: right;
+            }
         }
     }
     .woocommerce-Price-amount {
