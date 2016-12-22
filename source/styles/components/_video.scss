@@ -27,7 +27,12 @@
         height: 100%;
         color: $w;
         text-align: center;
-        padding: 0 80px;
+        padding: 0 em(80px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         .title {
             font-size: em(36px);
             color: $w;

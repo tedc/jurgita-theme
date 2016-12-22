@@ -21,6 +21,10 @@
         <source src="<?php echo $file; ?>.ogv" type="video/ogv" />
         <source src="<?php echo $file; ?>.webm" type="video/webm" />
     </video>
+	<div class="video-foreground">
+		<?php $oembed = get_sub_field('embed');
+		echo $oembed;?>
+	</div>
     <div class="video-overlay">
     	<h3 class="title"><?php the_sub_field('titolo_video'); ?></h3>
     	<a href="#" class="icon-play"></a>
