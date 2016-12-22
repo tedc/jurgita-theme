@@ -26,7 +26,7 @@
             $fbApp,
             $extend_result,
             'GET',
-            '/'. $opts['facebook_page_id'] . '/?fields=access_token'
+            '/'. $opts['facebook_page_id'] . '/?fields=fan_count'
         );
         try {
             $response = $fb->getClient()->sendRequest($request);
