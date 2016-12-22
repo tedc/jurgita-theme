@@ -26,6 +26,7 @@
                 awards();
                 faceSwitcher();
                 swichTab();
+                video();
             }
         }
     };
@@ -221,6 +222,33 @@
             $("#" + tab_id).addClass('current');
         })
 
+    }
+
+    function video () {
+        $(".video-cols").each(function () {
+            var $this = $(this);
+            var $video = $this.find(".video-item").get(0);
+            $this.find(".icon-play").on("click", function () {
+                var iframe = $this.find("iframe");
+                var src = iframe.attr("src");
+                $this.addClass("playing");
+                iframe.attr("src", src + "&autoplay=1&rel=0&showinfo=0");
+                $(".video-overlay").hide();
+                $video.pause();
+
+            });
+           /* $this.find(".close-button").on("click", function () {
+                console.log("close");
+                var iframe = $this.find("iframe");
+                var src = iframe.attr("src").replace("&autoplay=1&rel=0&showinfo=0", "");
+                $this.removeClass("playing");
+                setTimeout(function () {
+                    iframe.attr("src", "").attr("src", src);
+                }, 500);
+                $(".play").show();
+                $video.play();
+            })*/
+        });
     }
 
 })(jQuery); // Fully reference jQuery after this point.
