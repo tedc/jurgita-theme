@@ -4,6 +4,8 @@
     }
     .product-name {
         padding-left: 0;
+        font-size: em(18px);
+        color: $gold;
     }
     .cart-subtotal, .order-total {
         text-align: left;
