@@ -66,3 +66,37 @@
     padding-top: percentage(530px / 685px);
     position: relative;
 }
+
+
+.playing{
+    video{
+        opacity:0;
+        transition: opacity 0.5s;
+    }
+    iframe,.video-foreground{
+        opacity:1;
+        transition: opacity 0.5s;
+    }
+
+    .close-button{
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        top:em(40px);
+        right:em(40px);
+        color: $w;
+        text-transform: uppercase;
+        font-family: $second_font;
+        transition: opacity 0.5s, visibility 0.5s;
+        cursor: pointer;
+    }
+    .video-foreground,
+    .video-foreground iframe {
+        visibility: visible;
+        opacity: 1;
+    }
+    .container_play{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
