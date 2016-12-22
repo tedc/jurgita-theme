@@ -17,11 +17,11 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .col-2{
+    .col-2 {
         padding-left: 0;
         padding-right: 0;
         &:nth-child(even) {
-           padding-left: em(20px);
+            padding-left: em(20px);
         }
 
         &:nth-child(odd) {
@@ -29,6 +29,7 @@
         }
     }
 }
+
 #billing_country_field, #billing_state_field {
     .select {
         display: none;
@@ -51,10 +52,13 @@
     }
 }
 
+.select2-choice {
+    padding-top: em(9px) !important;
+    padding-bottom: em(9px) !important;
+    border: 1px solid $gold !important;
+    border-radius: 0px !important;
+}
 
-    .select2-choice {
-        padding-top: em(10px)!important;
-        padding-bottom: em(10px)!important;
-        border: 1px solid $gold!important;
-        border-radius: 0px!important;
-    }
+#billing_address_2_field {
+    margin-top: em(30px);
+}
