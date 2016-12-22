@@ -22,5 +22,9 @@
 .woocommerce-edit-address {
     .body-container {
         max-width: 100%;
+
+        label {
+            text-align: left;
+        }
     }
 }
