@@ -6,6 +6,7 @@ function wcs_woo_remove_reviews_tab($tabs) {
     unset($tabs['reviews']);
     return $tabs;
 }
+remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb', 20, 0);
 
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash' );
@@ -43,3 +44,4 @@ function login_menu ($nav_menu, $args) {
 }
 
 add_filter('wp_nav_menu', 'login_menu', 10, 2);
+
