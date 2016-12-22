@@ -52,12 +52,12 @@
 }
 
 .select2-choice {
-    padding-top: em(8px) !important;
-    padding-bottom: em(8px) !important;
+    padding-top: em(9px, 18px) !important;
+    padding-bottom: em(9px, 18px) !important;
     border: 1px solid $gold !important;
     border-radius: 0px !important;
 }
 
 #billing_address_2_field, #shipping_address_2_field {
-    padding-top: em(29px);
+    padding-top: em(30px, 18px);
 }
