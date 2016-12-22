@@ -228,7 +228,7 @@
         $(".video-cols").each(function () {
             var $this = $(this);
             var $video = $this.find(".video-item").get(0);
-            $this.find(".icon-play").on("click", function (event) {
+            $this.find(".video-overlay").on("click", function (event) {
                 event.preventDefault();
                 var iframe = $this.find("iframe");
                 var src = iframe.attr("src");

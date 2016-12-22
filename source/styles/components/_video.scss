@@ -19,6 +19,7 @@
         transform: translate3d(-50%, -50%, 0);
     }
     &-overlay {
+        cursor: pointer;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -108,7 +109,7 @@
     right: em(40px);
     color: $w;
     text-transform: uppercase;
-    font-family: $second_font;
+    font-family: $third-font;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
