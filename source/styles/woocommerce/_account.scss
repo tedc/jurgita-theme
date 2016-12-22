@@ -1,0 +1,16 @@
+.woocommerce-MyAccount-navigation {
+    li {
+        padding-top: em(10px);
+        padding-bottom: em(10px);
+        text-align: center;
+        a {
+            font-size: em(18px);
+            color: $gold;
+        }
+    }
+}
+.woocommerce-MyAccount-content {
+    a {
+        color: $gold;
+    }
+}
