@@ -3,3 +3,9 @@
     padding-top: em(10px);
     padding-bottom: em(10px);
 }
+
+#billing_country_field, #billing_state_field {
+    .select {
+        display: none;
+    }
+}
