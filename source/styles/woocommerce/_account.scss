@@ -1,7 +1,7 @@
 .woocommerce-MyAccount-navigation {
     li {
-        padding-top: em(10px);
-        padding-bottom: em(10px);
+        padding-top: em(5px);
+        padding-bottom: em(5px);
         text-align: center;
         a {
             font-size: em(18px);
@@ -14,6 +14,7 @@
     }
 }
 .woocommerce-MyAccount-content {
+    text-align: justify;
     a {
         color: $gold;
     }
