@@ -12,6 +12,11 @@
             text-align: center;
             padding-bottom: em(10px);
             padding-top: em(10px);
+            &:before {
+                content: '\2022';
+                margin-left: em(7px);
+                margin-right: em(7px);
+            }
             a {
                 font-size: em(18px);
                 color: $gold;
@@ -24,11 +29,13 @@
             @include breakpoint($bp) {
                 display: flex;
                 align-items: center;
-                &:before {
-                    content: '\2022';
-                    margin-left: em(7px);
-                    margin-right: em(7px);
-                }
+            }
+        }
+        li:first-child {
+            &:before {
+                content: '';
+                margin-left: 0;
+                margin-right: em(7px);
             }
         }
     }
