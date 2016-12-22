@@ -32,6 +32,7 @@
     }
     .btn {
         margin-top: em(15px);
+        margin-bottom: em(15px);
     }
 }
 
@@ -57,6 +58,6 @@
     border-radius: 0px !important;
 }
 
-#billing_address_2_field {
+#billing_address_2_field, #shipping_address_2 {
     padding-top: em(29px);
 }
