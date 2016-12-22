@@ -60,4 +60,14 @@
 }
 
 
+.grid-4.grid-cols {
+    .col-2 {
+        .btn {
+            margin-bottom: em(40px);
+            @include breakpoint($bp) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
