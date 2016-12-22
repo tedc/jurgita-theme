@@ -5,12 +5,13 @@
             text-align: right;
         }
     }
-    .product-name {
+    .product-name, .product-total {
         padding-left: 0;
         font-size: em(18px);
         color: $gold;
         padding: em(20px) 0;
     }
+
     .cart-subtotal, .order-total {
         text-align: center;
         @include breakpoint($bp) {
