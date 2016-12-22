@@ -1,9 +1,9 @@
 #payment {
     .item-payment {
         font-size: em(14px, 20px);
-        color: $category_gray;
+        color: $base_color;
         padding-bottom: em(30px, 20px);
-        font-family: $base_color;
+        font-family: $main-font;
     }
     .payment_method_paypal {
         img {
