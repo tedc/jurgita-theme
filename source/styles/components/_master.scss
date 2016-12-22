@@ -10,36 +10,48 @@
         padding: em(50px, 26px) em(80px, 26px);
         position: relative;
         .logo {
-            position: absolute;
-            height: 70px;
-            width: 70px;
-            left: -50px;
-            top: calc(50% - 35px);
-            z-index: 6;
-            .j {
-                font-size: em(50px, 26px);
+            display: none;
+            @include breakpoint($bp) {
+                display: block;
+                position: absolute;
+                height: 70px;
+                width: 70px;
+                left: -50px;
+                top: calc(50% - 35px);
+                z-index: 6;
+                .j {
+                    font-size: em(50px, 26px);
+                }
             }
         }
     }
     .square {
-        height: 0;
-        width: 20%;
-        padding-bottom: 20%;
-        background-color: $square-master;
-        position: absolute;
-        bottom: em(-50px);
-        right: 50%;
-        z-index: -1;
+        display: none;
+        @include breakpoint($bp) {
+            display: block;
+            height: 0;
+            width: 20%;
+            padding-bottom: 20%;
+            background-color: $square-master;
+            position: absolute;
+            bottom: em(-50px);
+            right: 50%;
+            z-index: -1;
+        }
     }
     .pattern {
-        height: 0;
-        width: 40%;
-        padding-bottom: 40%;
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
-        position: absolute;
-        left: 0;
-        bottom: -75%;
-        z-index: -1;
+        display: none;
+        @include breakpoint($bp) {
+            display: block;
+            height: 0;
+            width: 40%;
+            padding-bottom: 40%;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC) repeat;
+            position: absolute;
+            left: 0;
+            bottom: -75%;
+            z-index: -1;
+        }
     }
 
 }
