@@ -45,12 +45,12 @@ add_action( 'admin_menu', 'facebook_add_admin_menu' );
 function facebook_settings_init(  ) { 
 	
  
-	register_setting( 'social', 'facebook_settings' );
+	register_setting( 'facebook', 'facebook_settings' );
     
     
 	add_settings_section(
 		'facebook_section', 
-		__( 'Link social', 'frt' ), 
+		__( 'Settings per i like di Facebook', 'frt' ), 
 		'facebook_settings_section_callback', 
 		'facebook'
 	);
@@ -59,7 +59,7 @@ function facebook_settings_init(  ) {
 	add_settings_field( 
 		'facebook_page_id', 
 		__( 'Facebook Page Id', 'frt' ), 
-		'facebook_facebook_pi_field', 
+		'facebook_pi_field', 
 		'facebook', 
 		'facebook_section' 
 	);
@@ -67,27 +67,27 @@ function facebook_settings_init(  ) {
 	add_settings_field( 
 		'facebook_app_id', 
 		__( 'Facebook App Id', 'frt' ), 
-		'facebook_facebook_ai_field', 
+		'facebook_ai_field', 
 		'facebook', 
 		'facebook_section' 
 	);
     add_settings_field( 
 		'facebook_app_secret', 
 		__( 'Facebook App Secret', 'frt' ), 
-		'facebook_facebook_as_field', 
+		'facebook_as_field', 
 		'facebook', 
 		'facebook_section' 
 	);
     add_settings_field( 
 		'facebook_access_token', 
 		__( 'Facebook Access Token', 'frt' ), 
-		'facebook_facebook_at_field', 
+		'facebook_at_field', 
 		'facebook', 
 		'facebook_section' 
 	);
 
 }
-function facebook_facebook_pi_field(  ) { 
+function facebook_pi_field(  ) { 
 
 	$options = get_option( 'facebook_settings' );
 	?>
@@ -95,7 +95,7 @@ function facebook_facebook_pi_field(  ) {
 <?php
 
 }
-function facebook_facebook_ai_field(  ) { 
+function facebook_ai_field(  ) { 
 
 	$options = get_option( 'facebook_settings' );
 	?>
@@ -103,7 +103,7 @@ function facebook_facebook_ai_field(  ) {
 <?php
 
 }
-function facebook_facebook_as_field(  ) { 
+function facebook_as_field(  ) { 
 
 	$options = get_option( 'facebook_settings' );
 	?>
@@ -111,7 +111,7 @@ function facebook_facebook_as_field(  ) {
 <?php
 
 }
-function facebook_facebook_at_field(  ) { 
+function facebook_at_field(  ) { 
 
 	$options = get_option( 'facebook_settings' );
 	?>
@@ -125,7 +125,7 @@ function facebook_facebook_at_field(  ) {
 
 function facebook_settings_section_callback(  ) { 
 
-	echo __( 'Link per le pagine social', 'frt' );
+	echo __( 'Setting per i like di Facebook', 'frt' );
 
 }
 
@@ -135,11 +135,11 @@ function facebook_options_page(  ) {
 	?>
 	<form action='options.php' method='post'>
 
-		<h2>Social networks settings</h2>
+		<h2>Facebook settings</h2>
 
 		<?php
-		settings_fields( 'social' );
-		do_settings_sections( 'social' );
+		settings_fields( 'facebook' );
+		do_settings_sections( 'facebook' );
 		submit_button();
 		?>
 
@@ -148,7 +148,7 @@ function facebook_options_page(  ) {
 
 }
 
-function update_facebook_facebook_settings($new_value, $old_value) {
+function update_facebook_settings($new_value, $old_value) {
 	if($old_value['facebook_access_token'] != $new_value['facebook_access_token']) {
 		$new_value = extend_access_token($new_value);
 	} else {
@@ -157,7 +157,7 @@ function update_facebook_facebook_settings($new_value, $old_value) {
 	return $new_value;
 }
 function facebook_at_init() {
-	add_filter('pre_update_option_facebook_settings', 'update_facebook_facebook_settings', 10, 2);
+	add_filter('pre_update_option_facebook_settings', 'update_facebook_settings', 10, 2);
 }
 						  
 add_action('init', 'facebook_at_init');
