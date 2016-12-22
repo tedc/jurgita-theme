@@ -29,6 +29,9 @@
     	<h3 class="title"><?php the_sub_field('titolo_video'); ?></h3>
     	<a href="#" class="icon-play"></a>
     </div>
+	<div class="container_close">
+		<div class="close-button">chiudi</div>
+	</div>
 </div>
 <?php elseif (get_row_layout() == 'master') : ?>
 	<div class="container master">

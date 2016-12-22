@@ -100,3 +100,16 @@
         opacity: 0;
     }
 }
+
+
+.close-button {
+    position: absolute;
+    top: em(40px);
+    right: em(40px);
+    color: $w;
+    text-transform: uppercase;
+    font-family: $second_font;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
