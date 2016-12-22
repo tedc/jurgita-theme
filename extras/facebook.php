@@ -84,5 +84,5 @@
             exit;
         }
         $graphNode = $pageResponse->getDecodedBody();
-        return $graphNode['data'];
+        return $graphNode;
     }
