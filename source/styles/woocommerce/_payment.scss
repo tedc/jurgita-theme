@@ -1,0 +1,12 @@
+#payment {
+    .item-payment {
+        font-size: em(14px, 20px);
+        color: $category_gray;
+
+    }
+    .payment_method_paypal {
+        img {
+            display: none;
+        }
+    }
+}
