@@ -4,8 +4,17 @@
     padding-bottom: em(10px);
 }
 
+.woocommerce-MyAccount-content {
+    label {
+        text-align: left;
+    }
+}
 #billing_country_field, #billing_state_field {
     .select {
         display: none;
     }
+}
+
+#billing_address_1_field {
+    padding-bottom: em(10px);
 }
