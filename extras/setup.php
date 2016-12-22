@@ -32,7 +32,6 @@
 
 	add_action('after_setup_theme', __NAMESPACE__ . '\\image');
 
-		/ SOCIAL
 add_action( 'admin_init', 'facebook_settings_init' );
 
 function facebook_add_admin_menu(  ) { 
