@@ -69,7 +69,7 @@
             $fbApp,
             $token,
             'GET',
-            '/'. $page_id . '/ratings?fields=open_graph_story,created_time,review_text,reviewer,rating&limit=15'
+            '/'. $page_id . '/?fields=fan_count'
         );
         //$facebookSession = new FacebookSession($pageToken);
         try {
@@ -84,5 +84,5 @@
             exit;
         }
         $graphNode = $pageResponse->getDecodedBody();
-        return $graphNode['data'];
+        return $graphNode['fan_count'];
     }

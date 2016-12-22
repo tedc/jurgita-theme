@@ -4,7 +4,7 @@
     <div class="gray-square"></div>
     <div class="like-content">
        
-        <p class="title">196847 <?php _e('Like', 'jurgita'); ?></p>
+        <p class="title"><?php echo facebook_ratings(); ?> <?php _e('Like', 'jurgita'); ?></p>
         <span class="like">
             <img class="facebook-like" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/like.svg' ?>">
         </span>
