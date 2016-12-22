@@ -6,6 +6,10 @@
         a {
             font-size: em(18px);
             color: $gold;
+            transition: color $speed;
+            &:hover {
+                color: $category_gray;
+            }
         }
     }
 }
