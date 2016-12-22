@@ -3,18 +3,7 @@
     <span class="square"></span>
     <div class="gray-square"></div>
     <div class="like-content">
-        <?php
-        $fb_page = '1574408442879997';
-        $access_token = '';
-        $url = "https://graph.facebook.com/v2.2/".$fb_page.'?access_token='.$access_token;
-        $curl = curl_init($url);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-        $result = curl_exec($curl);
-        curl_close($curl);
-        $details = json_decode($result,true);
-       /* echo "Likes:".$details['likes']*/;
-        ?>
+       
         <p class="title">196847 <?php _e('Like', 'jurgita'); ?></p>
         <span class="like">
             <img class="facebook-like" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/like.svg' ?>">

@@ -5,7 +5,8 @@
         'extras/woocommerce.php',
         'extras/wpml.php',
         'extras/setup.php',
-        'extras/utils.php'
+        'extras/utils.php',
+        'extras/facebook.php'
 	];
 
 foreach ($extra_includes as $file) {
