@@ -70,12 +70,16 @@
         }
         .wp-post-image {
             .home & {
-                height: $f !important;
-                left: 50%;
-                position: absolute;
-                z-index: 0;
-                bottom: 0;
-                width: auto !important;
+                display: none;
+                @include breakpoint($bp) {
+                    display: block;
+                    height: $f !important;
+                    left: 50%;
+                    position: absolute;
+                    z-index: 0;
+                    bottom: 0;
+                    width: auto !important;
+                }
             }
         }
         .title, .subtitle {

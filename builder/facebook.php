@@ -12,7 +12,7 @@
             <span class="j">J</span>
             <span class="j">J</span>
         </a>
-        <a class="btn-social" href="<?php echo get_option("wpseo_social")["facebook_site"] ?>" target="_blank"><?php _e('Diventa fan', 'jurgita') ?></a>
+        <a class="btn-social" href="<?php echo get_option("wpseo_social")["facebook_site"]?>" target="_blank"><?php _e('Diventa fan', 'jurgita') ?></a>
     </div>
     <figure>
         <img src=<?php echo get_option("wpseo_social")["og_default_image"] ?>>
