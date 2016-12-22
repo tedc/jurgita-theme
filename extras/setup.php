@@ -43,10 +43,6 @@ function facebook_add_admin_menu(  ) {
 add_action( 'admin_menu', 'facebook_add_admin_menu' );
 
 function facebook_settings_init(  ) { 
-	
- 
-	register_setting( 'facebook', 'facebook_settings' );
-    
     
 	add_settings_section(
 		'facebook_section', 
@@ -54,7 +50,8 @@ function facebook_settings_init(  ) {
 		'facebook_settings_section_callback', 
 		'facebook'
 	);
-
+ 
+	register_setting( 'facebook', 'facebook_settings' );
 
 	add_settings_field( 
 		'facebook_page_id', 
