@@ -36,7 +36,9 @@
                 $language_link = $l['url'];
                 $language_code = $l['language_code'];
                 if($language_code != ICL_LANGUAGE_CODE) {
-                    $other_langs .= '<li class="menu-item" ><a href="'.$language_link.'">'.$language_code.'</a></li>';
+                    if(icl_object_id( $post->ID,  get_post_type(), false, $langague_code) ) {
+                        $other_langs .= '<li class="menu-item" ><a href="'.$language_link.'">'.$language_code.'</a></li>';
+                    }
                 }
             }
             foreach($languages as $l){
