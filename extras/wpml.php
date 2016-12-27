@@ -48,7 +48,7 @@
             }
         }
         $langs.="</ul>";
-        if(icl_object_id($post->ID, get_post_type(), true) ) {
+        if(icl_object_id($post->ID, get_post_type(), false) ) {
             echo $langs;
         }
     }
