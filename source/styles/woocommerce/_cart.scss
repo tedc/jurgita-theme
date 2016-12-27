@@ -98,12 +98,15 @@
     .woocommerce-page #content table.cart td.actions input {
         margin-bottom: 10px;
     }
+    .woocommerce-page .cart-collaterals {
+        overflow: hidden;
+    }
 
     .woocommerce-page .cart-collaterals .cart_totals {
         float: left;
         width: 100%;
         text-align: left;
-        overflow: hidden;
+
     }
 
     .woocommerce-page .cart-collaterals .cart_totals th,
