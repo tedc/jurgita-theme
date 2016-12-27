@@ -1,10 +1,10 @@
 /* START Make the WooCommerce Cart Table Responsive  for Mobile */
 /* CSS published in http://www.jeremycarter.com.au/optimising-woocommerce-checkout-for-mobile/ */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
 
     td.product-thumbnail {
-        width: 100%!important;;
+        width: 100%!important;
         text-align: center;
     }
     td.product-name {
