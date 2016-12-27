@@ -17,7 +17,7 @@
     }
     td.product-quantity {
         .quantity {
-            width: em(95px)!important;
+      /*      width: em(95px)!important;*/
         }
     }
     td.price {
@@ -103,6 +103,7 @@
         float: left;
         width: 100%;
         text-align: left;
+        overflow: hidden;
     }
 
     .woocommerce-page .cart-collaterals .cart_totals th,
@@ -219,7 +220,7 @@ td.product-name {
         border: 1px solid $light_gray;
         display: flex;
         align-items: center;
-        width: em(90px);
+        width: em(95px);
 
         input {
             width: em(80px, 26px);
