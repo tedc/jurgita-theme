@@ -48,7 +48,7 @@
             }
         }
         $langs.="</ul>";
-        if(get_post_meta( $post->ID, '_icl_lang_duplicate_of', true )) {
+        if(icl_object_id($post->ID, get_post_type(), true) ) {
             echo $langs;
         }
     }
