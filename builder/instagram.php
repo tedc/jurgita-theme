@@ -8,6 +8,6 @@
         </a>
     </div>
     <div class="container-btn">
-        <a href="https://www.instagram.com/rimastino/" class="btn" target="_blank"><?php _e('Segui', 'jurgita') ?></a>
+        <a href="<?php echo get_option("wpseo_social")["instagram_url"] ?>" class="btn" target="_blank"><?php _e('Segui', 'jurgita') ?></a>
     </div>
 </div>
