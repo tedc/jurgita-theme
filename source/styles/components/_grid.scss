@@ -12,7 +12,15 @@
 		}
 	}
 	&-full-h {
-		padding: 0;
+		padding: {
+			padding: 0;
+			bottom: em(40px);
+		}
+		@include breakpoint($bp) {
+			padding: {
+				bottom: em(40px)*2;
+			}
+		}
 		[class^="col"], [class*=" col"] {
 			padding: {
 				left: 0;
