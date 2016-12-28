@@ -463,7 +463,7 @@
 				transition: color $speed, transform $speed;
 				&:hover {
 					color: $gray;
-					transform: translate3d(0, -5px, 0);
+					transform: translate3d(0, -2px, 0);
 				}
 			}
 			&-phone {

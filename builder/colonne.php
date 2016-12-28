@@ -2,7 +2,7 @@
 <?php $col = 0; while(have_rows('colonne')) : the_row();
 $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{"y": -50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'';
 ?>
-<div class="col-2"<?php echo (!is_handheld()) ? ' '.$dataScrollMagic : ''; ?>>
+<div class="col-2"<?php echo (!is_handheld() && get_row_layout() != 'master') ? ' '.$dataScrollMagic : ''; ?>>
 <?php if(get_row_layout() == 'testo') : ?>
 	<div class="row-lg container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
 		<?php the_sub_field('contenuto'); ?>
@@ -37,11 +37,11 @@ $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"y": 50, "x" : -
 </div>
 <?php elseif (get_row_layout() == 'master') : ?>
 	<div class="container master">
-		<span class="pattern"></span>
-		<span class="square"></span>
-		<div class="master-content">
+		<span class="pattern" data-scrollmagic='{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'></span>
+		<span class="square" data-scrollmagic='{"tween":[{"y": 50, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'></span>
+		<div class="master-content" data-scrollmagic='{"tween":[{"y": 50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
 			<?php the_sub_field('testo_master'); ?>
-			<a href="<?php bloginfo('url'); ?>" class="logo">
+			<a href="<?php bloginfo('url'); ?>" class="logo" data-scrollmagic='{"tween":[{"y": -50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
 				<span class="j">J</span>
 				<span class="j">J</span>
 			</a>
