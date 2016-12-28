@@ -9,7 +9,7 @@
             width: 100% !important;
             position: relative;
             display: block;
-
+            @extend .icon-lente:before;
             &:hover {
                 &:before {
                     visibility: visible;
@@ -25,7 +25,7 @@
                 height: auto !important;
                 display: block;
             }
-            &:before {
+            &:after {
                 content: "";
                 visibility: hidden;
                 opacity: 0;
@@ -36,12 +36,10 @@
                 padding-top: 100%;
                 transition: opacity $speed, visibility $speed;
             }
-            &:after {
-                content: "";
+            &:before {
                 visibility: hidden;
                 opacity: 0;
                 font-family: "jurgita-icons";
-                @extend .icon-lente:before;
                 transition: opacity $speed, visibility $speed;
             }
 
