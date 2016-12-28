@@ -191,6 +191,7 @@
 		background-color: $w;
 		@include absfull();
 		z-index: 1;
+		transition: $speed background-color;
 	}
 	@include breakpoint($bp) {
 		display: inherit;
@@ -285,12 +286,18 @@
 	.btn-contact {
 		display: block;
 	}
-	.permalink {
-		color: $w;
+	.main-permalink {
 		@include absfull();
 		z-index: 3;
 	}
-
+	&:hover {
+		&:before {
+			background-color: $gray;
+		}
+		.panel-btn {
+			color: $w;
+		}
+	}
 }
 
 .menu {

@@ -30,7 +30,6 @@ $corsi = new WP_Query(array(
     'order' => 'ASC'
 )); if($corsi->have_posts()) : ?>
     <aside class="aside">
-        <a class="permalink" href="#" data-reveal="#panel"></a>
         <div class="panel" id="panel">
             <div class="panel-content" id="panel-content">
                 <h4 class="title"><?php _e('Prossimi corsi di Microblanding', 'jurgita'); ?></h4>
@@ -73,6 +72,7 @@ $corsi = new WP_Query(array(
             </div>
             <a href="<?php the_field('contact_page'); ?>" class="btn btn-contact"><?php _e('Contattami'); ?></a>
         </div>
-        <span class="panel-btn"><?php _e('Prossimi corsi', 'jurgita'); ?><i class="icon-arrow-down"></i></span>
+        <span class="panel-btn"><?php _e('Prossimi corsi', 'jurgita'); ?><i class="icon-arrow-down"></i></span>       
+        <a class="main-permalink" href="#" data-reveal="#panel"></a>
     </aside>
 <?php endif; ?>
