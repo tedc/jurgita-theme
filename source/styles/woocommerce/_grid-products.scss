@@ -45,7 +45,7 @@
                 display: block;
                 position: absolute;
                 top:0;
-                left: calc(50% - #{em(20px)});
+                left: calc(50% - #{em(20px, 40px)});
                 font-size: em(40px);
                 color: #888888;
                 width: 100%;
