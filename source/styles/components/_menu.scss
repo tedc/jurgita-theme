@@ -285,6 +285,10 @@
 	.btn-contact {
 		display: block;
 	}
+	.permalink {
+		@include absfull();
+		z-index: 3;
+	}
 }
 
 .menu {
