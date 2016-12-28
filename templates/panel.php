@@ -72,8 +72,7 @@ $corsi = new WP_Query(array(
             </div>
             <a href="<?php the_field('contact_page'); ?>" class="btn btn-contact"><?php _e('Contattami'); ?></a>
         </div>
-        <a class="permalink" href="#" data-reveal="#panel">
+        <a class="permalink" href="#" data-reveal="#panel"></a>
         <span class="panel-btn"><?php _e('Prossimi corsi', 'jurgita'); ?><i class="icon-arrow-down"></i></span>
-        </a>
     </aside>
 <?php endif; ?>
