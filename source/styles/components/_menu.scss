@@ -45,6 +45,23 @@
 					transform: translate3d(-20px, 0, 0);
 				}
 			}
+			&:hover {
+				.toggle{
+					.toggle-line {
+						&:nth-child(1), &:nth-child(3) {
+							transform: scaleX(0.7) translateZ(0);
+						}
+					}
+					&.active {
+						&:nth-child(1) {
+							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
+						}
+						&:nth-child(3) {
+							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
+						}
+					}
+				}
+			}
 		}
 		.icon-cart-full {
 			position: relative;
@@ -52,7 +69,7 @@
 				.total-cart {
 					background-color: $b;
 					color: $w;
-					transform: translateY(-5px);
+					transform: translateY(-2px);
 				}
 			}
 			.total-cart {
@@ -443,8 +460,10 @@
 				color: $gold;
 				font-size: em(24px);
 				padding: 0 em(10px, 24px);
+				transition: color $speed, transform $speed;
 				&:hover {
 					color: $gray;
+					transform: translate3d(0, -2px, 0);
 				}
 			}
 			&-phone {
@@ -461,6 +480,7 @@
 				text-transform: none;
 				a {
 					color: $base_color;
+					font-weight: bold;
 					&:hover {
 						color: $gold;
 					}

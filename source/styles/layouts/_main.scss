@@ -5,3 +5,10 @@
 	}
 	min-height: calc(100vh - #{em(70px)});
 }
+
+[data-scrollmagic] {
+	.handheld & {
+		transform: none !important;
+		opacity: 1 !important;
+	}
+}
