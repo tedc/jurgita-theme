@@ -5,9 +5,9 @@
     <?php if ($random == 0) {
     } ?>
     <?php if ($random == 1){?>
-    <div class="square" data-scrollmagic='{"tween":[{"y": 100}, {"y" : -50}], "triggerHook" : 0.5, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
-    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": -50}, {"y" : 0}], "triggerHook" : 0.5, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
+    <div class="square" data-scrollmagic='{"tween":[{"y": 100}, {"y" : -50}], "triggerHook" : 1, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
+    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": -50}, {"y" : 0}], "triggerHook" : 1, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
     <?php } else { ?>
-    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 100}, {"y" : -50}], "triggerHook" : 0.5, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
+    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 100}, {"y" : -50}], "triggerHook" : 1, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
     <?php } ?>
 </figure>
