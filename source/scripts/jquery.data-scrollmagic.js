@@ -65,6 +65,7 @@
             console.log(options.tween);
             if(Array.isArray(options.tween)) {
                 var tween = TweenMax.to(tweenEl, .5, options.tween[0], options.tween[1]);
+                console.log(tween);
                 scene.setTween(tween);
             } else {
                 scene.setTween(tweenEl, options.tween);
