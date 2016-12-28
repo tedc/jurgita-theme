@@ -58,7 +58,8 @@
 				border-radius: 100%;
 				width: em(15px, 10px);
 				height: em(15px, 10px);
-				line-height: em(15px, 10px);
+				padding-left: 2px;
+				line-height: 10px;
 				text-align: center;
 				font-size: em(10px, 20px);
 				transition: border $speed;
