@@ -7,6 +7,8 @@
 
         a {
             width: 100% !important;
+            position: relative;
+            display: block;
 
             img {
                 width: 100% !important;
@@ -17,12 +19,19 @@
                 content: "";
                 visibility: hidden;
                 opacity: 0;
-                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPF9l/ddqFEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA5/kJ8KH9VPqAAAAAElFTkSuQmCC), url("../images/lens.png");
-                background-repeat: repeat, no-repeat;
+               @include pattern();
                 display: block;
                 position: absolute;
                 width: 100%;
-                padding-top: 50%;
+                padding-top: 100%;
+            }
+            &:after {
+                content: "";
+                visibility: hidden;
+                opacity: 0;
+                font-family: "jurgita-icons";
+                @extend .icon-lente:before;
+
             }
 
             h3 {
