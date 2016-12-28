@@ -32,7 +32,7 @@
 			&:before {
 				content: '';
 				display: block; 
-				padding-top: percentage(530px/1350px);
+				padding-top: percentage(540px/1400px);
 			}
 			.video-cover, .figure.full {
 				@include absfull();
