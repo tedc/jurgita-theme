@@ -4,6 +4,9 @@
     }
     .argomento-text {
         padding-left: 0px;
+        strong {
+            color: $gold;
+        }
     }
     .check {
         position: relative;
