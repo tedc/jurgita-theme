@@ -1,8 +1,10 @@
-<section class="body-container row-lg">
+<section class="body-container row-lg" id="row_<?php echo $row; ?>">
 	<div class="row-content content text-block">
 	<?php if( get_sub_field('titolo') ) : ?>
-	<h2 class="title"><?php the_sub_field('titolo'); ?></h2>
+	<h2 class="title" data-scrollmagic='{"tween":[{"y": -50, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.7, "triggerElement": "#row_<?php echo $row; ?>"}'><?php the_sub_field('titolo'); ?></h2>
 	<?php endif; ?>
-	<?php the_sub_field('contenuto'); ?>
+	<div data-scrollmagic='{"tween":[{"y": 50, "opacity" : 0 }, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.7, "triggerElement": "#row_<?php echo $row; ?>"}'>
+		<?php the_sub_field('contenuto'); ?>
+	</div>
 	</div>
 </section>
