@@ -1,4 +1,4 @@
-<div class="grid-4 row-lg grid-cols" id="row_<?php echo $row; ?>">
+<div class="grid-4 row-lg<?php echo get_sub_field('full_height') ? ' grid-cols' : ''; ?>" id="row_<?php echo $row; ?>">
 <?php $col = 0; while(have_rows('colonne')) : the_row();
 $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{ "x" : 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'';
 ?>
