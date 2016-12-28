@@ -404,7 +404,6 @@
 			&-phone {
 				@include normalize_padding;
 				position: relative;
-				background-color: $gold;
 				padding-top: em(20px);
 				padding-bottom: em(20px);
 				color: $w;
@@ -414,9 +413,9 @@
 				flex-wrap: wrap;
 				text-transform: none;
 				a {
-					color: $w;
+					color: $base_color;
 					&:hover {
-						color: $light_gray;
+						color: $gold;
 					}
 					margin: 0 em(20px);
 				}
