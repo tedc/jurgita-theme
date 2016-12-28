@@ -191,6 +191,7 @@
 		background-color: $w;
 		@include absfull();
 		z-index: 1;
+		transition: $speed background-color;
 	}
 	@include breakpoint($bp) {
 		display: inherit;
@@ -285,10 +286,24 @@
 	.btn-contact {
 		display: block;
 	}
-	.permalink {
-		color: $w;
+	.main-permalink {
 		@include absfull();
 		z-index: 3;
+		&:hover {
+			.panel-btn {
+				.icon-arrow-down {
+					transform: scaleY(-1) translate3d(0,0,0);
+				}
+			}
+		}
+	}
+	&:hover {
+		&:before {
+			background-color: $gray;
+		}
+		.panel-btn {
+			color: $w;
+		}
 	}
 }
 
@@ -438,7 +453,7 @@
 				padding-top: em(20px);
 				padding-bottom: em(20px);
 				border-top: 1px solid $gold;
-				color: $w;
+				color: $base_color;
 				display: flex;
 				justify-content: center;
 				align-items: center;

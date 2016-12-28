@@ -9,6 +9,20 @@
         background-color: $yellow;
         position: relative;
         top: em(-20px);
+        transition: background-color $speed;
+        &-permalink {
+            @include absfull();
+            z-index: 1;
+            text-indent: 200%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        &:hover {
+            background-color: $gray;
+            a {
+                color: $w;
+            }
+        }
     }
     .logo {
         position: absolute;
