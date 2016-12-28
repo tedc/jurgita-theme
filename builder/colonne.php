@@ -2,7 +2,7 @@
 <?php $col = 0; while(have_rows('colonne')) : the_row();
 $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{"y": -50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'';
 ?>
-<div class="col-2"<?php echo (!is_handheld() && get_row_layout() != 'master') ? ' '.$dataScrollMagic : ''; ?>>
+<div class="col-2<?php echo (get_row_layout() == 'immagine') ? ' aligncenter' : ''; ?>"<?php echo (!is_handheld() && get_row_layout() != 'master') ? ' '.$dataScrollMagic : ''; ?>>
 <?php if(get_row_layout() == 'testo') : ?>
 	<div class="row-lg container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
 		<?php the_sub_field('contenuto'); ?>
