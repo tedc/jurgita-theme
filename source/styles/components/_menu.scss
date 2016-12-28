@@ -48,21 +48,27 @@
 		}
 		.icon-cart-full {
 			position: relative;
+			&:hover {
+				.total-cart {
+					background-color: $b;
+					color: $w;
+
+				}
+			}
 			.total-cart {
 				background-color: $w;
 				color: $gold;
 				position: absolute;
-				top: em(-5px, 10px);
-				right: em(-8px, 10px);
-				border: 1px solid $w;
+				top: -5px;
+				right: -8px;
 				border-radius: 100%;
-				width: em(15px, 10px);
-				height: em(15px, 10px);
+				width: 15px;
+				height: 15px;
 				padding-left: 2px;
 				line-height: 10px;
 				text-align: center;
-				font-size: em(10px, 20px);
-				transition: border $speed;
+				font-size: 10px;
+				transition: background-color $speed, color $speed;
 			}
 		}
 	}
