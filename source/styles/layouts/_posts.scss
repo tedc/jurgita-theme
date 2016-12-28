@@ -130,7 +130,7 @@
             .blur {
                 visibility: hidden;
                 opacity: 0;
-                @include pattern-lens();
+                @include pattern();
                 cursor: pointer;
                 @include absfull();
                 display: flex;
