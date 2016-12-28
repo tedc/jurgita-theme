@@ -286,8 +286,12 @@
 		display: block;
 	}
 	.permalink {
+		color: $w;
 		@include absfull();
 		z-index: 3;
+	}
+	.permalink.active {
+		background-color: $light_gray;
 	}
 }
 
