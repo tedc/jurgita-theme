@@ -1,4 +1,4 @@
-<div class="row-quote">
+<div class="row-quote" data-scrollmagic='{"tween":[{"backgroundPosition": "0% 0%"}, {"backgroundPosition": "0% 80%"}], "triggerHook" : 1, "duration" : "200vh"}'>
 	<blockquote class="quote" id="quote_<?php echo $row; ?>" data-scrollmagic='{"tween":[{"scale": 0.8, "opacity" : 0}, {"scale" : 1, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
 		&ldquo;<?php the_sub_field('frase'); ?>&rdquo;
 	</blockquote>
