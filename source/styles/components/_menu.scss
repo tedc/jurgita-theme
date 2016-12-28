@@ -46,6 +46,21 @@
 				}
 			}
 		}
+		.icon-cart-full {
+			position: relative;
+			.total-cart {
+				position: absolute;
+				top: em(-10px, 20px);
+				right: em(-15px, 20px);
+				border: 1px solid $w;
+				border-radius: 100%;
+				width: em(15px, 20px);
+				height: em(15px, 20px);
+				line-height: em(15px, 20px);
+				text-align: center;
+				font-size: em(10px, 20px);
+			}
+		}
 	}
 
 }
