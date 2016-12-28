@@ -54,10 +54,10 @@
 					}
 					&.active {
 						&:nth-child(1) {
-							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
+							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
 						}
 						&:nth-child(3) {
-							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
+							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
 						}
 					}
 				}
