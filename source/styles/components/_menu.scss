@@ -99,7 +99,7 @@
 	overflow: hidden;
 	position: relative;
 	font-family: $third-font;
-	z-index: 9999;
+	z-index: 2;
 	.j {
 		@include absfull();
 		font-size: em(50px);
