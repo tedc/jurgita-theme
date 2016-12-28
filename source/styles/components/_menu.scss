@@ -52,7 +52,7 @@
 				.total-cart {
 					background-color: $b;
 					color: $w;
-
+					tranform: translateY(5px);
 				}
 			}
 			.total-cart {
@@ -69,7 +69,7 @@
 				line-height: 10px;
 				text-align: center;
 				font-size: 10px;
-				transition: background-color $speed, color $speed;
+				transition: background-color $speed, color $speed, tranform $speed;
 			}
 		}
 	}
