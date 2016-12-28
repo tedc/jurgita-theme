@@ -13,9 +13,6 @@
 		color: $b;
 		&:hover {
 			color: $gold;
-			.total-cart {
-				border: 1px solid $b;
-			}
 		}
 	}
 	.btn-header {
@@ -52,9 +49,11 @@
 		.icon-cart-full {
 			position: relative;
 			.total-cart {
+				background-color: $w;
+				color: $gold;
 				position: absolute;
-				top: em(-10px, 10px);
-				right: em(-15px, 10px);
+				top: em(-5px, 10px);
+				right: em(-8px, 10px);
 				border: 1px solid $w;
 				border-radius: 100%;
 				width: em(15px, 10px);
