@@ -3,3 +3,26 @@
     padding-bottom: em(100px);
     background-color: $yellow;
 }
+
+.text-block {
+    .check {
+        position: relative;
+        display: block;
+        flex: 0 0 auto;
+        .number {
+            font-size: em(30px);
+            font-family: $third-font;
+            color: $light_gray;
+            font-weight: bold;
+            position: absolute;
+            left: -5px;
+            top: -20px;
+            font-style: normal;
+        }
+    }
+    .argomento {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+    }
+}
