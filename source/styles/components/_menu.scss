@@ -4,7 +4,7 @@
 	top: 0;
 	left: 0;
 	width: $f;
-	z-index: 9997;
+	z-index: 9999;
 	background-color: $w;
 	display: flex;
 	justify-content: space-between;
@@ -159,7 +159,7 @@
 	bottom: 0;
 	width: em(70px);
 	display: none;
-	z-index: 9999;
+	z-index: 9998;
 	&:before {
 		content: '';
 		background-color: $w;
@@ -269,7 +269,7 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	opacity: 0;
-	transform: scale(1.5) translateZ(0);
+	//transform: scale(1.5) translateZ(0);
 	visibility: hidden;
 	backface-visibility: hidden;
 	perspective: 1000px;
@@ -300,7 +300,7 @@
 		}
 	}
 	&.opened {
-		transform: scale(1) translateZ(0);
+		//transform: scale(1) translateZ(0);
 		opacity: 1;
 		visibility: visible;
 		.nav {
@@ -309,8 +309,8 @@
 				transform: translate3d(0, 0, 0) skewX(0deg);	
 				@for $i from 1 through 12 {
 					&:nth-child(#{$i}) {
-						transition-delay: ($speed/2) * $i;
-						transition-duration: $speed*2;
+						transition-delay: ($speed/2) * ($i / 2);
+						transition-duration: $speed*1.5;
 					}
 				}
 			}
@@ -375,8 +375,10 @@
 		}
 	}
 	&-footer {
-		.banner &{
+		.banner & {
 			width: $f;
+			transition: transform $speed;
+			transform: translate3d(0, 100%, 0);
 			text-align: center;
 			align-self: flex-end;
 			padding-top: em(40px);
@@ -419,6 +421,10 @@
 					margin: 0 em(20px);
 				}
 			}
+		}
+		.opened & {
+			transform: translate3d(0, 0%, 0);
+			transition-delay: $speed;
 		}
 	}
 }
