@@ -12,7 +12,7 @@
             <span class="j">J</span>
             <span class="j">J</span>
         </a>
-        <a class="btn-social" href="<?php echo get_option("wpseo_social")["facebook_site"]?>" target="_blank"  data-scrollmagic='{"duration" : 0, "offset" : 50, "triggerHook" : 1, "tween":[{"opacity" : 0}, {"opacity" : 1}]}'><?php _e('Diventa fan', 'jurgita') ?></a>
+        <a class="btn-social" href="<?php echo get_option("wpseo_social")["facebook_site"]?>" target="_blank"  data-scrollmagic='{"duration" : "100%", "offset" : 50, "triggerHook" : 1, "tween":[{"opacity" : 0}, {"opacity" : 1}]}'><?php _e('Diventa fan', 'jurgita') ?></a>
     </div>
     <figure data-scrollmagic='{"tween":{"y": 100}, "duration" : "200vh", "triggerHook" : 1, "reverse" : false}'>
         <img src=<?php echo get_option("wpseo_social")["og_default_image"] ?>>
