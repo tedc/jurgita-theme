@@ -18,10 +18,12 @@
 				left: 0;
 				right: 0;
 			}
+			overflow: hidden;
+			position: relative;
 			&:before {
 				content: '';
 				display: block; 
-				padding-top: 45%;
+				padding-top: 55%;
 			}
 			.video-cover, .figure.full {
 				@include absfull();
@@ -31,7 +33,7 @@
 					position: absolute;
 					top: 50%;
 					left: 50%;
-					transform: translate3d(-50, -50%, 0);
+					transform: translate3d(-50%, -50%, 0);
 					width: auto !important;
 					height: auto !important;
 					min-height: 100%;
