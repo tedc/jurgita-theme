@@ -45,6 +45,23 @@
 					transform: translate3d(-20px, 0, 0);
 				}
 			}
+			&:hover {
+				.toggle{
+					.toggle-line {
+						&:nth-child(1), &:nth-child(3) {
+							transform: scaleX(0.7) translateZ(0);
+						}
+					}
+					&.active {
+						&:nth-child(1) {
+							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
+						}
+						&:nth-child(3) {
+							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
+						}
+					}
+				}
+			}
 		}
 		.icon-cart-full {
 			position: relative;
