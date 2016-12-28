@@ -1,6 +1,8 @@
-<div class="grid-4 row-lg grid-cols">
-<?php while(have_rows('colonne')) : the_row(); ?>
-<div class="col-2">
+<div class="grid-4 row-lg grid-cols" id="row_<?php echo $row; ?>">
+<?php $col = 0; while(have_rows('colonne')) : the_row();
+$dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "triggerElement": "#row_<?php echo $row; ?>"}\'' : 'data-scrollmagic=\'{"tween":[{"y": -50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "triggerElement": "#row_<?php echo $row; ?>"}\'';
+?>
+<div class="col-2"<?php (is_handheld()) ? ' '.$dataScrollMagic : ''; ?>>
 <?php if(get_row_layout() == 'testo') : ?>
 	<div class="row-lg container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
 		<?php the_sub_field('contenuto'); ?>
@@ -64,5 +66,5 @@
 	</div>
 <?php endif; ?>
 </div>
-<?php endwhile; ?>
+<?php $col++; endwhile; ?>
 </div>
