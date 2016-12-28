@@ -6,7 +6,7 @@ if ($terms): ?>
     <div class="grid-4 container">
         <?php foreach ($terms as $term): ?>
             <div class="col-2">
-                <h2 class="title title-corso" data-scrollmagic='{"tween":[{"y": -50, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'><?php echo $term->name; ?></h2>
+                <h2 class="title title-corso" data-scrollmagic='{"tween":[{"x": -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'><?php echo $term->name; ?></h2>
                 <ul class="argomenti">
                     <?php while (have_rows('argomenti', 'livelli_' . $term->term_id)) : the_row(); ?>
                         <li class="argomento" data-scrollmagic='{"tween":[{"x": -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>

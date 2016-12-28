@@ -6,8 +6,8 @@
     } ?>
     <?php if ($random == 1){?>
     <div class="square" data-scrollmagic='{"tween":[{"y": 100}, {"y" : -50}], "triggerHook" : 1, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
-    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": -50}, {"y" : 0}], "triggerHook" : 1, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
+    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": -50}, {"y" : 0}], "triggerHook" : 1, "duration" : "200vh"}'></div>
     <?php } else { ?>
-    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 100}, {"y" : -50}], "triggerHook" : 1, "duration" : "200vh", "triggerElement" : "#img_<?php echo $row; ?>"}'></div>
+    <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 100}, {"y" : -50}], "triggerHook" : 1, "duration" : "200vh"}'></div>
     <?php } ?>
 </figure>
