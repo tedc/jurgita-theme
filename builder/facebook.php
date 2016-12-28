@@ -1,4 +1,4 @@
-<div class="container facebook row-lg">
+<div class="container facebook row-lg" id="row_<?php echo $row; ?>">
     <span class="pattern"></span>
     <span class="square"></span>
     <div class="gray-square"></div>
@@ -12,9 +12,9 @@
             <span class="j">J</span>
             <span class="j">J</span>
         </a>
-        <a class="btn-social" href="<?php echo get_option("wpseo_social")["facebook_site"]?>" target="_blank"><?php _e('Diventa fan', 'jurgita') ?></a>
+        <!-- <a class="btn-social" href="<?php echo get_option("wpseo_social")["facebook_site"]?>" target="_blank"  data-scrollmagic='[{"tween":{"opacity" : 0}, "duration" : "100%", "triggerHook" : 1, offset: 50}, {"tween":{"opacity" : 1}, "duration" : "100%", "triggerHook" : 0.75}]'><?php _e('Diventa fan', 'jurgita') ?></a> -->
     </div>
-    <figure>
+    <figure data-scrollmagic='{"tween":{"y": 100}, "duration" : "200vh", "triggerHook" : 1, "reverse" : false}'>
         <img src=<?php echo get_option("wpseo_social")["og_default_image"] ?>>
     </figure>
 </div>
