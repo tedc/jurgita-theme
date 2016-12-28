@@ -20,6 +20,7 @@
 			}
 			overflow: hidden;
 			position: relative;
+			max-height: calc(100vh - #{em(70px)});
 			&:before {
 				content: '';
 				display: block; 
