@@ -14,7 +14,7 @@
         </a>
         <a class="btn-social" href="<?php echo get_option("wpseo_social")["facebook_site"]?>" target="_blank"  data-scrollmagic='[{"tween":{"opacity" : 0}, "duration" : "100%", "triggerHook" : 1, offset: 50}, {"tween":{"opacity" : 1}, "duration" : "100%", "triggerHook" : 0.75}]'><?php _e('Diventa fan', 'jurgita') ?></a>
     </div>
-    <figure data-scrollmagic='{"tween":{"y": 100}, "duration" : "200vh", "triggerHook" : 1, "reverse" : false}'>
+    <!-- <figure data-scrollmagic='{"tween":{"y": 100}, "duration" : "200vh", "triggerHook" : 1, "reverse" : false}'>
         <img src=<?php echo get_option("wpseo_social")["og_default_image"] ?>>
-    </figure>
+    </figure> -->
 </div>
