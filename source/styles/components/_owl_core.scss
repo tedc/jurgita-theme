@@ -140,9 +140,14 @@
 
 .container-arrow {
     cursor: pointer;
-  [class^="icon-arrow"], [class*=" icon-arrow"] {
+    opacity: 0.5;
+    transition: opacity $speed;
+    [class^="icon-arrow"], [class*=" icon-arrow"] {
       font-size: em(24px);
-  }
+    }
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .description-attestati {
