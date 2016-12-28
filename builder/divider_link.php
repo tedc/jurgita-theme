@@ -1,5 +1,5 @@
-<div class="divider-link row-lg" id="row_<?php echo $row; ?>">
-    <div class="gray-line" data-scrollmagic='{"tween":[{"scaleX": }, {"scaleX" : 1}], "triggerHook" : 0.5, "triggerElement": "#row_<?php echo $row; ?>"}'></div>
+<div class="divider-link row-lg" id="row_<?php echo $row; ?>" data-scrollmagic='{"tween":[{"opacity": 0}, {"opacity" : 1}], "triggerHook" : 0.5}'>
+    <div class="gray-line" data-scrollmagic='{"tween":[{"scaleX": 0, "transformOrigin" : "left center"}, {"scaleX" : 1, "transformOrigin" : "left center"}], "triggerHook" : 0.5, "triggerElement": "#row_<?php echo $row; ?>"}'></div>
     <div class="shadow" data-scrollmagic='{"tween":[{"y": 50, "x" : -50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "triggerElement": "#row_<?php echo $row; ?>"}'></div>
     <div class="square-gray" data-scrollmagic='{"tween":[{"y": -50, "x" : 50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "triggerElement": "#row_<?php echo $row; ?>"}'></div>
     <div class="square-yellow" data-scrollmagic='{"tween":[{"y": 50, "x" : 50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "triggerElement": "#row_<?php echo $row; ?>"}'>
