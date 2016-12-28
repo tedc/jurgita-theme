@@ -4,7 +4,7 @@
 	top: 0;
 	left: 0;
 	width: $f;
-	z-index: 9997;
+	z-index: 9999;
 	background-color: $w;
 	display: flex;
 	justify-content: space-between;
@@ -159,7 +159,7 @@
 	bottom: 0;
 	width: em(70px);
 	display: none;
-	z-index: 9999;
+	z-index: 9998;
 	&:before {
 		content: '';
 		background-color: $w;
@@ -310,7 +310,7 @@
 				@for $i from 1 through 12 {
 					&:nth-child(#{$i}) {
 						transition-delay: ($speed/2) * $i;
-						transition-duration: $speed*2;
+						transition-duration: $speed/2;
 					}
 				}
 			}
