@@ -10,6 +10,16 @@
             position: relative;
             display: block;
 
+            &:hover {
+                &:before {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                &:after {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
             img {
                 width: 100% !important;
                 height: auto !important;
@@ -24,6 +34,7 @@
                 position: absolute;
                 width: 100%;
                 padding-top: 100%;
+                transition: opacity $speed, visibility $speed;
             }
             &:after {
                 content: "";
@@ -31,7 +42,7 @@
                 opacity: 0;
                 font-family: "jurgita-icons";
                 @extend .icon-lente:before;
-
+                transition: opacity $speed, visibility $speed;
             }
 
             h3 {
