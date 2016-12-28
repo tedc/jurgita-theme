@@ -12,7 +12,7 @@
         font-size: em(16px, 18px);
     }
     .aligncenter & {
-        margin: 0 em(10px);
+        margin: em(10px) em(10px);
     }
     &:disabled {
         background-color: $light_gray;
@@ -65,7 +65,6 @@
         .btn {
             margin-bottom: em(40px);
             @include breakpoint($bp) {
-                margin-bottom: em(20px);
             }
         }
     }
