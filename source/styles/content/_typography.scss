@@ -117,3 +117,12 @@ ul, ol {
         width: $f;
     }
 }
+
+.page-header-top {
+    .title {
+        line-height: em(60px, 50px);
+    }
+    .subtitle {
+        line-height: em(45px, 26px);
+    }
+}
