@@ -35,6 +35,10 @@
 				padding-top: percentage(800px/1400px);
 			}
 			.video-cover, .figure.full {
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+				transform: translate3d(-50%, -50%, 0);
 				@include absfull();
 			}
 			.figure {
