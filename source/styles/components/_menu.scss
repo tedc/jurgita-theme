@@ -289,6 +289,13 @@
 	.main-permalink {
 		@include absfull();
 		z-index: 3;
+		&:hover {
+			.panel-btn {
+				.icon-arrow-down {
+					transform: scaleY(-1) translate3d(0,0,0);
+				}
+			}
+		}
 	}
 	&:hover {
 		&:before {
