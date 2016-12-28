@@ -460,8 +460,10 @@
 				color: $gold;
 				font-size: em(24px);
 				padding: 0 em(10px, 24px);
+				transition: color $speed, transform $speed;
 				&:hover {
 					color: $gray;
+					transform: translate3d(0, -5px, 0);
 				}
 			}
 			&-phone {
@@ -478,6 +480,7 @@
 				text-transform: none;
 				a {
 					color: $base_color;
+					font-weight: bold;
 					&:hover {
 						color: $gold;
 					}
