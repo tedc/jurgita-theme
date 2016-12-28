@@ -4,7 +4,7 @@
     <div class="gray-square" data-scrollmagic='{"tween":[{"y": -50}, {"y" : 50}], "duration" : "200vh", "triggerHook" : 1, "triggerElement": "#row_<?php echo $row; ?>"}'></div>
     <div class="like-content">
        
-        <p class="title" data-scrollmagic='{"tween":{"text":"<?php echo facebook_ratings(); ?> <?php _e('Like', 'jurgita'); ?>", "opacity" : 1}, "duration" : 0, "triggerHook" : 0.75, "reverse" : false}'><?php for($i=0; $i<strlen(facebook_ratings()); $i++) {echo 0; } ?> <?php _e('Like', 'jurgita'); ?></p>
+        <p class="title" data-scrollmagic='{"tween":[{"y" : "-100%", "opacity" : 0}, {"y" : "0%", "opacity" : 1}], "duration" : "50%", "triggerHook" : 0.75, "triggerElement": "#row_<?php echo $row; ?>"}'><?php echo facebook_ratings(); ?> <?php _e('Like', 'jurgita'); ?></p>
         <span class="like" data-scrollmagic='{"tween":[{"y": 50}, {"y" : -50}], "duration" : "200vh", "triggerHook" : 1, "triggerElement": "#row_<?php echo $row; ?>"}'>
             <img class="facebook-like" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/like.svg' ?>">
         </span>
