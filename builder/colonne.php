@@ -1,6 +1,6 @@
 <div class="grid-4 row-lg grid-cols" id="row_<?php echo $row; ?>">
 <?php $col = 0; while(have_rows('colonne')) : the_row();
-$dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement": "#row_<?php echo $row; ?>"}\'' : 'data-scrollmagic=\'{"tween":[{"y": -50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement": "#row_<?php echo $row; ?>"}\'';
+$dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{"y": -50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'';
 ?>
 <div class="col-2"<?php echo (!is_handheld()) ? ' '.$dataScrollMagic : ''; ?>>
 <?php if(get_row_layout() == 'testo') : ?>
