@@ -9,7 +9,8 @@
             width: 100% !important;
             position: relative;
             display: block;
-            @extend .icon-lente:before;
+            font-family: "jurgita-icons";
+
             &:hover {
                 &:before {
                     visibility: visible;
@@ -25,21 +26,21 @@
                 height: auto !important;
                 display: block;
             }
-            &:after {
+            &:before {
                 content: "";
                 visibility: hidden;
                 opacity: 0;
-               @include pattern();
+                @include pattern-lens();
                 display: block;
                 position: absolute;
                 width: 100%;
                 padding-top: 100%;
                 transition: opacity $speed, visibility $speed;
             }
-            &:before {
+            &:after {
+                content: "\EA10";
                 visibility: hidden;
                 opacity: 0;
-                font-family: "jurgita-icons";
                 transition: opacity $speed, visibility $speed;
             }
 
