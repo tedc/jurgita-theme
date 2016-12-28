@@ -13,6 +13,9 @@
 		color: $b;
 		&:hover {
 			color: $gold;
+			.total-cart {
+				border: 1px solid $b;
+			}
 		}
 	}
 	.btn-header {
@@ -59,6 +62,7 @@
 				line-height: em(15px, 10px);
 				text-align: center;
 				font-size: em(10px, 20px);
+				transition: border $speed;
 			}
 		}
 	}
