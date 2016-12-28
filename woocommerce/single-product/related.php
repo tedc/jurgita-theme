@@ -46,7 +46,7 @@ $woocommerce_loop['columns'] = apply_filters('woocommerce_related_products_colum
 
 if ($products->have_posts()) : ?>
 
-    <div class="related products">
+    <div class="row-lg related products">
 
         <h2><?php _e('Related Products', 'woocommerce'); ?></h2>
 
