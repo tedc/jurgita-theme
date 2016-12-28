@@ -12,6 +12,15 @@
         position: relative;
         display: block;
         flex: 0 0 auto;
+        .number {
+            font-size: em(30px);
+            font-family: $third-font;
+            color: $light_gray;
+            font-weight: bold;
+            position: absolute;
+            left: -5px;
+            top: -10px;
+        }
     }
     .argomento {
         display: flex;
