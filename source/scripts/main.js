@@ -68,6 +68,7 @@
         $('[data-reveal]').each(function () {
             var id = $(this).attr('data-reveal');
             $(this).on('click', function (event) {
+                event.stopPropagation();
                 event.preventDefault();
                 $(id).toggleClass('opened');
                 $(this).toggleClass('active');
@@ -77,6 +78,11 @@
                     }, 400);
                 }
             })
+        })
+        $(window).on('click', function() {
+            if($('#panel').hasClass('opened')) {
+                $('[data-reveal="#panel"]').trigger('click');
+            }
         })
         $('#panel-content').perfectScrollbar();
     }
