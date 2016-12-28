@@ -310,7 +310,7 @@
 				@for $i from 1 through 12 {
 					&:nth-child(#{$i}) {
 						transition-delay: ($speed/2) * ($i / 2);
-						transition-duration: $speed;
+						transition-duration: $speed*1.5;
 					}
 				}
 			}
