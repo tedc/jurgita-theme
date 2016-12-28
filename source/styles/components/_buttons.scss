@@ -65,7 +65,7 @@
         .btn {
             margin-bottom: em(40px);
             @include breakpoint($bp) {
-                margin-bottom: 0;
+                margin-bottom: em(20px);
             }
         }
     }
