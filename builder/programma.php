@@ -7,7 +7,7 @@
                     <?php $i = 1; ?>
                     <?php while (have_rows('argomenti')) : the_row(); ?>
                         <li class="argomento col-2">
-                            <span class="check"><i class="number"><?php if ($i<10) { echo '0'+$i;} else { echo $i; }; $i++;?></i></span>
+                            <span class="check"><i class="number"><?php echo $i; $i++;?></i></span>
                             <span class="argomento-text"> <?php the_sub_field('argomento'); ?></span>
                         </li>
                     <?php endwhile ?>
