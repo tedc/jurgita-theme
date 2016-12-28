@@ -19,7 +19,8 @@
             font-weight: bold;
             position: absolute;
             left: -5px;
-            top: -10px;
+            top: -20px;
+            font-style: normal;
         }
     }
     .argomento {
@@ -29,6 +30,7 @@
     }
     .argomenti {
         padding-left: 0;
+        padding-bottom: em(40px);
     }
 
 }
