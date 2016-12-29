@@ -257,6 +257,28 @@
         });
     }
 
+    function scrollTo() {
+        var tl = new TimelineMax({
+            repeat: -1,
+            onRepeat: function() {
+                if($('.scroll-to').hasClass('active')) {
+                    tl.pause(2)
+                }
+            }
+        });
+        var controller = new ScrollMagic.controller();
+        controller.scrollTo(function (newpos) {
+            TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+        });
+        tl
+            .staggerFromTo(['.scroll-circle', '.icon-scroll-mouse'], .25, {opacity : 0}, {opacity : 1}, .15);
+        $('.scroll-to').on('click', function(event) {
+            event.preventDefault();
+            var id = $(this).attr('href');
+            controller.scrollTo(id);
+        })
+    }
+
 })(jQuery); // Fully reference jQuery after this point.
 
 

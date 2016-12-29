@@ -61,11 +61,27 @@
             position: relative;
             z-index: 1;
             padding-bottom: em(20px);
-            .icon-scroll {
-                display: block;
-                color: $gold;
-                font-size: em(40px);
-                padding: em(20px, 40px) 0;
+            .scroll{
+                &-to {
+                    display: block;
+                    color: $gold;
+                    padding: em(20px) 0;
+                }
+                &-circle {
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 5px;
+                    border: 1px solid $gold;
+                    margin: 1px auto 0;
+                }
+                .icon-scroll-mouse {
+                    font-size: 26px;
+                }
+                .icon-arrow-down {
+                    font-size: 3px;
+                    margin-top: 3px;
+                }
             }
         }
         .wp-post-image {
