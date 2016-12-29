@@ -263,7 +263,7 @@
             repeat: -1,
             onRepeat: function() {
                 if($('.scroll-to').hasClass('active')) {
-                    tl.pause(3)
+                    tl.pause(2)
                 }
             }
         });
@@ -271,7 +271,7 @@
         controller.scrollTo(function (newpos) {
             TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
         });
-        tl.staggerFromTo('.scroll-anim', .5, {opacity : 0}, {opacity : 1}, .45);
+        tl.staggerFromTo('.scroll-anim', .25, {opacity : 0}, {opacity : 1}, .15);
         $('.scroll-to').on('click', function(event) {
             event.preventDefault();
             var id = $(this).attr('href');
