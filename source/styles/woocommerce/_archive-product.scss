@@ -10,6 +10,9 @@
     input[type="search"] {
         border-color: $category_line;
         font-size: 14px;
+        &:focus {
+            border-color: $gold;
+        }
     }
     .btn-reverse {
         background-color: $category_line;
