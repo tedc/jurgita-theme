@@ -1,135 +1,138 @@
 .footer {
-   border-top: 1px solid $border-footer;
-   padding-bottom: em(40px);
-   h2 {
-       font-size: em(26px);
-       text-align: center;
-       padding-top: em(40px, 26px);
-       padding-bottom: em(25px, 26px);
-       font-family: $third-font;
-       color: $gold;
-   }
+    border-top: 1px solid $border-footer;
+    padding-bottom: em(40px);
+    h2 {
+        font-size: em(26px);
+        text-align: center;
+        padding-top: em(40px, 26px);
+        padding-bottom: em(25px, 26px);
+        font-family: $third-font;
+        color: $gold;
+    }
 
-   .bottom-footer {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
-       .text-2 {
-          text-align: center;
-          width: $f;
-          padding-bottom: 20px;
-           @include breakpoint($bp) {
-              flex: 1;
-              text-align: left;
-              width: auto;
-              padding-bottom: 0;
-           }
-           .textwidget {
-               color: #808285 ;
-               font-family: $main-font;
-               font-size: em(10px);
-           }
-       }
+    .bottom-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .text-2 {
+            text-align: center;
+            width: $f;
+            padding-bottom: 20px;
+            @include breakpoint($bp) {
+                flex: 1;
+                text-align: left;
+                width: auto;
+                padding-bottom: 0;
+            }
+            .textwidget {
+                color: #808285;
+                font-family: $main-font;
+                font-size: em(10px);
+            }
+        }
 
-       .menu-footer {
+        .menu-footer {
 
-         text-align: center;
-         color: $medium_gray;
-         width: $f;
-         @include breakpoint($bp) {
-            flex: 2;
-            width: auto;
-         }
-        li {
-                 list-style-type: none;
-                 color: #808285 ;
-                 line-height: 1;
-                 text-align: center;
-                 a {
-                     color: #808285 ;
-                     font-family: $main-font;
-                     font-size: em(10px);
-                     &:hover {
-                         color: $gold;
-                     }
-                 }
+            text-align: center;
+            color: $medium_gray;
+            width: $f;
+            @include breakpoint($bp) {
+                flex: 2;
+                width: auto;
+            }
+            li {
+                list-style-type: none;
+                color: #808285;
+                line-height: 1;
+                text-align: center;
+                a {
+                    color: #808285;
+                    font-family: $main-font;
+                    font-size: em(10px);
+                    &:hover {
+                        color: $gold;
+                    }
+                }
                 @include breakpoint($bp) {
-                  display: flex;
-                  align-items: center;
-                 &:before {
-                     content: '\2022';
-                     margin-left: em(7px);
-                     margin-right: em(7px);
-                 }
-               }
-             }
-         }
-       }
+                    display: flex;
+                    align-items: center;
+                    &:before {
+                        content: '\2022';
+                        margin-left: em(7px);
+                        margin-right: em(7px);
+                    }
+                }
+            }
+        }
+    }
 
-       .widget_img {
-          text-align: center;
-          width: $f;
-          padding-top: 20px;
-           @include breakpoint($bp) {
-              flex: 1;
-              text-align: right;
-              width: auto;
-              padding-top: 0;
-           }
-           color: #808285 ;
-           font-family: $main-font;
-           font-size: em(10px);
-       }
-       .icon-credits {
-          color: $base_color;
-          margin-left: 10px;
-          &:hover {
+    .widget_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $f;
+        padding-top: 20px;
+        @include breakpoint($bp) {
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            text-align: right;
+            width: auto;
+            padding-top: 0;
+        }
+        color: #808285;
+        font-family: $main-font;
+        font-size: em(10px);
+    }
+    .icon-credits {
+        font-size: em(14px);
+        color: $base_color;
+        margin-left: 10px;
+        &:hover {
             color: $gold;
-          }
-       }
-   }
-
-
+        }
+    }
+}
 
 #menu-menu-footer {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   padding-left: 0;
-   margin-top: 0;
-   width: $f;
-   @include breakpoint($bp) {
-      width: auto;
-   }
-   li {
-       list-style-type: none;
-       display: flex;
-       align-items: center;
-       color: #808285 ;
-       line-height: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    width: $f;
+    @include breakpoint($bp) {
+        width: auto;
+    }
+    li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        color: #808285;
+        line-height: 1;
 
-       a {
-           color: #808285 ;
-           font-family: $main-font;
-           font-size: em(10px);
-           &:hover {
-               color: $gold;
-           }
-       }
+        a {
+            color: #808285;
+            font-family: $main-font;
+            font-size: em(10px);
+            &:hover {
+                color: $gold;
+            }
+        }
 
-       &:before {
-           content: '\2022';
-           margin-left: em(7px);
-           margin-right: em(7px);
-       }
-   }
+        &:before {
+            content: '\2022';
+            margin-left: em(7px);
+            margin-right: em(7px);
+        }
+    }
 
-   li:first-child {
-       &:before {
-           content: '';
-           margin-left: 0;
-           margin-right: 0;
-       }
-   }
+    li:first-child {
+        &:before {
+            content: '';
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
 }
