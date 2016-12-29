@@ -1,30 +1,21 @@
 .woocommerce-product-search {
     display: flex;
     justify-content: center;
-
-    .container-search {
-        margin-right: 0 !important;
-        float: none !important;
-        position: relative;
-        border: 1px solid $light_gray;
-        display: flex;
-        align-items: center;
-        width: em(500px);
-
-        .btn-reverse {
-            background-color: $category_line;
-            border: 1px solid $category_line;
-        }
-
-        input {
-            font-size: em(14px);
-            font-family: $main-font;
-            color: $placeholder;
-            padding-left: em(18px);
-            border: 0;
-        }
-        input:focus {
-            outline: none;
+    max-width: 300px;
+    width: $f;
+    margin: 0 auto;
+    input[type="search"] {
+        border-color: $category_line;
+        font-size: 14px;
+    }
+    .btn-reverse {
+        background-color: $category_line;
+        border: 1px solid $category_line;
+        color: $gold;
+        &:hover {
+            background-color: $gold;
+            border-color: $gold;
+            color: $w;
         }
     }
 }
