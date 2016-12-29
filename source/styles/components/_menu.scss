@@ -39,12 +39,6 @@
 			.btn-header-text {
 				transition: color $speed, transform $speed;
 			}
-			&.active {
-				.btn-header-text {
-					color: transparent;
-					transform: translate3d(-20px, 0, 0);
-				}
-			}
 			&:hover {
 				.toggle{
 					.toggle-line {
@@ -58,6 +52,24 @@
 						}
 						&:nth-child(3) {
 							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
+						}
+					}
+				}
+			}
+			&.active {
+				.btn-header-text {
+					color: transparent;
+					transform: translate3d(-20px, 0, 0);
+				}
+				&:hover {
+					.toggle{
+						.toggle-line {
+							&:nth-child(1) {
+								transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
+							}
+							&:nth-child(3) {
+								transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
+							}
 						}
 					}
 				}
