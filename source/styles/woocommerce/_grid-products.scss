@@ -20,17 +20,21 @@
                     visibility: visible;
                     opacity: 1;
                 }
+                img {
+                    opacity: 0.4;
+                }
             }
             img {
                 width: 100% !important;
                 height: auto !important;
                 display: block;
+                opacity: 1;
+                transition: opacity $speed;
             }
             &:before {
                 content: "";
                 visibility: hidden;
                 opacity: 0;
-                @include pattern-lens();
                 display: block;
                 position: absolute;
                 width: 100%;
