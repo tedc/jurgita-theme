@@ -47,7 +47,7 @@
             padding-top: em(50px);
             padding-bottom: 0;
             min-height: calc(100vh - #{em(70px)});
-            .wp-post-image, .letter {
+            .wp-post-image, .letter, .subtitle {
                 opacity: 0;
             }
         }
