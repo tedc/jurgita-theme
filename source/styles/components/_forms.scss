@@ -5,6 +5,7 @@
     background-color: $w;
     width: $f;
     color: $gray;
+    transition: border-color $speed, background-color $speed;
     @include input-placeholder() {
         font-family: $main-font;
         font-size: 1em;
@@ -22,6 +23,7 @@
     }
     &:focus {
         outline: none !important;
+        border-color: $base_color;
     }
 }
 
