@@ -281,6 +281,44 @@
         })
     }
 
+    function intro() {
+        var intro = new TimelineMax({
+            paused: true,
+            onStart: function() {
+                clearTimeout(startAnim)
+            }
+        })
+        intro
+            .staggerFromTo('.home .page-header-top .letter', .5,
+                {
+                    opacity : 0, 
+                    y : '50%'
+                },
+                {
+                    opacity : 1, 
+                    y : '0%'
+                },
+                .1
+            )
+            .fromTo('.home .page-header-top .subtitle', .5, 
+                {
+                    opacity: 0
+                },
+                {
+                    opacity: 1
+                },
+                "-=.75"
+            )
+        var startAnim = setTimeout(function() {
+            if($('html').hasClass('wf-active')) {
+                intro.play();
+            } else {
+                clearTimeout(startAnim);
+            }
+            
+        }, 20)
+    }
+
 })(jQuery); // Fully reference jQuery after this point.
 
 
