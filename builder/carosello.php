@@ -7,7 +7,7 @@
             <div class="square"></div>
             <div class="square-shadow"></div>
             <div class="gray-square"></div>
-            <a href="http://jurgita.dnative.com" class="logo">
+            <a href="<?php bloginfo('url'); ?>" class="logo">
                 <span class="j">J</span>
                 <span class="j">J</span>
             </a>
