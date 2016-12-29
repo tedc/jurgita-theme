@@ -284,10 +284,7 @@
 
     function intro() {
         var intro = new TimelineMax({
-            paused: true,
-            onStart: function() {
-                clearTimeout(startAnim)
-            }
+            paused: true
         })
         intro
             .staggerFromTo('.home .page-header-top .letter', .5,
@@ -310,14 +307,17 @@
                 },
                 "-=.75"
             )
-        var startAnim = setTimeout(function() {
-            if($('html').hasClass('wf-active')) {
-                intro.play();
-                clearTimeout(startAnim);
-            } else {
-                startAnim();
-            }
-        }, 20)
+        var startAnim = function() {
+            var anim = setTimeout(function() {
+                if($('html').hasClass('wf-active')) {
+                    intro.play();
+                    clearTimeout(anim);
+                } else {
+                    startAnim();
+                }
+            }, 20);
+        }
+        startAnim();
     }
 
 })(jQuery); // Fully reference jQuery after this point.
