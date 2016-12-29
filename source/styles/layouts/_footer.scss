@@ -117,7 +117,7 @@
             color: #808285;
             font-family: $main-font;
             font-size: em(10px);
-
+            transition: text-decoration $speed;
             &:hover {
                 color: $gold;
                 text-decoration: underline;
