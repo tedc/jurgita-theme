@@ -4,7 +4,9 @@
     max-width: 700px;
     width: $f;
     margin: 0 auto;
-    flex-wrap: wrap;
+    input {
+        margin: 0;
+    }
     input[type="search"] {
         border-color: $category_line;
         font-size: 14px;
