@@ -23,7 +23,7 @@
 }
 
 input {
-    &[type="text"], &[type="email"], &[type="password"], &[type="tel"] {
+    &[type="text"], &[type="email"], &[type="password"], &[type="tel"], &[type="search"] {
         @extend %inputs;
     } 
 }
