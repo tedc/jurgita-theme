@@ -82,10 +82,10 @@
         }
         color: #808285;
         font-family: $main-font;
-        font-size: em(10px);
+        font-size: em(10px, 14px);
     }
     .icon-credits {
-        font-size: em(16px, 12px);
+        font-size: em(14px, 10px);
         color: $base_color;
         margin-left: 10px;
         &:hover {
