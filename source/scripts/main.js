@@ -27,7 +27,7 @@
                 faceSwitcher();
                 swichTab();
                 video();
-                scrollTo();
+                scrollToHead();
             }
         }
     };
@@ -258,7 +258,7 @@
         });
     }
 
-    function scrollTo() {
+    function scrollToHead() {
         var tl = new TimelineMax({
             repeat: -1,
             onRepeat: function() {
@@ -267,12 +267,11 @@
                 }
             }
         });
-        var controller = new ScrollMagic.controller();
+        var controller = new ScrollMagic.Controller();
         controller.scrollTo(function (newpos) {
             TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
         });
-        tl
-            .staggerFromTo(['.scroll-circle', '.icon-scroll-mouse'], .25, {opacity : 0}, {opacity : 1}, .15);
+        tl.staggerFromTo(['.scroll-circle', '.icon-scroll-mouse'], .25, {opacity : 0}, {opacity : 1}, .15);
         $('.scroll-to').on('click', function(event) {
             event.preventDefault();
             var id = $(this).attr('href');

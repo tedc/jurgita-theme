@@ -28,4 +28,4 @@
 
 	<?php endif; ?>
 </header>
-<?php echo (is_front_page()) && '<div id="site"></div>'; ?>
+<?php echo (is_front_page()) ? '<div id="site"></div>' : ''; ?>
