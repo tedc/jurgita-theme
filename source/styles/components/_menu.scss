@@ -188,12 +188,11 @@
 	}
 	.active:hover & {
 		.toggle-line {
-			&:nth-child(1), &:nth-child(3) {
-				animation-name: lineActive;
-				animation-fill-mode: none;
+			&:nth-child(1) {
+				animation-name: lineActiveTop;
 			}
 			&:nth-child(3) {
-				animation-direction: reverse;
+				animation-name: lineActiveBottom;
 			}
 		}
 	}
@@ -564,11 +563,20 @@
 	}
 }
 
-@keyframes lineActive {
+@keyframes lineActiveTop {
 	0% {
 		transform: translate3d(0, #{em(6px)}, 0) rotate(45deg);
 	}
 	100% {
 		transform: translate3d(0, #{em(6px)}, 0) rotate(-45deg);
+	}
+}
+
+@keyframes lineActiveBottom {
+	0% {
+		transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
+	}
+	100% {
+		transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
 	}
 }
