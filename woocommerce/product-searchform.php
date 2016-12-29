@@ -24,11 +24,9 @@ if (!defined('ABSPATH')) {
 ?>
 
 <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url(home_url('/')); ?>">
-    <div class="container-search">
-        <input type="search" id="woocommerce-product-search-field" class="search-field"
+    <input type="search" id="woocommerce-product-search-field" class="search-field"
                placeholder="<?php _e('Cerca tra i prodotti', 'jurgita') ?>" value="<?php echo get_search_query(); ?>"
                name="s" title="<?php echo esc_attr_x('Search for:', 'label', 'woocommerce'); ?>"/>
-    </div>
     <input class="btn-reverse" type="submit"
            value="<?php echo esc_attr_x('Search', 'submit button', 'woocommerce'); ?>"/>
     <input type="hidden" name="post_type" value="product"/>
