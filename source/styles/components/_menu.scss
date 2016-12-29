@@ -317,6 +317,8 @@
 	}
 	.btn-contact {
 		display: block;
+		position: relative;
+		z-index: 1;
 	}
 	.main-permalink {
 		@include absfull();
