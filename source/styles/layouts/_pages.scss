@@ -75,13 +75,14 @@
                     border: 1px solid $gold;
                     margin: 1px auto 0;
                 }
-                .icon-scroll-mouse {
-                    font-size: 26px;
-                }
-                .icon-arrow-down {
-                    font-size: 3px;
-                    margin-top: 3px;
-                }
+            }
+            .icon-scroll-mouse {
+                font-size: 26px;
+            }
+            .icon-arrow-down {
+                font-size: 8px;
+                top: -7px;
+                position: relative;
             }
         }
         .wp-post-image {

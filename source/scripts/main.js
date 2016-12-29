@@ -27,6 +27,7 @@
                 faceSwitcher();
                 swichTab();
                 video();
+                scrollTo();
             }
         }
     };

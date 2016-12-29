@@ -213,6 +213,17 @@
 	@include breakpoint($bp) {
 		display: inherit;
 	}
+	.blur {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: $f;
+		background-color: transparentize($w, .1);
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity $speed, visibility $speed;
+	}
 	.panel {
 		position: absolute;
 		background-color: $w;
@@ -253,6 +264,10 @@
 			.icon-arrow-down {
 				transform: scaleY(-1) translate3d(0,0,0);
 			}	
+			.blur {
+				visibility: visible;
+				opacity: 1;
+			}
 		}
 		&-content {
 			overflow: hidden;

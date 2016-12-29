@@ -31,6 +31,7 @@ $corsi = new WP_Query(array(
 )); if($corsi->have_posts()) : ?>
     <aside class="aside">
         <div class="panel" id="panel">
+            <div class="blur"></div>
             <div class="panel-content" id="panel-content">
                 <h4 class="title"><?php _e('Prossimi corsi di Microblanding', 'jurgita'); ?></h4>
                 <ul>
