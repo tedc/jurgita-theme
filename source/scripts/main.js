@@ -307,8 +307,19 @@
                 },
                 "-=.75"
             )
+            .fromTo('.home .page-header .wp-post-image', .5, 
+                {
+                    opacity: 0,
+                    x : '5%'
+                },
+                {
+                    opacity : 1, 
+                    x : '0%'
+                },
+                "-=.45"
+            )
             .fromTo(
-                ['.home .page-header-bottom', '.home .page-header .wp-post-image'], .5,
+                '.home .page-header-bottom', .5,
                 {
                     opacity : 0, 
                     y : '100%'
