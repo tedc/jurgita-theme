@@ -15,7 +15,11 @@
 		$i = 1;
 		$h1 = '<h1 class="title">';
 		foreach ($name as $n) {
-			$h1 .= ($n < count($name)) ? $n . '<br>' : $n . '</h1>';
+			$str = '';
+			for($c = 0; $c<strlen($n); $c++) {
+				$str .= '<span class="letter">'.$n[$c].'</span>';
+			}
+			$h1 .= ($i < count($name)) ? $str . '<br>' : $str . '</h1>';
 			$i++;
 		}
 		echo '<div class="page-header-top">'.$h1;

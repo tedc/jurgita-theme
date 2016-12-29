@@ -261,6 +261,7 @@
     function scrollToHead() {
         var tl = new TimelineMax({
             repeat: -1,
+            yoyo: true,
             onRepeat: function() {
                 if($('.scroll-to').hasClass('active')) {
                     tl.pause(2)
