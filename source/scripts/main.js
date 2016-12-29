@@ -307,6 +307,18 @@
                 },
                 "-=.75"
             )
+            .fromTo(
+                ['.home .page-header-bottom', '.home .page-header .wp-post-image'], .5,
+                {
+                    opacity : 0, 
+                    y : '100%'
+                },
+                {
+                    opacity : 1, 
+                    y : '0%'
+                },
+                "-=.45"
+            )
         var startAnim = function() {
             var anim = setTimeout(function() {
                 if($('html').hasClass('wf-active')) {
