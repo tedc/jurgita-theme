@@ -46,32 +46,12 @@
 							transform: scaleX(0.7) translateZ(0);
 						}
 					}
-					&.active {
-						&:nth-child(1) {
-							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
-						}
-						&:nth-child(3) {
-							transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
-						}
-					}
 				}
 			}
 			&.active {
 				.btn-header-text {
 					color: transparent;
 					transform: translate3d(-20px, 0, 0);
-				}
-				&:hover {
-					.toggle{
-						.toggle-line {
-							&:nth-child(1) {
-								transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
-							}
-							&:nth-child(3) {
-								transform: translate3d(0, #{em(6px) * -1}, 0) rotate(45deg);
-							}
-						}
-					}
 				}
 			}
 		}
@@ -203,6 +183,17 @@
 			&:nth-child(2) {
 				opacity: 0;
 				transition-delay: $speed/2;
+			}
+		}
+	}
+	.active:hover & {
+		.toggle-line {
+			&:nth-child(1), &:nth-child(3) {
+				animation-name: lineActive;
+				animation-fill-mode: none;
+			}
+			&:nth-child(3) {
+				animation-direction: reverse;
 			}
 		}
 	}
@@ -570,5 +561,14 @@
 	}
 	100% {
 		transform: translate3d(0, #{em(6px) * -1}, 0) rotate(-45deg);
+	}
+}
+
+@keyframes lineActive {
+	0% {
+		transform: translate3d(0, #{em(6px)}, 0) rotate(45deg);
+	}
+	100% {
+		transform: translate3d(0, #{em(6px)}, 0) rotate(-45deg);
 	}
 }
