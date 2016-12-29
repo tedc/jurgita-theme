@@ -117,9 +117,10 @@
             color: #808285;
             font-family: $main-font;
             font-size: em(10px);
-            text-decoration: underline;
+
             &:hover {
                 color: $gold;
+                text-decoration: underline;
             }
         }
 
