@@ -112,17 +112,20 @@
         align-items: center;
         color: #808285;
         line-height: 1;
-
+        border: 1px solid transparent;
+        transition: border $speed;
+        &:hover {
+            border: 1px solid $gold;
+            a {
+                color: $gold;
+            }
+        }
         a {
             color: #808285;
             font-family: $main-font;
             font-size: em(10px);
-            text-decoration: none;
-            transition: color $speed, text-decoration $speed;
-            &:hover {
-                color: $gold;
-                text-decoration: underline;
-            }
+            transition: color $speed;
+
         }
 
         &:before {
