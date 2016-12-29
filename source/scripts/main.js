@@ -28,6 +28,7 @@
                 swichTab();
                 video();
                 scrollToHead();
+                intro();
             }
         }
     };
@@ -312,10 +313,10 @@
         var startAnim = setTimeout(function() {
             if($('html').hasClass('wf-active')) {
                 intro.play();
-            } else {
                 clearTimeout(startAnim);
+            } else {
+                startAnim();
             }
-            
         }, 20)
     }
 
