@@ -364,3 +364,13 @@ input[name=update_cart] {
 
     }
 }
+
+.shop_table .order_details {
+    .product-name {
+        padding-left: 0;
+        text-align: left;
+    }
+    .product-total {
+        text-align: center;
+    }
+}
