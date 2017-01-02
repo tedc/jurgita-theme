@@ -24,6 +24,9 @@
     <?php 
     $today = date('Ymd');
     var_dump($today);
+    $corsi  = get_posts(array('post_type'=>'coris'));
+    var_dump($corsi[0]);
+    var_dump($corsi[1]);
     $args = array (
         'post_type' => 'corsi',
         'meta_query' => array(
