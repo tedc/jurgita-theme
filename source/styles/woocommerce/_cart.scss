@@ -365,7 +365,7 @@ input[name=update_cart] {
     }
 }
 
-.shop_table.order_details {
+.shop_table.order_details, .shop_table.customer_details {
     .product-name {
         padding-left: 0!important;
         text-align: left;
