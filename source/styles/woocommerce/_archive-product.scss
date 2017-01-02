@@ -172,7 +172,7 @@
                 }
             }
             .select-list {
-                transition: opacity $speed, visibility $speed;
+                transition: opacity $speed, visibility $speed, border $speed;
                 position: absolute;
                 padding-left: em(20px);
                 padding-right: em(40px);
