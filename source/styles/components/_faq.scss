@@ -9,6 +9,7 @@
         position: relative;
         display: block;
         flex: 0 0 auto;
+        transition: color $speed;
         .number {
             font-size: em(30px);
             font-family: $third-font;
@@ -18,13 +19,31 @@
             left: -5px;
             top: -20px;
             font-style: normal;
+            transition: color $speed;
         }
     }
+    .argomento-text {
+        color: $gold;
+        transition: color $speed;
+    }
+
     .argomento {
         display: flex;
         align-items: center;
         padding-left: 0;
         cursor: pointer;
+    }
+
+    .argomento.active {
+        .check {
+            background-color: $yellow;
+            .number {
+                color: $base_color;
+            }
+        }
+        .argomento-text {
+            color: $base_color;
+        }
     }
     p {
         display: none;
