@@ -365,11 +365,12 @@ input[name=update_cart] {
     }
 }
 
-
+.shop_table.order_details {
     .product-name {
-        padding-left: 0;
+        padding-left: 0!important;
         text-align: left;
     }
     .product-total {
         text-align: center;
     }
+}
