@@ -286,7 +286,7 @@
     function faq() {
         $('.argomento').on( 'click', function (event){
             var $ph = $(this).next('p');
-            console.log($ph);
+            $ph.slideToggle();
         })
     }
 
