@@ -29,6 +29,7 @@
                 video();
                 scrollToHead();
                 intro();
+                faq();
             }
         }
     };
@@ -281,6 +282,14 @@
             $(this).addClass('active');
         })
     }
+
+    function faq() {
+        $('.argomento').on( 'click', function (event){
+            var $ph = $(this).next('p');
+            console.log($ph);
+        })
+    }
+
 
     function intro() {
         var intro = new TimelineMax({
