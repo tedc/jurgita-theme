@@ -70,7 +70,7 @@
             border-top: 1px solid $w;
             border-left: 1px solid $w;
             border-right: 1px solid $w;
-            transition:  border-top $speed, border-left $speed, border-right $speed;
+            transition:  border $speed;
             &:after {
                 position: absolute;
                 right: 15px;
@@ -157,7 +157,7 @@
                 border-top: 1px solid $w;
                 border-left: 1px solid $w;
                 border-right: 1px solid $w;
-                transition:  border-top $speed, border-left $speed, border-right $speed;
+                transition:  border $speed;
                 &:after {
                     position: absolute;
                     right: 15px;
