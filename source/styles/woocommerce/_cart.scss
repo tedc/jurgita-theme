@@ -365,7 +365,7 @@ input[name=update_cart] {
     }
 }
 
-.shop_table.order_details, .shop_table.customer_details {
+.shop_table.order_details {
     .product-name {
         padding-left: 0!important;
         text-align: left;
@@ -378,5 +378,14 @@ input[name=update_cart] {
     }
     td {
         text-align: center;
+    }
+}
+
+.shop_table.customer_details {
+    th {
+        text-align: left;
+    }
+    td {
+        text-align: right;
     }
 }
