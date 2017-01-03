@@ -91,6 +91,7 @@
             text-align: left;
             padding-bottom: em(30px);
             padding-top: em(30px);
+            font-size: em(35px);
             @include breakpoint($bp) {
                 padding-bottom: em(50px);
                 padding-top: 0px;
