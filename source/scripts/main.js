@@ -293,7 +293,7 @@
                 $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
                 $('.woocommerce-main-image img').attr('src', photo_fullsize);
             });
-            $('.woocommerce-main-image img').fadeIn();
+            $('.woocommerce-main-image img').fadeIn('fast');
             $('.woocommerce-main-image ').attr('href', photo_fullsize);
             $('.woocommerce-main-image ').attr('title', title);
             $('.woocommerce-main-image img').attr('alt', title);
