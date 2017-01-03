@@ -37,7 +37,12 @@
 }
 
 .sticky {
-        margin-bottom: em(150px);
+        margin-top: em(40px);
+        margin-bottom: em(80px);
+        @include breakpoint($bp) {
+            margin-bottom: em(150px);
+            margin-top: 0;
+        }
 
     .container-img {
 
@@ -83,8 +88,9 @@
         }
 
         .title {
+            text-align: left;
             padding-bottom: em(30px);
-            padding-top: em(40px);
+            padding-top: em(30px);
             @include breakpoint($bp) {
                 padding-bottom: em(50px);
                 padding-top: 0px;
