@@ -52,8 +52,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			do_action( 'woocommerce_review_order_after_cart_contents' );
 		?>
-	</tbody>
-	<tfoot>
 
 		<tr class="cart-subtotal">
 			<th><?php _e( 'Subtotal', 'woocommerce' ); ?></th>
@@ -109,5 +107,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php do_action( 'woocommerce_review_order_after_order_total' ); ?>
 
-	</tfoot>
+	</tbody>
 </table>
