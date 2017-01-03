@@ -58,20 +58,21 @@
 
 #ship-to-different-address {
     .checkbox {
+        display: flex;
         cursor: pointer;
         padding: 10px 0;
         font-size: em(16px);
         font-family: $third-font;
         text-transform: uppercase;
         color: $gold;
-        transform: translate3d(0%, 0, 0);
-        transition: transform $speed;
         &:hover {
             &:after {
                 transform: scaleY(-1) translate3d(0,0,0);
             }
         }
         &:after {
+            transform: translate3d(0%, 0, 0);
+            transition: transform $speed;
             font-family: "jurgita-icons";
             content: "\EA02";
         }
