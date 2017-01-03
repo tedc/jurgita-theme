@@ -296,7 +296,7 @@
                 $('.woocommerce-main-image ').attr('title', title);
                 $('.woocommerce-main-image img').attr('alt', title);
                 $('.woocommerce-main-image img').on('load', function() {
-                    $(".list-images-product .thumbnail").fadeTo(500, 1);
+                    $(".list-images-product .thumbnail").fadeIn(500);
                 });
             });
 
