@@ -37,8 +37,7 @@
 }
 
 .sticky {
-
-    margin-bottom: em(150px);
+        margin-bottom: em(150px);
 
     .container-img {
 
@@ -78,10 +77,18 @@
     }
 
     article {
-
         .container-post-head {
             @extend %post-head;
 
+        }
+
+        .title {
+            padding-bottom: em(30px);
+            padding-top: em(40px);
+            @include breakpoint($bp) {
+                padding-bottom: em(50px);
+                padding-top: 0px;
+            }
         }
 
         .entry-title {
