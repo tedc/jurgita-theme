@@ -223,7 +223,7 @@ td.product-name {
         border: 1px solid $light_gray;
         display: flex;
         align-items: center;
-        width: em(80px);
+        width: em(80px, 12px);
 
         input {
             width: em(80px, 26px);
