@@ -30,22 +30,28 @@
 input {
     &[type="text"], &[type="email"], &[type="password"], &[type="tel"], &[type="search"] {
         @extend %inputs;
-    } 
+    }
 }
 
 .input {
-	&-row {
-    	padding-bottom: em(30px);
+    &-row {
+        padding-bottom: em(30px);
     }
 }
 
 .acceptance {
-	&-row {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+    &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-	}
+        .wpcf7-submit {
+            margin-top: em(20px);
+            @include breakpoint($bp) {
+                margin-top: 0px;
+            }
+        }
+    }
 }
 
 .ajax-loader {
@@ -61,25 +67,25 @@ textarea {
 input[type="checkbox"] {
     display: none;
     & + label {
-    	font-size: em(12px);
-    	font-style: italic;
-    	display: flex;
-    	align-items: center;
-    	cursor: pointer;
-    	&:before {
-    		width: 14px;
-    		height: 14px;
-    		border: 1px solid $w;
-    		outline: 1px solid $gold;
-    		transition: background-color $speed;
-    		margin-right: 10px;
-    		content: '';
-    	}
+        font-size: em(12px);
+        font-style: italic;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:before {
+            width: 14px;
+            height: 14px;
+            border: 1px solid $w;
+            outline: 1px solid $gold;
+            transition: background-color $speed;
+            margin-right: 10px;
+            content: '';
+        }
     }
     &:checked + label {
-    	&:before {
-    		background-color: $gold;
-    	}
+        &:before {
+            background-color: $gold;
+        }
     }
 }
 
