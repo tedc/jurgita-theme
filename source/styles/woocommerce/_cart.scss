@@ -4,24 +4,24 @@
 @media screen and (max-width: 720px) {
 
     td.product-thumbnail {
-        width: 100% !important;
+        width: 100%!important;
         text-align: center;
     }
     td.product-name {
-        padding-left: 0 !important;
-        width: 100% !important;
+        padding-left: 0!important;
+        width: 100%!important;
         text-align: center;
         .name-product {
-            padding-bottom: 0 !important;
+            padding-bottom: 0!important;
         }
     }
-    /*  td.product-quantity {
-          .quantity {
-              width: em(80px)!important;
-          }
-      }*/
+  /*  td.product-quantity {
+        .quantity {
+            width: em(80px)!important;
+        }
+    }*/
     td.price {
-        text-align: center !important;
+        text-align: center!important;
     }
 
     /* Force table to not be like tables anymore */
@@ -48,7 +48,7 @@
     .woocommerce-page table.shop_table td {
         /* Behave  like a "row" */
         position: relative;
-        /*       padding-left: 30% !important;*/
+ /*       padding-left: 30% !important;*/
     }
 
     .woocommerce-page table.shop_table {
@@ -71,6 +71,7 @@
         white-space: nowrap;
     }
 
+
     .woocommerce .quantity,
     .woocommerce #content .quantity,
     .woocommerce-page .quantity,
@@ -81,7 +82,7 @@
     .woocommerce-page table.cart td.actions,
     .woocommerce-page #content table.cart td.actions {
         text-align: left;
-        border: 0;
+        border:0;
         padding-left: 6px !important;
     }
 
@@ -110,7 +111,7 @@
 
     .woocommerce-page .cart-collaterals .cart_totals th,
     .woocommerce-page .cart-collaterals .cart_totals td {
-        border: 0 !important;
+        border:0 !important;
     }
 
     .woocommerce-page .cart-collaterals .cart_totals table tr.cart-subtotal td,
@@ -125,7 +126,7 @@
     .woocommerce-page table.shop_table.order_details tfoot th,
     .woocommerce-page table.shop_table.order_details tfoot td {
         padding-left: 6px !important;
-        border: 0 !important;
+        border:0 !important;
     }
 
     .woocommerce-page table.shop_table tbody {
@@ -148,36 +149,29 @@
     .woocommerce-page .order_details ul,
     .woocommerce .order_details,
     .woocommerce-page .order_details {
-        padding: 0;
+        padding:0;
     }
 
     .woocommerce .order_details li,
     .woocommerce-page .order_details li {
         clear: left;
         margin-bottom: 10px;
-        border: 0;
+        border:0;
     }
 
 }
 
 /* END Make the WooCommerce Cart Table Responsive  for Mobile */
 
+
 .product-name {
     text-align: left;
-/*    padding-top: em(20px, 12px);
-    padding-bottom: em(20px, 12px);*/
 }
-
-.product-quantity {
+.product-quantity{
     text-align: center;
-/*    padding-top: em(20px, 12px);
-    padding-bottom: em(20px, 12px);*/
 }
-
 .product-price, .product-subtotal {
     text-align: right;
-   /* padding-top: em(20px, 12px);
-    padding-bottom: em(20px, 12px);*/
 }
 
 th {
@@ -186,20 +180,17 @@ th {
     color: $placeholder;
     padding-left: 0px;
 }
-
 td {
     border-bottom: 1px solid $category_line;
 }
-
 .product-thumbnail {
-    /*    width: 1px;
-        white-space: nowrap;*/
+/*    width: 1px;
+    white-space: nowrap;*/
 }
-
 td.product-name {
     padding-left: em(30px);
-    /*  width: 1px;
-      white-space: nowrap;*/
+  /*  width: 1px;
+    white-space: nowrap;*/
     .name-product {
         padding-bottom: em(70px);
         a {
@@ -224,7 +215,6 @@ td.product-name {
         }
     }
 }
-
 .product-quantity {
     .quantity {
         margin: 0 auto;
@@ -295,9 +285,9 @@ td.product-name {
 }
 
 .product-price, .product-subtotal {
-
+    padding-bottom: 0!important;
     .amount {
-        font-size: em(22px) !important;
+        font-size: em(22px)!important;
         color: $gold;
         font-family: $second-font;
         font-weight: bold;
@@ -311,7 +301,6 @@ td.product-name {
 .title-cart {
     padding-top: em(80px);
 }
-
 .container-button {
     display: flex;
     flex-wrap: wrap;
@@ -334,7 +323,7 @@ td.product-name {
             font-family: $second-font;
             color: $base_color;
             padding: em(5px) em(20px);
-            width: 100%;
+            width:100%;
             @include breakpoint($bp) {
                 width: 600px;
             }
@@ -344,12 +333,10 @@ td.product-name {
         }
     }
 }
-
 input[name=update_cart] {
     margin-top: em(10px);
     margin-bottom: em(10px);
 }
-
 .checkout-button {
     margin-top: em(10px);
     margin-bottom: em(10px);
@@ -363,7 +350,7 @@ input[name=update_cart] {
 }
 
 .cart_totals {
-    h2 {
+    h2{
         padding-bottom: 0;
         font-size: em(20px);
         padding-top: 10px;
@@ -381,7 +368,7 @@ input[name=update_cart] {
 
 .shop_table.order_details {
     .product-name {
-        padding-left: 0 !important;
+        padding-left: 0!important;
         text-align: left;
     }
     .product-total {
