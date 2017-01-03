@@ -15,11 +15,11 @@
             padding-bottom: 0!important;
         }
     }
-    td.product-quantity {
+  /*  td.product-quantity {
         .quantity {
-      /*      width: em(95px)!important;*/
+            width: em(80px)!important;
         }
-    }
+    }*/
     td.price {
         text-align: center!important;
     }
@@ -223,7 +223,7 @@ td.product-name {
         border: 1px solid $light_gray;
         display: flex;
         align-items: center;
-        width: em(95px);
+        width: em(80px);
 
         input {
             width: em(80px, 26px);
