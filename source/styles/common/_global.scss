@@ -138,8 +138,8 @@
 
 @mixin normalize_padding {
     padding: {
-        left: em(20px);
-        right: em(20px);
+        left: em(15px);
+        right: em(15px);
     }
     @include breakpoint(640px){
         padding: {
