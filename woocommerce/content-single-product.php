@@ -35,7 +35,7 @@ if (post_password_required()) {
     return;
 }
 ?>
-
+<?php get_template_part('templates/breadcrumbs'); ?>
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>"
      id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="container img-summary">
