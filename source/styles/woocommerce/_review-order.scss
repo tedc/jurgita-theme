@@ -27,7 +27,24 @@
     .woocommerce-Price-amount {
         @extend .price;
     }
-    tfoot {
-        display: block;
+   .shipping {
+       text-align: center;
+       @include breakpoint($bp) {
+            text-align: left;
+       }
+   }
+    .shipping {
+        th {
+            text-align: center;
+            @include breakpoint($bp) {
+                text-align: left;
+            }
+        }
+        td {
+            text-align: center;
+            @include breakpoint($bp) {
+                text-align: right;
+            }
+        }
     }
 }
