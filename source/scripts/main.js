@@ -285,8 +285,9 @@
     }
 
     function productImg() {
-        $('.thumbnails .zoom').click(function(e){
+        $('.single-image-slider-nav .zoom').click(function(e){
             e.preventDefault();
+            console.log('prova');
             var photo_fullsize =  $(this).find('img').attr('src');
             var title =  $(this).find('img').attr('alt');
             $('.woocommerce-main-image img').attr('src',photo_fullsize);
