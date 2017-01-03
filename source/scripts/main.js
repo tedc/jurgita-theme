@@ -292,10 +292,11 @@
             $('.woocommerce-main-image img').fadeOut(500 ,function() {
                 $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
                 $('.woocommerce-main-image img').attr('src', photo_fullsize);
+                $('.woocommerce-main-image ').attr('href', photo_fullsize);
+                $('.woocommerce-main-image ').attr('title', title);
+                $('.woocommerce-main-image img').attr('alt', title);
             }).fadeIn(500);
-            $('.woocommerce-main-image ').attr('href', photo_fullsize);
-            $('.woocommerce-main-image ').attr('title', title);
-            $('.woocommerce-main-image img').attr('alt', title);
+
         });
     }
 
