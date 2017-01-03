@@ -43,3 +43,15 @@
         }
     }
 }
+
+#payment {
+    .button {
+        margin: 0px auto;
+        margin-bottom: 40px;
+        display: flex;
+        @include breakpoint($bp) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
