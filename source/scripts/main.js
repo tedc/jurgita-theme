@@ -295,7 +295,10 @@
                 $('.woocommerce-main-image ').attr('href', photo_fullsize);
                 $('.woocommerce-main-image ').attr('title', title);
                 $('.woocommerce-main-image img').attr('alt', title);
-            }).fadeIn(500);
+                $('.woocommerce-main-image img').on('load', function() {
+                    $(".list-images-product .thumbnail").fadeTo(500, 1);
+                });
+            });
 
         });
     }
