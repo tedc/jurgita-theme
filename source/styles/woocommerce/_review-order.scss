@@ -55,3 +55,15 @@
         }
     }
 }
+
+#ship-to-different-address {
+    padding: 10px 0;
+    font-size: em(16px);
+    font-family: $third-font;
+    text-transform: uppercase;
+    color: $gold;
+    &:after {
+        font-family: "jurgita-icons";
+        content: "\EA02";
+    }
+}
