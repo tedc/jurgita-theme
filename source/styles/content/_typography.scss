@@ -126,19 +126,3 @@ ul, ol {
         line-height: em(45px, 26px);
     }
 }
-
-ul {
-    padding: 0;
-    li {
-        list-style-type: none;
-        font-size: em(18px);
-        line-height: em(31px, 18px);
-
-        &:before {
-            content: '\2022';
-            margin-left: em(7px);
-            margin-right: em(7px);
-
-        }
-    }
-}
