@@ -296,9 +296,9 @@
                 $('.woocommerce-main-image ').attr('title', title);
                 $('.woocommerce-main-image img').attr('alt', title);
                 $('.woocommerce-main-image img').on('load', function() {
-                    console.log('pronto');
-                })
-            }).fadeIn(500);
+                    $(".list-images-product .thumbnail").fadeIn(500);
+                });
+            });
 
         });
     }
