@@ -288,10 +288,11 @@
         $('.single-image-slider-nav .zoom').click(function(e){
             e.preventDefault();
             console.log('prova');
-            var photo_fullsize =  $(this).find('img').attr('src');
+            var photo_fullsize =  $(this).find('img').attr('src').replace('-180x180','-600x600');;
             console.log(photo_fullsize);
             var title =  $(this).find('img').attr('alt');
             console.log(title);
+            $('.woocommerce-main-image img').attr('srcset',photo_fullsize);
             $('.woocommerce-main-image img').attr('src',photo_fullsize);
             $('.woocommerce-main-image ').attr('href',photo_fullsize);
 
