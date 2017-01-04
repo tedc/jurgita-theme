@@ -18,7 +18,9 @@ if ($terms): ?>
                   <?php  endwhile; ?>
                   </ul>
                 <?php while (have_rows('prezzo', 'livelli_' . $term->term_id)) : the_row(); ?>
+                    <div class="prova">
                     <?php echo (get_sub_field('prezzo')) ? '<div class="price">'.get_sub_field('prezzo').'</div>' : ''; ?>
+                    </div>
                 <?php  endwhile; ?>
             </div>
         <?php endforeach; ?>
