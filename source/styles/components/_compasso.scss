@@ -11,7 +11,7 @@
         height: 30px;
         border: 2px solid $gold;
         border-radius: 50%;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 23px;
         text-align: center;
         background-color: $w;
@@ -48,17 +48,19 @@
         }
     }
     .slider {
-        position: absolute;
-        padding: 20px;
-        background-color: $yellow;
-        font-size: em(24px);
-        color: $base_color;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility $speed, opacity $speed ;
-        &.active{
-            visibility: visible;
-            opacity: 1;
+        @include breakpoint($bp) {
+            position: absolute;
+            padding: 20px;
+            background-color: $yellow;
+            font-size: em(24px);
+            color: $base_color;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility $speed, opacity $speed;
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
         }
     }
 
