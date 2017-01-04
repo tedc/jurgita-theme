@@ -18,8 +18,8 @@ if ($terms): ?>
                   <?php  endwhile; ?>
                   </ul>
                 <div class="price">
-                    <?php while (have_rows('price', 'livelli_' . $term->term_id)) : the_row(); ?>
-                    <?php echo get_sub_field('price') ?></div>
+                    <?php while (have_rows('prezzo', 'livelli_' . $term->term_id)) : the_row(); ?>
+                    <?php echo get_sub_field('prezzo') ?></div>
                 <?php endwhile ?>
             </div>
         <?php endforeach; ?>
