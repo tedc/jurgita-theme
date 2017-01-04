@@ -64,24 +64,25 @@
     top: 9%;
     left: 15%;
 }
+#first-slider {
+    top: 5%;
+    left: calc( 15% + 7px);
+}
+
 #second-dot {
     top: 15%;
     right: 15%;
 }
-#third-dot {
-    top: 15%;
-    right: 15%;
-}
-
-#first-slider {
-    top: 5%;
-    left: 22%;
-}
 #second-slider {
     top: 10%;
-    right: 22%;
+    right: calc( 15% + 7px);
+}
+
+#third-dot {
+    top: 40%;
+    left: 30%;
 }
 #third-slider {
-    top: 10%;
-    right: 22%;
+    top: 36%;
+    left: calc( 30% + 7px);
 }
