@@ -4,7 +4,9 @@
         height: auto;
     }
     .dot-icon {
-        color: $base-color;
+        position: absolute;
+        color: transparent;
+        cursor: pointer;
         width: 30px;
         height: 30px;
         border: 2px solid $gold;
@@ -13,55 +15,46 @@
         line-height: 23px;
         text-align: center;
         background-color: $w;
-        position: absolute;
-        @include breakpoint($bp) {
-            color: transparent;
-            cursor: pointer;
-
-            &:after {
-                content: '';
-                width: 20px;
-                height: 2px;
-                background-color: $base_color;
-                position: absolute;
-                top: 12px;
-                left: 3px;
-            }
+        &:after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background-color: $base_color;
+            position: absolute;
+            top: 12px;
+            left: 3px;
+        }
+        &:before {
+            content: '';
+            width: 2px;
+            height: 20px;
+            background-color: $base_color;
+            position: absolute;
+            top: 3px;
+            left: 12px;
+            transition: height $speed, width $speed;
+        }
+        &.active{
             &:before {
                 content: '';
-                width: 2px;
-                height: 20px;
-                background-color: $base_color;
-                position: absolute;
-                top: 3px;
-                left: 12px;
-                transition: height $speed, width $speed;
-            }
-            &.active {
-                &:before {
-                    content: '';
-                    height: 0px;
-                    width: 0px;
+                height: 0px;
+                width: 0px;
 
-                }
             }
         }
     }
     .slider {
-        position: relative;
-        @include breakpoint($bp) {
-            position: absolute;
-            padding: 20px;
-            background-color: $yellow;
-            font-size: em(24px);
-            color: $base_color;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility $speed, opacity $speed;
-            &.active {
-                visibility: visible;
-                opacity: 1;
-            }
+        position: absolute;
+        padding: 20px;
+        background-color: $yellow;
+        font-size: em(24px);
+        color: $base_color;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility $speed, opacity $speed ;
+        &.active{
+            visibility: visible;
+            opacity: 1;
         }
     }
 
@@ -71,48 +64,45 @@
     top: 9%;
     left: 15%;
 }
-
 #first-slider {
     top: 4%;
-    left: calc(15% + 40px);
+    left: calc( 15% + 40px );
 }
 
 #second-dot {
     top: 15%;
     right: 15%;
 }
-
 #second-slider {
     top: 10%;
-    right: calc(15% + 40px);
+    right: calc( 15% + 40px );
 }
 
 #third-dot {
     top: 40%;
     left: 30%;
 }
-
 #third-slider {
     top: 35%;
-    left: calc(30% + 40px);
+    left: calc( 30% + 40px );
 }
+
 
 #fourth-dot {
     top: 65%;
     right: 30%;
 }
-
 #fourth-slider {
     top: 60%;
-    right: calc(30% + 40px);
+    right: calc( 30% + 40px );
 }
+
 
 #fifth-dot {
     top: 85%;
     right: 40%;
 }
-
 #fifth-slider {
     top: 80%;
-    right: calc(40% + 40px);
+    right: calc( 40% + 40px );
 }
