@@ -1,0 +1,24 @@
+.compasso {
+    img {
+        width:100%;
+        height: auto;
+    }
+
+
+}
+
+.mask {
+    .dot-icon {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #767373;
+        border-radius: 50%;
+        float: left;
+        position: relative;
+        margin-left: -40px;
+        margin-top: -20px;
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 32px;
+    }
+}
