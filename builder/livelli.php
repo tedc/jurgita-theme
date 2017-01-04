@@ -15,7 +15,7 @@ if ($terms): ?>
                             </span>
                             <?php echo (get_sub_field('check')) ? '<span class="argomento-text">'.get_sub_field('argomento').'</span>' : ''; ?>
                         </li>
-                        <div class="price"><?php get_sub_field('argomento') ?></div>
+                        <div class="price"><?php echo get_sub_field('argomento') ?></div>
                   <?php  endwhile; ?>
                   </ul>
             </div>
