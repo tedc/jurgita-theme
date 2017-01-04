@@ -17,7 +17,10 @@ if ($terms): ?>
                         </li>
                   <?php  endwhile; ?>
                   </ul>
-                <div class="price"><?php echo $term->get_sub_field('price') ?></div>
+                <div class="price">
+                    <?php while (have_rows('price', 'livelli_' . $term->term_id)) : the_row(); ?>
+                    <?php echo get_sub_field('price') ?></div>
+                <?php endwhile ?>
             </div>
         <?php endforeach; ?>
     </div>
