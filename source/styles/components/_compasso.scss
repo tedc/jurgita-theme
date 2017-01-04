@@ -65,8 +65,8 @@
     left: 15%;
 }
 #first-slider {
-    top: 5%;
-    left: calc( 15% + 40px);
+    top: 4%;
+    left: calc( 15% + 40px ;
 }
 
 #second-dot {
@@ -75,7 +75,7 @@
 }
 #second-slider {
     top: 10%;
-    right: calc( 15% + 40px);
+    right: calc( 15% + 40px );
 }
 
 #third-dot {
@@ -83,6 +83,26 @@
     left: 30%;
 }
 #third-slider {
-    top: 36%;
-    left: calc( 30% + 40px);
+    top: 35%;
+    left: calc( 30% + 40px );
+}
+
+
+#fourth-dot {
+    top: 65%;
+    right: 30%;
+}
+#fourth-slider {
+    top: 61%;
+    right: calc( 30% + 40px );
+}
+
+
+#fifth-dot {
+    top: 40%;
+    left: 30%;
+}
+#fifth-slider {
+    top: 35%;
+    left: calc( 30% + 40px );
 }

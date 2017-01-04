@@ -11,5 +11,10 @@
         <div class="slider" id="third-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
         <div class="dot-icon" id="third-dot">3</div>
 
+        <div class="slider" id="fourth-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="dot-icon" id="fourth-dot">3</div>
+
+        <div class="slider" id="fifth-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="dot-icon" id="fifth-dot">3</div>
     </div>
 </div>

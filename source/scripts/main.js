@@ -321,6 +321,18 @@
             $(this).toggleClass( "active" );
             $("#second-slider").toggleClass( "active" );
         });
+        $("#third-dot").on('click', function() {
+            $(this).toggleClass( "active" );
+            $("#third-slider").toggleClass( "active" );
+        });
+        $("#fourth-dot").on('click', function() {
+            $(this).toggleClass( "active" );
+            $("#fourth-slider").toggleClass( "active" );
+        });
+        $("#fifth-dot").on('click', function() {
+            $(this).toggleClass( "active" );
+            $("#fifth-slider").toggleClass( "active" );
+        });
     }
 
     function intro() {
