@@ -73,10 +73,6 @@
 
 
 .title {
-   /* text-align: center;
-    @include breakpoint($bp) {
-        text-align: left;
-    }*/
     &-date {
         text-align: center;
         @include breakpoint($bp) {
