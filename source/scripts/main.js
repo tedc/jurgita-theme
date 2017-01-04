@@ -311,6 +311,11 @@
         })
     }
 
+    function compasso() {
+        $(".dot-icon").on('click', function() {
+            $("#slider").animate({width:'toggle'},350);
+        });
+    }
 
     function intro() {
         var intro = new TimelineMax({

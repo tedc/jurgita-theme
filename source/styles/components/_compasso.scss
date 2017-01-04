@@ -1,21 +1,10 @@
 .compasso {
     img {
-        width:100%;
+        width: 100%;
         height: auto;
     }
-    .first {
-        position: absolute;
-        top: 25px;
-        left: 90px;
-    }
-
-
-}
-
-.mask {
-
-
     .dot-icon {
+        color: transparent;
         cursor: pointer;
         width: 30px;
         height: 30px;
@@ -26,6 +15,25 @@
         line-height: 23px;
         text-align: center;
         background-color: $w;
+        &:after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background-color: $base_color;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:before {
+            content: '';
+            width: 2px;
+            height: 20px;
+            background-color: $base_color;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
     }
     .slider {
         padding: 20px;
@@ -33,4 +41,5 @@
         font-size: em(24px);
         color: $base_color;
     }
+
 }
