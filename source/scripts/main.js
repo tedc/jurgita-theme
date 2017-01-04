@@ -31,6 +31,7 @@
                 scrollToHead();
                 intro();
                 faq();
+                compasso();
             }
         }
     };
@@ -312,8 +313,9 @@
     }
 
     function compasso() {
-        $(".dot-icon").on('click', function() {
-            $("#slider").animate({width:'toggle'},350);
+        $("#first-dot").on('click', function() {
+            $(this).toggleClass( "active" );
+            $("#first-slider").toggleClass( "active" );
         });
     }
 
