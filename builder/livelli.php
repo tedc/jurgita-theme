@@ -20,7 +20,7 @@ if ($terms): ?>
                     </li>
                 <?php endwhile; ?>
             </ul>
-            <?php $price =  the_field('prezzo', $term);
+            <?php $price =  get_field('prezzo', $term);
             $int = substr($price, 0, strpos($price, ','));
             $dec = substr($price, strpos($price, ","));
             ?>
