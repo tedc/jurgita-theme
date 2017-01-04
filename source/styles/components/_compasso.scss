@@ -32,8 +32,15 @@
             position: absolute;
             top: 3px;
             left: 12px;
+            transition: height $speed;
         }
+        &.active{
+            &:before {
+                content: '';
+                height: 0px;
 
+            }
+        }
     }
     .slider {
         position: absolute;
