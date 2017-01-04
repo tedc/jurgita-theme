@@ -8,5 +8,8 @@
         <div class="slider" id="second-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
         <div class="dot-icon" id="second-dot">2</div>
 
+        <div class="slider" id="third-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="dot-icon" id="third-dot">3</div>
+
     </div>
 </div>
