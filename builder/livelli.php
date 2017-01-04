@@ -21,7 +21,7 @@ if ($terms): ?>
                 <?php endwhile; ?>
             </ul>
             <?php $price =  get_field('prezzo', $term);
-            $int = substr($price, 0, strpos($price, ','));
+            $int = strtok($price, ',');
             var_dump($int);
             $dec = substr($price, strpos($price, ","));
             var_dump($dec);
