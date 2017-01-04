@@ -317,6 +317,10 @@
             $(this).toggleClass( "active" );
             $("#first-slider").toggleClass( "active" );
         });
+        $("#second-dot").on('click', function() {
+            $(this).toggleClass( "active" );
+            $("#second-slider").toggleClass( "active" );
+        });
     }
 
     function intro() {
