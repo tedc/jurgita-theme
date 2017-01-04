@@ -22,11 +22,9 @@ if ($terms): ?>
             </ul>
             <?php $price =  get_field('prezzo', $term);
             $int = strtok($price, '.');
-            var_dump($int);
             $dec = substr($price, strpos($price, ".")+1);
-            var_dump($dec);
             ?>
-            <div class="price corso-price" data-scrollmagic='{"tween":[{"x": 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'> <?php echo '€ '.'<span class="int-price">'. $int . '</span>' . $dec ?></div>
+            <div class="price corso-price" data-scrollmagic='{"tween":[{"x": 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'> <?php echo '€ '.'<span class="int-price">'. $int . ',</span>' . $dec ?></div>
         </div>
     <?php endforeach; ?>
     </div>
