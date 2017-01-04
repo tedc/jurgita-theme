@@ -5,7 +5,7 @@ if ($terms): ?>
 
     <div class="grid-4 container">
     <?php foreach ($terms as $term): ?>
-        <div class="col-2">
+        <div class="col-2 col-programma">
             <h2 class="title title-corso"
                 data-scrollmagic='{"tween":[{"x": -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'><?php echo $term->name; ?></h2>
             <ul class="argomenti">
