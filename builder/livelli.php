@@ -17,7 +17,7 @@ if ($terms): ?>
                         </li>
                   <?php  endwhile; ?>
                   </ul>
-                <div class="price"><?php echo get_sub_field('price') ?></div>
+                <div class="price"><?php echo $term->get_sub_field('price') ?></div>
             </div>
         <?php endforeach; ?>
     </div>
