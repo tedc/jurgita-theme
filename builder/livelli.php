@@ -22,7 +22,7 @@ if ($terms): ?>
             </ul>
 
 
-            <div class="price" data-scrollmagic='{"tween":[{"x": 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'> <?php the_field('prezzo', $term) ?></div>
+            <div class="price corso-price" data-scrollmagic='{"tween":[{"x": 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'> <?php the_field('prezzo', $term) ?></div>
 
         </div>
     <?php endforeach; ?>
