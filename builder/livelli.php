@@ -24,7 +24,7 @@ if ($terms): ?>
             $int = strtok($price, '.');
             $dec = substr($price, strpos($price, ".")+1);
             ?>
-            <div class="price corso-price" data-scrollmagic='{"tween":[{"x": 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'><div class="price-container"> <?php echo '€ '.'<span class="int-price">'. $int . ',</span>' . $dec ?></div></div>
+            <div class="price corso-price" data-scrollmagic='{"tween":[{"x": 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'><div class="price-container"> <?php echo '€&nbsp;'.'<span class="int-price">'. $int . ',</span>' . $dec ?></div></div>
         </div>
     <?php endforeach; ?>
     </div>
