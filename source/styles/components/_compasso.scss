@@ -13,8 +13,7 @@
 }
 
 .mask {
-    display: flex;
-    align-items: center;
+
 
     .dot-icon {
         cursor: pointer;
@@ -28,7 +27,7 @@
         text-align: center;
         background-color: $w;
     }
-    .label {
+    .slider {
         padding: 20px;
         background-color: $yellow;
         font-size: em(24px);

@@ -1,7 +1,7 @@
 <div class="body-container compasso">
     <img src="<?php the_sub_field('immagine'); ?>">
     <div class="mask first">
-        <div class="label"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="slider" data-label="first"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
         <div class="dot-icon">+</div>
     </div>
     <div class="mask second">
