@@ -4,13 +4,13 @@
         height: auto;
     }
     .dot-icon {
+        position: absolute;
         color: transparent;
         cursor: pointer;
         width: 30px;
         height: 30px;
         border: 2px solid $gold;
         border-radius: 50%;
-        position: relative;
         font-size: 30px;
         line-height: 23px;
         text-align: center;
@@ -21,8 +21,8 @@
             height: 2px;
             background-color: $base_color;
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 12px;
+            left: 3px;
         }
         &:before {
             content: '';
@@ -30,16 +30,26 @@
             height: 20px;
             background-color: $base_color;
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 3px;
+            left: 12px;
         }
 
     }
     .slider {
+        position: absolute;
         padding: 20px;
         background-color: $yellow;
         font-size: em(24px);
         color: $base_color;
     }
 
+}
+
+#first-dot {
+    top: 9%;
+    left: 15%;
+}
+#first-slider {
+    top: 5%;
+    left: 22%;
 }
