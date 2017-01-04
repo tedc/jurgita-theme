@@ -49,6 +49,13 @@
         background-color: $yellow;
         font-size: em(24px);
         color: $base_color;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility $speed, opacity $speed ;
+        &.active{
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
 }
