@@ -48,7 +48,6 @@
         }
     }
     .slider {
-        @include breakpoint($bp) {
             position: absolute;
             padding: 20px;
             background-color: $yellow;
@@ -61,7 +60,7 @@
                 visibility: visible;
                 opacity: 1;
             }
-        }
+
     }
 
 }
