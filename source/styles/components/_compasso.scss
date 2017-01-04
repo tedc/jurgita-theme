@@ -14,14 +14,22 @@
 
 .mask {
     .dot-icon {
+        cursor: pointer;
         width: 30px;
         height: 30px;
-        border: 3px solid $gold;
+        border: 2px solid $gold;
         border-radius: 50%;
         position: absolute;
         font-size: 18px;
         font-weight: 700;
         line-height: 30px;
         text-align: center;
+        background-color: $w;
+    }
+    .label {
+        padding: 20px;
+        background-color: $yellow;
+        font-size: em(24px);
+        color: $base_color;
     }
 }

@@ -2,6 +2,7 @@
     <img src="<?php the_sub_field('immagine'); ?>">
     <div class="mask first">
         <div class="dot-icon">+</div>
+        <div class="label"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
     </div>
     <div class="mask second">
         <div class="dot-icon">+</div>
