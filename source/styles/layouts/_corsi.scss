@@ -70,44 +70,46 @@
         }
     }
 
-}
 
-.title {
-    text-align: center;
-    @include breakpoint($bp) {
-        text-align: left;
-    }
-    &-date {
+    .title {
         text-align: center;
         @include breakpoint($bp) {
             text-align: left;
         }
-        padding-bottom: 0;
-        font-size: em(40px);
-        line-height: 1.125;
-        color: $base_color;
-        .corsi-date-row, .day-group, .place {
-            display: block;
-        }
-        .day-group {
-            color: $time-post;
-            font-size: em(70px, 40px);
-        }
-        .place {
-            color: $time-post;
-            font-size: em(60px, 40px);
-            padding-top: em(40px, 60px);
-        }
-        .sep {
-            color: $light_gray;
-            padding: 0 em(10px, 70px);
-        }
-
-        .year {
-            padding-left: em(20px, 40px);
-        }
-        .single-corsi & {
+        &-date {
             text-align: center;
+            @include breakpoint($bp) {
+                text-align: left;
+            }
+            padding-bottom: 0;
+            font-size: em(40px);
+            line-height: 1.125;
+            color: $base_color;
+            .corsi-date-row, .day-group, .place {
+                display: block;
+            }
+            .day-group {
+                color: $time-post;
+                font-size: em(70px, 40px);
+            }
+            .place {
+                color: $time-post;
+                font-size: em(60px, 40px);
+                padding-top: em(40px, 60px);
+            }
+            .sep {
+                color: $light_gray;
+                padding: 0 em(10px, 70px);
+            }
+
+            .year {
+                padding-left: em(20px, 40px);
+            }
+            .single-corsi & {
+                text-align: center;
+            }
         }
     }
+
 }
+
