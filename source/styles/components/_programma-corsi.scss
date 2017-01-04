@@ -36,10 +36,18 @@
 }
 
 .corso-price {
-    &:after {
-        width: 40px;
-        height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &:before {
+        width: 60px;
+        height: 60px;
         content: '';
         @include pattern();
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 }
