@@ -297,8 +297,8 @@ td.product-name {
 .shop_table {
     width: 100%;
     th {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: em(10px, 14px);
+        padding-bottom: em(10px, 14px);
     }
 }
 
@@ -318,6 +318,8 @@ td.product-name {
         flex-wrap: wrap;
         padding-top: em(30px);
         .coupon-label {
+            padding-top: em(10px, 14px);
+            padding-bottom: em(10px, 14px);
             width: 100%;
             font-size: em(14px);
             color: $placeholder;
