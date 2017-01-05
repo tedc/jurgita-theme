@@ -9,6 +9,24 @@
 }
 
 .woocommerce-thankyou-order-details {
+    padding: {
+        left: em(15px);
+        right: em(15px);
+        top: em(10px);
+        bottom: em(10px);
+    }
+    @include breakpoint(640px){
+        padding: {
+            left: em(20px);
+            right: em(20px);
+        }
+    }
+    @include breakpoint($bp){
+        padding: {
+            left: em(40px);
+            right: em(40px);
+        }
+    }
     li {
         padding-top: em(10px);
         padding-bottom: em(10px);
@@ -29,18 +47,44 @@
 
 .checkout {
     p, h2, h3 {
-        padding: 10px 20px;
-        @include breakpoint($bp) {
-            padding-left: 40px;
-            padding-right: 40px;
+        padding: {
+            left: em(15px);
+            right: em(15px);
+            top: em(10px);
+            bottom: em(10px);
+        }
+        @include breakpoint(640px){
+            padding: {
+                left: em(20px);
+                right: em(20px);
+            }
+        }
+        @include breakpoint($bp){
+            padding: {
+                left: em(40px);
+                right: em(40px);
+            }
         }
     }
 }
 
 .bacs_details {
-    padding: 10px 20px;
-    @include breakpoint($bp) {
-        padding-left: 40px;
-        padding-right: 40px;
+    padding: {
+        left: em(15px);
+        right: em(15px);
+        top: em(10px);
+        bottom: em(10px);
+    }
+    @include breakpoint(640px){
+        padding: {
+            left: em(20px);
+            right: em(20px);
+        }
+    }
+    @include breakpoint($bp){
+        padding: {
+            left: em(40px);
+            right: em(40px);
+        }
     }
 }

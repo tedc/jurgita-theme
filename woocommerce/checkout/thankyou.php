@@ -37,7 +37,7 @@ if ( $order ) : ?>
 
 		<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
 
-		<ul class="woocommerce-thankyou-order-details order_details container">
+		<ul class="woocommerce-thankyou-order-details order_details">
 			<li class="order">
 				<?php _e( 'Order Number:', 'woocommerce' ); ?>
 				<strong><?php echo $order->get_order_number(); ?></strong>
