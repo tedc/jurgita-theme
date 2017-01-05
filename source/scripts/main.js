@@ -286,6 +286,11 @@
     }
 
     function productImg() {
+      
+        $.ajaxSetup ({
+            // Disable caching of AJAX responses
+            cache: false
+        });
         var isAnim = false;
         $('.single-image-slider-nav .zoom').click(function (e) {
             if (isAnim) {
