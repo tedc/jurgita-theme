@@ -1,6 +1,6 @@
 <div class="body-container">
     <div class="compasso">
-        <div class="container-img">
+        <div class="container-img" data-scrollmagic='{"tween":[{"x": 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
             <img src="<?php the_sub_field('immagine'); ?>">
             <div class="dot-icon" id="first-dot">1</div>
             <div class="dot-icon" id="second-dot">2</div>
