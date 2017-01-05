@@ -45,7 +45,7 @@
     strong {
         color: $gold;
     }
-/*    p, h2, h3 {
+    & > p,& > h2,& > h3 {
         font-size: em(16px);
         padding: {
             left: em(15px);
@@ -65,7 +65,7 @@
                 right: em(40px);
             }
         }
-    }*/
+    }
 }
 
 /*.bacs_details {
