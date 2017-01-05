@@ -13,3 +13,10 @@
 .return-to-shop {
     padding-bottom: em(10px);
 }
+
+.summary {
+    .woocommerce-message {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

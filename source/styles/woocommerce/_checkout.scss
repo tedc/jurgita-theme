@@ -1,0 +1,20 @@
+.order_item {
+    .product-name{
+        padding-top: em(10px);
+        padding-bottom: em(10px);
+        a, .product-quantity {
+            color: gold;
+        }
+    }
+}
+
+.woocommerce-thankyou-order-details {
+    li {
+        padding-top: em(10px);
+        padding-bottom: em(10px);
+        color: $base-color;
+        strong {
+            color: $gold;
+        }
+    }
+}

@@ -100,7 +100,7 @@
     left:0;
     @include breakpoint($bp) {
         top: 4%;
-        left: calc(15% + 70px);
+        left: calc(15% + 50px);
     }
 }
 
@@ -114,7 +114,7 @@
     right:0;
     @include breakpoint($bp) {
         top: 10%;
-        right: calc(15% + 70px);
+        right: calc(15% + 50px);
     }
 }
 
@@ -128,7 +128,7 @@
     left:0;
     @include breakpoint($bp) {
         top: 35%;
-        left: calc(30% + 70px);
+        left: calc(30% + 50px);
     }
 }
 
@@ -142,7 +142,7 @@
     right:0;
     @include breakpoint($bp) {
         top: 60%;
-        right: calc(30% + 70px);
+        right: calc(30% + 50px);
     }
 }
 
@@ -156,6 +156,6 @@
     right:0;
     @include breakpoint($bp) {
         top: 80%;
-        right: calc(40% + 70px);
+        right: calc(40% + 50px);
     }
 }
