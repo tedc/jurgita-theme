@@ -78,16 +78,16 @@
 
 .table_checkout {
     .product-total {
-        text-align: center;
+        text-align: center!important;
         @include breakpoint($bp) {
-            text-align: right;
+            text-align: right!important;
         }
     }
     tfoot {
         td {
-            text-align: center;
+            text-align: center!important;
             @include breakpoint($bp) {
-                text-align: right;
+                text-align: right!important;
             }
         }
     }
