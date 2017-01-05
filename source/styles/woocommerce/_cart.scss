@@ -357,10 +357,11 @@ input[name=update_cart] {
 }
 
 .cart_totals {
+    padding-top: em(40px);
     h2{
         padding-bottom: 0;
         font-size: em(20px);
-        padding-top: 10px;
+
     }
     .shop_table {
         tr {
