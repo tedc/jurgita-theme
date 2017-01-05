@@ -32,9 +32,6 @@
         padding-bottom: em(10px);
         color: $base-color;
         line-height: 1;
-        strong {
-            color: $gold;
-        }
     }
 }
 
@@ -45,6 +42,9 @@
 }
 
 .checkout {
+    strong {
+        color: $gold;
+    }
     p, h2, h3 {
         font-size: em(16px);
         padding: {
@@ -86,5 +86,12 @@
             left: em(40px);
             right: em(40px);
         }
+    }
+}
+
+.wc-bacs-bank-details{
+    li {
+        padding-top: em(10px);
+        padding-bottom: em(10px);
     }
 }
