@@ -302,11 +302,9 @@
             var title = $(this).find('img').attr('alt');
             $('.woocommerce-main-image img').fadeOut(300, function () {
                 $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
-                $('.woocommerce-main-image img').attr('src', photo_fullsize).load( function () {
-                    console.log(this);
-                    $(this).fadeIn(300, function () {
-                        isAnim = false;
-                    });
+                $('.woocommerce-main-image img').attr('src', photo_fullsize);
+                $(this).fadeIn(300, function () {
+                    isAnim = false;
                 });
                 $('.woocommerce-main-image ').attr('href', photo_fullsize);
                 $('.woocommerce-main-image ').attr('title', title);
