@@ -83,12 +83,12 @@
             text-align: right!important;
         }
     }
-    tfoot {
+
         td {
             text-align: center!important;
             @include breakpoint($bp) {
                 text-align: right!important;
             }
         }
-    }
+
 }
