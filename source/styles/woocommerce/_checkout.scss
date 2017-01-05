@@ -21,11 +21,14 @@
 }
 
 .woocommerce-thankyou-order-received {
-    padding-left: em(20px);
-    padding-right: em(20px);
+    font-size: em(30px);
+    padding-bottom: em(50px, 30px);
+    @extend %title-post;
+    padding-left: em(20px,30px);
+    padding-right: em(20px, 30px);
 
     @include breakpoint($bp) {
-        padding-left: em(40px);
-        padding-right: em(40px);
+        padding-left: em(40px, 30px);
+        padding-right: em(40px, 30px);
     }
 }
