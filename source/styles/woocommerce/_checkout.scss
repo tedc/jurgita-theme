@@ -9,7 +9,7 @@
 }
 
 .woocommerce-thankyou-order-details {
-    padding: {
+   /* padding: {
         left: em(15px);
         right: em(15px);
         top: em(10px);
@@ -26,7 +26,7 @@
             left: em(40px);
             right: em(40px);
         }
-    }
+    }*/
     li {
         padding-top: em(10px);
         padding-bottom: em(10px);
@@ -45,7 +45,7 @@
     strong {
         color: $gold;
     }
-    p, h2, h3 {
+/*    p, h2, h3 {
         font-size: em(16px);
         padding: {
             left: em(15px);
@@ -65,10 +65,10 @@
                 right: em(40px);
             }
         }
-    }
+    }*/
 }
 
-.bacs_details {
+/*.bacs_details {
     padding: {
         left: em(15px);
         right: em(15px);
@@ -87,7 +87,7 @@
             right: em(40px);
         }
     }
-}
+}*/
 
 .wc-bacs-bank-details{
     li {
