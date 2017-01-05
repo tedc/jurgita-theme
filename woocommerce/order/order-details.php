@@ -49,8 +49,7 @@ $show_customer_details = is_user_logged_in() && $order->get_user_id() === get_cu
 			}
 		?>
 		<?php do_action( 'woocommerce_order_items_table', $order ); ?>
-	</tbody>
-	<tfoot>
+		
 		<?php
 			foreach ( $order->get_order_item_totals() as $key => $total ) {
 				?>
@@ -61,7 +60,7 @@ $show_customer_details = is_user_logged_in() && $order->get_user_id() === get_cu
 				<?php
 			}
 		?>
-	</tfoot>
+	</tbody>
 </table>
 
 <?php do_action( 'woocommerce_order_details_after_order_table', $order ); ?>
