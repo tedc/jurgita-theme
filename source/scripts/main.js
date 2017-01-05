@@ -290,11 +290,11 @@
             e.preventDefault();
             var photo_fullsize =  $(this).find('img').attr('src').replace('-180x180','-600x600');
             var title =  $(this).find('img').attr('alt');
-            $('.woocommerce-main-image img').fadeOut(500 ,function() {
+            $('.woocommerce-main-image img').fadeOut(200 ,function() {
                 $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
-                $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('onreadystatechange load', function(){
+                $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('readystatechange load', function(){
                     if (this.complete)
-                        $(this).fadeIn(500);
+                        $(this).fadeIn(200);
                 });
                 $('.woocommerce-main-image ').attr('href', photo_fullsize);
                 $('.woocommerce-main-image ').attr('title', title);
