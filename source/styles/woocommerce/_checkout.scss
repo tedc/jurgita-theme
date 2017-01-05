@@ -36,3 +36,11 @@
         }
     }
 }
+
+.bacs_details {
+    padding: 10px 20px;
+    @include breakpoint($bp) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
