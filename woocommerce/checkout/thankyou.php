@@ -35,7 +35,7 @@ if ( $order ) : ?>
 
 	<?php else : ?>
 
-		<p class="title woocommerce-thankyou-order-received container"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
+		<p class="title woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
 
 		<ul class="woocommerce-thankyou-order-details order_details container">
 			<li class="order">
@@ -66,6 +66,6 @@ if ( $order ) : ?>
 
 <?php else : ?>
 
-	<p class="woocommerce-thankyou-order-received container"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
+	<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
 
 <?php endif; ?>
