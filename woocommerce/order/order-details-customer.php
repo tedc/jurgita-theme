@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php endif; ?>
 
-<header class="title">
+<header class="title title-billing">
 	<h3><?php _e( 'Billing Address', 'woocommerce' ); ?></h3>
 </header>
 <address>
@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</div><!-- /.col-1 -->
 	<div class="col-2">
-		<header class="title">
+		<header class="title title-shipping">
 			<h3><?php _e( 'Shipping Address', 'woocommerce' ); ?></h3>
 		</header>
 		<address>
