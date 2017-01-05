@@ -293,6 +293,11 @@
         });
         var isAnim = false;
         $('.single-image-slider-nav .zoom').click(function (e) {
+            if($(this).hasClass('active')){
+                return false;
+            }
+            $('.active').removeClass('active');
+            $(this).addClass('active');
             if (isAnim) {
                 return false
             };
