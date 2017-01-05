@@ -297,8 +297,7 @@
             var title = $(this).find('img').attr('alt');
             $('.woocommerce-main-image img').fadeOut(500, function () {
                 $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
-                $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('readystatechange load', function () {
-                    if (this.complete)
+                $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('load', function () {
                         $(this).fadeIn(500, function () {
                             isAnim = false;
                         });
