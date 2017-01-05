@@ -1,9 +1,10 @@
 .order_item {
     .product-name{
+        text-align: center!important;
         padding-top: em(10px);
         padding-bottom: em(10px);
         @include breakpoint($bp) {
-            text-align: left;
+            text-align: left!important;
         }
         a, .product-quantity {
             color: $gold;
