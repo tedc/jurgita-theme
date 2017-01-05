@@ -295,10 +295,10 @@
             e.preventDefault();
             var photo_fullsize = $(this).find('img').attr('src').replace('-180x180', '-600x600');
             var title = $(this).find('img').attr('alt');
-            $('.woocommerce-main-image img').fadeOut(500, function () {
+            $('.woocommerce-main-image img').fadeOut(300, function () {
                 $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
                 $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('load', function () {
-                        $(this).fadeIn(500, function () {
+                        $(this).fadeIn(300, function () {
                             isAnim = false;
                         });
                 });
