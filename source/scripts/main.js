@@ -84,8 +84,8 @@
                 }
             })
         })
-        $(window).on('click', function() {
-            if($('#panel').hasClass('opened')) {
+        $(window).on('click', function () {
+            if ($('#panel').hasClass('opened')) {
                 $('[data-reveal="#panel"]').trigger('click');
             }
         })
@@ -235,7 +235,7 @@
 
     }
 
-    function video () {
+    function video() {
         $(".video-cols").each(function () {
             var $this = $(this);
             var $video = $this.find(".video-item").get(0);
@@ -266,8 +266,8 @@
         var tl = new TimelineMax({
             repeat: -1,
             yoyo: true,
-            onRepeat: function() {
-                if($('.scroll-to').hasClass('active')) {
+            onRepeat: function () {
+                if ($('.scroll-to').hasClass('active')) {
                     tl.pause(2)
                 }
             }
@@ -276,8 +276,8 @@
         controller.scrollTo(function (newpos) {
             TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
         });
-        tl.staggerFromTo('.scroll-anim', .25, {opacity : 0}, {opacity : 1}, .15);
-        $('.scroll-to').on('click', function(event) {
+        tl.staggerFromTo('.scroll-anim', .25, {opacity: 0}, {opacity: 1}, .15);
+        $('.scroll-to').on('click', function (event) {
             event.preventDefault();
             var id = $(this).attr('href');
             controller.scrollTo(id);
@@ -286,26 +286,49 @@
     }
 
     function productImg() {
-        $('.single-image-slider-nav .zoom').click(function(e){
+        var isAnim = false;
+        $('.single-image-slider-nav .zoom').click(function (e) {
+            if (isAnim) {
+                return false
+            };
+            isAnim = true;
             e.preventDefault();
-            var photo_fullsize =  $(this).find('img').attr('src').replace('-180x180','-600x600');
-            var title =  $(this).find('img').attr('alt');
-            $('.woocommerce-main-image img').fadeOut(200 ,function() {
+            var photo_fullsize = $(this).find('img').attr('src').replace('-180x180', '-600x600');
+            var title = $(this).find('img').attr('alt');
+            $('.woocommerce-main-image img').fadeOut(500, function () {
                 $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
-                $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('readystatechange load', function(){
+                $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('readystatechange load', function () {
                     if (this.complete)
-                        $(this).fadeIn(200);
+                        $(this).fadeIn(500, function () {
+                            isAnim = false;
+                        });
                 });
                 $('.woocommerce-main-image ').attr('href', photo_fullsize);
                 $('.woocommerce-main-image ').attr('title', title);
                 $('.woocommerce-main-image img').attr('alt', title);
             });
-
         });
+
+        /* $('.single-image-slider-nav .zoom').click(function(e){
+         e.preventDefault();
+         var photo_fullsize =  $(this).find('img').attr('src').replace('-180x180','-600x600');
+         var title =  $(this).find('img').attr('alt');
+         $('.woocommerce-main-image img').fadeOut(200 ,function() {
+         $('.woocommerce-main-image img').attr('srcset', photo_fullsize);
+         $('.woocommerce-main-image img').attr('src', photo_fullsize).bind('readystatechange load', function(){
+         if (this.complete)
+         $(this).fadeIn(200);
+         });
+         $('.woocommerce-main-image ').attr('href', photo_fullsize);
+         $('.woocommerce-main-image ').attr('title', title);
+         $('.woocommerce-main-image img').attr('alt', title);
+         });
+
+         });*/
     }
 
     function faq() {
-        $('.argomento').on( 'click', function (event){
+        $('.argomento').on('click', function (event) {
             $(this).toggleClass('active');
             var $ph = $(this).next('p');
             $ph.slideToggle();
@@ -313,25 +336,25 @@
     }
 
     function compasso() {
-        $("#first-dot").on('click', function() {
-            $(this).toggleClass( "active" );
-            $("#first-slider").toggleClass( "active" );
+        $("#first-dot").on('click', function () {
+            $(this).toggleClass("active");
+            $("#first-slider").toggleClass("active");
         });
-        $("#second-dot").on('click', function() {
-            $(this).toggleClass( "active" );
-            $("#second-slider").toggleClass( "active" );
+        $("#second-dot").on('click', function () {
+            $(this).toggleClass("active");
+            $("#second-slider").toggleClass("active");
         });
-        $("#third-dot").on('click', function() {
-            $(this).toggleClass( "active" );
-            $("#third-slider").toggleClass( "active" );
+        $("#third-dot").on('click', function () {
+            $(this).toggleClass("active");
+            $("#third-slider").toggleClass("active");
         });
-        $("#fourth-dot").on('click', function() {
-            $(this).toggleClass( "active" );
-            $("#fourth-slider").toggleClass( "active" );
+        $("#fourth-dot").on('click', function () {
+            $(this).toggleClass("active");
+            $("#fourth-slider").toggleClass("active");
         });
-        $("#fifth-dot").on('click', function() {
-            $(this).toggleClass( "active" );
-            $("#fifth-slider").toggleClass( "active" );
+        $("#fifth-dot").on('click', function () {
+            $(this).toggleClass("active");
+            $("#fifth-slider").toggleClass("active");
         });
     }
 
@@ -342,16 +365,16 @@
         intro
             .staggerFromTo('.home .page-header-top .letter', .5,
                 {
-                    opacity : 0, 
-                    y : '50%'
+                    opacity: 0,
+                    y: '50%'
                 },
                 {
-                    opacity : 1, 
-                    y : '0%'
+                    opacity: 1,
+                    y: '0%'
                 },
                 .1
             )
-            .fromTo('.home .page-header-top .subtitle', .5, 
+            .fromTo('.home .page-header-top .subtitle', .5,
                 {
                     opacity: 0
                 },
@@ -360,32 +383,32 @@
                 },
                 "-=.75"
             )
-            .fromTo('.home .page-header .wp-post-image', .5, 
+            .fromTo('.home .page-header .wp-post-image', .5,
                 {
                     opacity: 0,
-                    x : '5%'
+                    x: '5%'
                 },
                 {
-                    opacity : 1, 
-                    x : '0%'
+                    opacity: 1,
+                    x: '0%'
                 },
                 "-=.45"
             )
             .fromTo(
                 '.home .page-header-bottom', .5,
                 {
-                    opacity : 0, 
-                    y : '5%'
+                    opacity: 0,
+                    y: '5%'
                 },
                 {
-                    opacity : 1, 
-                    y : '0%'
+                    opacity: 1,
+                    y: '0%'
                 },
                 "-=.45"
             )
-        var startAnim = function() {
-            var anim = setTimeout(function() {
-                if($('html').hasClass('wf-active')) {
+        var startAnim = function () {
+            var anim = setTimeout(function () {
+                if ($('html').hasClass('wf-active')) {
                     intro.play();
                     clearTimeout(anim);
                 } else {
