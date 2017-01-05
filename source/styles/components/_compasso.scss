@@ -36,7 +36,7 @@
                 top: 3px;
                 left: 12px;
                 transform: scaleY(1);
-                transition: transform;
+                transition: transform $speed;
             }
             &.active {
                 &:before {
