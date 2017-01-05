@@ -39,32 +39,14 @@
 }
 
 .woocommerce-thankyou-order-received {
-    font-size: em(30px);
-    padding-bottom: em(50px, 30px);
+    padding-bottom: em(40px);
     @extend %title-post;
-    padding: {
-        left: em(15px, 30px);
-        right: em(15px, 30px);
-        top: em(10px, 30px);
-        bottom: em(10px, 30px);
-    }
-    @include breakpoint(640px){
-        padding: {
-            left: em(20px, 30px);
-            right: em(20px, 30px);
-        }
-    }
-    @include breakpoint($bp){
-        padding: {
-            left: em(40px, 30px);
-            right: em(40px, 30px);
-        }
-    }
 
 }
 
 .checkout {
     p, h2, h3 {
+        font-size: em(16px);
         padding: {
             left: em(15px);
             right: em(15px);
