@@ -32,3 +32,13 @@
         padding-right: em(40px, 30px);
     }
 }
+
+.checkout {
+    p, h2, h3 {
+        padding: 10px 20px;
+        @include breakpoint($bp) {
+            padding-left: em(40px);
+            padding-right: em(40px);
+        }
+    }
+}
