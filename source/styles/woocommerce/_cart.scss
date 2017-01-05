@@ -311,12 +311,12 @@ td.product-name {
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: em(40px);
 
     .coupon {
         width:100%;
         display: flex;
         flex-wrap: wrap;
-        padding-top: em(30px);
         .coupon-label {
             padding-top: em(10px, 14px);
             padding-bottom: em(10px, 14px);
