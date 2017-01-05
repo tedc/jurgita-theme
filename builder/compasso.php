@@ -9,10 +9,10 @@
             <div class="dot-icon" id="fifth-dot">5</div>
         </div>
 
-        <div class="slider" id="first-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
-        <div class="slider" id="second-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
-        <div class="slider" id="third-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
-        <div class="slider" id="fourth-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
-        <div class="slider" id="fifth-slider"><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="slider" id="first-slider"><span class="circle">1</span><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="slider" id="second-slider"><span class="circle">2</span><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="slider" id="third-slider"><span class="circle">3</span><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="slider" id="fourth-slider"><span class="circle">4</span><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
+        <div class="slider" id="fifth-slider"><span class="circle">5</span><?php _e('1 compasso PhiBros', 'jurgita'); ?></div>
     </div>
 </div>
