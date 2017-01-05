@@ -10,10 +10,10 @@
 
 .woocommerce-thankyou-order-details {
     padding: {
-        left: em(15px)!important;
-        right: em(15px)!important;
-        top: em(10px)!important;
-        bottom: em(10px)!important;
+        left: em(15px);
+        right: em(15px);
+        top: em(10px);
+        bottom: em(10px);
     }
     @include breakpoint(640px){
         padding: {
