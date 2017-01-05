@@ -45,24 +45,26 @@
     strong {
         color: $gold;
     }
-    & > p,& > h2,& > h3 {
-        font-size: em(16px);
-        padding: {
-            left: em(15px);
-            right: em(15px);
-            top: em(10px);
-            bottom: em(10px);
-        }
-        @include breakpoint(640px){
+    .woocommerce {
+        & > p, & > h2, & > h3 {
+            font-size: em(16px);
             padding: {
-                left: em(20px);
-                right: em(20px);
+                left: em(15px);
+                right: em(15px);
+                top: em(10px);
+                bottom: em(10px);
             }
-        }
-        @include breakpoint($bp){
-            padding: {
-                left: em(40px);
-                right: em(40px);
+            @include breakpoint(640px) {
+                padding: {
+                    left: em(20px);
+                    right: em(20px);
+                }
+            }
+            @include breakpoint($bp) {
+                padding: {
+                    left: em(40px);
+                    right: em(40px);
+                }
             }
         }
     }
