@@ -13,6 +13,7 @@
         padding-top: em(10px);
         padding-bottom: em(10px);
         color: $base-color;
+        line-height: 1;
         strong {
             color: $gold;
         }
@@ -20,5 +21,11 @@
 }
 
 .woocommerce-thankyou-order-received {
-    @include normalize_padding();
+    padding-left: em(20px);
+    padding-right: em(20px);
+
+    @include breakpoint($bp) {
+        padding-left: em(40px);
+        padding-right: em(40px);
+    }
 }
