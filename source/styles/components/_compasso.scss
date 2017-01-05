@@ -6,7 +6,6 @@
     .dot-icon {
         position: absolute;
         color: $base-color;
-        cursor: pointer;
         width: 30px;
         height: 30px;
         border: 2px solid $gold;
@@ -17,6 +16,7 @@
         background-color: $w;
 
         @include breakpoint($bp) {
+            cursor: pointer;
             color: transparent;
             &:after {
                 content: '';
@@ -48,13 +48,15 @@
         }
     }
     .slider {
+        padding: 10px 0;
         position: relative;
-        font-size: em(24px);
+        font-size: em(16px, 14px);
         color: $base_color;
         display: flex;
         align-items: center;
 
         @include breakpoint($bp) {
+            font-size: em(24px);
             display: block;
             position: absolute;
             padding: 20px;
@@ -68,15 +70,17 @@
             }
         }
         .circle {
+            margin-right: 10px;
             display: block;
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
             border: 2px solid $gold;
             border-radius: 50%;
-            font-size: 20px;
-            line-height: 23px;
+            font-size: 16px;
+            line-height: 19px;
             text-align: center;
             background-color: $w;
+            padding-left: 2px;
 
             @include breakpoint($bp) {
                 display: none;
