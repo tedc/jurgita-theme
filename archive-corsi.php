@@ -46,7 +46,9 @@
 
         <?php include(locate_template( 'templates/content-' . get_post_type() . '.php', false, false )); ?>
     <?php $i++; endwhile; wp_reset_postdata(); ?>
+
     <?php endif; ?>
+<?php wp_reset_query(); ?>
 
 
 <div class="navigation-page">

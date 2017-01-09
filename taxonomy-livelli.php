@@ -53,7 +53,9 @@ $query = new WP_Query($args); ?>
 
     <?php include(locate_template( 'templates/content-' . get_post_type() . '.php', false, false )); ?>
     <?php $i++; endwhile; wp_reset_postdata(); ?>
+
 <?php endif; ?>
+<?php wp_reset_query(); ?>
 
 
 <div class="navigation-page">
@@ -63,9 +65,9 @@ $query = new WP_Query($args); ?>
     $big = 999999999; // need an unlikely integer
 
     echo paginate_links(array(
-        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'base' => str_replace( $big, '%#%', esc_url(get_pagenum_link( $big )) ),
         'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
+        'current' => max( 1, get_query_var('paged') ),
         'total' => $wp_query->max_num_pages,
         'prev_text' => __('Precedente', 'jurgita'),
         'next_text' => __('Successiva', 'jurgita'),
