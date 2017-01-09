@@ -45,7 +45,7 @@
     <?php if ($query->have_posts()) : $i = 0; while ($query->have_posts()) : $query->the_post(); ?>
 
         <?php include(locate_template( 'templates/content-' . get_post_type() . '.php', false, false )); ?>
-    <?php $i++; endwhile; wp_reset_postdata(); ?>
+    <?php $i++; endwhile;  ?>
     <?php endif; ?>
 
 
@@ -59,10 +59,10 @@ echo paginate_links(array(
     'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
     'format' => '?paged=%#%',
     'current' => max(1, get_query_var('paged')),
-    'total' => $wp_query->max_num_pages,
+    'total' => $query->max_num_pages,
     'prev_text' => __('Precedente', 'jurgita'),
     'next_text' => __('Successiva', 'jurgita'),
 ));
-?>
+wp_reset_postdata();?>
     <div class="line-categories"></div>
 </div>
