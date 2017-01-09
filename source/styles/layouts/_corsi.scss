@@ -16,11 +16,12 @@
             img {
                 width: 33%;
                 display: block;
+                margin-left: em(10px);
             }
             @include breakpoint($bp) {
                 display: block;
                 img {
-                    margin-left: em(10px);
+                    display: inline;
                     width:100px;
                 }
             }
