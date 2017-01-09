@@ -51,6 +51,10 @@
 
 .cols-shipping {
     padding-left: 0px!important;
+
+    address {
+        padding-bottom: em(30px);
+    }
 }
 mark {
     background-color: $gold;
