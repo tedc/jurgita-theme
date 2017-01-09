@@ -1,15 +1,15 @@
 <?php $postClass = ($i%2 == 0) ? '' : ' alt'; ?>
-<div <?php post_class('container grid-4 row-lg'.$postClass); ?>>
+<div id="corsi" <?php post_class('container grid-4 row-lg'.$postClass); ?>>
 	<div class="container-img col-2">
 	    <figure>
 		    <a href="<?php the_permalink(); ?>">
-		        <img src="<?php the_post_thumbnail_url( 'large' ) ?>">
+		        <img src="<?php the_post_thumbnail_url( 'large' ) ?>" data-scrollmagic='{"tween":[{"y": 300, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#corsi"}'>
 		    </a>
-	        <div class="square"></div>
-	        <div class="square-shadow"></div>
+	        <div class="square" data-scrollmagic='{"tween":[{"y": -300}, {"y" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#corsi"}'></div>
+	        <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 300, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#corsi"}'></div>
 	    </figure>
 	</div>
-	<article class="col-2 content">
+	<article class="col-2 content" data-scrollmagic='{"tween":[{"y": 0, "x" : -50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#corsi"}'>
 		<?php get_template_part('templates/corsi', 'meta'); ?>
 		<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	    <h3 class="title title-date">

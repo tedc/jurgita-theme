@@ -2,7 +2,7 @@
     <figure>
         <img src="<?php the_post_thumbnail_url() ?>" data-scrollmagic='{"tween":[{"y": 300, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#sticky-post"}'>
         <div class="square" data-scrollmagic='{"tween":[{"y": -300}, {"y" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#sticky-post"}'></div>
-        <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 300, "x" : }, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#sticky-post"}'></div>
+        <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 300, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#sticky-post"}'></div>
     </figure>
 </div>
 
