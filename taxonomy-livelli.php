@@ -22,6 +22,7 @@
 
 
 <?php
+$paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
 $today = date('Ymd');
 $args = array (
     'post_type' => 'corsi',
@@ -40,6 +41,7 @@ $args = array (
     'meta_key'  => 'data_fine',
     'orderby'   => 'meta_value_num',
     'order'     => 'ASC',
+    'paged'     => $paged,
     'tax_query' => array(
         array(
             'taxonomy' => get_queried_object()->taxonomy,
