@@ -1,5 +1,6 @@
 <?php $postClass = ($i%2 == 0) ? '' : ' alt'; ?>
-<div id="corsi" <?php post_class('container grid-4 row-lg'.$postClass); ?>>
+<?php $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{ "x" : 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\''; ?>
+<div id="corsi-<?php echo $i ?>" <?php post_class('container grid-4 row-lg'.$postClass); ?>>
 	<div class="container-img col-2">
 	    <figure>
 		    <a href="<?php the_permalink(); ?>">
@@ -9,7 +10,7 @@
 	        <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 300, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#corsi"}'></div>
 	    </figure>
 	</div>
-	<article class="col-2 content" data-scrollmagic='{"tween":[{"y": 0, "x" : -50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100vh", "triggerElement": "#corsi"}'>
+	<article class="col-2 content" <?php echo $dataScrollMagic ?>>
 		<?php get_template_part('templates/corsi', 'meta'); ?>
 		<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	    <h3 class="title title-date">
