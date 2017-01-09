@@ -1,8 +1,8 @@
 <div class="container-img col-2">
     <figure>
-        <img src="<?php the_post_thumbnail_url() ?>" data-scrollmagic='{"tween":[{"y": -50, "x" : -50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : 0, "triggerElement": "#sticky-post"}'>
-        <div class="square" data-scrollmagic='{"tween":[{"y": 50}, {"y" : 0}], "triggerHook" : 0.5, "duration" : 0, "triggerElement": "#sticky-post"}'></div>
-        <div class="square-shadow" data-scrollmagic='{"tween":[{"y": -50, "x" : 50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : 0, "triggerElement": "#sticky-post"}'></div>
+        <img src="<?php the_post_thumbnail_url() ?>" data-scrollmagic='{"tween":[{"y": -50, "x" : -50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100%", "triggerElement": "#sticky-post"}'>
+        <div class="square" data-scrollmagic='{"tween":[{"y": 50}, {"y" : 0}], "triggerHook" : 0.5, "duration" : "100%", "triggerElement": "#sticky-post"}'></div>
+        <div class="square-shadow" data-scrollmagic='{"tween":[{"y": -50, "x" : 50}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "100%", "triggerElement": "#sticky-post"}'></div>
     </figure>
 </div>
 
