@@ -32,10 +32,16 @@
     justify-content: space-between;
     margin-top: em(40px);
     margin-bottom: em(150px);
+    flex-wrap: wrap;
+    font-size: em(10px);
 
     .line-categories {
-        top: calc(50% - 2px);
+        display: none;
         @extend %line-navigation;
+        top: calc(50% - 2px);
+        @include breakpoint($bp) {
+            display: block;
+        }
     }
 
     .categories {
