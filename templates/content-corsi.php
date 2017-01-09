@@ -1,5 +1,5 @@
 <?php $postClass = ($i%2 == 0) ? '' : ' alt'; ?>
-<?php $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{ "x" : 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\''; ?>
+<?php $dataScrollMagic = ($i%2 == 0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{ "x" : 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\''; ?>
 <div id="corsi-<?php echo $i ?>" <?php post_class('container grid-4 row-lg'.$postClass); ?>>
 	<div class="container-img col-2">
 	    <figure>
