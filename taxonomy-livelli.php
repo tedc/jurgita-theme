@@ -22,7 +22,7 @@
 
 
 <?php
-$paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 $today = date('Ymd');
 $args = array (
     'post_type' => 'corsi',
