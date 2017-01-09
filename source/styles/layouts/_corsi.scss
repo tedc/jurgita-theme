@@ -15,8 +15,9 @@
             display: inline-block;
             img {
                 width: 33%;
-                display: block;
-                margin-left: em(10px);
+                max-width: 100px;
+                display: inline;
+                padding-left: em(10px);
             }
             @include breakpoint($bp) {
                 display: block;
