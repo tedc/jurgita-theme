@@ -37,9 +37,9 @@
 
 <div class="container-post grid-4">
     <?php $query = new WP_Query(array('post__not_in' => get_option('sticky_posts'))); ?>
-    <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-        <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-    <?php endwhile; ?>
+    <?php if ($query->have_posts()) :  $col = 0; while ($query->have_posts()) : $query->the_post(); ?>
+       <?php include(locate_template('templates/content-'. get_post_type() != 'post' ? get_post_type() : get_post_format() . '.php', false, false)); ?>
+    <?php  $col++; endwhile; ?>
     <?php endif; ?>
 </div>
 
