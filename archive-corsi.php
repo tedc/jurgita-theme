@@ -45,7 +45,7 @@
     <?php if ($query->have_posts()) : $i = 0; while ($query->have_posts()) : $query->the_post(); ?>
 
         <?php include(locate_template( 'templates/content-' . get_post_type() . '.php', false, false )); ?>
-    <?php $i++; endwhile; wp_reset_postdata(); ?>
+    <?php $i++; endwhile; wp_reset_query(); ?>
 
     <?php endif; ?>
 
