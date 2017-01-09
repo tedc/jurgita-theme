@@ -1,4 +1,6 @@
-<article class="col-2" <?php post_class(); ?>>
+<?php $col = 0; ?>
+<?php $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{ "x" : 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\''; ?>
+<article class="col-2" <?php post_class(); echo $dataScrollMagic; ?>>
     <div class="container-img">
         <figure>
             <?php the_post_thumbnail('post-size') ?>
@@ -17,3 +19,4 @@
     </div>
     <a class="btn" href="<?php the_permalink(); ?>"><?php _e('Leggi tutto', 'jurgita') ?></a>
 </article>
+<?php $col++; ?>
