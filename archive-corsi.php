@@ -21,7 +21,8 @@
 
 
 
-    <?php 
+    <?php
+    $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
     $today = date('Ymd');
     $args = array (
         'post_type' => 'corsi',
@@ -39,7 +40,8 @@
         ),
         'meta_key'  => 'data_fine',
         'orderby'   => 'meta_value_num',
-        'order'     => 'ASC'
+        'order'     => 'ASC',
+        'paged'     => $paged
     );
     $query = new WP_Query($args); ?>
     <?php if ($query->have_posts()) : $i = 0; while ($query->have_posts()) : $query->the_post(); ?>
@@ -64,6 +66,7 @@ echo paginate_links(array(
     'prev_text' => __('Precedente', 'jurgita'),
     'next_text' => __('Successiva', 'jurgita'),
 ));
+
 ?>
     <div class="line-categories"></div>
 </div>
