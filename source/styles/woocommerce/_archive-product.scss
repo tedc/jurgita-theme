@@ -33,7 +33,10 @@
     margin-top: em(40px);
     margin-bottom: em(150px);
     flex-wrap: wrap;
-    font-size: em(10px);
+    font-size: em(10px, 12px);
+    @include breakpoint($bp) {
+        font-size: em(16px);
+    }
 
     .line-categories {
         display: none;
