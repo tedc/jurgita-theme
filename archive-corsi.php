@@ -43,6 +43,7 @@
         'order'     => 'ASC',
         'paged'     => $paged
     );
+    var_dump($paged);
     $query = new WP_Query($args); ?>
     <?php if ($query->have_posts()) : $i = 0; while ($query->have_posts()) : $query->the_post(); ?>
 
