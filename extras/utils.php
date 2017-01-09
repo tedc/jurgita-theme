@@ -8,11 +8,9 @@
 
 	function data_corsi($s, $e) {
 		$start = new DateTime($s);
-		var_dump($start);
 		$end = new DateTime($e);
-		var_dump($end);
 		$date = '<span class="corsi-date">';
-		if ($end === $start) {
+		if ($end->format('d') === $start->format('d') && $end->format('F') === $start->format('F') ) {
 			$date .= '<span class="day-group">'.$start->format('d') . '</span><span class="bottom-date">'.date_i18n('F', strtotime($s)).'<span class="year">'.$start->format('Y').'</span>';
 		}
 		if ($start->format('F') === $end->format('F') && $start->format('Y') === $end->format('Y')) :
