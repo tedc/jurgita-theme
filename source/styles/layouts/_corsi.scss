@@ -3,14 +3,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .flag {
             img {
                 margin-right: em(10px);
             }
         }
         .partners {
-            img {
-                margin-left: em(10px);
+            display: none;
+            @include breakpoint($bp) {
+                display: block;
+                img {
+                    margin-left: em(10px);
+                    width:100px;
+                }
             }
         }
     }
