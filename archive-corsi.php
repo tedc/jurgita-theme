@@ -52,6 +52,7 @@
 
 <div class="navigation-page">
 <?php
+wp_reset_query();
 global $wp_query;
 
 $big = 999999999; // need an unlikely integer
