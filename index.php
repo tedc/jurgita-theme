@@ -18,7 +18,7 @@
 <?php endif; ?>
 
 
-<div class="sticky grid-4">
+<div id="sticky-post" class="sticky grid-4" data-scrollmagic='{"tween":[{"opacity" : 0}, {"opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
     <?php
     $sticky = get_option('sticky_posts');
     $args = array(
