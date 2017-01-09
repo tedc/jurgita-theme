@@ -65,7 +65,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php if ( ! wc_ship_to_billing_address_only() && $order->needs_shipping_address() ) : ?>
 
 	</div><!-- /.col-1 -->
-	<div class="col-2">
+	<div class="col-2 cols-shipping">
 		<header class="title title-shipping">
 			<h3><?php _e( 'Shipping Address', 'woocommerce' ); ?></h3>
 		</header>
