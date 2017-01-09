@@ -10,7 +10,13 @@
             }
         }
         .partners {
-            display: none;
+            width: auto;
+            max-width: 100%;
+            display: inline-block;
+            img {
+                width: 33%;
+                display: block;
+            }
             @include breakpoint($bp) {
                 display: block;
                 img {
