@@ -48,7 +48,7 @@
     <?php $i++; endwhile; wp_reset_postdata(); ?>
 
     <?php endif; ?>
-<?php wp_reset_query(); ?>
+
 
 
 <div class="navigation-page">
