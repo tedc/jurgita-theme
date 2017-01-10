@@ -1,0 +1,13 @@
+.iubenda-banner-content {
+    p:first-child {
+        color: $gold;
+        font-weight: 400;
+        font-family: $third-font;
+    }
+    p:last-child {
+        letter-spacing: $letter-spacing-base;
+        margin: 0;
+        font-family: $main-font;
+        font-size: em(18px);
+    }
+}
