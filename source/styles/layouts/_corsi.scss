@@ -99,7 +99,7 @@
         .corsi-date-row, .day-group, .place {
             display: block;
         }
-        .day-group {
+        .day-group, .corsi-date-row {
             color: $time-post;
             font-size: em(70px, 40px);
         }
@@ -118,6 +118,10 @@
         }
         .single-corsi & {
             text-align: center;
+        }
+        .month {
+            color: $gold;
+            font-size: em(40px, 70px);
         }
     }
 }
