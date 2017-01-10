@@ -102,6 +102,10 @@
         .day-group, .corsi-date-row {
             color: $time-post;
             font-size: em(70px, 40px);
+            .year {
+                color: $gold;
+                font-size: em(40px, 70px);
+            }
         }
         .place {
             color: $time-post;
@@ -122,6 +126,7 @@
         .month {
             color: $gold;
             font-size: em(40px, 70px);
+            padding-left: em(20px, 40px);
         }
     }
 }
