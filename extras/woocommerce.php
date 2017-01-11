@@ -44,4 +44,3 @@ function login_menu ($nav_menu, $args) {
 }
 
 add_filter('wp_nav_menu', 'login_menu', 10, 2);
-

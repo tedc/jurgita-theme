@@ -5,7 +5,6 @@
 		return $content;
 	}
 	add_filter('wpcf7_form_elements', 'unwrap_cf_checkbox');
-
 	function data_corsi($s, $e) {
 		$start = new DateTime($s);
 		$end = new DateTime($e);

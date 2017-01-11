@@ -3,7 +3,6 @@ function vars()
 {
     ?>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-
     <script>
         var WebFontConfig = {
             typekit: {
@@ -21,7 +20,6 @@ function vars()
         // })(document);
         var isMobile = <?php echo (is_handheld()) ? 'true' : 'false'; ?>;
     </script>
-
     <script type="text/javascript">
         var _iub = _iub || [];
         _iub.csConfiguration = {
@@ -30,7 +28,6 @@ function vars()
             lang: "it"
         };
     </script>
-
     <script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8"
             async></script>
 
@@ -47,10 +44,7 @@ function vars()
     </script>
     <?php
 }
-
 add_action('wp_footer', 'vars'); ?>
-
-
 <?php
 add_action('wp_footer', 'add_googleanalytics');
 function add_googleanalytics()
