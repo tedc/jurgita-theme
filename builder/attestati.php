@@ -4,8 +4,7 @@
     <?php $query = new WP_Query(array(
         "post_type" => "attestati",
     )); ?>
-    <?php $count = 0; while ($query->have_posts()) : $query->the_post();
-        /* $post = get_post();*/ ?>
+    <?php $count = 0; while ($query->have_posts()) : $query->the_post(); ?>
         <div class="carousel-item" data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1, "delay" : <?php echo $count * 0.25; ?>}], "triggerHook" : 0.65, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'>
             <figure class="carousel_figure container">
                 <img src="<?php the_post_thumbnail_url("small"); ?>">
