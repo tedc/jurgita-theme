@@ -88,7 +88,10 @@
         div[itemprop="description"] {
             font-size: em(14px);
             padding-bottom: em(45px);
-
+            a {
+                color: $base_color;
+            }
+            
             ul {
                 margin-top: 0;
                 margin-bottom: 0;
