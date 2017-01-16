@@ -10,6 +10,7 @@
     return $nav_menu;
 }
 add_filter('wp_nav_menu', 'main_menu_footer', 10, 2);
+
 if (function_exists('acf_add_options_page')) {
     acf_add_options_sub_page(array(
         'page_title' => 'Telefono e WhatsApp',
