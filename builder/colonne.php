@@ -5,7 +5,7 @@ $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opac
 ?>
 <div class="col-2<?php echo (get_row_layout() == 'immagine') ? ' aligncenter' : ''; ?>"<?php echo (!is_handheld() && get_row_layout() != 'master') ? ' '.$dataScrollMagic : ''; ?>>
 <?php if(get_row_layout() == 'testo') : ?>
-	<div class="row-lg container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
+	<div class="container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
 		<?php the_sub_field('contenuto'); ?>
 	</div>
 <?php elseif (get_row_layout() == 'immagine') : ?>
