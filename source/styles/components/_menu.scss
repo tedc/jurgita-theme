@@ -33,6 +33,15 @@
 			}
 			background-color: $gold;
 		}
+		&.btn-cart {
+			a {
+				color: $w;
+				&:hover {
+					color: $b;
+				}
+			}
+			background-color: $gold;
+		}
 		&.btn-menu {
 			position: relative;
 			z-index: 9999;
