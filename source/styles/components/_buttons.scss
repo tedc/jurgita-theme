@@ -77,7 +77,7 @@
     margin: 0 auto;
 
     @include breakpoint($bp) {
-        display: inline;
+        display: inline-flex;
         max-width: 200px;
         margin-right: em(30px);
     }
