@@ -22,7 +22,7 @@
 			$h1 .= ($i < count($name)) ? $str . '<br>' : $str . '</h1>';
 			$i++;
 		}
-		echo '<div class="page-header-top">'.$h1;
+		echo '<div class="page-header-top"><h1 style="display:none">jurgita jasiunaite</h1>'.$h1;
 		echo '<h2 class="subtitle">' .$description[0].'<br/>&'.$description[1].'</h2></div>';
 		if($about) :
 			echo '<div class="page-header-bottom"><a class="btn-reverse" href="'.get_permalink($about).'">'.get_the_title( $about ).'</a><a href="#site" class="scroll-to"><i class="icon-scroll-mouse"></i><span class="scroll-circle scroll-anim"></span><span class="scroll-circle scroll-anim"></span><span class="scroll-circle scroll-anim"></span><i class="icon-arrow-down scroll-anim"></i></a></div>';
