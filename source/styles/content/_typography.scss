@@ -50,6 +50,11 @@ p {
         }
     }
 }
+.content {
+    p:last-child {
+        padding-bottom: 0;
+    }
+}
 
 
 ul, ol {
