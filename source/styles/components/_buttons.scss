@@ -78,5 +78,6 @@
 
     @include breakpoint($bp) {
         display: inline;
+        min-width: 200px;
     }
 }
