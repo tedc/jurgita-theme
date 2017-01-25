@@ -34,6 +34,7 @@
 			background-color: $gold;
 		}
 		&.btn-cart {
+			margin-left: 2px;
 			a {
 				color: $w;
 				&:hover {
@@ -547,7 +548,7 @@
 
 [class^="icon-cart"], [class*=" icon-cart"] {
 	font-size: em(20px);
-	margin-left: 1em;
+	/*margin-left: 1em;*/
 }
 
 @keyframes lineTop {
