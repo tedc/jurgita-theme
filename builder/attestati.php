@@ -1,16 +1,16 @@
 <div class="awards row-lg" id="awards_<?php echo $row; ?>">
 <h2 class="title aligncenter" data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.75, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'><?php _e('I miei attestati', 'jurgita') ?></h2>
-<div class="carousel_list" data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1, "delay" : <?php echo $count * 0.25; ?>}], "triggerHook" : 0.65, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'>
+<div class="carousel_list" data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.65, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'>
     <?php $query = new WP_Query(array(
         "post_type" => "attestati",
     )); ?>
-    <?php $count = 0; while ($query->have_posts()) : $query->the_post(); ?>
+    <?php while ($query->have_posts()) : $query->the_post(); ?>
         <div class="carousel-item">
             <figure class="carousel_figure container">
                 <img src="<?php the_post_thumbnail_url("small"); ?>">
             </figure>
         </div>
-    <?php $count++; endwhile; ?>
+    <?php endwhile; ?>
     <?php wp_reset_query(); ?>
 </div>
 <div class="container-nav">
