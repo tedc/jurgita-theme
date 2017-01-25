@@ -71,8 +71,10 @@
 }
 
 .btn.min-width {
-    min-width: 200px;
-    text-align: center;
+    @include breakpoint($bp) {
+        min-width: 200px;
+    }
+  /*  text-align: center;
     display: block;
     margin: 0 auto;
 
@@ -80,5 +82,5 @@
         display: inline-flex;
         max-width: 200px;
         margin-right: em(30px);
-    }
+    }*/
 }
