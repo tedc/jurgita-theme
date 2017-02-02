@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
+				"transi",
+				"transition"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"whi",
+				"width"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
 				"op",
 				"opacity\topacity()"
 			],
@@ -14,10 +42,6 @@
 			[
 				"no",
 				"nowrap"
-			],
-			[
-				"whi",
-				"white-space"
 			],
 			[
 				"abs",
@@ -174,10 +198,6 @@
 			[
 				"post",
 				"post_thumbnail"
-			],
-			[
-				"transi",
-				"transition-delay"
 			],
 			[
 				"th",
@@ -360,10 +380,6 @@
 				"transform"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"max-",
 				"max-width"
 			],
@@ -439,33 +455,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "DB_NAME=bspkn_db\nDB_USER=root\nDB_PASSWORD=\nDB_HOST=localhost\n\nWP_ENV=development\nWP_HOME=http://mara.local\nWP_SITEURL=${WP_HOME}/wp\n\n# Generate your keys here: https://roots.io/salts.html\nAUTH_KEY='-@yvXd7,FlN_W8M{DWnGdgb47t/7Cqq>Ti0otA*W0)kIDN|,#W!@-<atg7B@Lfk,'\nSECURE_AUTH_KEY='A-l$M<?[emF.!r!$TVf+OYth.)^N>vbe_iuI?2o*_{Aab*s#L0,gL(xtm;SvBVbG'\nLOGGED_IN_KEY='P&73l-HA1QiC@qt*,VAL)M!hwF[^xA%|3X*>49wGA9g#gc!RM7zvLyZO%|ye1B%+'\nNONCE_KEY='{f2Rljd<;}kLDRK2$(yjhQp+_](<$xV4}4_#oU+:9Vi]HP?iF=CtzVtc=8@+p=?i'\nAUTH_SALT='8uksx-P95FDJmO{D|9#75.yBo,6/jIRiQ<)Dy#j./%!/My],cTcw!4s<;JAG-:O5'\nSECURE_AUTH_SALT='%4/YSxW1b)4FCdTU.#KR35h#wqg[6Dn04pN*n;wX=#GjPV12zcY.:vsUMI{3mzVn'\nLOGGED_IN_SALT='_KAy.w4/;;A{,_lG-lTTX?itGNhzm=yAF(Y?gd7)y,F?[WZFJ:Y%%]szy#}z?jTF'\nNONCE_SALT=')w&YRat65+zQQg{V;6^ts;tXgY]D0/x.AZ7{SW>OdRE{,M7G>EbmIHz]O,)5@Ro='\n",
-			"file": "/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/bspkn/.env",
-			"file_size": 825,
-			"file_write_time": 131226448489565024,
-			"settings":
-			{
-				"buffer_size": 826,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bower.json",
-			"settings":
-			{
-				"buffer_size": 383,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "composer.json",
-			"settings":
-			{
-				"buffer_size": 782,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -543,10 +532,43 @@
 	[
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets/styles"
+		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets/styles",
+		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/lib"
 	],
 	"file_history":
 	[
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp31147/giuliettavintagepizza.it/web.config",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp04479/public_html/app/themes/jurgita-theme/assets/scripts/main.js",
+		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets/styles/main.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp14085/giuliettavintagepizza.it/wp-config.php",
+		"/C/Users/RiMaStInO/Desktop/giulietta.sql",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp01747/giuliettavintagepizza.it/wp-includes/default-constants.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp52381/giuliettavintagepizza.it/wp-settings.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp20537/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp08349/public_html/app/themes/jurgita-theme/extras/setup.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp52439/public_html/wp-config.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp12560/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp48087/giuliettavintagepizza.it/wp-config-sample.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp08502/var/www/dnative_ftp/giulietta/wp-content/themes/savory/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp34957/var/www/dnative_ftp/giulietta/wp-content/themes/savory/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp30899/var/www/dnative_ftp/giulietta/wp-content/themes/savory/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp08007/var/www/dnative_ftp/giulietta/wp-content/themes/savory/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp54943/var/www/dnative_ftp/giulietta/wp-content/themes/savory/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp50347/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/E/._Licensing",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp00852/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp08821/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp09705/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/archive.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp24717/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/templates/loop-blog.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp23579/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/templates/custom-page.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp21642/var/www/websherpa.it/www/prod/app/plugins/js_composer/include/classes/core/class-wpb-map.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp23174/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp47913/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp49555/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/rtl-customizer.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp48656/var/www/websherpa.it/www/prod/app/themes/massive-dynamic-child/style.css",
+		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/composer.json",
+		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/bower.json",
+		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/bspkn/.env",
 		"/C/Users/RiMaStInO/Desktop/id_rsa",
 		"/C/Users/RiMaStInO/Downloads/jurgita_2017-01-20.sql",
 		"/C/Users/RiMaStInO/Desktop/tema da installare/ninezeroseven_WP_v4.0.18/Documentation/assets/js/README.md",
@@ -560,12 +582,10 @@
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/templates/header.php",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/gulpfile.js",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/manifest.json",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets/styles/main.css",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/styles/main.scss",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/lib/extras.php",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/templates/head.php",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/source/styles/common/_global.scss",
-		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/bower.json",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/lib/assets.php",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/package.json",
 		"/C/Users/RiMaStInO/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
@@ -644,37 +664,7 @@
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/lib/assets.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/home.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/404.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/assets/assets.json",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/lib/setup.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/styles.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/search-form.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/search-buildings.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/layout/_modal.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/site/_layout.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/video.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/bottoni.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/header.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/preventivo.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/content-buildings.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/brochure.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/angular/directives/map.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/site/_search.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/gallery.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/head.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/api.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/plant.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_frt_columns.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/pug/search.pug",
-		"/Users/edograndinetti/Sites/bspkn/site/build/contact.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/content.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/buildings-archive-image.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/ajax.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/icons.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/archive-buildings.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_frt_quotes.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/facebook.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/pug/facebook.pug",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_frt_container_gallery.scss"
+		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/assets/assets.json"
 	],
 	"find":
 	{
@@ -694,6 +684,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"draggable",
+			"giulietta/",
+			"giulietta.dnative.com",
+			"giulietta.dinative.com",
+			"WP_CONTENT_URL",
+			"WP_CONTENT_DIR",
+			"wp_initial_constants",
+			"WP_CONTENT_DIR",
+			"wp-content",
+			"'WP_CONTENT_DIR'",
+			"if ( !defined('WP_CONTENT_DIR') )",
+			"padding: 20px;",
+			"wpb_wrapper",
+			"textarea",
+			"vc_btn",
+			"custom",
+			"send",
+			"message",
+			"nome",
+			"subject",
+			"name",
+			"custom",
 			"jurgita.dnative.com",
 			"dist/main.css",
 			"dist/",
@@ -799,29 +811,7 @@
 			"obligatorio",
 			"ordery",
 			"if",
-			"images",
-			"align-self",
-			"container_text_features",
-			"100%6",
-			"golden",
-			"49",
-			"<?php echo 40 * $m; ?>",
-			" duration=\"440\"",
-			"primary",
-			"0.6",
-			"320",
-			"position: a",
-			"attachment",
-			"@extend %container",
-			"container property_list",
-			"property_list container",
-			" property_list",
-			"property_list",
-			"more",
-			"height-duration=\"0.5\" ",
-			"second_gallery",
-			"sub_title",
-			"sub"
+			"images"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -829,6 +819,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"www.giuliettavintagepizza.it",
+			"Invia",
+			"Messaggio",
+			"Nome",
+			"Oggetto",
+			"nome",
 			"jurgitajasiunaite.com",
 			"assets",
 			"$scope.posts",
@@ -873,345 +869,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/bspkn/.env",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 826,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								42,
-								42
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "bower.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 383,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										381,
-										382
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										0,
-										1
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "composer.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 782,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										781,
-										782
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										0,
-										1
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
