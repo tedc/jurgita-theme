@@ -1,10 +1,18 @@
 <div class="pop-up">
-    <div class="container master" id="master">
-        <span class="pattern"></span>
-        <span class="square"></span>
-        <div class="master-content" data-scrollmagic='{"tween":[{"y": 50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'>
-            <?php the_sub_field('testo_master'); ?>
-            <a href="<?php bloginfo('url'); ?>" class="logo" data-scrollmagic='{"tween":[{"y": -50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'>
+    <div class="blur"></div>
+    <div class="pop-up__box">
+        <div class="pop-up__box-content">
+            <span class="close">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </span>
+            <figure>
+                <img src="<?php the_sub_field('immagine'); ?>">
+            </figure>
+            <p><?php the_sub_field('testo'); ?></p>
+            <a href="<?php the_sub_field('link');?>" class="btn min-width"><?php the_sub_field('testo_bottone');?></a>
+
+            <a href="<?php bloginfo('url'); ?>">
                 <span class="j">J</span>
                 <span class="j">J</span>
             </a>
