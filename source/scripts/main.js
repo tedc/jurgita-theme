@@ -287,21 +287,22 @@
     }
 
     function productImg() {
-      
-        $.ajaxSetup ({
+
+        $.ajaxSetup({
             // Disable caching of AJAX responses
             cache: false
         });
         var isAnim = false;
         $('.single-image-slider-nav .zoom').click(function (e) {
-            if($(this).hasClass('active')){
+            if ($(this).hasClass('active')) {
                 return false;
             }
             $('.active').removeClass('active');
             $(this).addClass('active');
             if (isAnim) {
                 return false
-            };
+            }
+            ;
             isAnim = true;
             e.preventDefault();
             var photo_fullsize = $(this).find('img').attr('src').replace('-180x180', '-600x600');
@@ -429,12 +430,13 @@
     }
 
     function popup() {
-        var test = sessionStorage.getItem("first");
-            if (!test) {
-            $('.pop-up').addClass('active');
 
+        var test = sessionStorage.getItem("first");
+        if (test) {
+            $('.pop-up').addClass('active');
+            sessionStorage.removeItem("first");
         }
-        $('.pop-up--close').on('click', function(){
+        $('.pop-up--close').on('click', function () {
             $('.pop-up').removeClass('active');
             sessionStorage.setItem("first");
         });
