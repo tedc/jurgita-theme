@@ -51,8 +51,8 @@ $padding_popup: 60px;
         position: absolute;
         right: 0;
         top: 0;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         background-color: $square-master;
 
         .toggle-line {
@@ -61,8 +61,8 @@ $padding_popup: 60px;
             background-color: $w;
             position: absolute;
             left: 0;
-            top: 0;
-            width: 100%;
+            bottom: 50%;
+            width: 20px;
         }
         .toggle-line:nth-child(1) {
             transform: rotate(-45deg);
