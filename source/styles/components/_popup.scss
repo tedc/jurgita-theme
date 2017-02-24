@@ -46,4 +46,14 @@ $padding_popup: 60px;
         left: 50%;
         transform: translate3d(-50%, 50%, 0);
     }
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background-color: $square-master;
+
+    }
 }
