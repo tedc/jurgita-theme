@@ -432,8 +432,9 @@
         console.log(sessionStorage.getItem("first"));
         var test = sessionStorage.getItem("first");
         if (test == false) {
+            alert('test');
             $('.pop-up').hide();
-            console.log('dentro if '+sessionStorage.getItem("first"));
+            console.log('dentro if '+test);
         }
         $('.pop-up--close').on('click', function(){
             $('.pop-up').hide();
