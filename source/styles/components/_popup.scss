@@ -65,10 +65,10 @@ $padding_popup: 60px;
             width: 100%;
         }
         .toggle-line:nth-child(1) {
-            transform: rotate(-45deg) translateY(50%);
+            transform: rotate(-45deg);
         }
         .toggle-line:nth-child(2) {
-            transform: rotate(45deg) translateY(50%);
+            transform: rotate(45deg);
             margin-bottom: 0;
         }
 
