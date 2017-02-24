@@ -5,14 +5,27 @@ $padding_popup: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    .blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: hsla(0,0%,100%,0.9);
+        height: 100%;
+        z-index: 101;
+    }
     &__box {
         border: 4px solid $yellow;
         position: relative;
         padding: em($padding_popup);
         margin-left: 50px;
         margin-right: 50px;
-
+        z-index: 102;
+        background-color: $w;
         .logo {
             display: block;
             position: absolute;
@@ -52,6 +65,7 @@ $padding_popup: 60px;
 
     .close {
         position: absolute;
+        cursor: pointer;
         right: 0;
         top: 0;
         width: 30px;
