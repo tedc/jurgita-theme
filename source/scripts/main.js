@@ -434,7 +434,6 @@
         if (!test) {
             $('.pop-up').addClass('active');
             sessionStorage.setItem("first", "true");
-
             $('.pop-up--close').on('click', function () {
                 $('.pop-up').removeClass('active');
 

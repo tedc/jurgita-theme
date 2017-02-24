@@ -109,7 +109,7 @@ var cssTasks = function(filename) {
       return postcss(
       [
           autoprefixer({
-              browsers: ['> 1%', 'ff > 3', 'ie >= 8'] 
+              browsers: ['> 1%', 'ff > 3', 'ie >= 8', 'Safari >= 6']
           })
       ]
       )
