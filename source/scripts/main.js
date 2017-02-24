@@ -429,15 +429,16 @@
     }
 
     function popup() {
-        sessionStorage.setItem("first",true);
-        console.log(sessionStorage.getItem("first"));
-        if (sessionStorage.getItem("first") == false) {
+        localStorage.setItem("first",true);
+        console.log(localStorage.getItem("first"));
+        if (localStorage.getItem("first") == false) {
             $('.pop-up').hide();
+            console.log('dentro if '+localStorage.getItem("first"));
         }
         $('.pop-up--close').on('click', function(){
             $('.pop-up').hide();
-            sessionStorage.setItem("first",false);
-            console.log(sessionStorage.getItem("first"));
+            localStorage.setItem("first",false);
+            console.log(localStorage.getItem("first"));
         });
     }
 
