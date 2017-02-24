@@ -431,6 +431,7 @@
 
     function popup() {
 
+        
         var test = sessionStorage.getItem("first");
         if (test == "true") {
             $('.pop-up').removeClass('active');
