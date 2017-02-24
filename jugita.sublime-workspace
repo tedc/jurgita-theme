@@ -4,8 +4,36 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
 				"font",
-				"font-size"
+				"font-weight"
 			],
 			[
 				"transi",
@@ -14,10 +42,6 @@
 			[
 				"fle",
 				"flex-direction"
-			],
-			[
-				"text",
-				"text-transform"
 			],
 			[
 				"whi",
@@ -208,10 +232,6 @@
 				"after"
 			],
 			[
-				"padding",
-				"padding-top"
-			],
-			[
 				"frt_",
 				"frt_columns"
 			],
@@ -352,10 +372,6 @@
 				"beforeLoader"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"con",
 				"content"
 			],
@@ -382,10 +398,6 @@
 			[
 				"max-",
 				"max-width"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"bo",
@@ -537,11 +549,51 @@
 	],
 	"file_history":
 	[
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp39921/var/www/dnative.com/dev/prod/verga/web/app/plugins/contact-form-7/wp-contact-form-7.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp26134/var/www/dnative.com/dev/prod/verga/web/app/plugins/contact-form-7/wp-contact-form-7.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp23395/var/www/dnative.com/dev/prod/verga/web/wp-config.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp12454/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp49122/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/lib/support.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp49666/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/lib/utilities.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp39165/var/www/websherpa.it/www/config/application.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp22268/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/single.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp48040/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/functions.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp13472/var/www/dnative.com/dev/prod/verga/config/application.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp36539/var/www/dnative.com/dev/prod/verga/web/app/themes/verga-theme/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp37533/var/www/bspkn.it/www/prod/new/web/app/themes/bespoken-theme/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp34836/var/www/dnative.com/dev/prod/verga/web/app/themes/verga-theme/README.md",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp24704/var/www/bspkn.it/www/prod/new/web/app/themes/bespoken-theme/package.json",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp09065/var/www/bspkn.it/www/prod/new/web/app/themes/bespoken-theme/gulpfile.js",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp56996/public_html/app/themes/jurgita-theme/assets/fonts/jurgita-icons.eot",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp54851/public_html/app/themes/jurgita-theme/source/fonts/template.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp14204/var/www/dnative_ftp/axl/wp-content/themes/axl/partials/flexible-content.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp04997/wp-content/themes/axl/partials/flex-evidenza.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp05004/wp-content/themes/axl/dist/styles/main.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp59624/wp-content/themes/axl/dist/styles/main.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp50403/wp-content/themes/axl/partials/flex-slider.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp25218/wp-content/themes/axl/partials/flex-slider.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp00938/giuliettavintagepizza.it/wp-config.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp25568/wp-content/themes/axl/dist/styles/main.css",
+		"/C/Users/RiMaStInO/Desktop/Lavori/Giulietta/db/Sql1060537_4.sql",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp50377/giuliettavintagepizza.it/wp-includes/default-constants.php",
+		"/C/Users/RiMaStInO/Desktop/giulietta.sql",
+		"/C/Users/RiMaStInO/Desktop/Lavori/AxL/db/aperelle.sql",
+		"/C/Users/RiMaStInO/Desktop/Lavori/AxL/aperelle.sql",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp14992/wp-config.php",
+		"/C/Users/RiMaStInO/Desktop/Lavori/AxL/axl.sql",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp01952/public_html/app/themes/jurgita-theme/assets/styles/main.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp00239/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp20488/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/E/aperelle-backend 2/src/assets/scss/components/_header.scss",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp21439/var/www/dnative_ftp/axl/wp-content/themes/axl/partials/flex-hero.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp16265/giuliettavintagepizza.it/wp-config.php",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp54452/giuliettavintagepizza.it/web.config",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp15648/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
+		"/C/Users/RiMaStInO/AppData/Local/Temp/scp34063/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
 		"/C/Users/RiMaStInO/AppData/Local/Temp/scp31147/giuliettavintagepizza.it/web.config",
 		"/C/Users/RiMaStInO/AppData/Local/Temp/scp04479/public_html/app/themes/jurgita-theme/assets/scripts/main.js",
 		"/C/Users/RiMaStInO/Desktop/RiMaStInO/wamp/www/jurgita/web/app/themes/jurgita-theme/assets/styles/main.css",
 		"/C/Users/RiMaStInO/AppData/Local/Temp/scp14085/giuliettavintagepizza.it/wp-config.php",
-		"/C/Users/RiMaStInO/Desktop/giulietta.sql",
 		"/C/Users/RiMaStInO/AppData/Local/Temp/scp01747/giuliettavintagepizza.it/wp-includes/default-constants.php",
 		"/C/Users/RiMaStInO/AppData/Local/Temp/scp52381/giuliettavintagepizza.it/wp-settings.php",
 		"/C/Users/RiMaStInO/AppData/Local/Temp/scp20537/var/www/websherpa.it/www/prod/app/themes/massive-dynamic/style.css",
@@ -624,47 +676,7 @@
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/settings.php",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/node_modules/angular-cookie-law/dist/angular-cookie-law.js",
 		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/app.coffee",
-		"/Users/edograndinetti/Sites/bspkn/phonetica/wordpress/web/app/themes/phonetica-theme/source/coffee/angular/animations/slideToggle.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/extras/scripts.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/services.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/content-single-servizi.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/taxonomy-cantieri.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/page-header.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/content-servizi.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/ajax-cantieri.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/archivio-storico.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/ajax-buildings.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/angular/resources/more.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/layout/_menu.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/angular/directives/index.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/assets/manifest.json",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/form-header.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_container_full_services.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/site/_blog.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/page.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/content-page.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/immobili-bck.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/appuntamento.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_container_single_service.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/buildings-header.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/angular/resources/search.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/angular/models/search.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/parentadv.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/angular/directives/filters.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/coffee/angular/directives/form.coffee",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/content/_animations.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/source/sass/components/_dashed_line.scss",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/dotations.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/index.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/wp-config.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/buildings/gallery-wip.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/galleria.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/builder/popup.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/gulpfile.js",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/lib/assets.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/templates/home.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/404.php",
-		"/Users/edograndinetti/Sites/bspkn/ferretti/web/app/themes/ferretti-theme/assets/assets.json"
+		"/Users/edograndinetti/Sites/bspkn/phonetica/wordpress/web/app/themes/phonetica-theme/source/coffee/angular/animations/slideToggle.coffee"
 	],
 	"find":
 	{
@@ -684,6 +696,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"clearfix",
+			"249",
+			"249px",
+			"249px);",
+			"height:calc(100vh - 249px);",
+			"height: calc(100vh - 249px);",
+			"min-height: calc(100vh - 249px);",
+			"public/",
+			"new.aperelle.it",
+			"axl.dnative.com",
+			"height:calc",
+			"calc",
+			"calc(100%+20px)",
+			"form-container-classic",
+			"inputs-container",
+			"giuliettavintagepizza.it/wp-content/",
+			"wp-content/uploads/",
+			"upload/",
+			"iconbox-side",
 			"draggable",
 			"giulietta/",
 			"giulietta.dnative.com",
@@ -792,26 +823,7 @@
 			"container_quote",
 			"frt_form",
 			".container_quote_mediaobject",
-			"container_text_mediaobject",
-			"{{{post.id}}",
-			"post.id",
-			"_content",
-			"gallery",
-			".cols_gallery_content ",
-			"height:",
-			"post.id",
-			"facebook",
-			"print_r",
-			"get_tax_header_image",
-			"<?php the_permalink(); ?>",
-			"bottom",
-			"&_f",
-			"bordercolo",
-			"grauito",
-			"obligatorio",
-			"ordery",
-			"if",
-			"images"
+			"container_text_mediaobject"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -819,6 +831,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"www.aperelle.it",
+			"new.aperelle.it",
+			"giuliettavintagepizza.it/public/wp-content/",
 			"www.giuliettavintagepizza.it",
 			"Invia",
 			"Messaggio",
@@ -951,7 +967,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 261.0,
+	"side_bar_width": 140.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

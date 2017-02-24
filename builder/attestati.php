@@ -3,6 +3,7 @@
 <div class="carousel_list" data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.65, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'>
     <?php $query = new WP_Query(array(
         "post_type" => "attestati",
+        "posts_per_page" => -1,
     )); ?>
     <?php while ($query->have_posts()) : $query->the_post(); ?>
         <div class="carousel-item">
@@ -23,6 +24,7 @@
     <div class="carousel_content">
         <?php $query = new WP_Query(array(
         "post_type" => "attestati",
+            "posts_per_page" => -1,
         ));  ?>
     <?php while ($query->have_posts()) :
         $query->the_post();  ?>
