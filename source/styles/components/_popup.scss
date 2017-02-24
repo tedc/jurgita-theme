@@ -58,6 +58,7 @@ $padding_popup: 60px;
         .toggle-line {
             display: block;
             height: em(4px);
+            margin-bottom: em(2px);
             background-color: $w;
         }
         .toggle-line:nth-child(1) {
