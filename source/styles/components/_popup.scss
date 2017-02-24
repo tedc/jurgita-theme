@@ -58,19 +58,17 @@ $padding_popup: 60px;
         .toggle-line {
             display: block;
             height: em(4px);
-            margin-bottom: em(2px);
             background-color: $w;
             position: absolute;
             left: 0;
             top: 0;
             width: 100%;
-            transform: translateY( 50%);
         }
         .toggle-line:nth-child(1) {
-            transform: rotate(-45deg);
+            transform: rotate(-45deg) translateY(50%);
         }
         .toggle-line:nth-child(2) {
-            transform: rotate(45deg);
+            transform: rotate(45deg) translateY(50%);
             margin-bottom: 0;
         }
 
