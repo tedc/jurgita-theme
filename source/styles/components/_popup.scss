@@ -72,7 +72,7 @@ $padding_popup: 60px;
         transform: translate3d(-50%, 50%, 0);
     }
 
-    .close {
+    &--close {
         position: absolute;
         cursor: pointer;
         right: 0;

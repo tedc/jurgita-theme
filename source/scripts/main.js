@@ -32,6 +32,7 @@
                 intro();
                 faq();
                 compasso();
+                popup();
             }
         }
     };
@@ -427,9 +428,11 @@
         startAnim();
     }
 
-    function popup () {
+    function popup() {
         var first = true;
-        $('')
+        $('pop-up--close').on('click', function(){
+            $('pop-up').hide();
+        });
     }
 
 })(jQuery); // Fully reference jQuery after this point.

@@ -2,7 +2,7 @@
     <div class="blur"></div>
     <div class="pop-up__box">
         <div class="pop-up__box-content">
-            <span class="close">
+            <span class="pop-up--close">
                 <span class="toggle-line"></span>
                 <span class="toggle-line"></span>
             </span>
