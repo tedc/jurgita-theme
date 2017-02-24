@@ -1,3 +1,4 @@
+$padding_popup: 60px;
 .pop-up {
     width: 100%;
     height: 100vh;
@@ -7,13 +8,15 @@
 
     &__box {
         border: 2px solid $gold;
+        position: relative;
+        padding: em($padding_popup);
 
         .logo {
             display: block;
             position: absolute;
-            height: 70px;
-            width: 70px;
-            left: -50px;
+            height: em(70px);
+            width: em(70px);
+            left: calc(-$padding_popup - 35px);
             top: calc(50% - 35px);
             z-index: 6;
         }
