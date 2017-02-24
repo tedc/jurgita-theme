@@ -430,17 +430,17 @@
     }
 
     function popup() {
-
-        
         var test = sessionStorage.getItem("first");
-        if (test == "true") {
-            $('.pop-up').removeClass('active');
-           /* sessionStorage.removeItem("first");*/
-        }
-        $('.pop-up--close').on('click', function () {
-            $('.pop-up').removeClass('active');
+        if (!test) {
+            $('.pop-up').addClass('active');
             sessionStorage.setItem("first", "true");
-        });
+
+            $('.pop-up--close').on('click', function () {
+                $('.pop-up').removeClass('active');
+
+            });
+        }
+
     }
 
 })(jQuery); // Fully reference jQuery after this point.
