@@ -429,7 +429,6 @@
     }
 
     function popup() {
-        localStorage.setItem("first",true);
         console.log(localStorage.getItem("first"));
         if (localStorage.getItem("first") == false) {
             $('.pop-up').hide();
