@@ -16,7 +16,7 @@ $padding_popup: 60px;
             position: absolute;
             height: em(70px);
             width: em(70px);
-            left: calc(-#{$padding_popup} - 35px);
+            left: 35px;
             top: calc(50% - 35px);
             z-index: 6;
         }
