@@ -60,6 +60,11 @@ $padding_popup: 60px;
             height: em(4px);
             margin-bottom: em(2px);
             background-color: $w;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            transform: translateY( 50%);
         }
         .toggle-line:nth-child(1) {
             transform: rotate(-45deg);
