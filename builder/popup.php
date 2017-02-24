@@ -11,7 +11,7 @@
             </figure>
             <p class="pop-up--date"><?php the_sub_field('date'); ?></p>
             <span class="pop-up--text"><?php the_sub_field('testo'); ?></span>
-            <a href="<?php the_sub_field('link');?>" class="btn"><?php the_sub_field('testo_bottone');?></a>
+            <a href="<?php the_sub_field('link');?>" class="btn" target="_blank"><?php the_sub_field('testo_bottone');?></a>
 
             <a href="<?php bloginfo('url'); ?>" class="logo">
                 <span class="j">J</span>
