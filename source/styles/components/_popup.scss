@@ -61,10 +61,10 @@ $padding_popup: 60px;
             background-color: $w;
         }
         .toggle-line:nth-child(1) {
-            transform: translate3d(0,-.375em,0) rotate(-45deg)
+            transform: rotate(-45deg)
         }
         .toggle-line:nth-child(2) {
-            transform: translate3d(0,-.375em,0) rotate(45deg)
+            transform: rotate(45deg)
         }
 
     }
