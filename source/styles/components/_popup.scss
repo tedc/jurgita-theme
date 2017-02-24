@@ -62,10 +62,11 @@ $padding_popup: 60px;
             background-color: $w;
         }
         .toggle-line:nth-child(1) {
-            transform: rotate(-45deg)
+            transform: rotate(-45deg);
         }
         .toggle-line:nth-child(2) {
-            transform: rotate(45deg)
+            transform: rotate(45deg);
+            margin-bottom: 0;
         }
 
     }
