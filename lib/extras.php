@@ -32,3 +32,9 @@ function excerpt_more()
   return ' &hellip;';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+/*
+function _add_https( $src ){
+   return str_replace('http:', 'https:', $src);
+}
+add_filter( 'script_loader_src', __NAMESPACE__.'\\_add_https', 15, 1 );
+add_filter( 'style_loader_src', __NAMESPACE__.'\\_add_https', 15, 1 );*/
