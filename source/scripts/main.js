@@ -429,7 +429,7 @@
 
     function popup () {
         var first = true;
-
+        $('')
     }
 
 })(jQuery); // Fully reference jQuery after this point.

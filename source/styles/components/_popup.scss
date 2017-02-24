@@ -51,16 +51,19 @@ $padding_popup: 60px;
     }
     &--date {
         text-align: center;
-        font-size: em(40px);
-        padding-top: em(20px, 40px);
+        font-size: em(20px);
+        padding-top: em(10px, 20px);
         color: $gold;
         font-family: $third-font;
+        @include breakpoint($bp) {
+            font-size: em(40px);
+            padding-top: em(20px, 40px);
+        }
     }
     &--text {
         text-align: center;
         font-size: em(20px);
     }
-
 
     .btn {
         position: absolute;
