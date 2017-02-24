@@ -7,7 +7,7 @@ $padding_popup: 60px;
     justify-content: center;
 
     &__box {
-        border: 2px solid $gold;
+        border: 2px solid $yellow;
         position: relative;
         padding: em($padding_popup);
 
@@ -34,7 +34,16 @@ $padding_popup: 60px;
         }
     }
 
-    p {
+    .pop-up--text {
         text-align: center;
+        font-size: em(20px);
+        padding-top: em(20px, 20px);
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate3d(-50%, 50%, 0);
     }
 }
