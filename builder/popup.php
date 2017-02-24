@@ -3,9 +3,8 @@
     <div class="pop-up__box">
         <div class="pop-up__box-content">
             <span class="close">
-                <!--<span class="toggle-line"></span>
-                <span class="toggle-line"></span>-->
-                <p>&#x2716;</p>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
             </span>
             <figure>
                 <img src="<?php the_sub_field('immagine'); ?>">
