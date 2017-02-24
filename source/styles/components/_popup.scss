@@ -49,12 +49,17 @@ $padding_popup: 60px;
             display: block;
         }
     }
-
-    .pop-up--text {
+    &--date {
+        text-align: center;
+        font-size: em(40px);
+        padding-top: em(20px, 40px);
+        color: $gold;
+    }
+    &--text {
         text-align: center;
         font-size: em(20px);
-        padding-top: em(20px, 20px);
     }
+
 
     .btn {
         position: absolute;
