@@ -4,7 +4,7 @@
 	top: 0;
 	left: 0;
 	width: $f;
-	z-index: 9999;
+	z-index: 9996;
 	background-color: $w;
 	display: flex;
 	justify-content: space-between;
@@ -214,7 +214,7 @@
 	bottom: 0;
 	width: em(70px);
 	display: none;
-	z-index: 9998;
+	z-index: 9995;
 	&:before {
 		content: '';
 		background-color: $w;
