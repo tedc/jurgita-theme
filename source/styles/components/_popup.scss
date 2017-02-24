@@ -20,6 +20,8 @@ $padding_popup: 60px;
             top: calc(50% - 35px);
             z-index: 6;
         }
+
+
     }
     figure {
         width: auto;
@@ -30,5 +32,9 @@ $padding_popup: 60px;
             height:	auto;
             display: block;
         }
+    }
+
+    p {
+        text-align: center;
     }
 }

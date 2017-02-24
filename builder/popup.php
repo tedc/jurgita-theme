@@ -10,7 +10,7 @@
                 <img src="<?php the_sub_field('immagine'); ?>">
             </figure>
             <p><?php the_sub_field('testo'); ?></p>
-            <a href="<?php the_sub_field('link');?>" class="btn min-width"><?php the_sub_field('testo_bottone');?></a>
+            <a href="<?php the_sub_field('link');?>" class="btn"><?php the_sub_field('testo_bottone');?></a>
 
             <a href="<?php bloginfo('url'); ?>" class="logo">
                 <span class="j">J</span>
