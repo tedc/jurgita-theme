@@ -10,6 +10,8 @@ $padding_popup: 60px;
         border: 4px solid $yellow;
         position: relative;
         padding: em($padding_popup);
+        margin-left: 50px;
+        margin-right: 50px;
 
         .logo {
             display: block;
