@@ -9,7 +9,7 @@
             <figure>
                 <img src="<?php the_sub_field('immagine'); ?>">
             </figure>
-            <p class="pop-up--text"><?php the_sub_field('testo'); ?></p>
+            <span class="pop-up--text"><?php the_sub_field('testo'); ?></span>
             <a href="<?php the_sub_field('link');?>" class="btn"><?php the_sub_field('testo_bottone');?></a>
 
             <a href="<?php bloginfo('url'); ?>" class="logo">
