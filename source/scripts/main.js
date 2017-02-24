@@ -429,9 +429,13 @@
     }
 
     function popup() {
-        var first = true;
+        sessionStorage.setItem("first",true);
+        if (sessionStorage.getItem("first") == false) {
+            $('.pop-up').hide();
+        }
         $('.pop-up--close').on('click', function(){
             $('.pop-up').hide();
+            sessionStorage.setItem("first",false);
         });
     }
 
