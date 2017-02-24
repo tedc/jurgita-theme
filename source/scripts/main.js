@@ -432,13 +432,13 @@
     function popup() {
 
         var test = sessionStorage.getItem("first");
-        if (test) {
-            $('.pop-up').addClass('active');
-            sessionStorage.removeItem("first");
+        if (test == "true") {
+            $('.pop-up').removeClass('active');
+           /* sessionStorage.removeItem("first");*/
         }
         $('.pop-up--close').on('click', function () {
             $('.pop-up').removeClass('active');
-            sessionStorage.setItem("first");
+            sessionStorage.setItem("first", "true");
         });
     }
 

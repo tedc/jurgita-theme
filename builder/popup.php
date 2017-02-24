@@ -1,4 +1,4 @@
-<div class="pop-up">
+<div class="pop-up active">
     <div class="blur"></div>
     <div class="pop-up__box">
         <div class="pop-up__box-content">
