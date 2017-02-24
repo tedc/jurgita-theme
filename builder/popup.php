@@ -12,7 +12,7 @@
             <p><?php the_sub_field('testo'); ?></p>
             <a href="<?php the_sub_field('link');?>" class="btn min-width"><?php the_sub_field('testo_bottone');?></a>
 
-            <a href="<?php bloginfo('url'); ?>">
+            <a href="<?php bloginfo('url'); ?>" class="logo">
                 <span class="j">J</span>
                 <span class="j">J</span>
             </a>
