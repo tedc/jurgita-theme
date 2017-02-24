@@ -430,8 +430,8 @@
 
     function popup() {
         var first = true;
-        $('pop-up--close').on('click', function(){
-            $('pop-up').hide();
+        $('.pop-up--close').on('click', function(){
+            $('.pop-up').hide();
         });
     }
 
