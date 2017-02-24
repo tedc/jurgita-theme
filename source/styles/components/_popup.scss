@@ -63,12 +63,13 @@ $padding_popup: 60px;
             left: 0;
             bottom: 50%;
             width: 20px;
+            transform-origin: 100% 100%;
         }
         .toggle-line:nth-child(1) {
-            transform: rotate(-45deg);
+            transform: rotate(-45deg) translate3d(50%, 50%, 0);
         }
         .toggle-line:nth-child(2) {
-            transform: rotate(45deg);
+            transform: rotate(45deg) translate3d(50%, 50%, 0);
             margin-bottom: 0;
         }
 
