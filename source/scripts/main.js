@@ -429,17 +429,14 @@
     }
 
     function popup() {
-
         var test = sessionStorage.getItem("first");
-        if (test) {
-            alert('test');
-            $('.pop-up').hide();
-            console.log('dentro if '+test);
+            if (!test) {
+            $('.pop-up').addClass('active');
+
         }
         $('.pop-up--close').on('click', function(){
-            $('.pop-up').hide();
+            $('.pop-up').removeClass('active');
             sessionStorage.setItem("first");
-            console.log(sessionStorage.getItem("first"));
         });
     }
 
