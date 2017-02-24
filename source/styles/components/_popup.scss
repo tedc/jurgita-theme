@@ -57,10 +57,10 @@ $padding_popup: 60px;
 
         .toggle-line {
             display: block;
-            height: em(4px);
+            height:4px;
             background-color: $w;
             position: absolute;
-            left: 0;
+            left: -5px;
             bottom: 50%;
             width: 20px;
             transform-origin: 100% 100%;
