@@ -36,3 +36,16 @@
 		$date .= '</span>';
 		echo $date;
 	}
+	function data_corsi_form($s, $e) {
+		$start = new DateTime($s);
+		$end = new DateTime($e);
+		$date = '';
+		if($start->format('F') === $end->format('F') && $start->format('Y') === $end->format('Y')) :
+			$date .= $start->format('d') . ' / ' . $end->format('d') . ' '.date_i18n('F', strtotime($s)).' '.$start->format('Y');
+		elseif($start->format('F') != $end->format('F') && $start->format('Y') === $end->format('Y')) :
+			$date .= $start->format('d') . ' '.date_i18n('F', strtotime($s)). ' / ' . $end->format('d') . ' '.date_i18n('F', strtotime($e)).' '.$start->format('Y');
+		else :
+			$date .= $start->format('d') . ' '.date_i18n('F', strtotime($s)). ' ' .$start->format('Y') . ' / ' . $end->format('d') . ' '.date_i18n('F', strtotime($e)).' '.$end->format('Y');
+		endif;
+		echo $date;
+	}

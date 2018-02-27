@@ -231,6 +231,13 @@
 
 }
 
+.woocommerce-loop-product__title {
+    text-align: center;
+    color: $base_color;
+    font-family: $third-font;
+    padding-bottom: em(20px);
+}
+
 .price, %price {
     line-height: 1;
     padding-bottom: em(40px);

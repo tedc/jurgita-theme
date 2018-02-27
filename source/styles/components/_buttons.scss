@@ -8,6 +8,8 @@
     line-height: 1;
     font-size: em(16px);
     transition: background-color $speed;
+    border-radius: 0;
+    @include appearance(none);
     p & {
         font-size: em(16px, 18px);
     }
@@ -44,6 +46,15 @@
         background-color: $gold;
         color: $w;
 
+    }
+    .page-header--black & {
+        border-color: $w;
+        background-color: transparent;
+        color: $w;
+        &:hover {
+            background-color: $w;
+            color: $gold;
+        }
     }
 }
 

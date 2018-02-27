@@ -19,7 +19,10 @@
 		height: em(70px);
 		display: flex;
 		align-items: center;
-		@include normalize_padding;
+		padding: {
+            left: em(40px);
+            right: em(40px);
+        }
 		&-text {
 			font-size: em(13px);
 			letter-spacing: $letter-spacing-large;
@@ -31,7 +34,7 @@
 					color: $b;
 				}
 			}
-			background-color: $gold;
+			background-color: lighten($gold, 10%);
 		}
 		&.btn-cart {
 			margin-left: 2px;
@@ -224,6 +227,9 @@
 	}
 	@include breakpoint($bp) {
 		display: inherit;
+	}
+	.post-type-archive-product & {
+		display: none !important;
 	}
 	.blur {
 		position: absolute;
@@ -547,7 +553,7 @@
 }
 
 [class^="icon-cart"], [class*=" icon-cart"] {
-	font-size: em(20px);
+	font-size: 20px;
 	/*margin-left: 1em;*/
 }
 

@@ -141,3 +141,51 @@
         }
     }
 }
+
+#iubenda-cs-banner {
+    background-color: $b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: $w;
+    width: 100%;
+    z-index: 99999998;
+    @include normalize_padding;
+    padding: {
+        top: 40px;
+        bottom: 40px;
+    }
+    a {
+        color: $w;
+        text-decoration: underline;
+    }
+}
+.iubenda-cs-content {
+    text-align: right;
+}
+.iubenda-banner-content {
+    text-align: left;
+}
+
+.accepted-payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: em(20px);
+    li {
+        &:before {
+            display: none;
+        }
+        &.paypal {
+            span {
+                height: 20px;
+            }
+        }
+        &.cash-on-delivery {
+            span {
+                height: 20px;
+                width: 35px;
+            }
+        }
+    }
+}

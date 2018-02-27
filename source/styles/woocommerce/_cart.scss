@@ -215,6 +215,12 @@ td.product-name {
         }
     }
 }
+.woocommerce-page table.shop_table .product-price {
+    display: none; 
+    @include breakpoint(720px) {
+        display: inherit;
+    }
+}
 .product-quantity {
     .quantity {
         margin: 0 auto;
@@ -284,8 +290,25 @@ td.product-name {
     }
 }
 
+.cart_item {
+    td {
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        }
+        @include breakpoint(720px) {
+            padding: {
+                top: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
 .product-price, .product-subtotal {
-    padding-bottom: 0!important;
+    @include breakpoint(720px) {
+        padding-bottom: 0!important;
+    }
     .amount {
         font-size: em(22px)!important;
         color: $gold;

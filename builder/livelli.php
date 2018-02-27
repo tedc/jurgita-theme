@@ -3,7 +3,7 @@
 $terms = get_sub_field('tipologie');
 if ($terms): ?>
 
-    <div class="grid-4 container"  data-scrollmagic='{"tween":[{"x": -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
+    <div class="grid-4 container"<?php if(!is_handheld()): ?> data-scrollmagic='{"tween":[{"x": -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'<?php endif; ?>>
     <?php foreach ($terms as $term): ?>
         <div class="col-2 col-programma">
             <h2 class="title title-corso"><?php echo $term->name; ?></h2>

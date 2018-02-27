@@ -1,6 +1,6 @@
 
 <?php $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\'' : 'data-scrollmagic=\'{"tween":[{ "x" : 50, "opacity" : 0}, {"x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}\''; ?>
-<article class="col-2" <?php post_class(); echo $dataScrollMagic; ?>>
+<article class="col-2" <?php post_class(); echo $dataScrollMagic && !is_handheld(); ?>>
     <div class="container-img">
         <figure>
             <?php the_post_thumbnail('post-size') ?>

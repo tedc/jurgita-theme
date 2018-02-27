@@ -89,19 +89,18 @@
 
         .title {
             text-align: left;
-            padding-bottom: em(30px);
-            padding-top: em(30px);
+            padding-top: em(20px, 35px);
+            padding-bottom: em(30px, 35px);
             font-size: em(35px);
-            @include breakpoint($bp) {
-                padding-bottom: em(50px);
-                padding-top: 0px;
-            }
         }
 
         .entry-title {
             @extend %title-post;
-            font-size: em(40px);
-            padding: em(45px, 40px) 0;
+            font-size: em(24px);
+            letter-spacing: 0;
+            @include breakpoint(850px) {
+                font-size: em(30px);
+            }
         }
 
         .entry-summary {
@@ -166,8 +165,11 @@
 
         .entry-title {
             @extend %title-post;
-            font-size: em(40px);
-            padding-bottom: em(35px, 40px);
+            font-size: em(24px);
+            letter-spacing: 0;
+            @include breakpoint(850px) {
+                font-size: em(30px);
+            }
         }
 
         .entry-summary {
@@ -236,7 +238,8 @@
     font-size: em(40px);
     letter-spacing: $letter-spacing-large;
 /*    padding-bottom: em(45px, 40px);*/
-    padding-top: em(45px, 40px);
+    padding-top: em(20px, 40px);
+    padding-bottom: em(30px, 40px);
 }
 .entry-content {
 
@@ -302,6 +305,10 @@
             }
         }
     }
+    img {
+        width: $f !important;
+        height: auto !important;
+    }
 }
 
 %post-head {
@@ -316,9 +323,12 @@
 
 
 %excerpt-post {
-    font-size: em(18px);
+    font-size: em(14px);
     font-family: $main-font;
     color: $base_color;
+    @include breakpoint(850px) {
+        font-size: em(16px);
+    } 
 }
 
 %line-navigation {

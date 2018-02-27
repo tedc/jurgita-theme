@@ -1,4 +1,12 @@
-<?php function main_menu_footer($nav_menu, $args)
+<?php 
+function agile_shortcode($attr) {
+ ob_start();
+ get_template_part('templates/agile', 'form');
+ return ob_get_clean();
+}
+add_shortcode( 'agile_form', 'agile_shortcode' );
+
+function main_menu_footer($nav_menu, $args)
 {
     if ($args->theme_location === 'primary_navigation') :
         ob_start();
@@ -136,3 +144,18 @@ function facebook_at_init()
     add_filter('pre_update_option_facebook_settings', 'update_facebook_settings', 10, 2);
 }
 add_action('init', 'facebook_at_init');
+
+
+add_action('init', 'register_shortcode_dati_workshop');
+ 
+function register_shortcode_dati_workshop(){
+    add_shortcode('dati_workshop', 'stringa_corso');
+}
+ 
+function stringa_corso(){
+    global $post;
+    $inizio = get_field('data_inizio', $post->ID);
+    $fine = get_field('data_fine', $post->ID);
+    $luogo = get_field('luogo', $post->ID);
+    return 'a '.$luogo.', del '.$inizio.' - '.$fine;
+}

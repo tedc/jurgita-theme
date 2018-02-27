@@ -1,4 +1,4 @@
-<div class="body-container" data-scrollmagic='{"tween":[{"opacity" : 0}, {"opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
+<div class="body-container"<?php if(!is_handheld()) : ?> data-scrollmagic='{"tween":[{"opacity" : 0}, {"opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'<?php endif; ?>>
     <div class="compasso">
         <div class="container-img">
             <img src="<?php the_sub_field('immagine'); ?>">

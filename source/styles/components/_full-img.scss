@@ -80,7 +80,8 @@
     top: 0;
     left: 50%;
     margin-left: -1px;
-    height: calc(100% + 20px);
+    //height: calc(100% + 20px);
+    bottom: -20px;
     background-color: $gold;
     cursor: pointer;
     &:after {

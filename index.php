@@ -18,31 +18,39 @@
 <?php endif; ?>
 
 
-<div id="sticky-post" class="sticky grid-4" data-scrollmagic='{"tween":[{"opacity" : 0}, {"opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
+
     <?php
     $sticky = get_option('sticky_posts');
+    $sticky_id = null;
     $args = array(
         'posts_per_page' => 1,
         'post__in' => $sticky,
         'ignore_sticky_posts' => 1
     );
     $query = new WP_Query($args);
-    if ($query->have_posts()) {
+    if ($query->have_posts()) : ?>
+    <div id="sticky-post" class="sticky grid-4" data-scrollmagic='{"tween":[{"opacity" : 0}, {"opacity" : 1}], "triggerHook" : 0.5, "duration" : 0}'>
+       <?php while($query->have_posts()) : 
         $query->the_post();
+        $sticky_id = get_the_ID();
         get_template_part('templates/sticky', get_post_type() != 'post' ? get_post_type() : get_post_format());
-    }
+        endwhile;
+        wp_reset_query(); ?>
+    </div>
+    <?php endif; 
     ?>
-</div>
 
+
+    <?php $query = new WP_Query(array('post__not_in' => array($sticky_id))); ?>
+    <?php if ($query->have_posts()) :  ?>
 
 <div class="container-post grid-4">
-    <?php $query = new WP_Query(array('post__not_in' => get_option('sticky_posts'))); ?>
-    <?php if ($query->have_posts()) :  $col = 0; while ($query->have_posts()) : $query->the_post(); ?>
+        <?php $col = 0; while ($query->have_posts()) : $query->the_post(); ?>
        <?php include(locate_template('templates/content.php', false, false)); ?>
-    <?php  $col++; endwhile; ?>
-    <?php endif; ?>
-</div>
+    <?php  $col++; endwhile;
+        wp_reset_query(); ?>
 
+</div>
 <div class="navigation-page">
 <?php
 global $wp_query;
@@ -60,3 +68,6 @@ echo paginate_links(array(
 ?>
     <div class="line-categories"></div>
 </div>
+<?php endif; ?>
+
+

@@ -22,22 +22,22 @@
         .page-template-template-custom-php & {
             background-color: $header-color;
             padding: {
-                top: em(75px);
-                bottom: em(75px);
+                top: em(25px);
+                bottom: em(25px);
             }
 
             @include breakpoint($bp) {
                 padding: {
-                    top: em(100px);
-                    bottom: em(100px);
+                    top: em(50px);
+                    bottom: em(50px);
                 }
             }
-            @include breakpoint(1024px) {
-                padding: {
-                    top: em(150px);
-                    bottom: em(150px);
-                }
-            }
+            // @include breakpoint(1024px) {
+            //     padding: {
+            //         top: em(150px);
+            //         bottom: em(150px);
+            //     }
+            // }
         }
 
         @include normalize_padding();
@@ -97,7 +97,7 @@
                 @include breakpoint($bp) {
                     display: block;
                     height: $f !important;
-                    left: 50%;
+                    left: 60%;
                     position: absolute;
                     z-index: 0;
                     bottom: 0;
@@ -107,6 +107,12 @@
         }
         .title, .subtitle {
             position: relative;
+        }
+        &--black {
+            background-color: $b !important;
+            .subtitle {
+                color: $w;
+            }
         }
         .cover {
             @include absfull();

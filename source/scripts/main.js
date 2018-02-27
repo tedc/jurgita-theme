@@ -23,6 +23,7 @@
                 price();
                 disableButtonCart();
                 select.init();
+                agile_select.init();
                 productImg();
                 awards();
                 faceSwitcher();
@@ -119,7 +120,7 @@
         },
         styleSelect: function () {
             var self = this;
-            $('select').each(function () {
+            $('select').not('.agile-height-default').each(function () {
                 var $this = $(this),
                     text = $this.find('option:selected').text(),
                     html = '<div class="select"><span class="select-value">' + text + '</span><ul class="select-list">';
@@ -140,6 +141,26 @@
                     window.location.href = window.location.origin + window.location.pathname + '?' + name + '=' + value;
                 })
             })
+        }
+    }
+    var agile_select = {
+        init: function () {
+            this.styleSelect()
+        },
+        styleSelect: function () {
+            var self = this;
+            $('.agile-select').each(function () {
+                var $this = $(this);
+                $this.find('select').on('change', function(e) {
+                    var val = $(this).find('option:selected').val(),
+                        default_value = $this.find('.agile-select__value').attr('data-default');
+                    if(val) {
+                        $this.find('.agile-select__value').text(val);
+                    } else {
+                        $this.find('.agile-select__value').text(default_value);
+                    }   
+                });
+            });
         }
     }
 

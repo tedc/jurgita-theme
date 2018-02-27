@@ -5,6 +5,7 @@
     background-color: $w;
     width: $f;
     color: $gray;
+    border-radius: 0;
     transition: border-color $speed, background-color $speed;
     @include input-placeholder() {
         font-family: $main-font;

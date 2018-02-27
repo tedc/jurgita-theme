@@ -1,0 +1,23 @@
+.agile {
+	&-select {
+		position: relative;
+		&__{
+			&option {
+				@extend %inputs;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			&value {
+				color: $base_color;
+			}
+		}
+		select {
+			@include absfull();
+			z-index: 10;
+			opacity: 0;
+			appearance: none;
+			cursor: pointer;
+		}
+	}
+}

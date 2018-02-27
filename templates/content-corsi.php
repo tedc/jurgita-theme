@@ -4,13 +4,13 @@
 	<div class="container-img col-2">
 	    <figure>
 		    <a href="<?php the_permalink(); ?>">
-		        <img src="<?php the_post_thumbnail_url( 'large' ) ?>" data-scrollmagic='{"tween":[{"y": 100, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "150vh", "triggerElement": "#corsi-<?php echo $i ?>"}'>
+		        <img src="<?php the_post_thumbnail_url( 'large' ) ?>"<?php if(!is_handheld()): ?> data-scrollmagic='{"tween":[{"y": 100, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "150vh", "triggerElement": "#corsi-<?php echo $i ?>"}'<?php endif; ?>>
 		    </a>
-	        <div class="square" data-scrollmagic='{"tween":[{"y": -100}, {"y" : 0}], "triggerHook" : 0.5, "duration" : "150vh", "triggerElement": "#corsi-<?php echo $i ?>"}'></div>
-	        <div class="square-shadow" data-scrollmagic='{"tween":[{"y": 100, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "150vh", "triggerElement": "#corsi-<?php echo $i ?>"}'></div>
+	        <div class="square"<?php if(!is_handheld()): ?> data-scrollmagic='{"tween":[{"y": -100}, {"y" : 0}], "triggerHook" : 0.5, "duration" : "150vh", "triggerElement": "#corsi-<?php echo $i ?>"}'<?php endif; ?>></div>
+	        <div class="square-shadow"<?php if(!is_handheld()): ?> data-scrollmagic='{"tween":[{"y": 100, "x" : 0}, {"y" : 0, "x" : 0}], "triggerHook" : 0.5, "duration" : "150vh", "triggerElement": "#corsi-<?php echo $i ?>"}'<?php endif; ?>></div>
 	    </figure>
 	</div>
-	<article class="col-2 content" <?php echo $dataScrollMagic ?>>
+	<article class="col-2 content" <?php echo $dataScrollMagic && !is_handheld() ?>>
 		<?php get_template_part('templates/corsi', 'meta'); ?>
 		<h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	    <h3 class="title title-date">

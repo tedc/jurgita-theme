@@ -1,7 +1,7 @@
 <?php
 add_filter('woocommerce_show_page_title', '__return_false');
 
-add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+//add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
 function wcs_woo_remove_reviews_tab($tabs) {
     unset($tabs['reviews']);
     return $tabs;
@@ -12,6 +12,7 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_ad
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash' );
 
 remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 100 );
 
 function my_price ($price) {
     $price = str_replace(array('<ins>', '</ins>', '&euro;</span>&nbsp;', ',', ':'), array('', '', '&euro;</span>&nbsp;<span class="int-price">','</span>,', ''), $price);
@@ -24,7 +25,7 @@ add_filter('woocommerce_cart_item_subtotal', 'my_price');
 
 
 function custom_woocommerce_get_catalog_ordering_args( $args ) { if (isset($_SESSION['orderby'])) { if($_SESSION['orderby']) { $args['orderby'] = 'category'; } } return $args; }
-add_filter('woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby');
+//add_filter('woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby');
 function custom_woocommerce_catalog_orderby( $sortby ) { $sortby['category'] = 'Sort by category'; return $sortby; }
 
 function woocommerce_car_icon(){
@@ -44,3 +45,7 @@ function login_menu ($nav_menu, $args) {
 }
 
 add_filter('wp_nav_menu', 'login_menu', 10, 2);
+
+//add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+//remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );

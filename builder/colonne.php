@@ -5,7 +5,7 @@ $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opac
 ?>
 <div class="col-2<?php echo (get_row_layout() == 'immagine') ? ' aligncenter' : ''; ?>"<?php echo (!is_handheld() && get_row_layout() != 'master') ? ' '.$dataScrollMagic : ''; ?>>
 <?php if(get_row_layout() == 'testo') : ?>
-	<div class="container content <?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
+	<div class="container content row-md<?php echo (get_sub_field('testo_centrato')) ? ' aligncenter' : ''; ?>">
 		<?php the_sub_field('contenuto'); ?>
 	</div>
 <?php elseif (get_row_layout() == 'immagine') : ?>
@@ -29,7 +29,9 @@ $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opac
 		echo $oembed;?>
 	</div>
     <div class="video-overlay">
+    <?php if(get_sub_field('titolo_video') !='') : ?>
     	<h3 class="title"><?php the_sub_field('titolo_video'); ?></h3>
+    <?php endif; ?>
     	<a href="#" class="icon-play"></a>
     </div>
 	<div class="container_close">
@@ -38,11 +40,11 @@ $dataScrollMagic = ($col%2==0) ? 'data-scrollmagic=\'{"tween":[{"x" : -50, "opac
 </div>
 <?php elseif (get_row_layout() == 'master') : ?>
 	<div class="container master" id="master">
-		<span class="pattern" data-scrollmagic='{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'></span>
-		<span class="square" data-scrollmagic='{"tween":[{"y": 50, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'></span>
-		<div class="master-content" data-scrollmagic='{"tween":[{"y": 50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'>
+		<span class="pattern"<?php if(!is_handheld()) : ?> data-scrollmagic='{"tween":[{"y": 50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'<?php endif; ?>></span>
+		<span class="square"<?php if(!is_handheld()) : ?> data-scrollmagic='{"tween":[{"y": 50, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'<?php endif; ?>></span>
+		<div class="master-content"<?php if(!is_handheld()) : ?> data-scrollmagic='{"tween":[{"y": 50, "x" : 50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'<?php endif; ?>>
 			<?php the_sub_field('testo_master'); ?>
-			<a href="<?php bloginfo('url'); ?>" class="logo" data-scrollmagic='{"tween":[{"y": -50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'>
+			<a href="<?php bloginfo('url'); ?>" class="logo"<?php if(!is_handheld()) : ?> data-scrollmagic='{"tween":[{"y": -50, "x" : -50, "opacity" : 0}, {"y" : 0, "x" : 0, "opacity" : 1}], "triggerHook" : 0.5, "duration" : 0, "triggerElement" : "#master"}'<?php endif; ?>>
 				<span class="j">J</span>
 				<span class="j">J</span>
 			</a>

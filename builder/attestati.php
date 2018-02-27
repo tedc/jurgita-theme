@@ -1,6 +1,6 @@
 <div class="awards row-lg" id="awards_<?php echo $row; ?>">
-<h2 class="title aligncenter" data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.75, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'><?php _e('I miei attestati', 'jurgita') ?></h2>
-<div class="carousel_list" data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.65, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'>
+<h2 class="title aligncenter"<?php if(!is_handheld()) : ?> data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.75, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'<?php endif; ?>><?php _e('I miei attestati', 'jurgita') ?></h2>
+<div class="carousel_list"<?php if(!is_handheld()) : ?> data-scrollmagic='{"tween": [{"y": 20, "opacity" : 0}, {"y" : 0, "opacity" : 1}], "triggerHook" : 0.65, "duration" : 0, "triggerElement" : "#awards_<?php echo $row; ?>"}'<?php endif; ?>>
     <?php $query = new WP_Query(array(
         "post_type" => "attestati",
         "posts_per_page" => -1,

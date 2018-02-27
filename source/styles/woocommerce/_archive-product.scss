@@ -26,6 +26,81 @@
     }
 }
 
+.woof_products_top_panel {
+    background-color: $category_line;
+    margin: 0 0 em(40px) !important;
+    padding: {
+        top: em(20px);
+        bottom: em(20px);
+    }
+    a {
+        color: $gold;
+        font-size: 12px;
+        &:hover {
+            color: $base_color;
+        }
+    }
+    @include normalize_padding;
+}
+.woof_reset_search_form {
+    @extend .btn-reverse;
+    float: none !important;
+}
+.products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .products {
+        flex: 0 0 auto;
+        width: $f;
+        @include breakpoint(850px) {
+            width: ($f/5) * 4;
+        }
+    }
+    .woof {
+        flex: 0 0 auto;
+        width: $f;
+        .widget_price_filter {
+            h4 {
+                font-family: $third-font;
+                width: $f;
+                text-align: center;
+                color: $gold;
+                padding-bottom: em(20px);
+            }
+        }
+        .widget_price_filter .ui-slider .ui-slider-range, .widget_price_filter .ui-slider .ui-slider-handle {
+            background-color: $gold !important;
+        }
+        @include normalize_padding;
+        @include breakpoint(850px) {
+            width: ($f/5);
+        }
+        .price_slider_amount {
+            .price_label {
+                font-size: 12px;
+                text-align: center !important;
+                width: $f;
+                color: $gold;
+                padding-bottom: em(25px, 12px);
+            }
+        }
+    }
+    .woof_list {
+        li {
+            display: flex;
+            input {
+                flex: 0 0 auto;
+            }
+        }
+    }
+    .woof_radio_label {
+        padding-top: 0 !important;
+        padding-bottom: em(20px) !important;
+        font-size: 12px;
+        flex: 4;
+    }
+}
+
 .order-bar {
     position: relative;
     display: flex;
